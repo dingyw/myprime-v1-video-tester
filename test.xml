@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xml:lang="en" xmlns="http://www.w3.org/2006/10/ttaf1" 
+xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling">
+	<head>
+		<styling>
+		</styling>
+	</head>
+	<body>
+		<div xml:lang="en">
+			<p begin = "00:00:00.01" dur="40.00"><b>Narrator:</b><br/>Welcome to myPRIME. Before you get started with the course, let's review how to navigate through the myPRIME program. At the top of the screen, you'll see the Course Progress bar, the Settings button, and the Secure Logout button. <br/>
+The Course Progress bar tells you the percentage of the course you have completed. It will guage your progress as you complete each of the three units. 
+The Settings button will allow you to edit your e-mail address, and change the background of your screen. Click on the button to open it, and click on the edit links to change either of the settings. To close the menu, just click on the button again. <br/>
+The Secure Logout button closes the program in such a way that prevents anyone else who uses the program on the same computer from accessing your Settings or information. <br/>
+The big viewing panel in the middle of the screen is where most of the action of the course takes place. This is where you'll watch videos, complete interactions, and enter information. Screen instructions appear in the upper area of the viewing panel. They'll tell you what action to perform when you need to provide input.
+To navigate through the course, use the Next, Back, or Submit buttons that appear at the bottom of the panel, or at the bottom of the active window. 
+At the bottom of your screen, you'll see several icons that you can click on at any time--Support, Tell Me More, My Stuff, and Review.<br/>
+Click on the Support  icon if you need technical support, or if you want to ask a question about myPRIME. The Support section contains a contact e-mail form. Use the drop-down menu to select the type of question you  need answered. Then, enter your name and e-mail address into the boxes provided, and enter your message into the box below. If you'd like a copy of the message sent to you, click the send copy to me checkbox. Click Send when you are finished. For technical support, you will receive a response within one day. For program questions, you will receive a response within three days. Once you've submitted your question, click on the ""x"" in the top right corner to close the Support tab.
+Click on the Tell Me More icon if you'd like to learn more about specific subjects that are covered in the course. You'll see three options in the Tell Me More section. Frequently Asked Questions or FAQs, the Glossary, and Research. Once you've opened one of these options, you can tab through the others as well. FAQs cover topics that students often ask questions about. Use the scroll bar to move through the list. You can also use the search box to look for a specific word. Click on a question to read the response. When you're ready to move on, click on the question again to close the box. 
+The Glossary tab contains definitions for common terms that are often used in myPRIME. The terms are listed alphabetically. You can either scroll through the list of terms, click on a letter at the top of the screen to jump to a particular word, or use the search box to look for a specific word. 
+The Research tab contains reference information for the studies that serve as the basis for the information in myPRIME. Click on a specific reference to open and read the details. Once you're ready to continue in the course, click on the ""x"" in the top right corner to close the Tell Me More tab.<br/>
+The My Stuff section contains the personal notes and reflections that you enter throughout the course. As you progress through the course, you'll have the opportunity to enter notes about information that you want to remember. These notes are available to you at any time on the Notes tab of My Stuff. At times, you will also be asked to reflect on certain problems and answer certain questions. Your answers will be stored on the Reflections tab of My Stuff. There are some activities in the course that many students like to keep a copy of, even long after they've completed the program. The ""putting it all together"" section is where you'll find a record of these activities. They'll become available to you here as you complete them throughout the course. When you're ready to close My Stuff, click on the ""x"" in the top right corner.
+The Review section contains the Course Menu and Practice Area. <br/>
+The Course Menu lists all of the lessons in myPRIME. Lessons will become available on the list once you complete them in the course. If you want to review a particular lesson in the course, just click on the title. 
+The Practice area contains all of the interactions in the course. Interactions will become available on the list once you complete them in the course. If you want to go back a particular activity and try it again, just click on it.
+When you're ready to pick up where you left off in the course, click on the "x" to close the Review section.</p>
+		</div>
+	</body>
+</tt>

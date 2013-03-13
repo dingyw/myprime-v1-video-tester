@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Path to the parent folder of the XML folders -->
+<!--   
+<xmls path="C:/wamp/www/myprime/192.168.251.35/trunk/development/myPRIME_Project/bin/data/">
+<xmls path="../../../192.168.251.35/trunk/development/myPRIME_Project/bin/data/">
+<xmls path="../../../DVD/Myprime_adapt_course/myPRIME/data/">
+-->
+<xmls path="../../../trunk/deploy/sites/ePRIME/">
+	<units>
+		<unit id="1" folder="files">
+			<lesson src="Unit_1_Lesson_0_Scene_1_0"/>
+			<lesson src="Unit001_Lesson001_Topic000"/>
+			<lesson src="Unit001_Lesson002_Topic000"/>
+			<lesson src="Unit001_Lesson003_Topic000"/>
+			<lesson src="Unit001_Lesson004_Topic000"/>
+			<lesson src="Unit001_Lesson004_Topic001"/>
+			<lesson src="Unit001_Lesson004_Topic002"/>
+			<lesson src="Unit001_Lesson004_Topic003"/>
+			<lesson src="Unit001_Lesson005_Topic000"/>
+			<lesson src="Unit001_Lesson006_Topic000"/>
+			<lesson src="Unit001_Lesson006_Topic001"/>
+			<lesson src="Unit001_Lesson006_Topic001A"/>
+			<lesson src="Unit001_Lesson006_Topic001B"/>
+			<lesson src="Unit001_Lesson006_Topic002"/>
+			<lesson src="Unit001_Lesson006_Topic003"/>
+			<lesson src="Unit001_Lesson006_Topic004"/>
+			<lesson src="Unit001_Lesson007_Topic000"/>
+			<lesson src="Unit001_Lesson008_Topic001"/>
+			<lesson src="Unit001_Lesson008_Topic002"/>
+			<lesson src="Unit001_Lesson009_Topic000"/>
+			<lesson src="Unit001_Lesson010_Topic000"/>
+			<lesson src="Unit001_Lesson011_Topic000"/>
+			<lesson src="Unit001_Lesson011_Topic002"/>
+			<lesson src="Unit001_Lesson012_Topic000"/>
+			<lesson src="Unit001_Lesson013_Topic000"/>
+			<lesson src="Unit001_Lesson014_Topic000"/>
+			<lesson src="Unit001_Lesson015_Topic000"/>
+		</unit>
+		
+		<unit id="2" folder="Unit_2">
+			<lesson src="Unit002_Lesson000_Topic000"/>
+			<lesson src="Unit002_Lesson001_Topic000"/>
+			<lesson src="Unit002_Lesson002_Topic000_Part1"/>
+			<lesson src="Unit002_Lesson002_Topic000_Part2"/>
+			<lesson src="Unit002_Lesson002A_Topic000"/>
+			<lesson src="Unit002_Lesson003_Topic000_Part1"/>
+			<lesson src="Unit002_Lesson003_Topic000_Part2"/>
+			<lesson src="Unit002_Lesson004_Topic000_Part1"/>
+			<lesson src="Unit002_Lesson004_Topic000_Part2"/>
+			<lesson src="Unit002_Lesson005_Topic000"/>
+			<lesson src="Unit002_Lesson006_Topic000"/>
+			<lesson src="Unit002_Lesson007_Topic000"/>
+			<lesson src="Unit002_Lesson008_Topic000"/>
+		</unit>
+		
+		<unit id="3" folder="Unit_3">
+			<lesson src="Unit003_Lesson000_Topic000"/>
+			<lesson src="Unit003_Lesson001_Topic000"/>
+			<lesson src="Unit003_Lesson002_Topic000"/>
+			<lesson src="Unit003_Lesson003_Topic000"/>
+			<lesson src="Unit003_Lesson004_Topic000"/>
+			<lesson src="Unit003_Lesson005_Topic000"/>
+			<lesson src="Unit003_Lesson006_Topic000"/>
+			<lesson src="Unit003_Lesson007_Topic000"/>
+			<lesson src="Unit003_Lesson008_Topic000"/>
+			<lesson src="Unit003_Lesson009_Topic000"/>
+			<lesson src="Unit003_Lesson010_Topic000"/>
+			<lesson src="Unit003_Lesson011_Topic000"/>
+			<lesson src="Unit003_Lesson012_Topic000"/>
+		</unit>
+
+	</units>
+</xmls>

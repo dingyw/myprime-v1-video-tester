@@ -1,0 +1,53 @@
+<!doctype html>
+<html ng-app>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>myPrime Video Test Utility</title>
+
+		<link rel="stylesheet" type="text/css" href="flowplayer/style.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+
+		<script type="text/javascript" src="flowplayer/flowplayer-3.2.12.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</head>
+	<body>
+		<div ng-controller="Main">
+			Unit :
+			<select class="span2" ng-model="unitId" ng-change="updateUnitId()">
+				<option value="1">Unit 1</option>
+				<option value="2">Unit 2</option>
+				<option value="3">Unit 3</option>
+			</select>
+
+			Lessons:
+			<select class="span4" ng-model="lessonSrc" ng-change="updateLessonSrc()">
+				<option value="{{lesson.src}}" ng-repeat="lesson in lessons">{{lesson.text}}</option>
+			</select>
+
+			Video:
+			<select ng-model="videoData" ng-change="updateVideo()">
+				<option value="{{brightcoveElem.id}},{{brightcoveElem.captionSrc}}" ng-repeat="brightcoveElem in brightcoveElems">{{brightcoveElem.name}}</option>
+			</select>
+
+			<button class="btn" onclick="init();">Refresh</button>
+			<script>
+
+				function init() {
+					// var data = {{videoId}}
+					
+					
+				}
+			</script>
+		</div>
+
+		<div id="page">
+
+			<a id="player" style="display:block;width:520px;height:330px"></a>
+			
+
+		</div>
+	</body>
+</html>
