@@ -69,7 +69,7 @@
 			
 			<!-- U1L4T2C2    HV    Choices - Host Video 1 - Introduction -->
 			
-			<brightcoveVideo name="U1L4T2C2_video" source="1456756738001" width="768" height="432" label="Introduction Video">
+			<brightcoveVideo name="U1L4T2C2_video" source="738313139001" width="768" height="432" label="Introduction Video">
 				<playheadUpdate action="setProgress" value="U1L4T2C2Complete_progressBar" frequency="5" />
 				<complete action="U1L4T2C2Complete_interaction" />
 				<caption source="data/Unit_1/captions/lesson_04/U1L4T2C2_cc.xml" />

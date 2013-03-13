@@ -169,8 +169,8 @@
 				<assetComplete action="gotoAndPlay" target="U3L3C6_3_evaluation"/>
 				
 				<evaluation evalType="multipleChoiceSingleSelect" design="true">
-					<instructionText><![CDATA[Enter a number in the box below, then click Next.]]></instructionText>
-					<questionText><![CDATA[Set a date. (NOTE: This date should be different than the date you set for achieving the goal.)]]></questionText>
+					<instructionText><![CDATA[Enter information in the boxes below, then click Next.]]></instructionText>
+					<questionText><![CDATA[Set a date]]></questionText>
 					<titleText><![CDATA[Developing a Plan for Success ]]></titleText>
 					<multimedia src="U3L3C6_2.swf"/>
 					<data-dependency id="U3L3C6_1"/>

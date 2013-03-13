@@ -137,7 +137,7 @@
 			
 			<!--  U1L13C2   HV   Psychological Influences - Intro Video -->
 			
-			<brightcoveVideo name="U1L13C2_video" source="1455053821001" width="768" height="432" label="Introduction Video">
+			<brightcoveVideo name="U1L13C2_video" source="777401350001" width="768" height="432" label="Introduction Video">
 			  <playheadUpdate action="setProgress" value="U1L13C2Complete_progressBar" frequency="5" />
 			  <complete action="U1L13C2Complete_interaction"/>
 			  <caption source="data/Unit_1/captions/lesson_13/U1L13C2_cc.xml"/>

@@ -152,7 +152,7 @@
 		
 		<!-- U1L9C1    TG    Defining a Drink -->
 		
-		<brightcoveVideo name="U1L9C1_video" source="738433031001" width="768" height="432" complete="true">
+		<brightcoveVideo name="U1L9C1_video" source="1560928300001" width="768" height="432" complete="true">
 			<playheadUpdate action="setProgress" value="U1L9C1Complete_progressBar" frequency="5" />
 			<complete action="U1L9C1Complete_interaction" />
 		</brightcoveVideo>

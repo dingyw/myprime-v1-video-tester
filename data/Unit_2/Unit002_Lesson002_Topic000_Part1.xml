@@ -209,7 +209,7 @@
 			
 			<!-- U2L2C15  -->
 			
-			<brightcoveVideo name="U2L2C15_video" source="1483692310001" width="768" height="432" label="Marketing Video">
+			<brightcoveVideo name="U2L2C15_video" source="820217059001" width="768" height="432" label="Marketing Video">
 				<playheadUpdate action="setProgress" value="U2L2C15Complete_progressBar" frequency="5" />
 				<complete action="gotoAndPlay" target="U2L2C17_video" />
 				<caption source="data/Unit_2/captions/lesson_02/U2L2C15_cc.xml" />

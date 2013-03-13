@@ -96,6 +96,8 @@ function Main($scope, $http, $templateCache) {
 	
 	function update(){
 		var videoArray = $scope.videoData.split(',');
+		
+		$scope.currentClosedCaption = videoArray[1];
 
 		player = flowplayer("player", "flowplayer/flowplayer-3.2.16.swf", {
 			clip : {

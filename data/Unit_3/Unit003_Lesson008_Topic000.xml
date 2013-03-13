@@ -83,7 +83,7 @@
 	
 			<!--  U3L8C2   -->
 			
-			<brightcoveVideo name="U3L8C2_video" source="1481473950001" width="768" height="432" label="Introduction Video">
+			<brightcoveVideo name="U3L8C2_video" source="776459140001" width="768" height="432" label="Introduction Video">
 			  <playheadUpdate action="setProgress" value="U3L8C2Complete_progressBar" frequency="5" />
 			  <complete action="goto" target="U3L8C3_swf"/>
 			  <complete action="callProperty" target="U3L8C3_swf.content" value="initContent"/>
@@ -124,7 +124,7 @@
 		
 			<!--  U3L8C5	 -->
 			
-			<brightcoveVideo name="U3L8C5_video" source="1481473945001" width="768" height="432" label="Processing Video">
+			<brightcoveVideo name="U3L8C5_video" source="776459139001" width="768" height="432" label="Processing Video">
 			  <playheadUpdate action="setProgress" value="U3L8C5Complete_progressBar" frequency="5" />
 			  <complete action="gotoAndPlay" target="U3L8C7_1_evaluation"/>
 			  <caption source="data/Unit_3/captions/lesson_08/U3L8C5_cc.xml"/>
@@ -170,7 +170,7 @@
 		
 			<!--  U3L8C8 -->
 			
-			<brightcoveVideo name="U3L8C8_video" source="1481193478001" width="768" height="432" label="Summary Video">
+			<brightcoveVideo name="U3L8C8_video" source="777667674001" width="768" height="432" label="Summary Video">
 			  <playheadUpdate action="setProgress" value="U3L8C8Complete_progressBar" frequency="5" />
 			  <complete action="U3L8C8Complete_interaction" />
 			  <caption source="data/Unit_3/captions/lesson_08/U3L8C8_cc.xml"/>

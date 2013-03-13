@@ -266,7 +266,7 @@
 			
 			<!-- U1L6T4C14    IG    Presentation 1 - Putting the Formula Together -->
 			
-			<brightcoveVideo name="U1L6T4C14_video" source="1532717118001" width="768" height="432" label="Putting the Formula Together">
+			<brightcoveVideo name="U1L6T4C14_video" source="1526521910001" width="768" height="432" label="Putting the Formula Together">
 				<playheadUpdate action="setProgress" value="U1L6T4C14Complete_progressBar" frequency="5" />
 				<complete action="U1L6T4C14Complete_interaction" />
 				<caption source="data/Unit_1/captions/lesson_06/U1L6T4C14_cc.xml" />
@@ -274,7 +274,7 @@
 			
 			<!-- U1L6T4C15    SV    Skype Video 2 - Putting the Formula Together -->
 			
-			<brightcoveVideo name="U1L6T4C15_video" source="1456743617001" width="768" height="432" label="Putting the Formula Together Reactions">
+			<brightcoveVideo name="U1L6T4C15_video" source="818961192001" width="768" height="432" label="Putting the Formula Together Reactions">
 				<playheadUpdate action="setProgress" value="U1L6T4C15Complete_progressBar" frequency="5" />
 				<complete action="U1L6T4C15Complete_interaction" />
 				<caption source="data/Unit_1/captions/lesson_06/U1L6T4C15_cc.xml" />

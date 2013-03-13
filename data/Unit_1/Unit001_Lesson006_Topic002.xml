@@ -56,7 +56,7 @@
 			
 			<!-- U1L6T2C3    A    Animation 1 - Choices -->
 			
-			<brightcoveVideo name="U1L6T2C3_video" source="1510693835001" width="768" height="432" label="Choices Animation">
+			<brightcoveVideo name="U1L6T2C3_video" source="1507950224001" width="768" height="432" label="Choices Animation">
 				<playheadUpdate action="setProgress" value="U1L6T2C3Complete_progressBar" frequency="5" />
 				<complete action="U1L6T2C3Complete_interaction" />
 				<caption source="data/Unit_1/captions/lesson_06/U1L6T2C3_cc.xml" />

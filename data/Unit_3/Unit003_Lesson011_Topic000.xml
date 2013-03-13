@@ -60,7 +60,7 @@
 
 		<!--  U3L11C2   -->
 		
-		<brightcoveVideo name="U3L11C2_video" source="1481227030001" width="768" height="432" label="Introduction Video">
+		<brightcoveVideo name="U3L11C2_video" source="776409831001" width="768" height="432" label="Introduction Video">
 		  <playheadUpdate action="setProgress" value="U3L11C2Complete_progressBar" frequency="5" />
 		  <complete action="gotoAndPlay" target="U3L11C3_evaluation"/>
 		  <caption source="data/Unit_3/captions/lesson_11/U3L11C2_cc.xml" />
@@ -104,7 +104,7 @@
 		
 		<!--  U3L11C6	-->
 		
-		<brightcoveVideo name="U3L11C6_video" source="1481230955001" width="768" height="432" label="Summary Video">
+		<brightcoveVideo name="U3L11C6_video" source="845645370001" width="768" height="432" label="Summary Video">
 		  <playheadUpdate action="setProgress" value="U3L11C6Complete_progressBar" frequency="5" />
 		  <complete action="gotoAndPlay" target="U3L11C7_evaluation"/>
 		  <caption source="data/Unit_3/captions/lesson_11/U3L11C6_cc.xml" />

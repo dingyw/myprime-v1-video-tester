@@ -86,7 +86,7 @@
 			
 			<!--  U1L11C3    NV    Impairment Problems -Narrative Video 1 - Who Got the DUI? Part 1  -->
 			
-			<brightcoveVideo name="U1L11C3_video" source="836502408001" width="768" height="432" label="Who Got the DUI? Dramatization">
+			<brightcoveVideo name="U1L11C3_video" source="1437303071001" width="768" height="432" label="Who Got the DUI? Dramatization">
 			  <playheadUpdate action="setProgress" value="U1L11C3Complete_progressBar" frequency="5" />
 			  <complete action="gotoAndPlay" target="U1L11T1C2_video" />
 			  <caption source="data/Unit_1/captions/lesson_11/U1L11C3_cc.xml"/>
@@ -110,7 +110,6 @@
 						<questionText><![CDATA[Which one of these people do you think is most likely to have gotten the DUI? ]]></questionText>
 						<instructionText><![CDATA[Select ONE of the characters below, and click Submit.]]></instructionText>
 						<titleText><![CDATA[Who Got the DUI?]]></titleText>
-						<audio src="U1L11T1C3.mp3" />
 						<choice-collection>
 							<choice id="c1" valueID="v1">
 								<text><![CDATA[U1L11T1C3_Image_John.jpg]]></text>

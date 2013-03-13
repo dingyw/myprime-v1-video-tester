@@ -62,7 +62,7 @@
 			
 			<!--  U2L1C2   -->
 			
-			<brightcoveVideo name="U2L1C2_video" source="1452873373001" width="768" height="432" label="Green Phase Hallmarks">
+			<brightcoveVideo name="U2L1C2_video" source="820182800001" width="768" height="432" label="Green Phase Hallmarks">
 			  <playheadUpdate action="setProgress" value="U2L1C2Complete_progressBar" frequency="5" />
 			  <complete action="gotoAndPlay" target="U2L1C3_video"/>
 			  <caption source="data/Unit_2/captions/lesson_01/U2L1C2_cc.xml" />
@@ -74,7 +74,7 @@
 		
 			<!--  U2L1C3   -->
 			
-			<brightcoveVideo name="U2L1C3_video" source="1452873372001" width="768" height="432" label="Importance and Feelings of Use">
+			<brightcoveVideo name="U2L1C3_video" source="819903063001" width="768" height="432" label="Importance and Feelings of Use">
 			  <playheadUpdate action="setProgress" value="U2L1C3Complete_progressBar" frequency="5" />
 			  <complete action="gotoAndPlay" target="U2L1C4_video"/>
 			  <caption source="data/Unit_2/captions/lesson_01/U2L1C3_cc.xml" />

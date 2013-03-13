@@ -93,7 +93,7 @@
 		
 			<!--  U1L11T2C3    A    High Tolerance - Animation 1 - How Tolerance Works  -->
 			
-			<brightcoveVideo name="U1L11T2C3_video" source="1510693824001" width="768" height="432" label="How Tolerance Works">
+			<brightcoveVideo name="U1L11T2C3_video" source="1507831502001" width="768" height="432" label="How Tolerance Works">
 			  <playheadUpdate action="setProgress" value="U1L11T2C3Complete_progressBar" frequency="5" />
 			  <complete action="U1L11T2C3Complete_interaction"/>
 			  <caption source="data/Unit_1/captions/lesson_11/U1L11T2C3_cc.xml"/>

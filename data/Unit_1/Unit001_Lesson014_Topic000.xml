@@ -117,7 +117,7 @@
 			
 			<!--  U1L14C3    IG    Do We All Respond the Same? Info Graphic  -->
 			
-			<brightcoveVideo name="U1L14C3_video" source="1502831341001" width="768" height="432" label="Do We All Respond the Same? Info Graphic">
+			<brightcoveVideo name="U1L14C3_video" source="819986910001" width="768" height="432" label="Do We All Respond the Same? Info Graphic">
 			  <playheadUpdate action="setProgress" value="U1L14C3Complete_progressBar" frequency="5" />
 			  <complete action="U1L14C3Ready_interaction"/>
 			  <caption source="data/Unit_1/captions/lesson_14/U1L14C3_cc.xml" />
@@ -130,7 +130,7 @@
 			<!--  U1L14C4    HV    Formula and Guidelines Review - Host Video
 									HV    My Guidelines - Host Intro to Interactions -->
 			
-			<brightcoveVideo name="U1L14C4_video" source="1483692315001" width="768" height="432" label="Formula and Guidelines Review">
+			<brightcoveVideo name="U1L14C4_video" source="821357260001" width="768" height="432" label="Formula and Guidelines Review">
 			  <playheadUpdate action="setProgress" value="U1L14C4Complete_progressBar" frequency="5" />
 			  <complete action="U1L14C4Ready_interaction"/>
 			  <caption source="data/Unit_1/captions/lesson_14/U1L14C4_cc.xml" />
@@ -250,7 +250,7 @@
 				<assetComplete action="U1L14C11_1Complete_interaction"/>
 				
 				<evaluation evalType="ReflectionQuestion">
-						<questionText><![CDATA[Given your unique factors, how might you adjust the 0-1-3 Guidelines for yourself?]]></questionText>
+						<questionText><![CDATA[Given your unique factors, how might you adjust the 0-1-2-3 Guidelines for yourself?]]></questionText>
 						<titleText><![CDATA[Reflection Question]]></titleText>
 						<value-collection>
 							<value id="v1"><![CDATA[true]]></value>

@@ -163,9 +163,9 @@
 		
 		<sequence label="Introduction">
 		
-			<!-- U1L9C1    TG  -->
+			<!-- U1L9C1    TG    Defining a Drink -->
 			
-			<brightcoveVideo name="U1L9C1_video" source="1560922958001" width="768" height="432" complete="true" label="Risk is Related to Quantity and Frequency/Low-Risk Guidelines">
+			<brightcoveVideo name="U1L9C1_video" source="1560928300001" width="768" height="432" complete="true" label="Risk is Related to Quantity and Frequency/Low-Risk Guidelines">
 				<playheadUpdate action="setProgress" value="U1L9C1Complete_progressBar" frequency="5" />
 				<complete action="U1L9C1Complete_interaction" />
 			</brightcoveVideo>

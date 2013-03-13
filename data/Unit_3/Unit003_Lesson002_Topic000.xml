@@ -85,7 +85,7 @@
 			
 			<!--  U3L2C2   -->
 			
-			<brightcoveVideo name="U3L2C2_video" source="1483328549001" width="768" height="432" label="Introduction Video">
+			<brightcoveVideo name="U3L2C2_video" source="750997527001" width="768" height="432" label="Introduction Video">
 			  <playheadUpdate action="setProgress" value="U3L2C2Complete_progressBar" frequency="5" />
 			  <complete action="U3L2C2Complete_interaction"/>
 			  <caption source="data/Unit_3/captions/lesson_02/U3L2C2_cc.xml"/>
@@ -198,7 +198,7 @@
 									HV	Host + Expert Video 3: Feedback on Feelings About Low-Risk Choices ("Already Making LRCs")
 									HV	Host Video 2: Summary  of Thinking About My Future -->
 	
-			<brightcoveVideo name="U3L2C6A_video" source="1481503357001" width="768" height="432" label="Summary Video">
+			<brightcoveVideo name="U3L2C6A_video" source="760706669001" width="768" height="432" label="Summary Video">
 			  <playheadUpdate action="setProgress" value="U3L2C6Complete_progressBar" frequency="5" />
 			  <complete action="U3L2C6Complete_interaction"/>
 			  <caption source="data/Unit_3/captions/lesson_02/U3L2C6A_cc.xml"/>
