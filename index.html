@@ -4,8 +4,13 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<title>myPrime Video Test Utility</title>
 
-		<link rel="stylesheet" type="text/css" href="flowplayer/style.css">
-		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+		<style type="text/css">
+			body {
+				padding: 40px 0;
+			}
+		</style>
 
 		<script type="text/javascript" src="flowplayer/flowplayer-3.2.12.min.js"></script>
 		<script src="js/angular.min.js"></script>
@@ -14,7 +19,8 @@
 
 	</head>
 	<body>
-		<div ng-controller="Main">
+
+		<div class="container" ng-controller="Main">
 			Unit :
 			<select class="span2" ng-model="unitId" ng-change="updateUnitId()">
 				<option value="1">Unit 1</option>
@@ -31,12 +37,14 @@
 			<select ng-model="videoData" ng-change="updateVideo()">
 				<option value="{{brightcoveElem.id}},{{brightcoveElem.captionSrc}}" ng-repeat="brightcoveElem in brightcoveElems">{{brightcoveElem.name}}</option>
 			</select>
+
+			<a class="btn btn-primary" ng-click="refresh()">Refresh</a>
 		</div>
 
-		<div id="page">
+		<div class="hero-unit">
 
 			<a id="player" style="display:block;width:520px;height:330px"></a>
-			
+
 		</div>
 	</body>
 </html>

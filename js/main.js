@@ -39,7 +39,6 @@ function Main($scope, $http, $templateCache) {
 
 		for (var i = 0; i < $lesson.length; i++) {
 			var lessonSrc = $($lesson[i]).attr('src');
-			var lessonSrc = $($lesson[i]).attr('src');
 			$scope.lessons.push({
 				text : lessonSrc,
 				src : lessonSrc,
@@ -50,6 +49,8 @@ function Main($scope, $http, $templateCache) {
 
 	$scope.updateLessonSrc = function() {
 		console.log("Update Lesson Src :: " + $scope.lessonSrc);
+		
+		var lessonURL = 'data/Unit_' + $scope.unitId + '/' + $scope.lessonSrc + '.xml';
 
 		// Clear out old data.
 		$scope.brightcoveElems = [];
@@ -58,7 +59,7 @@ function Main($scope, $http, $templateCache) {
 		$scope.response = null;
 		$http({
 			method : 'GET',
-			// url : $scope.lessonSrc,			url : '../../../../DVD/Myprime_adapt_course/myPRIME/data/Unit_1/Unit001_Lesson001_Topic000.xml',			cache : $templateCache
+			// url : $scope.lessonSrc,			url : lessonURL,			cache : $templateCache
 		}).success(function(data, status) {
 			console.log("Success loading lesson XML");
 
@@ -69,7 +70,7 @@ function Main($scope, $http, $templateCache) {
 			for (var i = 0; i < $brightcoveElems.length; i++) {
 				var videoName = $($brightcoveElems[i]).attr('name');
 				var videoId = $($brightcoveElems[i]).attr('source');				var videoLabel = $($brightcoveElems[i]).attr('label');				var captionElem = $($brightcoveElems[i]).find('caption');				var captionSrc = $(captionElem).attr('source');
-				console.log(videoName);
+				
 				$scope.brightcoveElems.push({
 					name : videoName,
 					id : videoId,
@@ -84,6 +85,16 @@ function Main($scope, $http, $templateCache) {
 
 	$scope.updateVideo = function() {
 		console.log("Update Video :: " + $scope.videoData);
+		
+		update();
+	};
+	
+	$scope.refresh = function () {
+		console.log("Refresh Video :: " + $scope.videoData);
+		update();
+	}
+	
+	function update(){
 		var videoArray = $scope.videoData.split(',');
 
 		player = flowplayer("player", "flowplayer/flowplayer-3.2.16.swf", {
@@ -125,6 +136,5 @@ function Main($scope, $http, $templateCache) {
 				}
 			}
 		});
-
-	};
+	}
 }
