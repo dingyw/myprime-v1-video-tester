@@ -1,0 +1,303 @@
+<scene id="3656" title="Be Ready, Be Quick">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U3L9C0_evaluation" />
+	
+		<interactionGroup name="U3L9C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3656,U3L9C0Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L9C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L9C6Complete_interaction">
+			<interaction action="setLastSavePoint" value="3656,U3L9C6Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L9C7_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L9C8_4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3656,U3L9C8_4Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L9C9_swf" />
+			<interaction action="callProperty" target="U3L9C9_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L9C10Complete_interaction">
+			<interaction action="setLastSavePoint" value="3656,U3L9C10Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L9C11_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L9C11Complete_interaction">
+			<!-- <interaction action="recordComplete" value="Lesson,3656" /> -->
+			<interaction action="recordComplete" value="Scene,3656,Lesson,1316" />
+			<interaction action="getScene" value="3763" />
+		</interactionGroup>
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U3L9C1Init_progressBar"   callInteraction="false" interaction="init_interaction" weight="5" />
+		<progressBar name="U3L9C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U3L9C1Complete_progressBar"  />
+		<progressBar name="U3L9C2Complete_progressBar" />
+		<progressBar name="U3L9C6Complete_progressBar" interaction="U3L9C6Complete_interaction" weight="25" />
+		<progressBar name="U3L9C7Complete_progressBar" />
+		<progressBar name="U3L9C8Complete_progressBar" interaction="U3L9C8_4Complete_interaction" weight="25"/>
+		<progressBar name="U3L9C9Complete_progressBar" />
+		<progressBar name="U3L9C10Complete_progressBar" interaction="U3L9C10Complete_interaction"/>
+		<progressBar name="U3L9C11Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U3L9C0_evaluation" visible="true"  componentID="u3l9c0">
+			
+			<assetComplete action="U3L9C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Be Ready, Be Quick]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore the anxiety and fears that people face when confronted with the opportunity to make high-risk choices. We'll also explore coping mechanisms and develop strategies for dealing with cues to drink or use.]]></questionText>
+					<instructionText><![CDATA[Duration: 25 minutes]]></instructionText>
+					<multimedia src="unit3_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U3L9C1  TG    -->
+			
+			<brightcoveVideo name="U3L9C1_video" source="738436498001" width="768" height="432"  complete="true" label="Be Ready, Be Quick">
+			  <playheadUpdate action="setProgress" value="U3L9C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L9C2_video"/>
+			</brightcoveVideo>
+	
+			<!--  U3L9C2   -->
+			
+			<brightcoveVideo name="U3L9C2_video" source="819980425001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U3L9C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L9C6_1_evaluation"/>
+			  <caption source="data/Unit_3/captions/lesson_09/U3L9C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Processing">
+		
+			<!--  U3L9C6	 -->
+			
+			<evaluation name="U3L9C6_1_evaluation" componentID="u3l9c6_1" label="Processing Questions">
+			
+				<assetComplete action="gotoAndPlay" target="U3L9C6_2_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[1. A typical situation where I would normally make high-risk choices is...<input id="c1"/>2. The next event coming up where it will be tempting for me to make high-risk choices is...<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Be Ready, Be Quick Strategies]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U3L9C6_2_evaluation" componentID="u3l9c6_2">
+			
+				<assetComplete action="gotoAndPlay" target="U3L9C6_3_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[3. Before that situation or event, who will I tell about my decision to make a change?<input id="c1"/>4. What will I say to this person (or these people) about my decision to make a change? <input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Be Ready, Be Quick Strategies (Continued)]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U3L9C6_3_evaluation" componentID="u3l9c6_3">
+			
+				<assetComplete action="gotoAndPlay" target="U3L9C6_4_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[5. Who will be there to support me during that event or situation (who will be abstaining or making other low-risk choices)? <input id="c1"/>6. What will I ask them to do to support me during that event (or in that situation)?<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Be Ready, Be Quick Strategies (Continued)]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U3L9C6_4_evaluation" componentID="u3l9c6_4">
+			
+				<assetComplete action="U3L9C6Complete_interaction" />
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[7. What will be happening at this event that might make it difficult to make low-risk choices?<input id="c1"/>8. How will I deal with the things that make it more difficult?<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Be Ready, Be Quick Strategies (Continued)]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<!--  U3L9C7 -->
+			
+			<brightcoveVideo name="U3L9C7_video" source="798513694001" width="768" height="432" label="Testimonials">
+			  <playheadUpdate action="setProgress" value="U3L9C7Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L9C8_1_evaluation"/>
+			  <caption source="data/Unit_3/captions/lesson_09/U3L9C7_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U3L9C8 -->
+			
+			<evaluation name="U3L9C8_1_evaluation" componentID="u3l9c8_1" label="Processing Questions, Part 2">
+			
+				<assetComplete action="gotoAndPlay" target="U3L9C8_2_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[1. What will I do if I feel the urge to make a high-risk drinking or drug choice?<input id="c1"/>2. What is happening or what am I feeling right before I make a high-risk choice?<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Be Ready, Be Quick Cues]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U3L9C8_2_evaluation" componentID="u3l9c8_2">
+			
+				<assetComplete action="gotoAndPlay" target="U3L9C8_3_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[3. What is likely to be the most important thing for me to remember at that time in order to make a low-risk choice?<input id="c1"/>4. What will I tell myself to counter the high-risk feelings and thoughts so I can make a low-risk choice?<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Be Ready, Be Quick Cues (Continued)]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U3L9C8_3_evaluation" componentID="u3l9c8_3">
+			
+				<assetComplete action="gotoAndPlay" target="U3L9C8_4_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[5. What will I do to make it more likely I will have a good time making low-risk choices?<input id="c1"/>6. What are some things I need to be prepared to say if I'm in a situation where I'm tempted to make a high-risk drinking or drug choice but want to make a low-risk choice?<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Be Ready, Be Quick Cues (Continued)]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U3L9C8_4_evaluation" componentID="u3l9c8_4">
+			
+				<assetComplete action="U3L9C8_4Complete_interaction"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[7. Something I did in the past that helped me avoid high-risk choices and make low-risk choices is...<input id="c1"/>]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Next.]]></instructionText>
+						<titleText><![CDATA[Be Ready, Be Quick Cues (Continued)]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<!-- U3L9C9 -->
+				
+			<swf name="U3L9C9_swf" source="flash/googleMap.swf" localSource="flash/globe.swf" componentID="u3l9c9" label="Be Ready, Be Quick Globe">
+				<assetComplete action="gotoAndPlay" target="U3l9c9B_evaluation"/>
+			</swf>
+			
+			<evaluation name="U3l9c9B_evaluation" componentID="u3l9c9b">
+				<assetComplete action="gotoAndPlay" target="U3L9C10_video"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true" >
+					<questionText><![CDATA[Would you like to share your response with others?  ]]></questionText>
+					<instructionText><![CDATA[Select one of the choices below.]]></instructionText>
+					<multimedia src="U1L1C15.swf"/>
+					<titleText><![CDATA[Share Your Response?]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[Yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[No]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!--  U3L9C10 -->
+			
+			<brightcoveVideo name="U3L9C10_video" source="782283539001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U3L9C10Complete_progressBar" frequency="5" />
+			  <complete action="U3L9C10Complete_interaction" />
+			  <caption source="data/Unit_3/captions/lesson_09/U3L9C10_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U3L9C11 -->
+			
+			<evaluation name="U3L9C11_evaluation" componentID="u3l9c11" label="Lesson Summary Screen">
+			
+				<assetComplete action="U3L9C11Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Be Ready; Be Quick]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[3]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

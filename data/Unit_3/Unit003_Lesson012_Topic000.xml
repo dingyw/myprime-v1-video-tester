@@ -1,0 +1,96 @@
+<scene id="3675" title="Drawing to a Close">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U3L12C0_evaluation" />
+		
+		<interactionGroup name="U3L12C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3675,U3L12C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L12C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L12C5Complete_interaction">
+			<interaction action="recordComplete" value="Scene,3675,Lesson,1319,Unit,1083" />
+			<interaction action="goto" target="congrat_swf" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U3L12C1Init_progressBar" interaction="init_interaction"   callInteraction="false" weight="25" />
+		<progressBar name="U3L12C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U3L12C1Complete_progressBar" weight="25" />
+		<progressBar name="U3L12C2Complete_progressBar"  />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U3L12C0_evaluation" visible="true" componentID="u3l12c0">
+			
+			<assetComplete action="U3L12C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Drawing to a Close]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll conclude the Protecting Unit and the program, and leave you with all the resources and tools you'll need to be successful.]]></questionText>
+					<instructionText><![CDATA[Duration: 5 minutes]]></instructionText>
+					<multimedia src="unit3_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Program Summary">
+		
+		<!--  U3L12C1  TG     -->
+		
+		<brightcoveVideo name="U3L12C1_video" source="738436465001" width="768" height="432" complete="true" label="Drawing to a Close">
+		  <playheadUpdate action="setProgress" value="U3L12C1Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U3L12C2_video"/>
+		</brightcoveVideo>
+
+		<!--  U3L12C2   -->
+		
+		<brightcoveVideo name="U3L12C2_video" source="777085976001" width="768" height="432" label="Summary Video">
+		  <playheadUpdate action="setProgress" value="U3L12C2Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U3L12C5_evaluation"/>
+		  <caption source="data/Unit_3/captions/lesson_12/U3L12C2_cc.xml"/>
+		</brightcoveVideo>
+					
+		<!--  U3L12C5	 -->
+		
+		<evaluation name="U3L12C5_evaluation" componentID="u3l12c5" label="Lesson Summary Screen">
+		
+			<assetComplete action="U3L12C5Complete_interaction" />
+			
+			<evaluation evalType="ReflectionQuestion" templateType="notes">
+					<questionText><![CDATA[Drawing to a Close]]></questionText>
+					<titleText><![CDATA[My Notes]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[3]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+		
+		</evaluation>
+		
+		<swf name="congrat_swf" source="assets/media/congratulations.swf">
+			<assetComplete action="dispatch" value="syncUp" />
+		</swf>
+		
+		</sequence>
+		
+	</assets>
+  
+</scene>

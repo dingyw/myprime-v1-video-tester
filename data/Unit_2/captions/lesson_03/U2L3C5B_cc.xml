@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>  </styling>
+  </head>
+  <body>
+    <div xml:lang="en">
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Narrator:</b>
+        <br/>
+	   This chart shows blood alcohol level on the left and time in hours across the bottom. If we track a person’s blood alcohol level over an evening of drinking, it will form what scientists call a blood alcohol curve.
+Look at the blood alcohol curve for a person who’s intoxicated. They will actually reach each blood alcohol level twice – once as they get intoxicated, and then a second time as they get sober. Similar curves can be drawn for any drug use. With a drug like marijuana, the curve begins when THC enters the brain. 
+For alcohol, state-dependent learning begins at a blood alcohol level of anywhere between .08 and .11. It will continue until we are so intoxicated that we can’t learn or function well. Then, as we sober up, we get back into a BAL where state-dependent learning can occur. And this will continue until our BAL drops below around .08.
+Now, if we connect the points between where state-dependent learning begins and ends, the points form a window of state-dependent learning.  Whether I become intoxicated or not, anything I learn within this window is likely to become state dependent. And that means I remember it best only when my BAL is in this window.
+Research shows that state-dependent learning occurs with other drugs as well. Whether it’s simply remembering the words to a song, recalling someone’s name, or a skill like playing pool, if we were in the window when we learned it, we will perform it best only when we are back in the window.
+      </p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,140 @@
+<scene id="3674" title="My Letter">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U3L11C0_evaluation" />
+	
+		<interactionGroup name="U3L11C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3674,U3L11C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L11C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L11C3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3674,U3L11C3Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L11C6_video" />
+		</interactionGroup>
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U3L11C1Init_progressBar" interaction="init_interaction"   callInteraction="false" weight="5" />
+		<progressBar name="U3L11C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U3L11C1Complete_progressBar" weight="25" />
+		<progressBar name="U3L11C2Complete_progressBar"  weight="25" />
+		<progressBar name="U3L11C3Complete_progressBar" interaction="U3L11C3Complete_interaction" weight="25" />
+		<progressBar name="U3L11C6Complete_progressBar"  weight="25" />
+		<progressBar name="U3L11C7Complete_progressBar"  weight="25" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U3L11C0_evaluation" visible="true"  componentID="u3l11c0">
+			
+			<assetComplete action="U3L11C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[My Letter]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll have an opportunity to reflect on our experiences and share them with someone  we care about by writing a letter. ]]></questionText>
+					<instructionText><![CDATA[Duration: 30 minutes]]></instructionText>
+					<multimedia src="unit3_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+		<!--  U3L11C1  TG     -->
+		
+		<brightcoveVideo name="U3L11C1_video" source="738436464001" width="768" height="432"  complete="true" label="My Letter">
+		  <playheadUpdate action="setProgress" value="U3L11C1Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U3L11C2_video"/>
+		</brightcoveVideo>
+
+		<!--  U3L11C2   -->
+		
+		<brightcoveVideo name="U3L11C2_video" source="1481227030001" width="768" height="432" label="Introduction Video">
+		  <playheadUpdate action="setProgress" value="U3L11C2Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U3L11C3_evaluation"/>
+		  <caption source="data/Unit_3/captions/lesson_11/U3L11C2_cc.xml" />
+		</brightcoveVideo>
+		
+		</sequence>
+		
+		<sequence label="My Letter">
+		
+		<!--  U3L11C3 -->
+		
+		<evaluation name="U3L11C3_evaluation" componentID="u3l11c3" label="My Letter">
+		
+			<assetComplete action="U3L11C3Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<questionText><![CDATA[Write a letter from your heart to a special person in your life.  What would you like to share with that person about this experience? See if you can include at least three things that you've learned from the program.]]></questionText>
+					<instructionText><![CDATA[Type your letter in the box, then click Submit.]]></instructionText>
+					<multimedia src="U3L11C3.swf"/>
+					<audio src="U3L11C3.mp3"/>
+					<titleText><![CDATA[My Letter]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<!--  U3L11C4	-->
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+		<!--  U3L11C6	-->
+		
+		<brightcoveVideo name="U3L11C6_video" source="1481230955001" width="768" height="432" label="Summary Video">
+		  <playheadUpdate action="setProgress" value="U3L11C6Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U3L11C7_evaluation"/>
+		  <caption source="data/Unit_3/captions/lesson_11/U3L11C6_cc.xml" />
+		</brightcoveVideo>
+		
+		<!--  U3L11C7 -->
+		
+		<evaluation name="U3L11C7_evaluation" componentID="u3l5c7" label="Lesson Summary Screen">
+		
+			<assetComplete action="getNextScene" recordComplete="true" value="3674,1318"/>
+			
+			<evaluation evalType="ReflectionQuestion" templateType="notes">
+					<questionText><![CDATA[My Letter]]></questionText>
+					<titleText><![CDATA[My Notes]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[3]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		</sequence>
+		
+	</assets>
+  
+</scene>

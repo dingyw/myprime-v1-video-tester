@@ -1,0 +1,379 @@
+<scene id="3479" title="Orange Phase: Psychological Dependence">
+
+	<interactions>
+		<interactionGroup name="init_interaction">
+		<!--
+			<interaction action="goto" target="U2L3C30_swf"/>
+			-->
+			<interaction action="setLastSavePoint" value="3479,init_interaction" />
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="initContent" />
+			<interaction action="callProperty" target="returnToMenu_swf.content" value="label,Return to Menu"/>
+			<interaction action="gotoAndPlay" target="U2L3C29_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C29Complete_interaction">
+			<interaction action="goto" target="U2L3C30_swf"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C30Init_interaction">
+			<interaction action="hide" target="returnToMenu_swf" />
+			<interaction action="goto" target="U2L3C30_swf"/>
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="transitionIn" />
+		</interactionGroup>
+		
+		<!-- call by U2L3C30_swf -->
+		
+		<interactionGroup name="U2L3C2Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C2_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C2Complete_interaction">
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="completeOutcome,psychologicalDependence" />
+			<interaction action="callInteraction" value="U2L3C30Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C4Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C4_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C4Complete_interaction">
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="completeOutcome,intergrationPreoccupation" />
+			<interaction action="callInteraction" value="U2L3C30Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C5Init_interaction">
+			<interaction action="gotoAndPlay" target="Orange_SDL_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="Orange_SDLComplete_interaction">
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="completeOutcome,stateDependentLearning" />
+			<interaction action="callInteraction" value="U2L3C30Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C7Init_interaction">
+			<interaction action="gotoAndPlay" target="Orange_SOR_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="Orange_SORComplete_interaction">
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="completeOutcome,senseRelationship" />
+			<interaction action="callInteraction" value="U2L3C30Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C8Init_interaction">
+			<interaction action="gotoAndPlay" target="Orange_DOC_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="Orange_DOCComplete_interaction">
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="completeOutcome,defenseChoice" />
+			<interaction action="callInteraction" value="U2L3C30Init_interaction"/>
+		</interactionGroup>
+		
+		<!--
+		<interactionGroup name="U2L3C10Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C10_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C10Complete_interaction">
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="completeOutcome,frequentHighRiskChoices" />
+			<interaction action="callInteraction" value="U2L3C30Init_interaction"/>
+		</interactionGroup>
+		-->
+		<interactionGroup name="U2L3C12Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C12_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C12Complete_interaction">
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="completeOutcome,socialDependence" />
+			<interaction action="callInteraction" value="U2L3C30Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C15AInit_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C15A_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C15BComplete_interaction">
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="completeOutcome,tolerance" />
+			<interaction action="callInteraction" value="U2L3C30Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C16Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C16_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C16Complete_interaction">
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="completeOutcome,thinkingMemoryChanges" />
+			<interaction action="callInteraction" value="U2L3C30Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C19Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C19_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C20Complete_interaction">
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="completeOutcome,reboundEffects" />
+			<interaction action="callInteraction" value="U2L3C30Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C21Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C21_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C21Complete_interaction">
+			<interaction action="callProperty" target="U2L3C30_swf.content" value="completeOutcome,problemOutcomes" />
+			<interaction action="callInteraction" value="U2L3C30Init_interaction"/>
+		</interactionGroup>
+		<!-- end call by U2L3C30_swf -->
+			
+		<interactionGroup name="U2L3C31Complete_interaction">
+			<interaction action="recordComplete" value="Scene,3480"/>
+			<interaction action="getNextScene" recordComplete="true" value="3479,1301" />
+		</interactionGroup>
+			
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Review">
+		
+			<!-- U2L3C29 -->
+			
+			<brightcoveVideo name="U2L3C29_video" source="738342320001" width="768" height="432" label="Review Matrix Video">
+				<complete action="U2L3C29Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C29_cc.xml"/>
+			</brightcoveVideo>
+		
+			<!-- A button that sits on the bottom left corner -->
+			
+			<swf name="returnToMenu_swf" source="assets/media/greenBtn.swf" x="10" y="394" z="1" visible="false">
+				<interactions>
+					<interaction type="click" action="hide" target="returnToMenu_swf" />
+					<interaction type="click" action="callInteraction" value="U2L3C30Init_interaction" />
+				</interactions>
+			</swf>
+			
+			<!-- U2L3C2  -->
+			
+			<brightcoveVideo name="U2L3C2_video" source="1560964863001" width="768" height="432" label="Orange Phase Hallmarks">
+				<complete action="U2L3C2Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C2_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C4  -->
+			
+			<brightcoveVideo name="U2L3C4_video" source="778783624001" width="768" height="432" label="Psychological Dependence">
+				<complete action="U2L3C4Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C4_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  Orange_SDL -->
+			
+			<brightcoveVideo name="Orange_SDL_video" source="797680898001" width="768" height="432">
+				<complete action="Orange_SDLComplete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/Orange_SDL_video_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- Orange_SOR  -->
+			
+			<brightcoveVideo name="Orange_SOR_video" source="798456122001" width="768" height="432">
+				<complete action="Orange_SORComplete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/Orange_SOR_video_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C8  -->
+			
+			<brightcoveVideo name="Orange_DOC_video" source="798434255001" width="768" height="432">
+				<complete action="Orange_DOCComplete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/Orange_DOC_video_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C10  
+			
+			<brightcoveVideo name="U2L3C10_video" source="820184718001" width="768" height="432">
+				<complete action="gotoAndPlay" target="U2L3C10Complete_interaction" />
+			</brightcoveVideo>
+			
+			-->
+			<!-- U2L3C12  -->
+			
+			<brightcoveVideo name="U2L3C12_video" source="1452895212001" width="768" height="432" label="Social Dependence">
+				<complete action="U2L3C12Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C12_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C15A  -->
+			
+			<brightcoveVideo name="U2L3C15A_video" source="760720641001" width="768" height="432" label="Tolerance">
+				<complete action="gotoAndPlay" target="U2L3C15B_evaluation" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C15A_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C15B  -->
+			
+			<evaluation name="U2L3C15B_evaluation" componentID="u2l3c15b_1" label="Tolerance Questions">
+			
+				<assetComplete action="gotoAndPlay" target="U2L3C15B_2_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect">
+						<questionText><![CDATA[Which one of the following statements is true?]]></questionText>
+						<instructionText><![CDATA[Chose the best answer, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[That’s correct! Tolerance to physical things like walking goes up <b> faster</b> than tolerance to mental abilities like dealing with several things at once.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Actually, there are two kinds of tolerance, mental and physical. Tolerance to physical things like walking goes up <b>faster</b> than tolerance to mental abilities like dealing with several things at once.]]></feedbackText>
+							<feedbackText valueID="v3"><![CDATA[No, the opposite is actually true. Tolerance to physical things like walking goes up <b>faster</b> than tolerance to mental abilities like dealing with several things at once.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Tolerance - Check Your Understanding]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[All tolerance is the same.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Tolerance to physical things like walking goes up <b>faster</b> than tolerance to mental abilities like dealing with several things at once.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v3">
+								<text><![CDATA[Tolerance to physical things like walking goes up <b>slower</b> than tolerance to mental abilities like dealing with several things at once.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L3C15B_2_evaluation" componentID="u2l3c15b_2">
+			
+				<assetComplete action="U2L3C15BComplete_interaction"/>
+			
+				<evaluation evalType="multipleChoiceSingleSelect">
+						<questionText><![CDATA[Compared to people with a low tolerance, people with a high tolerance are:]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[You've got it!  People with high tolerance become less sensitive to the effects of alcohol and don't realize how impaired they are.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[It might seem that way, but in reality, people with high tolerance become less sensitive to the effects of alcohol and don't realize how impaired they are.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Tolerance - Check Your Understanding]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[More aware of when they are impaired.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Less aware of when they are impaired.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+
+			</evaluation>
+			
+			<evaluation name="U2L3C15B_3_evaluation" componentID="u2l3c15b_3">
+			
+				<assetComplete action="gotoAndPlay" target="U2L3C16_video"/>
+			
+				<evaluation evalType="multipleChoiceSingleSelect">
+						<questionText><![CDATA[People with a high tolerance:]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v2"><![CDATA[Darn... you missed this one. Let's review. People with high tolerance are <i>more</i> likely to experience problems because they think they are not impaired when they really are.]]></feedbackText>
+							<feedbackText valueID="v1"><![CDATA[Great job! This is an important thing to keep in mind. In the Orange Phase a lot of people end up experiencing problems because they do not always know when they are impaired.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Tolerance - Check Your Understanding]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[Are less likely to experience impairment problems.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Are more likely to experience impairment problems.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>	
+				
+			</evaluation>
+			
+			<!-- U2L3C16 -->
+			
+			<brightcoveVideo name="U2L3C16_video" source="1543723670001" width="768" height="432" label="Thinking and Memory Changes: Impaired Mental Abilities">
+				<complete action="U2L3C16Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C16_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C19 -->
+			
+			<brightcoveVideo name="U2L3C19_video" source="1543704577001" width="768" height="432" label="Rebound Effects: Drinking to Cure Hangovers">
+				<complete action="gotoAndPlay" target="U2L3C20_video" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C19_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C20 -->
+			
+			<brightcoveVideo name="U2L3C20_video" source="1450519970001" width="768" height="432" label="Rebound Effects: Marijuana and Theta Waves">
+				<complete action="U2L3C20Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C20_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C21 -->
+			
+			<brightcoveVideo name="U2L3C21_video" source="1467194488001" width="768" height="432" label="Problem Outcomes: Health and Impairment Problems Likely">
+				<complete action="U2L3C21Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C21_cc.xml"/>
+			</brightcoveVideo>
+		
+			<!-- U2L3C30 -->
+			
+			<swf name="U2L3C30_swf" source="assets/media/U2L3C30.swf" componentID="u2l3c30">
+				<assetComplete action="gotoAndPlay" target="U2L3C31_evaluation" />
+			</swf>
+			
+			<!-- U2L3C31 -->
+			
+			<evaluation name="U2L3C31_evaluation" componentID="u2l3c31" label="Lesson Summary Screen">
+				<assetComplete action="U2L3C31Complete_interaction" />
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Orange Phase – Psychological Dependence]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[2]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+	
+</scene>

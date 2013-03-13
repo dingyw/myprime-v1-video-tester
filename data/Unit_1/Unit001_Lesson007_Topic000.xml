@@ -1,0 +1,107 @@
+<scene id="3437" title="Two Questions">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L7C0_evaluation" />
+	
+		<interactionGroup name="U1L7C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3437,U1L7C0Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L7C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L7C1Ready_interaction">
+			<interaction action="gotoAndPlay" target="U1L7C1_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L7C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L7C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L7C2Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L7C3_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L7C3Complete_interaction">
+			<interaction action="getNextScene" recordComplete="true" value="3437,1277" />
+		</interactionGroup>
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L7C1Init_progressBar" interaction="init_interaction"  callInteraction="false" weight="15" />
+		<progressBar name="U1L7C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L7C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L7C2Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U1L7C0_evaluation" visible="true" componentID="u1l7c0">
+			
+			<assetComplete action="U1L7C0Complete_interaction"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Preventing Health Problems - Two Questions]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll discover the two questions that govern the risk of developing health problems as a result of alcohol or drug use.]]></questionText>
+					<instructionText><![CDATA[Duration: 5 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!-- U1L7C1    TG    Two Questions -->
+			
+			<brightcoveVideo name="U1L7C1_video" source="1560926575001" width="768" height="432"  complete="true" label="Two Questions">
+			  <playheadUpdate action="setProgress" value="U1L7C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L7C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L7C2    HV     Two Question Intro 
+								 MOS  Two Questions - MOS 
+								 HV     Two Questions Host Summary -->
+			
+			<brightcoveVideo name="U1L7C2_video" source="1526593743001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L7C2Complete_progressBar" frequency="5" />
+				<complete action="U1L7C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_07/U1L7C2_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L7C3    My Notes -->
+			
+			<evaluation name="U1L7C3_evaluation" componentID="u1l7c3" label="Lesson Summary Screen">
+				
+				<assetComplete action="U1L7C3Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Preventing Health Problems - Two Questions]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+</scene>

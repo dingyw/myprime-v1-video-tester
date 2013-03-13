@@ -1,0 +1,287 @@
+<scene id="3492" title="Psychological Influences and Beliefs">
+
+	<!-- Note ::
+		U1L13, U1L13T1, and U1L13T2 are being merged into Lesson 13: Psychological Influences and Beliefs. 
+	-->
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L13C0_evaluation" />
+	
+		<interactionGroup name="U1L13C0Completion_interaction">
+			<interaction action="setLastSavePoint" value="3492,U1L13C0Completion_interaction" />
+		  <interaction action="gotoAndPlay" target="U1L13C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L13C2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3492,U1L13C2Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L13T1C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L13T1C7Complete_interaction">
+			<interaction action="setLastSavePoint" value="3492,U1L13T1C7Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L13T2C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L13T2C3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3492,U1L13T2C3Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L11T2C14_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L13T2C4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3492,U1L13T2C4Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L13T2C5_evaluation" />
+		</interactionGroup>
+		
+		<!--
+			Note: U1L13T2C5 is U1L11T3C5A, because of the moving around of components, this one got mixed up.
+		-->
+		<interactionGroup name="U1L13T2C5Init_interaction">
+			<interaction action="goto" target="U1L13T2C5_swf"/>
+			<interaction action="callProperty" target="U1L13T2C5_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L13T2C5Complete_interaction">
+			<interaction action="setLastSavePoint" value="3492,U1L13T2C5Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L13T2C4_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T3C5BInit_interaction">
+			<interaction action="gotoAndPlay" target="U1L11T3C5B_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T3C5BComplete_interaction">
+			<interaction action="callProperty" target="U1L13T2C5_swf.content" value="completeOutcome,marijuana" />
+			<interaction action="callInteraction" value="U1L13T2C5Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T3C5CInit_interaction">
+			<interaction action="gotoAndPlay" target="U1L11T3C5C_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T3C5CComplete_interaction">
+			<interaction action="callProperty" target="U1L13T2C5_swf.content" value="completeOutcome,stimulants" />
+			<interaction action="callInteraction" value="U1L13T2C5Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T3C5DInit_interaction">
+			<interaction action="gotoAndPlay" target="U1L11T3C5D_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T3C5DComplete_interaction">
+			<interaction action="callProperty" target="U1L13T2C5_swf.content" value="completeOutcome,narcotics" />
+			<interaction action="callInteraction" value="U1L13T2C5Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T3C5EInit_interaction">
+			<interaction action="gotoAndPlay" target="U1L11T3C5E_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T3C5EComplete_interaction">
+			<interaction action="callProperty" target="U1L13T2C5_swf.content" value="completeOutcome,prescriptionDrugs" />
+			<interaction action="callInteraction" value="U1L13T2C5Init_interaction"/>
+		</interactionGroup>
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L13C1Init_progressBar" interaction="init_interaction" callInteraction="false"  weight="25" />
+		<progressBar name="U1L13C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L13C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L13C2Complete_progressBar" interaction="U1L13C2Complete_interaction"/>
+
+		<progressBar name="U1L13T1C2Complete_progressBar" />
+		<progressBar name="U1L13T1C7Complete_progressBar" interaction="U1L13T1C7Complete_interaction"/>
+		
+		<progressBar name="U1L13T2C2Complete_progressBar" />
+		<progressBar name="U1L13T2C3Complete_progressBar" />
+		
+		<progressBar name="U1L11T2C14Complete_progressBar" />
+		<progressBar name="U1L11T3C2Complete_progressBar" />
+		
+		<progressBar name="U1L13T2C5Complete_interaction" />
+		
+		<progressBar name="U1L13T2C4Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U1L13C0_evaluation" visible="true" componentID="u1l13c0">
+			
+			<assetComplete action="U1L13C0Completion_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Psychological Influences and Beliefs]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll examine some common beliefs that sometimes prevent people from recognizing  the risks associated with high-risk choices... beliefs such as, "Using a designated driver eliminates problems," "If I try harder, I can overcome impairment," and, "Drugs don't create as much impairment as alcohol does."]]></questionText>
+					<instructionText><![CDATA[Duration: 10 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!-- U1L13C1    TG  Psychological Influences and Beliefs -->
+			
+			<brightcoveVideo name="U1L13C1_video" source="806870660001" width="768" height="432" complete="true" label="Psychological Influences and Beliefs">
+			  <playheadUpdate action="setProgress" value="U1L13C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L13C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U1L13C2   HV   Psychological Influences - Intro Video -->
+			
+			<brightcoveVideo name="U1L13C2_video" source="1455053821001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U1L13C2Complete_progressBar" frequency="5" />
+			  <complete action="U1L13C2Complete_interaction"/>
+			  <caption source="data/Unit_1/captions/lesson_13/U1L13C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Designated Drivers">
+		
+			<!-- Topic 1 -->
+			
+			<!--  U1L13T1C2    EV    Can I Avoid Problems with a Designated Driver? Expert Video 
+										HV + EV    Can I Avoid Problems with a Designated Driver? Transition to Skype Video
+										SV     Can I Avoid Problems With a Designated Driver? Skype Video 
+										EV+Illustrations    Can I Avoid Problems with a Designated Driver? Expert Video With Illustrations 
+										HV + EV     Can I Avoid Problems With a Designated Driver? Host and Expert Video -->
+			
+			<brightcoveVideo name="U1L13T1C2_video" source="819912042001" width="768" height="432" label="Can I Avoid Problems with a Designated Driver? Videos">
+			  <playheadUpdate action="setProgress" value="U1L13T1C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L13T1C7_video"/>
+			  <caption source="data/Unit_1/captions/lesson_13/U1L13T1C2_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U1L13T1C7    IG    Can I Avoid Problems with a Designated Driver? Info Graphic   -->
+			
+			<brightcoveVideo name="U1L13T1C7_video" source="1544408361001" width="768" height="432" label="Can I Avoid Problems with a Designated Driver? Info Graphic">
+			  <playheadUpdate action="setProgress" value="U1L13T1C7Complete_progressBar" frequency="5" />
+			  <complete action="U1L13T1C7Complete_interaction"/>
+			  <caption source="data/Unit_1/captions/lesson_13/U1L13T1C7_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Extra Effort">
+			
+			<!--  U1L13T2C2   HV    Can We Overcome Impairment with Extra Effort? Intro Video -->
+			
+			<brightcoveVideo name="U1L13T2C2_video" source="753362436001" width="768" height="432" label="Can We Overcome Impairment with Extra Effort? Video">
+			  <playheadUpdate action="setProgress" value="U1L13T2C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L13T2C3_video"/>
+			  <caption source="data/Unit_1/captions/lesson_13/U1L13T2C2_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U1L13T2C3     IG    Can We Overcome Impairment with Extra Effort? Info Graphic  -->
+			
+			<brightcoveVideo name="U1L13T2C3_video" source="791702404001" width="768" height="432" label="Can We Overcome Impairment with Extra Effort? Info Graphic">
+			  <playheadUpdate action="setProgress" value="U1L13T2C3Complete_progressBar" frequency="5" />
+			  <complete action="U1L13T2C3Complete_interaction"/>
+			  <caption source="data/Unit_1/captions/lesson_13/U1L13T2C3_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- *** Unit 1, Lesson 11 *** -->
+			
+			<brightcoveVideo name="U1L11T2C14_video" source="818961181001" width="768" height="432" label="High Tolerance - Other Video 1 – Skype Characters">
+			  <playheadUpdate action="setProgress" value="U1L11T2C14Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L11T3C2_video"/>
+			  <caption source="data/Unit_1/captions/lesson_13/U1L11T2C14_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Drugs and Impairment">
+		
+			<!-- Note: Be careful of this one. The name got mixed up in the moving of components. -->
+			
+			<brightcoveVideo name="U1L11T3C2_video" source="1483692317001" width="768" height="432" label="Drugs and Impairment Menu Introduction">
+			  <playheadUpdate action="setProgress" value="U1L11T3C2Complete_progressBar" frequency="5" />
+			  <complete action="goto" target="U1L13T2C5_swf"/>
+			  <complete action="callProperty" target="U1L13T2C5_swf.content" value="initContent" />
+			  <caption source="data/Unit_1/captions/lesson_13/U1L13T3C2_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--
+			 Duplicate video of U1L11T3C2
+			 
+			<brightcoveVideo name="U1L11T3C5_video" source="742650964001" width="768" height="432" >
+			  <playheadUpdate action="setProgress" value="U1L11T3C5Complete_progressBar" frequency="5" />
+			  <complete action="goto" target="U1L13T2C5_swf"/>
+			  <complete action="callProperty" target="U1L13T2C5_swf.content" value="initContent" />
+			  <caption source="data/Unit_1/captions/lesson_13/U1L11T3C5_cc.xml"/>
+			</brightcoveVideo>
+			-->
+			
+			<!--
+			U1L13T2C5 is U1L11T3C5A, because of the moving around of components, this one got mixed up.
+			-->
+			<swf name="U1L13T2C5_swf" source="assets/media/U1L13T2C5.swf" >
+				<assetComplete action="U1L13T2C5Complete_interaction" />
+			</swf>
+			
+			<brightcoveVideo name="U1L11T3C5B_video" source="1537130446001" width="768" height="432" >
+				<complete action="U1L11T3C5BComplete_interaction" />
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L11T3C5C_video" source="1561023710001" width="768" height="432" >
+			  <complete action="U1L11T3C5CComplete_interaction" />
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L11T3C5D_video" source="746918676001" width="768" height="432" >
+				<complete action="U1L11T3C5DComplete_interaction" />
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L11T3C5E_video" source="746853680001" width="768" height="432" >
+			  <complete action="U1L11T3C5EComplete_interaction" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- *** end Unit 1, Lesson 11 *** -->
+		
+			<!--  U1L13T2C4    HV    Can We Overcome Impairment with Extra Effort? Host Summary -->
+			
+			<brightcoveVideo name="U1L13T2C4_video" source="753330000001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U1L13T2C4Complete_progressBar" frequency="5" />
+			  <complete action="U1L13T2C4Complete_interaction" />
+			  <caption source="data/Unit_1/captions/lesson_13/U1L13T2C4_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L13T2C5    My Note -->
+			
+			<evaluation name="U1L13T2C5_evaluation" componentID="u1l13t2c5" label="Lesson Summary Screen">
+			
+				<assetComplete action="getNextScene" recordComplete="true" value="3492,1292"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Psychological Influences and Beliefs]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+</scene>

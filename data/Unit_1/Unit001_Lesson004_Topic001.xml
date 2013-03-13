@@ -1,0 +1,224 @@
+<scene id="2814" title="Biology">
+
+	<interactions>
+		<interactionGroup name="U1L4T1C1Ready_interaction">
+		  <interaction action="setLastSavePoint" value="2814,U1L4T1C1Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U1L4T1C1_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L4T1C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L4T1C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T1C2Complete_interaction">
+			<interaction action="goto" target="U1L4T1C3_swf" />
+			<interaction action="callProperty" target="U1L4T1C3_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T1C3Complete_interaction">
+			<interaction action="setLastSavePoint" value="2814,U1L4T1C3Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L4T1C4_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T1C4Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L4T1C5_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T1C5Complete_interaction">
+			<interaction action="setLastSavePoint" value="2814,U1L4T1C5Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L4T1C6A_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T1C6AComplete_interaction">
+			<interaction action="gotoAndPlay" target="U1L4T1C6A_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T1C6BInit_interaction">
+			<interaction action="gotoAndPlay" target="U1L4T1C6B_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T1C6BComplete_interaction">
+			<interaction action="gotoAndPlay" target="U1L4T1C7_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T1C7Init_interaction">
+			<interaction action="setLastSavePoint" value="2814,U1L4T1C7Init_interaction" />
+			<interaction action="gotoAndPlay" target="U1L4T1C7_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T1C7Complete_interaction">
+			<interaction action="setLastSavePoint" value="2814,U1L4T1C7Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L4T1C8_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T1C8Complete_interaction">
+			<interaction action="setLastSavePoint" value="2814,U1L4T1C8Complete_interaction" />
+			<interaction action="getNextScene" recordComplete="true" value="2814,1210" />
+		</interactionGroup>
+		
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L4T1C1Init_progressBar" interaction="U1L4T1C1Ready_interaction" weight="25" />
+		<progressBar name="U1L4T1C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L4T1C2Complete_progressBar" />
+		<progressBar name="U1L4T1C3Complete_progressBar" interaction="U1L4T1C3Complete_interaction" weight="25" />
+		<progressBar name="U1L4T1C4Complete_progressBar" />
+		<progressBar name="U1L4T1C5Complete_progressBar" interaction="U1L4T1C5Complete_interaction" weight="25"/>
+		<progressBar name="U1L4T1C6AComplete_progressBar" />
+		<progressBar name="U1L4T1C6BComplete_progressBar" />
+		<progressBar name="U1L4T1C7Complete_progressBar" interaction="U1L4T1C7Complete_interaction" weight="25" />
+		<progressBar name="U1L4T1C8Complete_progressBar"  weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Introduction">
+	
+			<!-- U1L4T1C1    TG    Biology -->
+			
+			<brightcoveVideo name="U1L4T1C1_video" source="738433024001" width="768" height="432" visible="true" complete="true" label="Biology">
+			  <ready action="U1L4T1C1Ready_interaction" />
+			  <playheadUpdate action="setProgress" value="U1L4T1C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L4T1C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L4T1C2    HV+EV    Biology - Host Video 1 - Introduction -->
+			
+			<brightcoveVideo name="U1L4T1C2_video" source="1511103471001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L4T1C2Complete_progressBar" frequency="5" />
+				<complete action="U1L4T1C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T1C2_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="The Formula">
+		
+			<!-- U1L4T1C3    DD*    Biology - Interaction 1 - Risks -->
+			
+			<swf name="U1L4T1C3_swf" source="assets/media/U1L4T1C3_v2.swf">
+				<assetComplete action="U1L4T1C3Complete_interaction" />
+			</swf>
+			
+			<!-- U1L4T1C4    A    Biology - Animation 1 - Formula -->
+			
+			<brightcoveVideo name="U1L4T1C4_video" source="818756764001" width="768" height="432" label="Formula Animation">
+				<playheadUpdate action="setProgress" value="U1L4T1C4Complete_progressBar" frequency="5" />
+				<complete action="U1L4T1C4Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T1C4_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L4T1C5    HV    Biology - Host Video 2 - Formula Summary -->
+			
+			<brightcoveVideo name="U1L4T1C5_video" source="1511103468001" width="768" height="432" label="Formula Video">
+				<playheadUpdate action="setProgress" value="U1L4T1C5Complete_progressBar" frequency="5" />
+				<complete action="U1L4T1C5Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T1C5_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Trigger Levels">
+		
+			<!-- U1L4T1C6A    P+A    Biology - Animation 2 - Trigger Levels -->
+			
+			<brightcoveVideo name="U1L4T1C6A_video" source="1536984346001" width="768" height="432" label="Trigger Levels">
+				<playheadUpdate action="setProgress" value="U1L4T1C6AComplete_progressBar" frequency="5" />
+				<complete action="U1L4T1C6AComplete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T1C6A_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- Question after the video if they would like to view  additional video -->
+			
+			<evaluation name="U1L4T1C6A_evaluation" componentID="ul4t1c6a">
+			
+				<c1 action="gotoAndPlay" target="U1L4T1C6B_video" />
+				<c2 action="gotoAndPlay" target="U1L4T1C7_evaluation" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true" >
+						<instructionText><![CDATA[]]></instructionText>
+						<questionText><![CDATA[Want another way to think about biological risk?]]></questionText>
+						<multimedia src="AlertBoxCenteredText.swf"/>
+						<titleText><![CDATA[]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[Yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v2">
+								<text><![CDATA[No]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<!-- U1L4T1C6B    A    Biology - Animation 3 - Thermostat (OPTIONAL) -->
+			
+			<brightcoveVideo name="U1L4T1C6B_video" source="818961133001" width="768" height="432">
+				<playheadUpdate action="setProgress" value="U1L4T1C6BComplete_progressBar" frequency="5" />
+				<complete action="U1L4T1C6BComplete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T1C6B_cc.xml" />
+			</brightcoveVideo>
+		
+			<!-- U1L4T1C7    MC*    Biology - Interactivity 2 - Multiple Choice Question -->
+			
+			<evaluation name="U1L4T1C7_evaluation" componentID="u1l4t1c7" label="Biology Questions">
+			
+				<assetComplete action="U1L4T1C7Complete_interaction"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="true" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit. ]]></instructionText>
+					<questionText><![CDATA[If Person 1 has a lower trigger level for developing heart disease, what can we say about their level of biological risk for heart disease in comparison with Person 2 and Person 3?]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[That's right! Person 1 has increased biological risk for heart disease in comparison with Person 2 and Person 3. Because the trigger level is lower, he can develop heart disease more easily than the other two.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[This is tricky! While it is possible for anyone to develop heart disease, Person 1 actually has increased biological risk for heart disease in comparison with Person 2 and Person 3. Because the trigger level is lower, they can develop heart disease more easily than the other two.]]></feedbackText>
+						<feedbackText valueID="v3"><![CDATA[Not quite. Person 1 actually has increased biological risk for heart disease in comparison with Person 2 and Person 3. Because the trigger level is lower, they can develop heart disease more easily than the other two, so they are at greater risk.]]></feedbackText>
+					</feedback>
+					<titleText><![CDATA[Trigger Levels for Heart Disease]]></titleText>
+					<multimedia src="U1L4T1C7_Image.jpg"/>
+					<choice-collection>
+						<choice id="c1" valueID="v3">
+							<text><![CDATA[Person 1 has decreased biological risk for heart disease in comparison with Person 2 and Person 3. ]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[Person 1 has the same biological risk for heart disease as Person 2 and Person 3. ]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v1">
+							<text><![CDATA[Person 1 has increased biological risk for heart disease in comparison with Person 2 and Person 3. ]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L4T1C8    HV    Biology - Host Video 3 - Transition Back to Studio -->
+			
+			<brightcoveVideo name="U1L4T1C8_video" source="738305083001" width="768" height="432" label="Summary Video">
+				<playheadUpdate action="setProgress" value="U1L4T1C8Complete_progressBar" frequency="5" />
+				<complete action="U1L4T1C8Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T1C8_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L4T1C10    My Notes -->
+			
+		</sequence>
+	</assets>
+  
+</scene>

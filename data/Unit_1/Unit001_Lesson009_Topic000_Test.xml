@@ -1,0 +1,552 @@
+<scene id="3468" title="Risk is Related to Quantity and Frequency Low-Risk Guidelines">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L9C0_evaluation" />
+	
+		<interactionGroup name="U1L9C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3468,U1L9C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U1L9C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L9C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3468,U1L9C2Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L9C3A_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C3AComplete_interaction">
+			<interaction action="setLastSavePoint" value="3468,U1L9C3AComplete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L9C3G_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3468,U1L9C4Complete_interaction" />
+			<interaction action="goto" target="U1L9C7_swf" />
+			<interaction action="callProperty" target="U1L9C7_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C7Complete_interaction">
+			<interaction action="setLastSavePoint" value="3468,U1L9C7Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L9C8_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C8Complete_interaction">
+			<interaction action="setLastSavePoint" value="3468,U1L9C8Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L9C9_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C9Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L9C10_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C10Complete_interaction">
+			<interaction action="setLastSavePoint" value="3468,U1L9C10Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L9C11_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C11Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L9C12_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C12Complete_interaction">
+			<interaction action="setLastSavePoint" value="3468,U1L9C12Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L9C15_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C15Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L9C16_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C16Complete_interaction">
+			<interaction action="setLastSavePoint" value="3468,U1L9C16Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L9C17_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C17Complete_interaction">
+			<interaction action="setLastSavePoint" value="3468,U1L9C17Complete_interaction" />
+			<interaction action="goto" target="U1L9C21_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C3AC1Select_interaction">
+			<interaction action="gotoAndPlay" target="U1L9C3B_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C3AC2Select_interaction">
+			<interaction action="gotoAndPlay" target="U1L9C3C_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C3AC3Select_interaction">
+			<interaction action="gotoAndPlay" target="U1L9C3D_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C3AC4Select_interaction">
+			<interaction action="gotoAndPlay" target="U1L9C3E_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C3AC5Select_interaction">
+			<interaction action="gotoAndPlay" target="U1L9C3F_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C21Complete_interaction">
+			<interaction action="setLastSavePoint" value="3468,U1L9C21Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L9C22_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C22Complete_interaction">
+			<interaction action="setLastSavePoint" value="3468,U1L9C22Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L9C23_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L9C23Complete_interaction">
+			<interaction action="getNextScene" recordComplete="true"  value="3468,1226" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L9C0Init_progressBar" interaction="init_interaction" callInteraction="false" weight="25" />
+		<progressBar name="U1L9C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L9C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L9C2Complete_progressBar" />
+		<progressBar name="U1L9C3AComplete_progressBar" interaction="U1L9C3AComplete_interaction" />
+		<progressBar name="U1L9C4Complete_progressBar" />
+		<progressBar name="U1L9C7Complete_progressBar" interaction="U1L9C7Complete_interaction" weight="25"/>
+		<progressBar name="U1L9C8Complete_progressBar" />
+		<progressBar name="U1L9C9Complete_progressBar" />
+		<progressBar name="U1L9C10Complete_progressBar" interaction="U1L9C10Complete_interaction" />
+		<progressBar name="U1L9C11Complete_progressBar" />
+		<progressBar name="U1L9C12Complete_progressBar" />
+		<progressBar name="U1L9C15Complete_progressBar" interaction="U1L9C15Complete_interaction" />
+		<progressBar name="U1L9C16Complete_progressBar" />
+		<progressBar name="U1L9C17Complete_progressBar" />
+		<progressBar name="U1L9C21Complete_progressBar" interaction="U1L9C21Complete_interaction"/>
+		<progressBar name="U1L9C22Complete_progressBar" interaction="U1L9C22Complete_interaction"/>
+		<progressBar name="U1L9C23Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U1L9C0_evaluation" visible="true" componentID="u1l9c0">
+			
+			<assetComplete action="U1L9C0Complete_interaction"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Risk is Related to Quantity and Frequency / Low-Risk Guidelines]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll examine what research reveals about drinking alcohol in specific quantities and frequencies, and the associated risk for problems. We'll also learn research-based guidelines for avoiding problems as a result of alcohol or drug use.]]></questionText>
+					<instructionText><![CDATA[Duration: 35 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<!-- U1L9C1    TG    Defining a Drink -->
+		
+		<brightcoveVideo name="U1L9C1_video" source="738433031001" width="768" height="432" complete="true">
+			<playheadUpdate action="setProgress" value="U1L9C1Complete_progressBar" frequency="5" />
+			<complete action="U1L9C1Complete_interaction" />
+		</brightcoveVideo>
+		
+		<!-- U1L9C2     HV    QF - Host Video 1 - Introduction	-->
+		
+		<brightcoveVideo name="U1L9C2_video" source="739616300001" width="768" height="432">
+			<playheadUpdate action="setProgress" value="U1L9C2Complete_progressBar" frequency="5" />
+			<complete action="U1L9C2Complete_interaction" />
+		</brightcoveVideo>
+		
+		<!-- U1L9C3A    CI    QF - Interaction 1 - Quantity and Frequency Research - MENU -->
+			
+		<evaluation name="U1L9C3A_evaluation" componentID="u1l9c3a" >
+			<c1 action="U1L9C3AC1Select_interaction" />
+			<c2 action="U1L9C3AC2Select_interaction" />
+			<c3 action="U1L9C3AC3Select_interaction" />
+			<c4 action="U1L9C3AC4Select_interaction" />
+			<c5 action="U1L9C3AC5Select_interaction"/>			
+			<c6 action="U1L9C3AComplete_interaction" />
+			
+			<!--		<assetComplete action="gotoAndPlay" value="U1L9C3G_evaluation" /> -->
+		
+			<evaluation evalType="multipleChoiceSingleSelect" design="true" >
+				<questionText><![CDATA[Select a level of risk to explore.]]></questionText>
+				<instructionText><![CDATA[Click on each quantity and frequency amount to learn more about risks.]]></instructionText>
+				<multimedia src="U1L9C3A.swf"/>
+				<audio src="U1L9C3A.mp3"/>
+				<titleText><![CDATA[Exploring the Research]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v1">
+						<text><![CDATA[No Drinks]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v1">
+						<text><![CDATA[1-2 Per Day]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v1">
+						<text><![CDATA[More Than 2 Per Day]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v1">
+						<text><![CDATA[More Thank 3 on a Single Day]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v1">
+						<text><![CDATA[More Than 1 Per Hour]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v1">
+						<text><![CDATA[Continue]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+			</evaluation>
+
+		</evaluation>
+		
+		<assets width="768" height="432">
+		
+			<brightcoveVideo name="U1L9C3B_video" source="822945531001">
+				<assetComplete action="gotoAndPlay" target="U1L9C3A_evaluation" />
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L9C3C_video" source="822945923001">
+				<assetComplete action="gotoAndPlay" target="U1L9C3A_evaluation" />
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L9C3D_video" source="763052183001">
+				<assetComplete action="gotoAndPlay" target="U1L9C3A_evaluation" />
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L9C3E_video" source="1507831436001">
+				<assetComplete action="gotoAndPlay" target="U1L9C3A_evaluation" />
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L9C3F_video" source="763047651001">
+				<assetComplete action="gotoAndPlay" target="U1L9C3A_evaluation" />
+			</brightcoveVideo>
+		
+		</assets>
+		
+		<evaluation name="U1L9C3G_evaluation" componentID="u1l9c3g" >
+		
+			<assetComplete action="gotoAndPlay" target="U1L9C4_video" />
+			
+			<evaluation evalType="multipleChoiceMultipleSelect" design="true" >
+					<questionText><![CDATA[Whose drinking choices are high or low risk?]]></questionText>
+					<instructionText><![CDATA[Hover the pointer over each person and select their  level of risk, then click Submit.]]></instructionText>
+					<multimedia src="U1L9C3G.swf"/>
+					<audio src="U1L9C3G.mp3"/>
+					<titleText><![CDATA[Exploring the Research]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[No Drinks]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[1-2 Per Day]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c3" valueID="v1">
+							<text><![CDATA[More Than 2 Per Day]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c4" valueID="v1">
+							<text><![CDATA[More Thank 3 on a Single Day]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c5" valueID="v1">
+							<text><![CDATA[More Than 1 Per Hour]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+		
+		</evaluation>
+		
+		<!-- U1L9C4    HV    QF - Host Video 2 - Bridge to Expert
+							EV    QF - Expert Video 1 - Low-Risk Guidelines
+							HV    QF - Host Video 3 - Bridge to Interaction 2 -->
+	
+		<brightcoveVideo name="U1L9C4_video" source="1463347836001" width="768" height="432">
+			<playheadUpdate action="setProgress" value="U1L9C4Complete_progressBar" frequency="5" />
+			<complete action="U1L9C4Complete_interaction" />
+		</brightcoveVideo>
+		
+		<!-- U1L9C7    CI    QF - Interaction 2 - Low-Risk Guidelines Profiles -->
+		
+		<swf name="U1L9C7_swf" source="assets/media/U1L9C7.swf" >
+			<assetComplete action="U1L9C7Complete_interaction" />
+		</swf>
+		
+		<!-- U1L9C8    EV    QF - Expert Video 2 - Interaction Summary -->
+		
+		<brightcoveVideo name="U1L9C8_video" source="739602064001" width="768" height="432">
+			<playheadUpdate action="setProgress" value="U1L9C8Complete_progressBar" frequency="5" />
+			<complete action="U1L9C8Complete_interaction" />
+		</brightcoveVideo>
+		
+		<!-- U1L9C9    IG    QF - Info Graphic 1 - Abstinence (OPTIONAL) -->
+		
+		<brightcoveVideo name="U1L9C9_video" source="1502809678001" width="768" height="432">
+			<playheadUpdate action="setProgress" value="U1L9C9Complete_progressBar" frequency="5" />
+			<complete action="U1L9C9Complete_interaction" />
+		</brightcoveVideo>
+		
+		<!-- U1L9C10    RQ    QF - User-Generated Content 1 -->
+		
+		<evaluation name="U1L9C10_evaluation" componentID="u1l9c10" >
+		
+			<assetComplete action="U1L9C10Complete_interaction" />
+			
+			<evaluation evalType="ReflectionQuestion">
+					<questionText><![CDATA[My reaction to the 0-1-2-3 Guidelines is...]]></questionText>
+					<titleText><![CDATA[Reflection Question]]></titleText>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<!-- savePoint -->
+		<!-- U1L9C11    MOS    QF - MOS Video 1 - 0-1-2-3 Resistance -->
+		
+		<brightcoveVideo name="U1L9C11_video" source="1443567486001" width="768" height="432">
+			<playheadUpdate action="setProgress" value="U1L9C11Complete_progressBar" frequency="5" />
+			<complete action="U1L9C11Complete_interaction" />
+		</brightcoveVideo>
+		
+		<!-- U1L9C12    HV + EV    QF - Host Video 4 - 0-1-2-3 Resistance 
+								QF - Expert Video 3 - Resistance Response 
+								HV    QF - Host Video 5 - Intro to Interactivity -->
+		
+		<brightcoveVideo name="U1L9C12_video" source="738314965001" width="768" height="432">
+			<playheadUpdate action="setProgress" value="U1L9C12Complete_progressBar" frequency="5" />
+			<complete action="U1L9C12Complete_interaction" />
+		</brightcoveVideo>
+		
+		<!-- U1L9C15    SL    QF - Interaction 3 - What Percentage of Drinkers -->
+		
+		<evaluation name="U1L9C15_evaluation" componentID="u1l9c15">
+			
+			<assetComplete action="U1L9C15Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true" scoreType="noScore">
+					<questionText><![CDATA[What percentage of all drinkers consume 10% of the alcohol in the U.S.?]]></questionText>
+					<instructionText><![CDATA[Move the slider to choose the best answer.]]></instructionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[That's right! 70% of the people who drink in the United States account for just 10% of all the alcohol consumed in the U.S..]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[The answer can be surprising. 70% of the people who drink in the United States account for just 10% of all the alcohol consumed in the U.S..]]></feedbackText>
+					</feedback>
+					<multimedia src="U1L9C15.swf"/>
+					<titleText><![CDATA[What Percentage of Drinkers?]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[10]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[20]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[30]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c4" valueID="v2">
+							<text><![CDATA[40]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c5" valueID="v2">
+							<text><![CDATA[50]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c6" valueID="v2">
+							<text><![CDATA[60]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c7" valueID="v1">
+							<text><![CDATA[70]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c8" valueID="v2">
+							<text><![CDATA[80]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c9" valueID="v2">
+							<text><![CDATA[90]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c10" valueID="v2">
+							<text><![CDATA[100]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<!-- U1L9C16    A    QF - Animation 1 - What Percentage of Drinkers -->
+		
+		<brightcoveVideo name="U1L9C16_video" source="1513434931001" width="768" height="432">
+			<playheadUpdate action="setProgress" value="U1L9C16Complete_progressBar" frequency="5" />
+			<complete action="U1L9C16Complete_interaction" />
+		</brightcoveVideo>
+		
+		<!-- U1L9C17    EV    QF - Expert Video 4 - Intro to QF Narrative Clip 
+								NV    QF - Narrative Clip 1 
+								HV + EV    QF - Expert Video 5 - What Percentage Summary 
+								HV    QF - Host Video 6 - Transition to Interaction 4 - My Choices -->
+		
+		<brightcoveVideo name="U1L9C17_video" source="1533028524001" width="768" height="432">
+			<playheadUpdate action="setProgress" value="U1L9C17Complete_progressBar" frequency="5" />
+			<complete action="U1L9C17Complete_interaction" />
+		</brightcoveVideo>
+		
+		<!-- U1L9C21    CI    QF - Interaction 4 - My Choices -->
+		
+		<evaluation name="U1L9C21_evaluation" componentID="u1l9c21">
+			
+			<assetComplete action="U1L9C21Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true" >
+					<questionText><![CDATA[Complete the calendar by entering the number of drinks you might consume in a "typical" week. Remember that one standard drink equals 12 oz. of beer, 5 oz. of wine, or 1.5 oz. of 80-proof liquor, all of which contain .6 oz. of pure alcohol.]]></questionText>
+					<instructionText><![CDATA[Type your number of drinks per day, then click Submit.]]></instructionText>
+					<multimedia src="U1L9C21.swf"/>
+					<audio src="U1L9C21.mp3"/>
+					<titleText><![CDATA[My Drinking Choices]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c3" valueID="v1">
+							<text><![CDATA[]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c4" valueID="v1">
+							<text><![CDATA[]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c5" valueID="v1">
+							<text><![CDATA[]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c6" valueID="v1">
+							<text><![CDATA[]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c7" valueID="v1">
+							<text><![CDATA[0]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c8" valueID="v1">
+							<text><![CDATA[0]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+
+		</evaluation>
+		
+		<!-- U1L9C22    RQ    QF - User-Generated Content 2 -->
+		
+		<evaluation name="U1L9C22_evaluation" componentID="u1l9c22" >
+		
+			<assetComplete action="U1L9C22Complete_interaction" />
+			
+			<evaluation evalType="ReflectionQuestion">
+					<questionText><![CDATA[How do you feel about how your drinking choices compare to the 0-1-2-3 Guidelines?]]></questionText>
+					<titleText><![CDATA[Reflection Question]]></titleText>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<evaluation name="U1L9C22b_evaluation" componentID="u1l9c22b" >
+		
+			<assetComplete action="U1L9C22bComplete_interaction" />
+			
+			<evaluation evalType="ReflectionQuestion">
+					<questionText><![CDATA[Something new or surprising to me about my choices is _____________________.]]></questionText>
+					<titleText><![CDATA[Reflection Question]]></titleText>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>			
+		</evaluation>
+		
+		<evaluation name="U1L9C22c_evaluation" componentID="u1l9c22c" >
+		
+			<assetComplete action="U1L9C22cComplete_interaction" />
+			
+			<evaluation evalType="ReflectionQuestion">
+					<questionText><![CDATA[How do you feel about how your drinking choices compare to national averages?]]></questionText>
+					<titleText><![CDATA[Reflection Question]]></titleText>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+
+		</evaluation>
+		
+		<!-- U1L9C23    My Notes -->
+		
+		<evaluation name="U1L9C23_evaluation" componentID="u1l9c23">
+			
+			<assetComplete action="U1L9C23Complete_interaction" />
+			
+			<evaluation evalType="ReflectionQuestion" templateType="notes">
+					<questionText><![CDATA[Risk is Related to Quantity and Frequency / Low-Risk Guidelines]]></questionText>
+					<titleText><![CDATA[My Notes]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+		</evaluation>
+		
+	</assets>
+  
+</scene>

@@ -1,0 +1,884 @@
+<scene id="3657" title="My Commitment">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U3L10C0_evaluation" />
+	
+		<interactionGroup name="U3L10C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3657,U3L10C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L10C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L10C3_B_2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3657,U3L10C3_B_2Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L10C3B_3_evaluation" />
+		</interactionGroup>		
+		
+		<interactionGroup name="U3L10C3D_9C1Select_interaction">
+		  <interaction action="gotoAndPlay" target="U3L10C4A_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L10C3D_9C2Select_interaction">
+		  <interaction action="gotoAndPlay" target="U3L10C4B_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L10C3D_9C3Select_interaction">
+		  <interaction action="gotoAndPlay" target="U3L10C4C_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L10C3D_9C4Select_interaction">
+		  <interaction action="gotoAndPlay" target="U3L10C4D_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L10C3D_9C5Select_interaction">
+		  <interaction action="gotoAndPlay" target="U3L10C4E_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L10C3_DComplete_interaction">
+			<interaction action="setLastSavePoint" value="3657,U3L10C3_DComplete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L10C5_1_evaluation"  />
+		</interactionGroup>
+		
+		
+		<interactionGroup name="skip_interaction">
+		  <interaction action="gotoAndPlay" target="U3L10C5_2_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L10C5Complete_interaction">
+			<interaction action="setLastSavePoint" value="3657,U3L10C5Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L10C6_video" />
+		</interactionGroup>
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U3L10C1Init_progressBar"   callInteraction="false" interaction="init_interaction" weight="5" />
+		<progressBar name="U3L10C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U3L10C1Complete_progressBar"  weight="25"/>
+		<progressBar name="U3L10C2Complete_progressBar"  weight="25"/>
+		<progressBar name="U3L10C3BComplete_progressBar"  interaction="U3L10C3_B_2Complete_interaction" weight="25" />
+		<progressBar name="U3L10C3DComplete_progressBar" interaction="U3L10C3_DComplete_interaction" weight="25"  />
+		<progressBar name="U3L10C5Complete_progressBar"  interaction="U3L10C5Complete_interaction" weight="25" />
+		<progressBar name="U3L10C6Complete_progressBar"  />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U3L10C0_evaluation" visible="true" componentID="u3l10c0">
+			
+			<assetComplete action="U3L10C0Complete_interaction" target="U3L10C1_video"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[My Commitment]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore our commitment level to our new plan and to protecting what we value.]]></questionText>
+					<instructionText><![CDATA[Duration: 25 minutes]]></instructionText>
+					<multimedia src="unit3_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U3L10C1  TG     -->
+			
+			<brightcoveVideo name="U3L10C1_video" source="738431240001" width="768" height="432"  complete="true" label="My Commitment">
+			  <playheadUpdate action="setProgress" value="U3L10C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L10C2_video"/>
+			</brightcoveVideo>
+	
+			<!--  U3L10C2   -->
+			
+			<brightcoveVideo name="U3L10C2_video" source="777730835001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U3L10C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L10C3A_evaluation"/>
+			  <caption source="data/Unit_3/captions/lesson_10/U3L10C2_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Commitment Questions">
+		
+		<!--  U3L10C3A  -->
+		
+		<evaluation name="U3L10C3A_evaluation" componentID="u3l10c3a" label="My Commitment to My Values Scales">
+			
+			<c1 action="gotoAndPlay" target="U3L10C3B_1_evaluation" />
+			
+			<c2 action="gotoAndPlay" target="U3L10C3B_3_evaluation" />
+			<c3 action="gotoAndPlay" target="U3L10C3B_3_evaluation" />
+			<c4 action="gotoAndPlay" target="U3L10C3B_3_evaluation" />
+			<c5 action="gotoAndPlay" target="U3L10C3B_3_evaluation" />
+			<c6 action="gotoAndPlay" target="U3L10C3B_3_evaluation" />
+			<c7 action="gotoAndPlay" target="U3L10C3B_3_evaluation" />
+			
+			<c8 action="gotoAndPlay" target="U3L10C3B_5_evaluation" />
+			
+			<c9 action="gotoAndPlay" target="U3L10C3B_7_evaluation" />
+			<c10 action="gotoAndPlay" target="U3L10C3B_7_evaluation" />
+		
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[How committed are you to protecting your top value? ]]></questionText>
+				<instructionText><![CDATA[Move the slider to select your answer, then click Next.]]></instructionText>
+				<multimedia src="U3L10C3A.swf"/>
+				<data-dependency id="u1l1c11"/>
+				<audio src="U3L10C3A.mp3"/>
+				<titleText><![CDATA[My Commitment Scales]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v2">
+						<text><![CDATA[1]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v2">
+						<text><![CDATA[2]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v2">
+						<text><![CDATA[3]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v2">
+						<text><![CDATA[4]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v2">
+						<text><![CDATA[5]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v2">
+						<text><![CDATA[6]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v1">
+						<text><![CDATA[7]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c8" valueID="v2">
+						<text><![CDATA[8]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c9" valueID="v2">
+						<text><![CDATA[9]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c10" valueID="v2">
+						<text><![CDATA[10]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<assets>
+		
+			<evaluation name="U3L10C3B_1_evaluation" componentID="u3l10c3b_1">
+			
+				<v0 action="gotoAndPlay" target="U3L10C3B_2_evaluation" />
+				<v1 action="gotoAndPlay" target="U3L10C3B_2b_evaluation" />
+			
+				<evaluation evalType="assessment" layout="vertical">
+						<titleText><![CDATA[My Commitment to My Value]]></titleText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<scale>
+							<scaleItem><![CDATA[Yes]]></scaleItem>
+							<scaleItem><![CDATA[No]]></scaleItem>
+							<scaleItem><![CDATA[I Don't Know]]></scaleItem>
+						</scale>
+						<choice-collection type="yesNo">
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[Has your commitment to this goal ever been higher than 1? ]]></text>
+						   	 </choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[yes]]></value>
+							<value id="v2"><![CDATA[no]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L10C3B_2_evaluation" componentID="u3l10c3b_2">
+			
+				<assetComplete action="U3L10C3_B_2Complete_interaction" />
+			
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What led your number to be higher at that point?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L10C3B_2b_evaluation" componentID="u3l10c3b_2b">
+			
+				<assetComplete action="gotoAndPlay" target="U3L10C3B_3_evaluation" />
+			
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What would need to happen for your number to move up from 1?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		</assets>
+		
+		<assets>
+		
+			<evaluation name="U3L10C3B_3_evaluation" componentID="u3l10c3b_3">
+			
+				<assetComplete action="gotoAndPlay" target="U3L10C3B_4_evaluation" />
+		
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<questionText><![CDATA[What led you to choose [LEARNER'S RESPONSE ON U3L10C3A] and not [(LEARNER'S RESPONSE ON U3L10C3A) + 2]?]]></questionText>
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<multimedia src="U3L10C3B_3.swf"/>
+					<data-dependency id="U3L10C3A"/>
+					<titleText><![CDATA[My Commitment to My Value]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L10C3B_4_evaluation" componentID="u3l10c3b_4">
+			
+				<assetComplete action="gotoAndPlay" target="U3L10C3C_evaluation" />
+		
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<questionText><![CDATA[What led you to choose [LEARNER'S RESPONSE ON U3L10C3A] and not [(LEARNER'S RESPONSE ON U3L10C3A) + 2]?]]></questionText>
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<multimedia src="U3L10C3B_4.swf"/>
+					<data-dependency id="U3L10C3A"/>
+					<titleText><![CDATA[My Commitment to My Value]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		</assets>
+		
+		<assets>
+		
+			<evaluation name="U3L10C3B_5_evaluation" componentID="u3l10c3b_5">
+			
+				<assetComplete action="gotoAndPlay" target="U3L10C3B_6_evaluation" />
+		
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<questionText><![CDATA[What led you to choose [LEARNER'S RESPONSE ON U3L10C3A] and not [(LEARNER'S RESPONSE ON U3L10C3A) + 2]?]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<multimedia src="U3L10C3B_5.swf"/>
+						<data-dependency id="U3L10C3A"/>
+						<titleText><![CDATA[My Commitment to My Value]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L10C3B_6_evaluation" componentID="u3l10c3b_6">
+			
+				<assetComplete action="gotoAndPlay" target="U3L10C3C_evaluation" />
+		
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<questionText><![CDATA[What led you to choose [LEARNER'S RESPONSE ON U3L10C3A] and not [(LEARNER'S RESPONSE ON U3L10C3A) + 2]?]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<multimedia src="U3L10C3B_6.swf"/>
+						<data-dependency id="U3L10C3A"/>
+						<titleText><![CDATA[My Commitment to My Value]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+
+				
+			</evaluation>
+		
+		</assets>
+		
+		<evaluation name="U3L10C3B_7_evaluation" componentID="u3l10c3b_7">
+			
+			<assetComplete action="gotoAndPlay" target="U3L10C3C_evaluation" />
+	
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[What led you to choose [LEARNER'S RESPONSE ON U3L10C3A] and not [(LEARNER'S RESPONSE ON U3L10C3A) + 2]?]]></questionText>
+				<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+				<multimedia src="U3L10C3B_7.swf"/>
+				<data-dependency id="U3L10C3A"/>
+				<titleText><![CDATA[My Commitment to My Value]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v1">
+						<text><![CDATA[yes]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<evaluation name="U3L10C3C_evaluation" componentID="u3l10c3c" label="My Commitment to My Plan Scales">
+			
+			<c1 action="gotoAndPlay" target="U3L10C3D_1_evaluation" />
+			
+			<c2 action="gotoAndPlay" target="U3L10C3D_3_evaluation" />
+			<c3 action="gotoAndPlay" target="U3L10C3D_3_evaluation" />
+			<c4 action="gotoAndPlay" target="U3L10C3D_3_evaluation" />
+			<c5 action="gotoAndPlay" target="U3L10C3D_3_evaluation" />
+			<c6 action="gotoAndPlay" target="U3L10C3D_3_evaluation" />
+			<c7 action="gotoAndPlay" target="U3L10C3D_3_evaluation" />
+			
+			<c8 action="gotoAndPlay" target="U3L10C3D_5_evaluation" />
+			
+			<c9 action="gotoAndPlay" target="U3L10C3D_7_evaluation" />
+			<c10 action="gotoAndPlay" target="U3L10C3D_7_evaluation" />
+		
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<questionText><![CDATA[How committed are you to implementing your new plan right now?]]></questionText>
+					<instructionText><![CDATA[Move the slider to select your answer, then click Next.]]></instructionText>
+					<multimedia src="U3L10C3C.swf"/>
+					<audio src="U3L10C3C.mp3"/>
+					<titleText><![CDATA[My Commitment to Implementing My New Plan]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[2]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[3]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c4" valueID="v2">
+							<text><![CDATA[4]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c5" valueID="v2">
+							<text><![CDATA[5]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c6" valueID="v2">
+							<text><![CDATA[6]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c7" valueID="v1">
+							<text><![CDATA[7]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c8" valueID="v2">
+							<text><![CDATA[8]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c9" valueID="v2">
+							<text><![CDATA[9]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c10" valueID="v2">
+							<text><![CDATA[10]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>			
+		</evaluation>
+		
+		<assets>
+		
+			<evaluation name="U3L10C3D_1_evaluation" componentID="u3l10c3d_1">
+			
+				<v0 action="gotoAndPlay" target="U3L10C3D_2_evaluation" />
+				<v1 action="gotoAndPlay" target="U3L10C3D_2b_evaluation" />
+			
+				<evaluation evalType="assessment" layout="vertical" customBG="sampleBG.swf">
+					<titleText><![CDATA[My Commitment to My Plan]]></titleText>
+					<instructionText><![CDATA[Type your answers in the boxes, then click Submit.]]></instructionText>
+					<scale>
+						<scaleItem><![CDATA[Yes]]></scaleItem>
+						<scaleItem><![CDATA[No]]></scaleItem>
+						<scaleItem><![CDATA[I Don't Know]]></scaleItem>
+					</scale>
+					<choice-collection type="yesNo">
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[Has your commitment to your goals ever been higher than 1?]]></text>
+						 </choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[yes]]></value>
+						<value id="v2"><![CDATA[no]]></value>
+					</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<evaluation name="U3L10C3D_2_evaluation" componentID="u3l10c3d_2">
+			
+				<assetComplete action="gotoAndPlay" target="U3L10C3D_8_evaluation" />
+			
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What led your number to be higher at that point?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<evaluation name="U3L10C3D_2b_evaluation" componentID="u3l10c3d_2b">
+			
+				<assetComplete action="gotoAndPlay" target="U3L10C3D_8_evaluation" />
+			
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What would need to happen for your number to move up from 1?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		</assets>
+		
+		<assets>
+		
+			<evaluation name="U3L10C3D_3_evaluation" componentID="u3l10c3d_3">
+			
+				<assetComplete action="gotoAndPlay" target="U3L10C3D_4_evaluation" />
+		
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<questionText><![CDATA[What led you to choose [LEARNER'S RESPONSE ON U3L10C3A] and not [(LEARNER'S RESPONSE ON U3L10C3A) + 2]?]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<multimedia src="U3L10C3B_3.swf"/>
+						<data-dependency id="U3L10C3C"/>
+						<titleText><![CDATA[My Commitment to My Value]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L10C3D_4_evaluation" componentID="u3l10c3d_4">
+			
+				<assetComplete action="gotoAndPlay" target="U3L10C3D_8_evaluation" />
+		
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<questionText><![CDATA[What led you to choose [LEARNER'S RESPONSE ON U3L10C3A] and not [(LEARNER'S RESPONSE ON U3L10C3A) + 2]?]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<multimedia src="U3L10C3B_4.swf"/>
+						<data-dependency id="U3L10C3C"/>
+						<titleText><![CDATA[My Commitment to My Value]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		</assets>
+		
+		<assets>
+		
+			<evaluation name="U3L10C3D_5_evaluation" componentID="u3l10c3d_5">
+			
+				<assetComplete action="gotoAndPlay" target="U3L10C3D_6_evaluation" />
+		
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<questionText><![CDATA[What led you to choose [LEARNER'S RESPONSE ON U3L10C3A] and not [(LEARNER'S RESPONSE ON U3L10C3A) + 2]?]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<multimedia src="U3L10C3B_5.swf"/>
+						<data-dependency id="U3L10C3C"/>
+						<titleText><![CDATA[My Commitment to My Value]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L10C3D_6_evaluation" componentID="u3l10c3d_6">
+			
+				<assetComplete action="gotoAndPlay" target="U3L10C3D_8_evaluation" />
+		
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<questionText><![CDATA[What led you to choose [LEARNER'S RESPONSE ON U3L10C3A] and not [(LEARNER'S RESPONSE ON U3L10C3A) + 2]?]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<multimedia src="U3L10C3B_6.swf"/>
+						<data-dependency id="U3L10C3C"/>
+						<titleText><![CDATA[My Commitment to My Value]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		</assets>
+		
+		<evaluation name="U3L10C3D_7_evaluation" componentID="u3l10c3d_7">
+			
+			<assetComplete action="gotoAndPlay" target="U3L10C3D_8_evaluation" />
+	
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<questionText><![CDATA[What led you to choose [LEARNER'S RESPONSE ON U3L10C3A] and not [(LEARNER'S RESPONSE ON U3L10C3A) + 2]?]]></questionText>
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<multimedia src="U3L10C3D_7.swf"/>
+					<data-dependency id="U3L10C3C"/>
+					<titleText><![CDATA[My Commitment to My Value]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<evaluation name="U3L10C3D_8_evaluation" componentID="u3l10c3d_8">
+			
+			<assetComplete action="gotoAndPlay" target="U3L10C3D_9_evaluation" />
+	
+			<evaluation evalType="ReflectionQuestion">
+					<questionText><![CDATA[Given your responses, what do you see as your next step?]]></questionText>
+					<titleText><![CDATA[Reflection Question]]></titleText>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+		</evaluation>
+		
+		<evaluation name="U3L10C3D_9_evaluation" componentID="u3l10c3d_9">
+			
+			<c1 action="U3L10C3D_9C1Select_interaction" />
+			<c2 action="U3L10C3D_9C2Select_interaction" />
+			<c3 action="U3L10C3D_9C3Select_interaction" />
+			<c4 action="U3L10C3D_9C4Select_interaction" />
+			<c5 action="U3L10C3D_9C5Select_interaction"/>			
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<questionText><![CDATA[What video will you see based on your scales?]]></questionText>
+					<instructionText><![CDATA[]]></instructionText>
+					<multimedia src="U3L10C3D_9.swf"/>
+					<data-dependency id="U3L10C3A"/>
+					<data-dependency id="U3L10C3C"/>
+					<titleText><![CDATA[My Commitment to My Value]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+		</evaluation>
+		
+		<!-- U3L10C4A	HV + EV	Host + Expert Video 1: Feedback on My Commitment (High Values / High Plan) -->
+		
+		<brightcoveVideo name="U3L10C4A_video" source="777666865001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U3L10C3DComplete_progressBar" frequency="5" />
+		  <complete action="skip_interaction"/>
+		  <caption source="data/Unit_3/captions/lesson_10/U3L10C4A_cc.xml" />
+		</brightcoveVideo>
+		
+		<!-- U3L10C4B	HV + EV	Host + Expert Video 2: Feedback on My Commitment (High Values / Low Plan) -->
+		
+		<brightcoveVideo name="U3L10C4B_video" source="777730833001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U3L10C3DComplete_progressBar" frequency="5" />
+		  <complete action="U3L10C3_DComplete_interaction"/>
+		  <caption source="data/Unit_3/captions/lesson_10/U3L10C4B_cc.xml" />
+		</brightcoveVideo>
+		
+		<!-- U3L10C4C	HV + EV	Host + Expert Video 3: Feedback on My Commitment (Low Values / High Plan) -->
+		
+		<brightcoveVideo name="U3L10C4C_video" source="777666862001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U3L10C3DComplete_progressBar" frequency="5" />
+		  <complete action="U3L10C3_DComplete_interaction"/>
+		  <caption source="data/Unit_3/captions/lesson_10/U3L10C4C_cc.xml" />
+		</brightcoveVideo>
+		
+		<!-- U3L10C4D	HV + EV	Host + Expert Video 4: Feedback on My Commitment (Middle Values / Middle Plan) -->
+		
+		<brightcoveVideo name="U3L10C4D_video" source="777730831001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U3L10C3DComplete_progressBar" frequency="5" />
+		  <complete action="U3L10C3_DComplete_interaction"/>
+		  <caption source="data/Unit_3/captions/lesson_10/U3L10C4D_cc.xml" />
+		</brightcoveVideo>
+		
+		<!-- U3L10C4E	HV + EV	Host + Expert Video 5: Feedback on My Commitment (Low Values / Low Plan) -->
+		
+		<brightcoveVideo name="U3L10C4E_video" source="777666858001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U3L10C3DComplete_progressBar" frequency="5" />
+		  <complete action="U3L10C3_DComplete_interaction"/>
+		  <caption source="data/Unit_3/captions/lesson_10/U3L10C4E_cc.xml" />
+		</brightcoveVideo>
+	
+		</sequence>
+		
+		<sequence label="Commitment Date">
+	
+		<!--  U3L10C5	 -->
+		
+		<evaluation name="U3L10C5_1_evaluation" componentID="u3l10c5_1" label="Setting a Date">
+			
+			<c1 action="gotoAndPlay" target="U3L10C5_2_evaluation" />
+			<c1 action="showInSequence" target="U3L10C5_4a_evaluation" />
+			
+			<c2 action="gotoAndPlay" target="U3L10C5_3_evaluation" />
+			<c2 action="showInSequence" target="U3L10C5_4a_evaluation" />
+			
+			<c3 action="gotoAndPlay" target="U3L10C5_3_evaluation" />
+			<c3 action="showInSequence" target="U3L10C5_4b_evaluation" />
+		
+			<evaluation evalType="multipleChoiceSingleSelect">
+				<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+				<questionText><![CDATA[Given all of the things you've just said, where do you stand on making low-risk choices?]]></questionText>
+				<titleText><![CDATA[My Commitment to Low-Risk Choices]]></titleText>
+				<audio src="U3L10C5.mp3"/>
+				<choice-collection>
+					<choice id="c1" valueID="v2">
+						<text><![CDATA[Yes, I'm ready to start making low-risk choices.]]></text>
+						<userEntry controlID=""/>
+					</choice>
+					<choice id="c2" valueID="v1">
+						<text><![CDATA[I'm already making low-risk choices, and need to keep my momentum.]]></text>
+						<userEntry controlID=""/>
+					</choice>
+					<choice id="c3" valueID="v2">
+						<text><![CDATA[I'm still thinking about it.]]></text>
+						<userEntry controlID=""/>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>				
+				</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<evaluation name="U3L10C5_2_evaluation" componentID="u3l10c5_2">
+			
+			<assetComplete action="gotoAndPlay" target="U3L10C5_3_evaluation" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+				<questionText><![CDATA[Enter your start date for when you would like to begin making low-risk choices.]]></questionText>
+				<titleText><![CDATA[My Commitment to Low-Risk Choices]]></titleText>
+				<multimedia src="U3L10C5_2.swf"/>
+				<data-dependency id="U3L4C7_1"/>
+				<choice-collection>
+					<choice id="c1" valueID="v2">
+						<text><![CDATA["month,day,year"]]></text>
+						<userEntry controlID=""/>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>				
+				</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence hideInSequence="true">
+		
+			<evaluation name="U3L10C5_3_evaluation" componentID="u3l10c5_3" hideInSequence="false">
+				
+				<assetComplete action="gotoAndPlayNext" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<questionText><![CDATA[Did you notice that I overwrote the original text?]]></questionText>
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<multimedia src="U3L10C5_3.swf"/>
+					<data-dependency id="U3L10C5_1"/>
+					<titleText><![CDATA[My Experiences]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L10C5_4a_evaluation" componentID="u3l10c5_4a">
+				
+				<assetComplete action="hideInSequence" />
+				<assetComplete action="U3L10C5Complete_interaction"  />
+				
+				<evaluation evalType="ReflectionQuestion">
+					<questionText><![CDATA[What are your three top reasons for making this change?  ]]></questionText>
+					<titleText><![CDATA[Reflection Question]]></titleText>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+						
+			
+			</evaluation>
+			
+			<evaluation name="U3L10C5_4b_evaluation" componentID="u3l10c5_4b">
+			
+				<assetComplete action="hideInSequence" />
+				<assetComplete action="U3L10C5Complete_interaction"  />
+			
+				<evaluation evalType="ReflectionQuestion">
+					<questionText><![CDATA[As you think about your reasons and the possibility of making a change in the future, what would need to happen for you to know that it was time for you? ]]></questionText>
+					<titleText><![CDATA[Reflection Question]]></titleText>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>				
+			
+			</evaluation>
+			
+		</sequence>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+		<!--  U3L10C6	HV	 -->
+		
+		<brightcoveVideo name="U3L10C6_video" source="1481230964001" width="768" height="432" label="Summary Video">
+		  <playheadUpdate action="setProgress" value="U3L10C6Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U3L10C7_evaluation"/>
+		  <caption source="data/Unit_3/captions/lesson_10/U3L10C6_cc.xml" />
+		</brightcoveVideo>
+		
+		<!--  U3L10C7 -->
+		
+		<evaluation name="U3L10C7_evaluation" componentID="u3l10c7" label="Lesson Summary Screen">
+		
+			<assetComplete action="getNextScene" recordComplete="true" value="3657,1317"/>
+			
+			<evaluation evalType="ReflectionQuestion" templateType="notes">
+					<questionText><![CDATA[My Commitment]]></questionText>
+					<titleText><![CDATA[My Notes]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[3]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+		
+		</evaluation>
+		
+		</sequence>
+		
+	</assets>
+  
+</scene>

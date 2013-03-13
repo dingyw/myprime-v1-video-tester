@@ -1,0 +1,646 @@
+<scene id="3599" title="A Closer Look at My Own Choices">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U2L7C0_evaluation" />
+	
+		<interactionGroup name="U2L7C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3599,U2L7C0Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L7C1_video" />
+		</interactionGroup>
+				
+		<interactionGroup name="U2L7C3_4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3599,U2L7C3_4Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L7C4_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L7C4Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L7C5_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L7C6Complete_interaction">
+			<interaction action="goto" target="U2L7C7_swf" />
+			<!-- 
+					true		:: require
+					false		::  optional (default)
+			-->
+			<interaction action="callProperty" target="U2L7C7_swf.content" value="initContent,true" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L7C6_2Complete_interaction">
+			<interaction action="goto" target="U2L7C7_swf" />
+			<interaction action="callProperty" target="U2L7C7_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L7C7Complete_interaction">
+			<interaction action="setLastSavePoint" value="3599,U2L7C7Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L7C9_video"  />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L7C9Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L7C10_swf" />
+			<interaction action="callProperty" target="U2L7C10_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L7C10Complete_interaction">
+			<interaction action="setLastSavePoint" value="3599,U2L7C10Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L7C12_1_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L7C12_1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L7C12_2_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L7C12_2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3599,U2L7C12_2Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L7C13_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L7C14_6Complete_interaction">
+			<interaction action="setLastSavePoint" value="3599,U2L7C14_6Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L7C16_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L7C18Complete_interaction">
+			<interaction action="setLastSavePoint" value="3599,U2L7C18Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L7C19_evaluation"/>
+		</interactionGroup>
+		
+		
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U2L7C1Init_progressBar" interaction="init_interaction"  callInteraction="false" weight="25" />
+		<progressBar name="U2L7C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U2L7C1Complete_progressBar" weight="25" />
+		<progressBar name="U2L7C2Complete_progressBar" weight="25" />
+		<progressBar name="U2L7C3Complete_progressBar" interaction="U2L7C3_4Complete_interaction" weight="25" />
+		<progressBar name="U2L7C4Complete_progressBar" weight="25" />
+		<progressBar name="U2L7C5Complete_progressBar" weight="25"/>
+		<progressBar name="U2L7C6Complete_progressBar" weight="25"/>
+		<progressBar name="U2L7C7Complete_progressBar" interaction="U2L7C7Complete_interaction" weight="25" />
+		<progressBar name="U2L7C9Complete_progressBar" weight="25"/>
+		<progressBar name="U2L7C10Complete_progressBar" interaction="U2L7C10Complete_interaction" weight="25"/>
+		<progressBar name="U2L7C12Complete_progressBar" interaction="U2L7C12_2Complete_interaction" weight="25"/>
+		<progressBar name="U2L7C13Complete_progressBar" weight="25"/>
+		<progressBar name="U2L7C14Complete_progressBar" interaction="U2L7C14_6Complete_interaction" weight="25"/>
+		<progressBar name="U2L7C16Complete_progressBar" weight="25"/>
+		<progressBar name="U2L7C18Complete_progressBar" interaction="U2L7C18Complete_interaction" weight="25"/>
+		<progressBar name="U2L7C19Complete_progressBar" weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U2L7C0_evaluation" visible="true" componentID="u2l7c0">
+			
+			<assetComplete action="U2L7C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[A Closer Look at My Own Choices]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll more closely examine the choices we've made with drugs and alcohol. We'll revisit how our choices compare with those of others, and look at a timeline of our experiences to identify patterns. We'll also calculate how much our problems from high-risk choices actually cost us, and weigh the pros and cons of those high-risk choices.]]></questionText>
+					<instructionText><![CDATA[Duration: 50 minutes]]></instructionText>
+					<multimedia src="unit2_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U2L7C1    TG      -->
+			
+			<brightcoveVideo name="U2L7C1_video" source="738433058001" width="768" height="432" complete="true" label="A Closer Look at My Own Choices">
+			  <playheadUpdate action="setProgress" value="U2L7C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L7C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U2L7C2   -->
+			
+			<brightcoveVideo name="U2L7C2_video" source="847335868001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U2L7C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L7C3_1_evaluation"/>
+			  <caption source="data/Unit_2/captions/lesson_07/U2L7C2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!--  U2L7C3      -->
+			
+			<evaluation name="U2L7C3_1_evaluation" componentID="u2l7c3_1" label="My Drinking Choices">
+				
+				<assetComplete action="gotoAndPlay" target="U2L7C3_2_evaluation" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true" >
+						<questionText><![CDATA[Enter the number of standard drinks you might consume in a "typical" week. Remember that one standard drink equals .6 ounces of pure alcohol, or one and a half ounces of 80-proof liquor.]]></questionText>
+						<instructionText><![CDATA[My Drinking Choices]]></instructionText>
+						<multimedia src="U2L7C3_1.swf"/>
+						<!--<audio src="U1L9C21.mp3"/>-->
+						<data-dependency id="U1L9C21" />
+						<titleText><![CDATA[My Drinking Choices]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[-1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c5" valueID="v1">
+								<text><![CDATA[]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c6" valueID="v1">
+								<text><![CDATA[]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c7" valueID="v1">
+								<text><![CDATA[]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c8" valueID="v1">
+								<text><![CDATA[0]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U2L7C3_2_evaluation" componentID="u2l7c3_2">
+				
+				<assetComplete action="gotoAndPlay" target="U2L7C3_3_evaluation" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true" >
+						<questionText><![CDATA[How many times in the past month would you estimate you have had five or more drinks?]]></questionText>
+						<instructionText><![CDATA[My Drinking Choices]]></instructionText>
+						<multimedia src="U2L7C3_2.swf"/>
+						<data-dependency id="U2L7C3_1" />
+						<titleText><![CDATA[My Drinking Choices]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[-1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[-1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[-1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[-1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c5" valueID="v1">
+								<text><![CDATA[-1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c6" valueID="v1">
+								<text><![CDATA[-1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c7" valueID="v1">
+								<text><![CDATA[-1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c8" valueID="v1">
+								<text><![CDATA[-1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L7C3_3_evaluation" componentID="u2l7c3_3">
+				
+				<c1 action="gotoAndPlay" target="U2L7C3_4_evaluation" />
+				<c2 action="gotoAndPlay" target="U2L7C4_evaluation" />
+				
+				<!--
+				<assetComplete action="gotoAndPlay" target="U2L7C3_4_evaluation" />
+				-->
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true" >
+						<questionText><![CDATA[Would you like to take a closer look at your drug use and see how your use compares with others?]]></questionText>
+						<instructionText><![CDATA[Select Yes or No below.]]></instructionText>
+						<multimedia src="U2L7C3_3.swf"/>
+						<titleText><![CDATA[My Drug Choices]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[Yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v2">
+								<text><![CDATA[No]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L7C3_4_evaluation" componentID="u2l7c3_4">
+				
+				<assetComplete action="U2L7C3_4Complete_interaction" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true" >
+						<questionText><![CDATA[Enter how often you use drugs?]]></questionText>
+						<instructionText><![CDATA[Read the information below, enter your answer, and click Submit.]]></instructionText>
+						<multimedia src="U2L7C3_4.swf"/>
+						<titleText><![CDATA[My Drug Use]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[0]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!--  U2L7C4   -->
+			
+			<evaluation name="U2L7C4_evaluation" componentID="u2l7c4" label="My Drinking Choices Question">
+				
+				<assetComplete action="U2L7C4Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What did you learn about your alcohol or drug use?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="What My Problems Cost Me">
+		
+			<!--  U2L7C5     -->
+			
+			<brightcoveVideo name="U2L7C5_video" source="756527902001" width="768" height="432" label="Cost Video">
+			  <playheadUpdate action="setProgress" value="U2L7C5Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L7C6_1_evaluation"/>
+			  <caption source="data/Unit_2/captions/lesson_07/U2L7C5_cc.xml" />
+			</brightcoveVideo>
+			
+			<!--  U2L7C6      -->
+			
+			<evaluation name="U2L7C6_1_evaluation" componentID="u2l7c6_1" label="Pre-Assessment">
+				
+				<c1 action="U2L7C6Complete_interaction" />
+				<c2 action="gotoAndPlay" target="U2L7C6_2_evaluation" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<instructionText><![CDATA[Answer each question that appears.]]></instructionText>
+					<questionText><![CDATA[Are you taking myPRIME as a result of a problem such as a DUI or some other incident?]]></questionText>
+					<titleText><![CDATA[What My Problems Cost Me]]></titleText>
+					<multimedia src="U2L7C6.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[Yes]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[No]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L7C6_2_evaluation" componentID="u2l7c6_2">
+				
+				<c1 action="U2L7C6Complete_interaction" />
+				<c2 action="U2L7C6_2Complete_interaction" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<instructionText><![CDATA[Answer each question that appears.]]></instructionText>
+					<questionText><![CDATA[Have you had a DUI or another alcohol or drug-related problem within the last two years?]]></questionText>
+					<titleText><![CDATA[What My Problems Cost Me]]></titleText>
+					<multimedia src="U2L7C6.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[Yes]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[No]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+						
+			<!--  U2L7C7     -->
+			
+			<swf name="U2L7C7_swf" source="assets/media/U2L7C7.swf">
+				<assetComplete action="U2L7C7Complete_interaction" />
+			</swf>
+		
+		</sequence>
+		
+		<sequence label="Timeline">
+		
+			<!--  U2L7C9      -->
+			
+			<brightcoveVideo name="U2L7C9_video" source="777279839001" width="768" height="432" label="Timeline Interaction Video">
+				<playheadUpdate action="setProgress" value="U2L7C9Complete_progressBar" frequency="5" />
+				<complete action="U2L7C9Complete_interaction"/>
+				<caption source="data/Unit_2/captions/lesson_07/U2L7C9_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U2L7C10  -->
+			
+			<swf name="U2L7C10_swf" source="assets/media/U2L7C10_main.swf">
+				<assetComplete action="U2L7C10Complete_interaction" />
+			</swf>
+			
+			<!-- U2L7C12  -->
+			
+			<evaluation name="U2L7C12_1_evaluation" componentID="u2l7c12_1" label="Timeline Reflection Question">
+			
+				<assetComplete action="U2L7C12_1Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What did you notice about your timeline?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U2L7C12_2_evaluation" componentID="u2l7c12_2">
+			
+				<assetComplete action="U2L7C12_2Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What parallels do you see between your timeline and what you've learned about the phases, if any?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Pros and Cons">
+		
+			<!-- U2L7C13 -->
+			
+			<brightcoveVideo name="U2L7C13_video" source="756528986001" width="768" height="432" label="Pros and Cons Video">
+			  <playheadUpdate action="setProgress" value="U2L7C13Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L7C14_1_evaluation"/>
+			  <caption source="data/Unit_2/captions/lesson_07/U2L7C13_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U2L7C14 -->
+			
+			<evaluation name="U2L7C14_1_evaluation" componentID="u2l7c14_1" label="Pros and Cons Activity">
+			
+				<assetComplete action="gotoAndPlay" target="U2L7C14_2_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+						<questionText><![CDATA[What are the "pros" of high-risk choices?]]></questionText>
+						<instructionText><![CDATA[Type each Pro into the text box and click Submit. You must enter at least three Pros. Then, click Next.]]></instructionText>
+						<multimedia src="U2L7C14_1.swf"/>
+						<audio src="U2L7C14.mp3"/>
+						<titleText><![CDATA[The Pros and Cons of My Choices]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U2L7C14_2_evaluation" componentID="u2l7c14_2">
+			
+				<assetComplete action="gotoAndPlay" target="U2L7C14_3_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+						<questionText><![CDATA[What are the "cons" of high-risk choices?]]></questionText>
+						<instructionText><![CDATA[Type each Con into the text box and click Submit. You must enter at least three Cons. Then, click Next.]]></instructionText>
+						<multimedia src="U2L7C14_2.swf"/>
+						<titleText><![CDATA[The Pros and Cons of My Choices]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U2L7C14_3_evaluation" componentID="u2l7c14_3">
+			
+				<assetComplete action="gotoAndPlay" target="U2L7C14_4_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+						<questionText><![CDATA[What are the "cons" of low-risk choices?]]></questionText>
+						<instructionText><![CDATA[Type each Con into the text box and click Submit. You must enter at least three Cons. Then, click Next.]]></instructionText>
+						<multimedia src="U2L7C14_3.swf"/>
+						<titleText><![CDATA[The Pros and Cons of My Choices]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U2L7C14_4_evaluation" componentID="u2l7c14_4">
+			
+				<assetComplete action="gotoAndPlay" target="U2L7C14_5_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+						<questionText><![CDATA[What are the "pros" of low-risk choices?]]></questionText>
+						<instructionText><![CDATA[Type each Pro into the text box and click Submit. You must enter at least three Pros. Then, click Next.]]></instructionText>
+						<multimedia src="U2L7C14_4.swf"/>
+						<titleText><![CDATA[The Pros and Cons of My Choices]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U2L7C14_5_evaluation" componentID="u2l7c14_5">
+			
+				<assetComplete action="gotoAndPlay" target="U2L7C14_6_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+						<questionText><![CDATA[Take a minute to look over some of the things that you put in your pros and cons.]]></questionText>
+						<instructionText><![CDATA[Take a minute to review your pros and cons. ]]></instructionText>
+						<multimedia src="U2L7C14_5.swf"/>
+						<data-dependency id="U2L7C14_1"/>
+						<data-dependency id="U2L7C14_2"/>
+						<data-dependency id="U2L7C14_3"/>
+						<data-dependency id="U2L7C14_4"/>
+						<titleText><![CDATA[The Pros and Cons of My Choices (Continued) ]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U2L7C14_6_evaluation" componentID="u2l7c14_6">
+			
+				<assetComplete action="U2L7C14_6Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion" >
+						<questionText><![CDATA[As you look at the picture of how your pros and cons compare with respect to high-risk and low-risk choices, what stands out to you?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U2L7C16 -->
+			
+			<brightcoveVideo name="U2L7C16_video" source="819943197001" width="768" height="432" label="Pros and Cons Summary">
+			  <playheadUpdate action="setProgress" value="U2L7C16Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L7C18_video"/>
+			  <caption source="data/Unit_2/captions/lesson_07/U2L7C16_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U2L7C18 -->
+			
+			<brightcoveVideo name="U2L7C18_video" source="1508123189001" width="768" height="432" label="Pros and Cons Video Summary">
+			  <playheadUpdate action="setProgress" value="U2L7C18Complete_progressBar" frequency="5" />
+			  <complete action="U2L7C18Complete_interaction"/>
+			  <caption source="data/Unit_2/captions/lesson_07/U2L7C18_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U2L7C19 -->
+			
+			<evaluation name="U2L7C19_evaluation" componentID="u2l7c19" label="Lesson Summary Screen">
+			
+				<assetComplete action="getNextScene" recordComplete="true" value="3599,1305"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[A Closer Look at My Own Choices]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[2]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

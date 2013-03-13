@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>  </styling>
+  </head>
+  <body>
+    <div xml:lang="en">
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        This short questionnaire can help you evaluate your own drinking choices. Consider the past 12 months of your life, and choose the response that best describes your experience.
+      </p>
+    </div>
+  </body>
+</tt>

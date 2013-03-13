@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>  </styling>
+  </head>
+  <body>
+    <div xml:lang="en">
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Narrator:</b><br />
+	   Now, let’s make sure this list really captures what you care about.  Take some time to pesonalize it by typing in a few specifics.
+You can make it a little more real by putting in the names of your family or friends. 
+And if you want to swap values out, that’s okay too.  For example, if you’re in a band you might change an item on the list to “music”.
+When you’re finished, the list should have ten values that reflect the most important things in your life.
+      </p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,125 @@
+<scene id="3474" title="What is Low Risk for Drugs">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L10C0_evaluation" />
+	
+		<interactionGroup name="U1L10C0Complete_interaction">
+		  <interaction action="gotoAndPlay" target="U1L10C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L10C2BranchYes_interaction">
+			<interaction action="goto" target="U1L10C5_swf" />
+			<interaction action="callProperty" target="U1L10C5_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L10C2BranchNo_interaction">
+			<interaction action="gotoAndPlay" target="U1L10C6_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L10C6Complete_interaction">
+			<interaction action="setLastSavePoint" value="3474,U1L10C6Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L10C7_evaluation" />
+		</interactionGroup>
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L10C1Init_progressBar" interaction="init_interaction"  callInteraction="false" weight="5" />
+		<progressBar name="U1L10C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L10C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L10C2Complete_progressBar" weight="25" />
+		<progressBar name="U1L10C6Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U1L10C0_evaluation" visible="true" componentID="u1l10c0">
+			
+			<assetComplete action="U1L10C0Complete_interaction"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[What Is Low Risk for Drugs?]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll learn more about research findings on the relationship between risk for problems and the quantity and frequency of drug use.]]></questionText>
+					<instructionText><![CDATA[Duration: 5 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U1L10C1    TG    What is Low Risk for Drugs? -->
+			
+			<brightcoveVideo name="U1L10C1_video" source="738433018001" width="768" height="432"  complete="true" label="What is Low Risk for Drugs?">
+			  <playheadUpdate action="setProgress" value="U1L10C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L10C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U1L10C2    HV + EV    Low Risk for Drugs  Intro, expert video, and introduction to the interactivity -->
+			
+			<brightcoveVideo name="U1L10C2_video" source="1511103462001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U1L10C2Complete_progressBar" frequency="5" />
+			  <complete action="goto" target="U1L10C2Branch_swf"/>
+			  <caption source="data/Unit_1/captions/lesson_10/U1L10C2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- 
+				Alert box asking the user if they want to view the presenation or not.
+				The SWF will call either U1L10C2BranchYes_interaction or U1L10C2BranchNo_interaction.
+			-->
+			<swf name="U1L10C2Branch_swf" source="assets/media/U1L10C2Branch.swf"></swf>
+			
+			<!--  U1L10C5    P    Low Risk for Drugs Presentations  -->
+			
+			<swf name="U1L10C5_swf" source="assets/media/U1L10C5_v2.swf">
+				<assetComplete action="gotoAndPlay" target="U1L10C6_video" />
+			</swf>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!--  U1L10C6    HV    Low-Risk Guidelines Summary  -->
+	
+			<brightcoveVideo name="U1L10C6_video" source="738305102001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U1L10C6Complete_progressBar" frequency="5" />
+			  <complete action="U1L10C6Complete_interaction"/>
+			  <caption source="data/Unit_1/captions/lesson_10/U1L10C6_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L10C7    My Notes -->
+			
+			<evaluation name="U1L10C7_evaluation" componentID="u1l10c7" label="Lesson Summary Screen">
+			
+					<assetComplete action="getNextScene" recordComplete="true" value="3474,1281"/>
+					
+					<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[What Is Low Risk for Drugs?]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+					</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

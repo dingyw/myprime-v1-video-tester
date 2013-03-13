@@ -1,0 +1,276 @@
+<scene id="3651" title="Support Around Me">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U3L4C0_evaluation" />
+	
+		<interactionGroup name="U3L4C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3651,U3L4C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L4C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L4C2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3651,U3L4C2Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L4C7_1_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L4C7_1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U3L4C7_2_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L4C7_2Complete_interaction">
+			<interaction action="gotoAndPlay" target="U3L4C7_3_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L4C7_3Complete_interaction">
+			<interaction action="gotoAndPlay" target="U3L4C7_4_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L4C7_4Complete_interaction">
+			<interaction action="gotoAndPlay" target="U3L4C7_5_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L4C7_5Complete_interaction">
+			<interaction action="setLastSavePoint" value="3651,U3L4C7_5Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L4C8_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L4C10CueOption_interaction">			
+			<interaction action="show"  target="U3L4C11_swf"/>
+			<interaction action="callProperty" target="U3L4C11_swf.content" value="initContent"/>
+		</interactionGroup>
+		
+		<!-- U3L4C11 will determines either the next interaction will be U3L4C11Complete_interaction or stay on the video U3L4C10 -->
+		<interactionGroup name="U3L4C10CueOptionEnd_interaction">			
+			<interaction action="callProperty" target="U3L4C11_swf.content" value="transitionOut"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L4C10Complete_interaction">
+			<interaction action="setLastSavePoint" value="3651,U3L4C10Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L4C12_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L4C11Complete_interaction">
+			<interaction action="pause"  target="U3L4C10_video"/>
+			<interaction action="callInteraction"  value="U3L4C10Complete_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L4C12Complete_interaction">
+			<interaction action="setLastSavePoint" value="3651,U3L4C12Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L4C13_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L4C13Complete_interaction">
+			<!-- <interaction action="recordComplete" value="Lesson,3651" /> -->
+			<interaction action="recordComplete" value="Scene,3651,Lesson,1311" />
+			<interaction action="getScene" value="3763" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U3L4C1Init_progressBar" interaction="init_interaction"   callInteraction="false" weight="5" />
+		<progressBar name="U3L4C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U3L4C1Complete_progressBar" weight="25" />
+		<progressBar name="U3L4C2Complete_progressBar"  interaction="U3L4C2Complete_interaction " weight="25"/>
+		<progressBar name="U3L4C7Complete_progressBar" interaction="U3L4C7_5Complete_interaction" weight="25"/>
+		<progressBar name="U3L4C8Complete_progressBar" weight="25"/>
+		<progressBar name="U3L4C10Complete_progressBar" interaction="U3L4C10Complete_interaction" weight="25" />
+		<progressBar name="U3L4C12Complete_progressBar" interaction="U3L4C12Complete_interaction" weight="25"/>
+		<progressBar name="U3L4C13Complete_progressBar" weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U3L4C0_evaluation" visible="true" componentID="u3l4c0">
+			
+			<assetComplete action="U3L4C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Support Around Me]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll identify the people and organizations around us that can best support us in making low-risk choices.]]></questionText>
+					<instructionText><![CDATA[Duration: 10 minutes]]></instructionText>
+					<multimedia src="unit3_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U3L4C1  TG     -->
+			
+			<brightcoveVideo name="U3L4C1_video" source="746406919001" width="768" height="432" complete="true" label="Support Around Me">
+			  <playheadUpdate action="setProgress" value="U3L4C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L4C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U3L4C2   -->
+			
+			<brightcoveVideo name="U3L4C2_video" source="855897819001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U3L4C2Complete_progressBar" frequency="5" />
+			  <complete action="U3L4C2Complete_interaction" />
+			  <caption source="data/Unit_3/captions/lesson_04/U3L4C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Reflecting on My Support">
+		
+			<!-- U3L4C7 -->
+			
+			<evaluation name="U3L4C7_1_evaluation" componentID="u3l4c7_1" label="Support Around Me Reflection Questions">
+			
+				<assetComplete action="U3L4C7_1Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[Who are some specific people who will support me?]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L4C7_2_evaluation" componentID="u3l4c7_2">
+			
+				<assetComplete action="U3L4C7_2Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[Where can I find other people who will support me?]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L4C7_3_evaluation" componentID="u3l4c7_3">
+			
+				<assetComplete action="U3L4C7_3Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[Who would respect me if I made changes in my alcohol or drug choices?]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L4C7_4_evaluation" componentID="u3l4c7_4">
+			
+				<assetComplete action="U3L4C7_4Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What can these people do to support me?]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U3L4C7_5_evaluation" componentID="u3l4c7_5">
+			
+				<assetComplete action="U3L4C7_5Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What would I say to ask for support?]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!-- U3L4C8	HV	Support Around Me - Host  Transition to Testimonial
+								TV	Support Around Me - Testimonial Video -->
+			
+			<brightcoveVideo name="U3L4C8_video" source="1483309811001" width="768" height="432" label="Support Around Me Testimonials">
+			  <playheadUpdate action="setProgress" value="U3L4C8Complete_progressBar" frequency="5" />
+			  <!--		  <complete action="callProperty" target="skipBtn_swf.content" value="label,Skip"/> -->
+			  <complete action="gotoAndPlay" target="U3L4C10_video"/>
+			  <caption source="data/Unit_3/captions/lesson_04/U3L4C8_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- 
+				U3L4C11_swf, a skip button, overlaps U3L4C10_video. 
+				There's a condition in the swf that determines the visibility of the skip button based on the learner's phase.
+			-->
+			<swf name="U3L4C11_swf" source="assets/media/U3L4C11.swf" z="2" >
+				<assetComplete action="U3L4C11Complete_interaction" />
+			</swf>
+			
+			<!-- U3L4C10	HV	Support Around Me - Host Summary and Optional Video 
+				  U3L4C11	OV	Other Video: Support Around Me - Twelve-Step Programs (OPTIONAL for all but late Phase 3 / Phase 4) -->-->
+			
+			<brightcoveVideo name="U3L4C10_video" source="1481230970001" width="768" height="432">
+			  <playheadUpdate action="setProgress" value="U3L4C10Complete_progressBar" frequency="5" />
+			  <cuePoint cuePoint="option" cuePointTime="50000" action="U3L4C10CueOption_interaction" />
+			  <cuePoint cuePoint="optionEnd" cuePointTime="64000" action="U3L4C10CueOptionEnd_interaction" />
+			  <complete action="U3L4C10Complete_interaction"/>
+			  <caption source="data/Unit_3/captions/lesson_04/U3L4C10_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U3L4C12	HV	Support Around Me - Host Summary -->
+			
+			<brightcoveVideo name="U3L4C12_video" source="1481230968001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U3L4C12Complete_progressBar" frequency="5" />
+			  <complete action="U3L4C12Complete_interaction" />
+			  <caption source="data/Unit_3/captions/lesson_04/U3L4C12_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U3L4C13	NOTES	 -->
+	
+			<evaluation name="U3L4C13_evaluation" componentID="u3l4c13" label="Lesson Summary Screen">
+			
+				<assetComplete action="U3L4C13Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Support Around Me ]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[3]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

@@ -1,0 +1,131 @@
+<scene id="2812" title="What Would Most People Say?">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L3C0_evaluation" />
+		
+		<interactionGroup name="U1L3C1Complete_interaction">
+			<interaction action="setLastSavePoint" value="2812,U1L3C1Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L3C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L3C2Complete_interaction">
+			<interaction action="goto" target="U1L3C3_swf" />
+			<interaction action="callProperty" target="U1L3C3_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L3C3Complete_interaction">
+			<interaction action="setLastSavePoint" value="2812,U1L3C3Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L3C4_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L3C4Complete_interaction">
+			<interaction action="setLastSavePoint" value="2812,U1L3C4Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L3C7_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L3C7Complete_interaction">
+			<interaction action="setLastSavePoint" value="2812,U1L3C7Complete_interaction" />
+			<interaction action="getNextScene" recordComplete="true" value="2812,1194" />
+		</interactionGroup>
+		
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L3C1Init_progressBar" interaction="init_interaction"  callInteraction="false" weight="15" />
+		<progressBar name="U1L3C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L3C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L3C2Complete_progressBar" />
+		<progressBar name="U1L3C3Complete_progressBar" interaction="U1L3C3Complete_interaction" weight="25" />
+		<progressBar name="U1L3C4Complete_progressBar" interaction="U1L3C4Complete_interaction" weight="25"/>
+		<progressBar name="U1L3C7Complete_progressBar" weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<evaluation name="U1L3C0_evaluation" visible="true" componentID="u1l3c0">
+			
+			<assetComplete action="gotoAndPlay" target="U1L3C1_video"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[What Would Most People Say?]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore common perceptions around the risk of developing various lifestyle-related health problems.]]></questionText>
+					<instructionText><![CDATA[Duration: 3 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+			
+			<!-- U1L3C1    TG    Two Types of Problems -->
+			
+			<brightcoveVideo name="U1L3C1_video" source="738433023001" width="768" height="432"  complete="true" label="What Would Most People Say?">
+			  <playheadUpdate action="setProgress" value="U1L3C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L3C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L3C2    HV    What Would Most People Say? Intro -->
+			
+			<brightcoveVideo name="U1L3C2_video" source="1456756742001" width="768" height="432" label="Introduction Video ">
+				<playheadUpdate action="setProgress" value="U1L3C2Complete_progressBar" frequency="5" />
+				<complete action="U1L3C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_03/U1L3C2_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="What Would Most People Say?">
+		
+			<!-- U1L3C3    MC    What Would Most People Say? Interactivity -->
+			
+			<swf name="U1L3C3_swf" source="assets/media/U1L3C3.swf" dataService="u1l3c3">
+				<assetComplete action="U1L3C3Complete_interaction" />
+			</swf>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+		<!-- U1L3C4    HV    What Would Most People Say? Interactivity Summary -->
+		
+			<brightcoveVideo name="U1L3C4_video" source="1456743631001" width="768" height="432" label="Summary Video">
+				<playheadUpdate action="setProgress" value="U1L3C4Complete_progressBar" frequency="5" />
+				<complete action="U1L3C4Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_03/U1L3C4_cc.xml" />
+			</brightcoveVideo>
+			
+			<evaluation name="U1L3C7_evaluation" componentID="u1l3c7" label="Lesson Summary Screen">
+				
+				<assetComplete action="U1L3C7Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+					<questionText><![CDATA[What Would Most People Say?]]></questionText>
+					<titleText><![CDATA[My Notes]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

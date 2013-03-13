@@ -1,0 +1,105 @@
+<scene id="3600" title="Wolf Story">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U2L8C0_evaluation" />
+	
+		<interactionGroup name="U2L8C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3600,U2L8C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L8C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L8C4Complete_interaction">
+			<interaction action="recordComplete" value="Unit,1082" />  
+			<interaction action="getNextScene" recordComplete="true" value="3600,1306" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U2L8C1Init_progressBar" interaction="init_interaction" callInteraction="false" weight="25" />
+		<progressBar name="U2L8C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U2L8C1Complete_progressBar" weight="25" />
+		<progressBar name="U2L8C2Complete_progressBar"  />
+		<progressBar name="U2L8C3Complete_progressBar"  />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U2L8C0_evaluation" visible="true" componentID="u2l8c0">
+			
+			<assetComplete action="U2L8C0Complete_interaction" target="U2L8C1_video"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Wolf Story]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll consider the role of our choices in protecting what we care about.]]></questionText>
+					<instructionText><![CDATA[Duration: 10 minutes]]></instructionText>
+					<multimedia src="unit2_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U2L8C1    TG      -->
+			
+			<brightcoveVideo name="U2L8C1_video" source="738433059001" width="768" height="432" complete="true" label="Which Wolf Will You Feed?">
+			  <playheadUpdate action="setProgress" value="U2L8C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L8C2_video"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!--  U2L8C2   -->
+			
+			<brightcoveVideo name="U2L8C2_video" source="827372085001" width="768" height="432" label="Unit Summary">
+			  <playheadUpdate action="setProgress" value="U2L8C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L8C3_video"/>
+			  <caption source="data/Unit_2/captions/lesson_08/U2L8C2_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U2L8C3      -->
+			
+			<brightcoveVideo name="U2L8C3_video" source="799731670001" width="768" height="432" label="The Wolf Story">
+			  <playheadUpdate action="setProgress" value="U2L8C3Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L8C4_evaluation"/>
+			  <caption source="data/Unit_2/captions/lesson_08/U2L8C3_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L8C4  -->
+			
+			<evaluation name="U2L8C4_evaluation" componentID="u2l8c4" label="Lesson Summary Screen">
+			
+				<assetComplete action="U2L8C4Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Wolf Story]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[2]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

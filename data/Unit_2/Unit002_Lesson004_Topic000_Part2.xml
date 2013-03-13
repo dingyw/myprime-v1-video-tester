@@ -1,0 +1,650 @@
+<scene id="3590" title="Red Phase: Addiction">
+
+	<interactions>
+		<interactionGroup name="init_interaction">
+			<interaction action="setLastSavePoint" value="3590,init_interaction" />
+			<interaction action="goto" target="U2L4C25_swf"/>
+			<interaction action="callProperty" target="U2L4C25_swf.content" value="initContent" />
+			<interaction action="callProperty" target="returnToMenu_swf.content" value="label,Return to Menu"/>
+			<interaction action="callProperty" target="returnToProgressionMenu_swf.content" value="label,Return to Menu"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C2Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C2_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C2Complete_interaction">
+			<interaction action="callProperty" target="U2L4C25_swf.content" value="completeOutcome,addictionWithLossOfControl" />
+			<interaction action="callInteraction" value="U2L4C25Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C8AInit_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C8A_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C8BComplete_interaction">
+			<interaction action="callProperty" target="U2L4C25_swf.content" value="completeOutcome,importanceCentralToLife" />
+			<interaction action="callInteraction" value="U2L4C25Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C9Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C9_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C11Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C11_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C11Complete_interaction">
+			<interaction action="callProperty" target="U2L4C25_swf.content" value="completeOutcome,defenseOfChoices" />
+			<interaction action="callInteraction" value="U2L4C25Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C12Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C12_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C16Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C16_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C16Complete_interaction">
+			<interaction action="callProperty" target="U2L4C25_swf.content" value="completeOutcome,tolerance" />
+			<interaction action="callInteraction" value="U2L4C25Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C17AInit_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C17A_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C17BComplete_interaction">
+			<interaction action="callProperty" target="U2L4C25_swf.content" value="completeOutcome,thinkingMemoryChanges" />
+			<interaction action="callInteraction" value="U2L4C25Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C18Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C18_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C19Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C19_video"/>
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<!-- end call by U2L4C25_swf -->
+		
+		<interactionGroup name="U2L4C25Init_interaction">
+			<interaction action="hide" target="returnToMenu_swf" />
+			<interaction action="goto" target="U2L4C25_swf"/>
+			<interaction action="callProperty" target="U2L4C25_swf.content" value="transitionIn" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C25Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C26_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C26Complete_interaction">
+			<interaction action="goto" target="U2L4C27_swf"/>
+			<interaction action="callProperty" target="U2L4C27_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C27Init_interaction">
+			<interaction action="hide" target="returnToProgressionMenu_swf" />
+			<interaction action="goto" target="U2L4C27_swf"/>
+			<interaction action="callProperty" target="U2L4C27_swf.content" value="transitionIn" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C28Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C28_video"/>
+			<interaction action="show" target="returnToProgressionMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C28Complete_interaction">
+			<interaction action="callProperty" target="U2L4C27_swf.content" value="completeOutcome,hallmarks" />
+			<interaction action="callInteraction" value="U2L4C27Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C29Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C29_video"/>
+			<interaction action="show" target="returnToProgressionMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C29Complete_interaction">
+			<interaction action="callProperty" target="U2L4C27_swf.content" value="completeOutcome,tolerance" />
+			<interaction action="callInteraction" value="U2L4C27Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C30Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C30_video"/>
+			<interaction action="show" target="returnToProgressionMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C30Complete_interaction">
+			<interaction action="callProperty" target="U2L4C27_swf.content" value="completeOutcome,thinkingMemory" />
+			<interaction action="callInteraction" value="U2L4C27Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C31Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C31_video"/>
+			<interaction action="show" target="returnToProgressionMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C31Complete_interaction">
+			<interaction action="callProperty" target="U2L4C27_swf.content" value="completeOutcome,reboundEffects" />
+			<interaction action="callInteraction" value="U2L4C27Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C32Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C32_video"/>
+			<interaction action="show" target="returnToProgressionMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C32Complete_interaction">
+			<interaction action="callProperty" target="U2L4C27_swf.content" value="completeOutcome,problemOutcomes" />
+			<interaction action="callInteraction" value="U2L4C27Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C34A_1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C34A_2_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C34A_2Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C34B_1_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C37Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C38_swf" />
+			<interaction action="callProperty" target="U2L4C38_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C39Complete_interaction">
+			<interaction action="recordComplete" value="Scene,3589"/>
+			<interaction action="getNextScene" recordComplete="true" value="3590,1302" />
+		</interactionGroup>
+	
+	
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U2L4C25Init_progressBar" interaction="init_interaction" weight="25" />
+		<progressBar name="U2L4C26Complete_progressBar" weight="25" />
+		<progressBar name="U2L4C33Complete_progressBar"  />
+		<progressBar name="U2L4C35Complete_progressBar" />
+		<progressBar name="U2L4C37Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<swf name="returnToMenu_swf" source="assets/media/greenBtn.swf" x="10" y="394" z="1" visible="false">
+			<interactions>
+				<interaction type="click" action="hide" target="returnToMenu_swf" />
+				<interaction type="click" action="callInteraction" value="U2L4C25Init_interaction" />
+			</interactions>
+		</swf>
+		
+		<swf name="returnToProgressionMenu_swf" source="assets/media/greenBtn.swf" x="10" y="394" z="1" visible="false">
+			<interactions>
+				<interaction type="click" action="hide" target="returnToProgressionMenu_swf" />
+				<interaction type="click" action="callInteraction" value="U2L4C27Init_interaction" />
+			</interactions>
+		</swf>
+		
+		<!-- U2L4C2 -->
+		
+		<brightcoveVideo name="U2L4C2_video" source="1553875099001" width="768" height="432">
+			<complete action="U2L4C2Complete_interaction" />
+			<caption source="data/Unit_2/captions/lesson_04/U2L4C2_cc.xml"/>
+		</brightcoveVideo>
+		
+		<!-- U2L4C8A -->
+		
+		<brightcoveVideo name="U2L4C8A_video" source="812919107001" width="768" height="432">
+			<complete action="goto" target="U2L4C8B_swf"/>
+			<complete action="callProperty" target="U2L4C8B_swf.content" value="initContent" />
+			<caption source="data/Unit_2/captions/lesson_04/U2L4C8A_cc.xml"/>
+		</brightcoveVideo>
+		
+		<!-- U2L4C8B -->
+		
+		<swf name="U2L4C8B_swf" source="assets/media/U2L4C8B.swf">
+			<assetComplete action="U2L4C8BComplete_interaction" />
+		</swf>
+		
+		<!-- U2L4C9 -->
+		
+		<brightcoveVideo name="U2L4C9_video" source="1544044134001" width="768" height="432">
+			<complete action="callProperty" target="U2L4C25_swf.content" value="completeOutcome,senseOfRelationship" />
+			<complete action="callInteraction" value="U2L4C25Init_interaction"/>
+			<caption source="data/Unit_2/captions/lesson_04/U2L4C9_cc.xml"/>
+		</brightcoveVideo>
+		
+		<!-- U2L4C11 -->
+		
+		<brightcoveVideo name="U2L4C11_video" source="1532650632001" width="768" height="432">
+			<complete action="U2L4C11Complete_interaction" />
+			<caption source="data/Unit_2/captions/lesson_04/U2L4C11_cc.xml"/>
+		</brightcoveVideo>
+		
+		<!-- U2L4C12 -->
+		
+		<brightcoveVideo name="U2L4C12_video" source="1547306061001" width="768" height="432">
+			<complete action="callProperty" target="U2L4C25_swf.content" value="completeOutcome,socialDependence" />
+			<complete action="callInteraction" value="U2L4C25Init_interaction"/>
+			<caption source="data/Unit_2/captions/lesson_04/U2L4C12_cc.xml"/>
+		</brightcoveVideo>
+		
+		<!-- U2L4C16 -->
+		
+		<brightcoveVideo name="U2L4C16_video" source="1467112355001" width="768" height="432">
+			<complete action="U2L4C16Complete_interaction" />
+			<caption source="data/Unit_2/captions/lesson_04/U2L4C16_cc.xml"/>
+		</brightcoveVideo>
+		
+		<!-- U2L4C17A -->
+		
+		<brightcoveVideo name="U2L4C17A_video" source="1558808562001" width="768" height="432">
+			<complete action="goto" target="U2L4C17B_swf" />
+			<complete action="callProperty" target="U2L4C17B_swf.content" value="initContent" />
+			<caption source="data/Unit_2/captions/lesson_04/U2L4C17A_cc.xml"/>
+		</brightcoveVideo>
+		
+		<!-- U2L4C17B -->
+		
+		<swf name="U2L4C17B_swf" source="assets/media/U2L4C17B.swf">
+			<assetComplete action="U2L4C17BComplete_interaction" />
+		</swf>
+		
+		<!-- U2L4C18 -->
+		
+		<brightcoveVideo name="U2L4C18_video" source="1544044118001" width="768" height="432">
+			<complete action="callProperty" target="U2L4C25_swf.content" value="completeOutcome,reboundEffects" />
+			<complete action="callInteraction" value="U2L4C25Init_interaction"/>
+			<caption source="data/Unit_2/captions/lesson_04/U2L4C18_cc.xml"/>
+		</brightcoveVideo>
+		
+		<!-- U2L4C19 -->
+		
+		<brightcoveVideo name="U2L4C19_video" source="1544044098001" width="768" height="432">
+			
+			<complete action="callProperty" target="U2L4C25_swf.content" value="completeOutcome,problems" />
+			<complete action="callInteraction" value="U2L4C25Init_interaction"/>
+			<caption source="data/Unit_2/captions/lesson_04/U2L4C19_cc.xml"/>
+		</brightcoveVideo>
+		
+		<!-- U2L4C25   CI   Red Phase  -->
+		
+		<swf name="U2L4C25_swf" source="assets/media/U2L4C25.swf" componentID="u2l4c25">
+			<assetComplete action="U2L4C25Complete_interaction" />
+		</swf>
+		
+		<sequence label="Progression Review">
+		
+			<!-- U2L4C26 -->
+			
+			<brightcoveVideo name="U2L4C26_video" source="754387886001" width="768" height="432" label="Progression Matrix Video">
+				<playheadUpdate action="setProgress" value="U2L4C26Complete_progressBar" frequency="5" />
+				<complete action="U2L4C26Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C26_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C27   CI    -->
+			
+			<swf name="U2L4C27_swf" source="assets/media/U2L4C27.swf" componentID="u2l4c27" >
+				<assetComplete action="gotoAndPlay" target="U2L4C33_video" />
+			</swf>
+			
+			<!-- U2L4C28 -->
+			
+			<brightcoveVideo name="U2L4C28_video" source="791365596001" width="768" height="432">
+				<complete action="U2L4C28Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C28_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C29 -->
+			
+			<brightcoveVideo name="U2L4C29_video" source="779872734001" width="768" height="432">
+				<complete action="U2L4C29Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C29_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C30 -->
+			
+			<brightcoveVideo name="U2L4C30_video" source="791374954001" width="768" height="432">
+				<complete action="U2L4C30Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C30_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C31 -->
+			
+			<brightcoveVideo name="U2L4C31_video" source="821406628001" width="768" height="432">
+				<complete action="U2L4C31Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C31_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C32 -->
+			
+			<brightcoveVideo name="U2L4C32_video" source="798465140001" width="768" height="432">
+				<complete action="U2L4C32Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C32_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="My Experiences">
+		
+			<!-- U2L4C33 -->
+			
+			<brightcoveVideo name="U2L4C33_video" source="754411254001" width="768" height="432" label="My Experiences Video">
+				<playheadUpdate action="setProgress" value="U2L4C33Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L4C34A_1_evaluation" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C33_cc.xml"/>
+			</brightcoveVideo>
+		
+			<!-- U2L4C34A -->	
+		
+			<evaluation name="U2L4C34A_1_evaluation" componentID="u2l4c34_1" label="My Experiences Self- Assessment Reflection Questions">
+				
+				<assetComplete action="U2L4C34A_1Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[I think my choices have placed me in which Phase...]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L4C34A_2_evaluation" componentID="u2l4c34_2">
+				
+				<assetComplete action="U2L4C34A_2Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[As I think about this, I feel...]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!-- U2L4C34B -->	
+			
+			<evaluation name="U2L4C34B_1_evaluation" componentID="u2l4c34b_1" label="My Experiences Self-Assessment">
+				
+				<assetComplete action="gotoAndPlay" target="U2L4C34B_2_evaluation"/>
+				
+				<evaluation evalType="assessment" layout="vertical" customBG="sampleBG.swf">
+						<titleText><![CDATA[My Experiences]]></titleText>
+						<instructionText><![CDATA[Review your answers, and make changes if you'd like to. Then, click Next to continue.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[Thank you for answering, press "Next" to move on.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Incorrect!  Custom feedback goes here!]]></feedbackText>
+						</feedback>
+						<data-dependency id="U2L0C3_1"/>
+						<audio src="U2L4C34B.mp3"/>
+						<choice-collection type="yesNo">
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[When I drink, I often drink more than the 0-1-2-3 Guidelines.]]></text>
+							 </choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Occasionally, I use illegal drugs or use a prescription drug to get high.]]></text>
+							 </choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[It now takes more drugs or alcohol for me to get high or intoxicated than when I first started.]]></text>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[I function best in groups when I am making high-risk drinking or drug choices.]]></text>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[yes]]></value>
+							<value id="v2"><![CDATA[no]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L4C34B_2_evaluation" componentID="u2l4c34b_2">
+				
+				<assetComplete action="gotoAndPlay" target="U2L4C34B_3_evaluation"/>
+				
+				<evaluation evalType="assessment" layout="vertical" customBG="sampleBG.swf">
+						<titleText><![CDATA[My Experiences]]></titleText>
+						<instructionText><![CDATA[Review your answers, and make changes if you'd like to. Then, click Next to continue.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[Thank you for answering, press "Next" to move on.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Incorrect!  Custom feedback goes here!]]></feedbackText>
+						</feedback>
+						<data-dependency id="U2L0C3_2"/>
+						<choice-collection type="yesNo">
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[Have you wanted or needed to cut down on your drinking or drug use in the last year?]]></text>
+							 </choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[In the last year, have you ever drunk or used drugs more than you meant to?]]></text>
+							 </choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[Have you had a feeling of guilt or remorse after drinking or drug use?]]></text>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[Have you failed to do what was normally expected from you because of drinking or drug use?]]></text>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[yes]]></value>
+							<value id="v2"><![CDATA[no]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L4C34B_3_evaluation" componentID="u2l4c34b_3">
+				
+				<assetComplete action="gotoAndPlay" target="U2L4C34B_4_evaluation"/>
+				
+				<evaluation evalType="assessment" layout="vertical" customBG="sampleBG.swf">
+						<titleText><![CDATA[My Experiences]]></titleText>
+						<instructionText><![CDATA[Review your answers, and make changes if you'd like to. Then, click Next to continue.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[Thank you for answering, press "Next" to move on.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Incorrect!  Custom feedback goes here!]]></feedbackText>
+						</feedback>
+						<data-dependency id="U2L0C3_3"/>
+						<choice-collection type="yesNo">
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[Have you been unable to remember what happened the night before because you had been drinking or using?]]></text>
+							 </choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Have you needed a drink (or drug) in the morning to get yourself going after a heavy drinking, or drug using episode?]]></text>
+							 </choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[Have you tried to cut back on your drinking or drug use but could not?]]></text>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[When you start drinking or using drugs, do you sometimes feel like something takes over and you get drunk or high without meaning to?]]></text>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[yes]]></value>
+							<value id="v2"><![CDATA[no]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L4C34B_4_evaluation" componentID="u2l4c34b_4">
+				
+				<assetComplete action="gotoAndPlay" target="U2L4C35_video"/>
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+						<questionText><![CDATA[Did you notice that I overwrote the original text?]]></questionText>
+						<instructionText><![CDATA[]]></instructionText>
+						<multimedia src="U2L4C34B_4.swf"/>
+						<data-dependency id="U2L4C34B_1"/>
+						<data-dependency id="U2L4C34B_2"/>
+						<data-dependency id="U2L4C34B_3"/>
+						<titleText><![CDATA[My Experiences]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c5" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c6" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c7" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c8" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c9" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c10" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c11" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c12" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<!-- U2L4C35 -->
+			
+			<brightcoveVideo name="U2L4C35_video" source="755099427001" width="768" height="432" label="Self-Assessment Discussion">
+				<playheadUpdate action="setProgress" value="U2L4C35Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L4C37_1_evaluation" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C35_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C37 -->
+			
+			<evaluation name="U2L4C37_1_evaluation" componentID="u2l4c37_1" label="My Experiences Reflection Questions">
+			
+				<assetComplete action="gotoAndPlay" target="U2L4C37_2_evaluation"/>
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What I want to remember about this experience is...]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<evaluation name="U2L4C37_2_evaluation" componentID="u2l4c37_2">
+			
+				<assetComplete action="U2L4C37Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[How will this information help me prevent future problems?]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<swf name="U2L4C38_swf" source="flash/googleMap.swf" localSource="flash/globe.swf" componentID="u2l4c38" label="My Experiences Globe">
+				<assetComplete action="gotoAndPlay" target="U2L4C38B_evaluation"/>
+			</swf>
+			
+			<evaluation name="U2L4C38B_evaluation" componentID="u2l4c38b">
+				<assetComplete action="gotoAndPlay" target="U2L4C39_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true" >
+					<questionText><![CDATA[Would you like to share your response with others?  ]]></questionText>
+					<instructionText><![CDATA[Select one of the choices below.]]></instructionText>
+					<multimedia src="U1L1C15.swf"/>
+					<titleText><![CDATA[Share Your Response?]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[Yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[No]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<evaluation name="U2L4C39_evaluation" componentID="u2l4c39" label="Lesson Summary Screen">
+				
+				<assetComplete action="U2L4C39Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Red Phase – Addiction ]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[2]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+</scene>

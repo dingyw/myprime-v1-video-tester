@@ -1,0 +1,388 @@
+<scene id="3258" title="Adoption Research">
+
+	<interactions>
+		<!--   
+		<interactionGroup name="init_interaction">
+			<interaction action="callInteraction" value="U1L6T1AC9AComplete_interaction" />
+		</interactionGroup>
+		 -->
+		
+		<interactionGroup name="U1L6T1AC1Ready_interaction">
+			<interaction action="setLastSavePoint" value="3258,U1L6T1AC1Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1AC1_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L6T1AC1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1AC3_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3258,U1L6T1AC3Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1AC4_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC4Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1AC5_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC5C1Select_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1AC6A_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC5C2Select_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1AC6B_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC5C3Select_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1AC6C_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC5Complete_interaction">
+			
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC6Complete_interaction">
+			<interaction action="setLastSavePoint" value="3258,U1L6T1AC6Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1AC7_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC7Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1AC8_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC8C1Select_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1AC9A_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC8C2Select_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1AC9B_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC8C3Select_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1AC9C_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC9AComplete_interaction">
+			<interaction action="setLastSavePoint" value="3258,U1L6T1AC9AComplete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1AC10B_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC9BComplete_interaction">
+			<interaction action="setLastSavePoint" value="3258,U1L6T1AC9BComplete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1AC10B_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC9CComplete_interaction">
+			<interaction action="setLastSavePoint" value="3258,U1L6T1AC9CComplete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1AC10B_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC10AFirstCuePoint_interaction">
+			<interaction action="show" target="U1L6T1AC10A_swf" />
+			<interaction action="callProperty" target="U1L6T1AC10A_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC10ALastCuePoint_interaction">
+			<interaction action="callProperty" target="U1L6T1AC10A_swf.content" value="transitionOut" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC10Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1AC11A_evaluation" />
+			<!-- Hide it for safe bets -->
+			<interaction action="hide" target="U1L6T1AC10A_swf" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC11AComplete_interaction">
+			<interaction action="setLastSavePoint" value="3258,U1L6T1AC11AComplete_interaction" />
+			
+			<interaction action="gotoAndPlay" target="U1L6T1AC11B_swf" />
+			<interaction action="callProperty" target="U1L6T1AC11B_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC11BComplete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1AC11C_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC11CComplete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1AC12_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1AC12Complete_interaction">
+			<interaction action="getNextScene" recordComplete="true" value="3258,1273" />
+		</interactionGroup>
+		
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L6T1AC1Init_progressBar" interaction="U1L6T1AC1Ready_interaction" weight="15" />
+		<progressBar name="U1L6T1AC1Complete_progressBar" weight="25" />
+		<progressBar name="U1L6T1AC3Complete_progressBar" />
+		<progressBar name="U1L6T1AC4Complete_progressBar" />
+		<progressBar name="U1L6T1AC5Complete_progressBar" interaction="U1L6T1AC5Complete_interaction" weight="25" callInteraction="false" />
+		<progressBar name="U1L6T1AC6Complete_progressBar" interaction="U1L6T1AC6Complete_interaction" />
+		<progressBar name="U1L6T1AC7Complete_progressBar" />
+		<progressBar name="U1L6T1AC9Complete_progressBar" />
+		<progressBar name="U1L6T1AC10Complete_progressBar" />
+		<progressBar name="U1L6T1AC11AComplete_progressBar" interaction="U1L6T1AC11AComplete_interaction" />
+		<progressBar name="U1L6T1AC11BComplete_progressBar" interaction="U1L6T1AC11BComplete_interaction" weight="25" callInteraction="false" />
+		<progressBar name="U1L6T1AC12Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Introduction">
+		
+			<!-- U1L6T1AC1    TG    Adoption Research -->
+			
+			<brightcoveVideo name="U1L6T1AC1_video" source="738431220001" width="768" height="432" visible="true" complete="true" label="Adoption Research">
+			  <ready action="U1L6T1AC1Ready_interaction" />
+			  <playheadUpdate action="setProgress" value="U1L6T1AC1Complete_progressBar" frequency="5" />
+			  <complete action="U1L6T1AC1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1AC3    EV    Expert Video 1 - Adoption Research Background -->
+			
+			<brightcoveVideo name="U1L6T1AC3_video" source="818589059001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L6T1AC3Complete_progressBar" frequency="5" />
+				<complete action="U1L6T1AC3Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1AC3_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1AC4    A    Animation 1 - Adoption Research Scenario 1 -->
+			
+			<brightcoveVideo name="U1L6T1AC4_video" source="810607600001" width="768" height="432" label="First Scenario">
+				<playheadUpdate action="setProgress" value="U1L6T1AC4Complete_progressBar" frequency="5" />
+				<complete action="U1L6T1AC4Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1AC4_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1AC5    MC    Interaction 1 - Adoption Research Scenario 1 - Question -->
+			
+			<evaluation name="U1L6T1AC5_evaluation" componentID="u1l6t1ac5" label="First Scenario Question">
+			
+				<c1 action="U1L6T1AC5C1Select_interaction" />
+				<c2 action="U1L6T1AC5C2Select_interaction" />
+				<c3 action="U1L6T1AC5C3Select_interaction" />
+			
+				<assetComplete action="U1L6T1AC5Complete_interaction" />
+			
+				<evaluation evalType="multipleChoiceSingleSelect">
+						<questionText><![CDATA[If the common belief is correct, and the risk for alcoholism is caused by <b>living</b> with parents who have alcoholism, what would we expect to see in rates of alcoholism among these two groups of children when they grew up?]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<titleText><![CDATA[What Would We Expect to See?]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[The rates of alcoholism in the group raised by adoptive parents with alcoholism would be higher. ]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v2">
+								<text><![CDATA[The rates of alcoholism in the group raised by adoptive parents without alcoholism would be higher.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v2">
+								<text><![CDATA[We would expect to see the same rates of alcoholism in both groups.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!-- U1L6T1AC6    A    Animation 2 - Adoption Research Scenario 1 - Feedback Animation -->
+			
+			<assets>
+			
+				<!-- U1L6T1AC6A    A    Animation 2 - Adoption Research Scenario 1 - Feedback Animation A -->
+					
+				<brightcoveVideo name="U1L6T1AC6A_video" source="810575295001" width="768" height="432">
+					<playheadUpdate action="setProgress" value="U1L6T1AC6Complete_progressBar" frequency="5" />
+					<complete action="U1L6T1AC6Complete_interaction" />
+					<caption source="data/Unit_1/captions/lesson_06/U1L6T1AC6A_cc.xml" />
+				</brightcoveVideo>
+				
+				<!-- U1L6T1AC6B    A    Animation 2 - Adoption Research Scenario 1 - Feedback Animation B -->
+				
+				<brightcoveVideo name="U1L6T1AC6B_video" source="810588615001" width="768" height="432">
+					<playheadUpdate action="setProgress" value="U1L6T1AC6Complete_progressBar" frequency="5" />
+					<complete action="U1L6T1AC6Complete_interaction" />
+					<caption source="data/Unit_1/captions/lesson_06/U1L6T1AC6B_cc.xml" />
+				</brightcoveVideo>
+				
+				<!-- U1L6T1AC6C    A    Animation 2 - Adoption Research Scenario 1 - Feedback Animation C -->
+				
+				<brightcoveVideo name="U1L6T1AC6C_video" source="810607599001" width="768" height="432">
+					<playheadUpdate action="setProgress" value="U1L6T1AC6Complete_progressBar" frequency="5" />
+					<complete action="U1L6T1AC6Complete_interaction" />
+					<caption source="data/Unit_1/captions/lesson_06/U1L6T1AC6C_cc.xml" />
+				</brightcoveVideo>
+				
+			</assets>
+			
+			<!-- U1L6T1AC7    A    Animation 5 - Adoption Research Scenario 2 -->
+			
+			<brightcoveVideo name="U1L6T1AC7_video" source="810575293001" width="768" height="432">
+				<playheadUpdate action="setProgress" value="U1L6T1AC7Complete_progressBar" frequency="5" />
+				<complete action="U1L6T1AC7Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1AC7_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1AC8    MC    Interaction 2 - Adoption Research Scenario 2 Prediction -->
+			
+			<evaluation name="U1L6T1AC8_evaluation" componentID="u1l6t1ac8">
+			
+				<c1 action="U1L6T1AC8C1Select_interaction" />
+				<c2 action="U1L6T1AC8C2Select_interaction" />
+				<c3 action="U1L6T1AC8C3Select_interaction" />
+			
+				<evaluation evalType="multipleChoiceSingleSelect">
+						<questionText><![CDATA[If the common belief is correct, and the risk for alcoholism is caused by <b>living</b> with parents who have alcoholism, what would we expect to see in rates of alcoholism among these two groups being raised by parents without alcoholism?]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<titleText><![CDATA[What Would We Expect to See? (Continued)]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[We would expect to see no alcoholism, or very low rates of alcoholism, in both groups.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v2">
+								<text><![CDATA[The rate of alcoholism in the group whose birth parents did not have alcoholism would be higher. ]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v2">
+								<text><![CDATA[The rate of alcoholism in the group whose birth parent(s) did have alcoholism would be higher.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!-- U1L6T1AC9    A    Animation 6 - Adoption Research Scenario 2 - Feedback Animation -->
+			
+			<assets>
+			
+				<!-- U1L6T1AC9A    A    Animation 6 - Adoption Research Scenario 2 - Feedback Animation A -->
+					
+				<brightcoveVideo name="U1L6T1AC9A_video" source="810588614001" width="768" height="432">
+					<playheadUpdate action="setProgress" value="U1L6T1AC9Complete_progressBar" frequency="5" />
+					<complete action="U1L6T1AC9AComplete_interaction" />
+					<caption source="data/Unit_1/captions/lesson_06/U1L6T1AC9A_cc.xml" />
+				</brightcoveVideo>
+				
+				<!-- U1L6T1AC9C    A    Animation 6 - Adoption Research Scenario 2 - Feedback Animation B -->
+				
+				<brightcoveVideo name="U1L6T1AC9B_video" source="810575292001" width="768" height="432">
+					<playheadUpdate action="setProgress" value="U1L6T1AC9Complete_progressBar" frequency="5" />
+					<complete action="U1L6T1AC9BComplete_interaction" />
+					<caption source="data/Unit_1/captions/lesson_06/U1L6T1AC9B_cc.xml" />
+				</brightcoveVideo>
+				
+				<!-- U1L6T1AC9C    A    Animation 6 - Adoption Research Scenario 2 - Feedback Animation C -->
+				
+				<brightcoveVideo name="U1L6T1AC9C_video" source="810588613001" width="768" height="432">
+					<playheadUpdate action="setProgress" value="U1L6T1AC9Complete_progressBar" frequency="5" />
+					<complete action="U1L6T1AC9CComplete_interaction" />
+					<caption source="data/Unit_1/captions/lesson_06/U1L6T1AC9C_cc.xml" />
+				</brightcoveVideo>
+				
+			</assets>
+			
+			<!-- link to resource -->
+			
+			<swf name="U1L6T1AC10A_swf" source="assets/media/U1L6T1AC10A.swf" z="1" visible="false">
+			</swf>
+			
+			<!-- U1L6T1AC10A    HV + EV    Host and Expert Video 1 - Adoption Research Conclusions (Version 8) 
+			
+			<brightcoveVideo name="U1L6T1AC10A_video" source="738305146001" width="768" height="432">
+				<playheadUpdate action="setProgress" value="U1L6T1AC10Complete_progressBar" frequency="5" />
+				<cuePoint cuePoint="firstCuePoint" action="U1L6T1AC10AFirstCuePoint_interaction" />
+				<cuePoint cuePoint="lastCuePoint" action="U1L6T1AC10ALastCuePoint_interaction" />
+				<complete action="U1L6T1AC10Complete_interaction" />
+			</brightcoveVideo>
+			-->
+			<!-- U1L6T1AC10B    HV + EV    Host and Expert Video 1 - Adoption Research Conclusions (Version 9)  -->
+			
+			<brightcoveVideo name="U1L6T1AC10B_video" source="802413688001" width="768" height="432">
+				<playheadUpdate action="setProgress" value="U1L6T1AC10Complete_progressBar" frequency="5" />
+				<cuePoint cuePoint="firstCuePoint" cuePointTime="68000" action="U1L6T1AC10AFirstCuePoint_interaction" />
+				<cuePoint cuePoint="lastCuePoint" cuePointTime="90000" action="U1L6T1AC10ALastCuePoint_interaction" />
+				<complete action="U1L6T1AC10Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1AC10B_cc.xml" />
+			</brightcoveVideo>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L6T1AC11A    RQ    Interaction 3 - Reflection Question - Adoption Research Conclusions -->
+			
+			<evaluation name="U1L6T1AC11A_evaluation" componentID="u1l6t1ac11a" label="Reflection Question">
+			
+				<assetComplete action="U1L6T1AC11AComplete_interaction" />
+			
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[Something that is new or surprising to me is...]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!-- U1L6T1AC11B    GB    Interaction 4 - Media Globe -->
+			
+			<swf name="U1L6T1AC11B_swf" source="flash/googleMap.swf" localSource="flash/globe.swf" componentID="u1l6t1ac11b" label="Adoption Research Globe">
+				<assetComplete action="U1L6T1AC11BComplete_interaction" />
+			</swf>
+			
+			<evaluation name="U1L6T1AC11C_evaluation" componentID="u1l6t1ac11c">
+			
+				<assetComplete action="U1L6T1AC11CComplete_interaction" />
+			
+				<evaluation evalType="multipleChoiceSingleSelect" design="true" >
+						<questionText><![CDATA[Would you like to share your response with others?  ]]></questionText>
+						<instructionText><![CDATA[Select one of the choices below.]]></instructionText>
+						<multimedia src="U1L1C15.swf"/>
+						<titleText><![CDATA[Share Your Response?]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[Yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v2">
+								<text><![CDATA[No]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<!-- U1L6T1AC12    SV    Skype Video 1 - Adoption Research Reactions -->
+				
+			<brightcoveVideo name="U1L6T1AC12_video" source="1456711856001" width="768" height="432" label="Adoption Research Reactions">
+				<playheadUpdate action="setProgress" value="U1L6T1AC12Complete_progressBar" frequency="5" />
+				<complete action="U1L6T1AC12Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1AC12_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1AC13    My Notes -->
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

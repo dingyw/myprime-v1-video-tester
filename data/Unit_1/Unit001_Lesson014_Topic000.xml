@@ -1,0 +1,332 @@
+<scene id="3498" title="Do We All Respond the Same?">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L14C0_evaluation" />
+		
+		<interactionGroup name="U1L14C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3498,U1L14C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U1L14C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L14C1Ready_interaction">
+			<interaction action="gotoAndPlay" target="U1L14C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L14C3Ready_interaction">
+			<interaction action="setLastSavePoint" value="3498,U1L14C3Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U1L14C4_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L14C4Ready_interaction">
+			<interaction action="setLastSavePoint" value="3498,U1L14C4Ready_interaction" />
+			<interaction action="goto" target="U1L14C6_swf"/>
+			<interaction action="callProperty" target="U1L14C6_swf.content" value="initContent"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L14C6Complete_interaction">
+			<interaction action="setLastSavePoint" value="3498,U1L14C6Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L14C7_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L14C8Complete_interaction">
+			<interaction action="setLastSavePoint" value="3498,U1L14C8Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L14C9_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L14C9Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L14C9_1_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L14C9_1Complete_interaction">
+			<interaction action="setLastSavePoint" value="3498,U1L14C9_1Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L14C11_1_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L14C11_1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L14C11_2_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L14C11_2Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L14C11_3_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L14C11_3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3498,U1L14C11_3Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L14C12_video"/>
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L14C1Init_progressBar" interaction="init_interaction"  callInteraction="false"  weight="5" />
+		<progressBar name="U1L14C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L14C1Complete_progressBar"  />
+		<progressBar name="U1L14C2Complete_progressBar"  />
+		<progressBar name="U1L14C3Complete_progressBar"  />
+		<progressBar name="U1L14C4Complete_progressBar"  />
+		<progressBar name="U1L14C6Complete_progressBar" interaction="U1L14C6Complete_interaction" />
+		<progressBar name="U1L14C7Complete_progressBar" />
+		<progressBar name="U1L14C8Complete_progressBar" interaction="U1L14C8Complete_interaction" weight="25" />
+		<progressBar name="U1L14C9Complete_progressBar" interaction="U1L14C9Complete_interaction" weight="25" />
+		<progressBar name="U1L14C9_1Complete_progressBar" weight="25"/>
+		<progressBar name="U1L14C11_1Complete_progressBar" weight="25"/>
+		<progressBar name="U1L14C11_2Complete_progressBar" weight="25"/>
+		<progressBar name="U1L14C11_3Complete_progressBar" interaction="U1L14C11_3Complete_interaction" weight="25"/>
+		<progressBar name="U1L14C12Complete_progressBar" weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U1L14C0_evaluation" visible="true" componentID="u1l14c0">
+			
+			<assetComplete action="U1L14C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Do We All Respond the Same?]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore the many factors that contribute to every person's unique risk profile, and identify specific considerations that may affect our own personal level of risk for problems.]]></questionText>
+					<instructionText><![CDATA[Duration: 20 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U1L14C1    TG    Do We All Respond the Same?   -->
+			
+			<brightcoveVideo name="U1L14C1_video" source="738431215001" width="768" height="432" complete="true" label="Do We All Respond the Same?">
+			  <playheadUpdate action="setProgress" value="U1L14C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L14C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U1L14C2   HV    Do We All Respond the Same? Intro -->
+			
+			<brightcoveVideo name="U1L14C2_video" source="754372288001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U1L14C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L14C3_video"/>
+			  <caption source="data/Unit_1/captions/lesson_14/U1L14C2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!--  U1L14C3    IG    Do We All Respond the Same? Info Graphic  -->
+			
+			<brightcoveVideo name="U1L14C3_video" source="1502831341001" width="768" height="432" label="Do We All Respond the Same? Info Graphic">
+			  <playheadUpdate action="setProgress" value="U1L14C3Complete_progressBar" frequency="5" />
+			  <complete action="U1L14C3Ready_interaction"/>
+			  <caption source="data/Unit_1/captions/lesson_14/U1L14C3_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="My Guidelines">
+	
+			<!--  U1L14C4    HV    Formula and Guidelines Review - Host Video
+									HV    My Guidelines - Host Intro to Interactions -->
+			
+			<brightcoveVideo name="U1L14C4_video" source="1483692315001" width="768" height="432" label="Formula and Guidelines Review">
+			  <playheadUpdate action="setProgress" value="U1L14C4Complete_progressBar" frequency="5" />
+			  <complete action="U1L14C4Ready_interaction"/>
+			  <caption source="data/Unit_1/captions/lesson_14/U1L14C4_cc.xml" />
+			</brightcoveVideo>
+			
+			<!--  U1L14C6     CI    My Guidelines Interaction 1 - Adjusting the Guidelines (OPTIONAL) -->
+			
+			<swf name="U1L14C6_swf" source="assets/media/U1L14C6.swf">
+				<assetComplete action="U1L14C6Complete_interaction" />
+			</swf>
+			
+			<!--  U1L14C7    EV    My Guidelines - Expert Video  -->
+			
+			<brightcoveVideo name="U1L14C7_video" source="799950300001" width="768" height="432" label="My Guidelines">
+			  <playheadUpdate action="setProgress" value="U1L14C7Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L14C8_evaluation"/>
+			  <caption source="data/Unit_1/captions/lesson_14/U1L14C7_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L14C8    MC    My Guidelines Interaction 2 - Biological Risks -->
+			
+			<evaluation name="U1L14C8_evaluation" componentID="u1l14c8" label="Biological Risks">
+			
+				<assetComplete action="U1L14C8Complete_interaction"/>
+				
+				<evaluation evalType="assessment" layout="vertical" customBG="sampleBG.swf">
+						<titleText><![CDATA[My Low-Risk Guidelines ]]></titleText>
+						<instructionText><![CDATA[Make a selection for each question, then click Submit.]]></instructionText>
+						<scale>
+							<scaleItem><![CDATA[Yes]]></scaleItem>
+							<scaleItem><![CDATA[No]]></scaleItem>
+							<scaleItem><![CDATA[I Don't Know]]></scaleItem>
+						</scale>
+						<choice-collection >
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[Do I have a family history of alcoholism?]]></text>
+							 </choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Do I have high tolerance?]]></text>
+							 </choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[yes]]></value>
+							<value id="v2"><![CDATA[no]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<!-- U1L14C9    CI    My Guidelines Interaction 3 - Other Factors -->
+			
+			<evaluation name="U1L14C9_evaluation" componentID="u1l14c9" label="Other Factors">
+				
+				<assetComplete action="U1L14C9Complete_interaction" />
+				
+				<evaluation evalType="assessment" layout="vertical" customBG="sampleBG.swf">
+						<titleText><![CDATA[My Low-Risk Guidelines ]]></titleText>
+						<instructionText><![CDATA[Make a selection for each question, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[Good job! You've completed the My Guidelines checklist.<br /><br />The questions you've just answered are intended to help you identify individual factors that might affect how you personally apply the 0-1-2-3 Guidelines. This checklist is available for you to review anytime in the MyStuff section.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Incorrect!  Custom feedback goes here!]]></feedbackText>
+						</feedback>
+						<scale>
+							<scaleItem><![CDATA[Yes]]></scaleItem>
+							<scaleItem><![CDATA[No]]></scaleItem>
+							<scaleItem><![CDATA[I Don't Know]]></scaleItem>
+						</scale>
+						<choice-collection >
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[Do I have any health problems that could be affected by alcohol? ]]></text>
+							 </choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Am I taking any medications that could increase my risk?]]></text>
+							 </choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[Do I have a small body size?]]></text>
+							 </choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[Do I need to plan for other changes in my life that might affect my metabolism?]]></text>
+							 </choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[yes]]></value>
+							<value id="v2"><![CDATA[no]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U1L14C9_1_evaluation" componentID="u1l14c9_1" >
+				
+				<assetComplete action="U1L14C9_1Complete_interaction" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<questionText><![CDATA[Did you notice that I overwrote the original text?]]></questionText>
+						<instructionText><![CDATA[]]></instructionText>
+						<multimedia src="U1L14C9_1.swf"/>
+						<titleText><![CDATA[My Guidelines]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			
+			<!-- U1L14C11    RQ    My Guidelines - Reflection Questions -->
+			
+			<evaluation name="U1L14C11_1_evaluation" componentID="u1l14c11_1" label="Reflection Questions">
+			    
+				<assetComplete action="U1L14C11_1Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[Given your unique factors, how might you adjust the 0-1-3 Guidelines for yourself?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U1L14C11_2_evaluation" componentID="u1l14c11_2">
+			
+				<assetComplete action="U1L14C11_2Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[My reaction to these guidelines is...]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U1L14C11_3_evaluation" componentID="u1l14c11_3">
+			
+				<assetComplete action="U1L14C11_3Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[If I choose to follow these guidelines, it will be because...]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L14C12    HV    Do We All Respond the Same? Host Summary -->
+			
+			<brightcoveVideo name="U1L14C12_video" source="744205407001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U1L14C12Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L14C13_evaluation"/>
+			  <caption source="data/Unit_1/captions/lesson_14/U1L14C12_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L14C13    My Notes  -->
+			
+			<evaluation name="U1L14C13_evaluation" componentID="u1l14c13" label="Lesson Summary Screen">
+			
+				<assetComplete action="getNextScene" recordComplete="true" value="3498,1295"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Do We All Respond the Same?]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

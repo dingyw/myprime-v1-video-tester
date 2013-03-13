@@ -1,0 +1,364 @@
+<scene id="3654" title="Overcoming State Dependent Learning">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U3L7C0_evaluation" />
+	
+		<interactionGroup name="U3L7C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3654,U3L7C0Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L7C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L7C1Complete_interaction">
+			<interaction action="setLastSavePoint" value="3654,U3L7C1Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L7C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L7C5_5Complete_interaction">
+			<interaction action="setLastSavePoint" value="3654,U3L7C5_5Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L7C6_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L7C6Complete_interaction">
+			<interaction action="setLastSavePoint" value="3654,U3L7C6Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L7C7_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L7C7Complete_interaction">
+			<!-- <interaction action="recordComplete" value="Lesson,3654" /> -->
+			<interaction action="recordComplete" value="Scene,3654,Lesson,1314" />
+			<interaction action="getScene" value="3763" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U3L7C1Init_progressBar" interaction="init_interaction"   callInteraction="false" weight="5" />
+		<progressBar name="U3L7C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U3L7C1Complete_progressBar" interaction="U3L7C1Complete_interaction" />
+		<progressBar name="U3L7C2Complete_progressBar"  />
+		<progressBar name="U3L7C5Complete_progressBar"  interaction="U3L7C5_5Complete_interaction" weight="25" />
+		<progressBar name="U3L7C6Complete_progressBar"  interaction="U3L7C6Complete_interaction"/>
+		<progressBar name="U3L7C7Complete_progressBar"  />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U3L7C0_evaluation" visible="true"  componentID="u3l7c0">
+			
+			<assetComplete action="U3L7C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Overcoming State Dependent Learning]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll identify skills that have may have become locked up in state dependent learning, and develop strategies for reclaiming them so that we are comfortable using them without high-risk choices.]]></questionText>
+					<instructionText><![CDATA[Duration: 15 minutes]]></instructionText>
+					<multimedia src="unit3_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U3L7C1  TG     -->
+			
+			<brightcoveVideo name="U3L7C1_video" source="738744834001" width="768" height="432" complete="true" label="Overcoming State Dependent Learning">
+				<playheadUpdate action="setProgress" value="U3L7C1Complete_progressBar" frequency="5" />
+				<complete action="U3L7C1Complete_interaction" target="U3L7C2_video"/>
+			</brightcoveVideo>
+	
+			<!--  U3L7C2   -->
+			
+			<brightcoveVideo name="U3L7C2_video" source="1477577690001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U3L7C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L7C5_1_evaluation"/>
+			  <caption source="data/Unit_3/captions/lesson_07/U3L7C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="My Plan">
+		
+			<!--  U3L7C5	RQ	Support Within Me - Interactivity - Processing Questions -->
+			
+			<evaluation name="U3L7C5_1_evaluation" componentID="u3l7c5_1">
+			
+				<assetComplete action="gotoAndPlay" target="U3L7C5_2_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[1. Is there a particular skill or situation that you feel may be state dependent in any way? <input id="c1"/>2. How will you practice overcoming that skill or situation?<input id="c2"/>3. Is there someone you can turn to for support in overcoming that skill or situation in the future?<input id="c3"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[My Plan for Overcoming State Dependent Learning]]></titleText>
+						<audio src="U3L7C5.mp3"/>
+						<remediation>
+							<file href="remFile.htm" windowOptions="height=500,width=300,top=100,left=400"/>
+							<remediationText valueID="c1"><![CDATA[Here is a list of skills that many people have experienced that they sometimes develop through state dependent learning: meeting people of the opposite sex, meeting people of the same sex, getting over feeling down, letting loose and really having fun, getting over feeling angry, being emotionally or sexually intimate, sharing feelings with others, going to parties, going to sporting events, relaxing, dancing.]]></remediationText>
+							<remediationText valueID="c2"><![CDATA[The only way to overcome state dependent learning is to practice the skill without making high-risk choices. When we relearn the skill without high-risk choices, then the state dependent learning will be gone. But, sometimes we need a plan to make that workable. For example, if dancing is state dependent and we want to keep doing it, we need to identify a person with whom we can dance and not be embarrassed while we relearn. Perhaps that is a friend, a family member, or a total stranger. Part of our plan is identifying the person, place, and time when we can dance. Then we must repeat this until we relearn. Sometimes we also need to identify alternatives. For example, if relaxing is state dependent, then we need to have an alternative way to relax other than drinking or using drugs. A person might listen to music, learn relaxation techniques, return to an old hobby they once enjoyed, or learn a new one.]]></remediationText>
+							<linkText><![CDATA[Want some ideas to help you answer these questions? <font color="#FFFF99"><u>Click here for some suggestions.</u></font>]]></linkText>
+						<remediationText valueID="c3"><![CDATA[]]></remediationText>
+						</remediation>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U3L7C5_2_evaluation" componentID="u3l7c5_2">
+			
+				<assetComplete action="gotoAndPlay" target="U3L7C5_3_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[4. Is there a person or group of people you rarely do things with unless you are both making high-risk choices?<input id="c1"/>5. What else you could do with that person or those people that does not involve making high-risk choices?<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[My Plan for Overcoming State Dependent Learning]]></titleText>
+						<remediation>
+							<file href="remFile.htm" windowOptions="height=500,width=300,top=100,left=400"/>
+							<remediationText valueID="c1"><![CDATA[]]></remediationText>
+							<remediationText valueID="c2"><![CDATA[The whole idea of state dependent relationships may seem a little odd. What it means is that if we are always making high-risk choices with certain people, our relationship with them can become dependent on the alcohol or drugs. Without it we might feel we have nothing in common. Overcoming this means that everyone involved has to be committed to learning to enjoy each other without alcohol or drugs. We find the things we have in common and do them together without alcohol or drugs. In time, it starts feeling comfortable again.]]></remediationText>
+							<linkText><![CDATA[Want some ideas to help you answer these questions? <font color="#FFFF99"><u>Click here for some suggestions.</u></font>]]></linkText>
+						</remediation>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U3L7C5_3_evaluation" componentID="u3l7c5_3">
+			
+				<assetComplete action="gotoAndPlay" target="U3L7C5_4_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<questionText><![CDATA[How important is it to you to have fun without high-risk alcohol or drug choices?]]></questionText>
+						<instructionText><![CDATA[Move the slider to select your answer, then click Next.]]></instructionText>
+						<multimedia src="U3L7C5_3.swf"/>
+						<titleText><![CDATA[My Plan for Overcoming State Dependent Learning]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[0]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v2">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v2">
+								<text><![CDATA[2]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v2">
+								<text><![CDATA[3]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c5" valueID="v2">
+								<text><![CDATA[4]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c6" valueID="v2">
+								<text><![CDATA[5]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c7" valueID="v1">
+								<text><![CDATA[6]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c8" valueID="v2">
+								<text><![CDATA[7]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c9" valueID="v2">
+								<text><![CDATA[8]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c10" valueID="v2">
+								<text><![CDATA[9]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c11" valueID="v2">
+								<text><![CDATA[10]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L7C5_4_evaluation" componentID="u3l7c5_4">
+			
+				<assetComplete action="gotoAndPlay" target="U3L7C5_5_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<questionText><![CDATA[To what extent will your plan for overcoming state dependent learning help you learn to have fun without high-risk choices? ]]></questionText>
+						<instructionText><![CDATA[Move the slider to select your answer, then click Next.]]></instructionText>
+						<multimedia src="U3L7C5_4.swf"/>
+						<titleText><![CDATA[My Plan for Overcoming State Dependent Learning]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[0]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v2">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v2">
+								<text><![CDATA[2]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v2">
+								<text><![CDATA[3]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c5" valueID="v2">
+								<text><![CDATA[4]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c6" valueID="v2">
+								<text><![CDATA[5]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c7" valueID="v1">
+								<text><![CDATA[6]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c8" valueID="v2">
+								<text><![CDATA[7]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c9" valueID="v2">
+								<text><![CDATA[8]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c10" valueID="v2">
+								<text><![CDATA[9]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c11" valueID="v2">
+								<text><![CDATA[10]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L7C5_5_evaluation" componentID="u3l7c5_5">
+			
+				<assetComplete action="U3L7C5_5Complete_interaction" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<questionText><![CDATA[How confident are you that you can take the next step to have more fun without making high-risk choices?]]></questionText>
+						<instructionText><![CDATA[Move the slider to select your answer, then click Next.]]></instructionText>
+						<multimedia src="U3L7C5_5.swf"/>
+						<titleText><![CDATA[My Plan for Overcoming State Dependent Learning]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[0]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v2">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v2">
+								<text><![CDATA[2]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v2">
+								<text><![CDATA[3]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c5" valueID="v2">
+								<text><![CDATA[4]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c6" valueID="v2">
+								<text><![CDATA[5]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c7" valueID="v1">
+								<text><![CDATA[6]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c8" valueID="v2">
+								<text><![CDATA[7]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c9" valueID="v2">
+								<text><![CDATA[8]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c10" valueID="v2">
+								<text><![CDATA[9]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c11" valueID="v2">
+								<text><![CDATA[10]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!--  U3L7C6	HV	-->
+			
+			<brightcoveVideo name="U3L7C6_video" source="1477541066001" width="768" height="432" label="Overcoming SDL - Host Transition to Expert Video">
+			  <playheadUpdate action="setProgress" value="U3L7C6Complete_progressBar" frequency="5" />
+			  <complete action="U3L7C6Complete_interaction" />
+			  <caption source="data/Unit_3/captions/lesson_07/U3L7C6_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U3L7C7 -->
+			
+			<evaluation name="U3L7C7_evaluation" componentID="u3l7c9" label="Lesson Summary Screen">
+			
+				<assetComplete action="U3L7C7Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Overcoming State Dependent Learning]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[3]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+		</sequence>
+			
+	</assets>
+  
+</scene>

@@ -1,0 +1,252 @@
+<scene id="3649" title="Thinking About My Future">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U3L2C0_evaluation" />
+		
+		<interactionGroup name="U3L2C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3649,U3L2C0Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L2C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L2C2Complete_interaction">
+			<interaction action="gotoAndPlay"  target="U3L2C3_swf"  />
+			<interaction action="callProperty" target="U3L2C3_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L2C3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3649,U3L2C3Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L2C4_1_evaluation"  />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L2C4_1Complete_interaction">
+				<interaction action="gotoAndPlay" target="U3L2C4_2_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L2C4_2Complete_interaction">
+				<interaction action="gotoAndPlay" target="U3L2C4_3_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L2C4_3Complete_interaction">
+				<interaction action="setLastSavePoint" value="3649,U3L2C4_3Complete_interaction" />
+				<interaction action="gotoAndPlay" target="U3L2C5_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L2C6Complete_interaction">
+				<interaction action="setLastSavePoint" value="3649,U3L2C6Complete_interaction" />
+				<interaction action="gotoAndPlay" target="U3L2C7_video"/>
+		</interactionGroup>		
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U3L2C1Init_progressBar" interaction="init_interaction" callInteraction="false" weight="25" />		
+		<progressBar name="U3L2C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U3L2C1Complete_progressBar" weight="25" />
+		<progressBar name="U3L2C2Complete_progressBar" weight="25" />
+		<progressBar name="U3L2C3Complete_progressBar" interaction="U3L2C3Complete_interaction" weight="25" />
+		<progressBar name="U3L2C4Complete_progressBar"  interaction="U3L2C4_3Complete_interaction" weight="25" />
+		<progressBar name="U3L2C6Complete_progressBar" interaction="U3L2C6Complete_interaction" weight="25"/>
+		<progressBar name="U3L2C7Complete_progressBar"/>
+		<progressBar name="U3L2C8Complete_progressBar"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U3L2C0_evaluation" visible="true" componentID="u3l2c0">
+			
+			<assetComplete action="U3L2C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Thinking About My Future]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll begin thinking about our future by identifying personal goals and creating a timeline for achieving those goals.]]></questionText>
+					<instructionText><![CDATA[Duration: 15 minutes]]></instructionText>
+					<multimedia src="unit3_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U3L2C1    TG      -->
+			
+			<brightcoveVideo name="U3L2C1_video" source="738431241001" width="768" height="432" complete="true" label="Thinking About My Future">
+			  <playheadUpdate action="setProgress" value="U3L2C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L2C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U3L2C2   -->
+			
+			<brightcoveVideo name="U3L2C2_video" source="1483328549001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U3L2C2Complete_progressBar" frequency="5" />
+			  <complete action="U3L2C2Complete_interaction"/>
+			  <caption source="data/Unit_3/captions/lesson_02/U3L2C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Future Timeline">
+		
+			<!--  U3L2C3   -->
+			
+			<swf name="U3L2C3_swf" source="assets/media/U3L2C3.swf" >
+				<assetComplete action="U3L2C3Complete_interaction"/>
+			</swf>
+			
+			<!--  U3L2C4   -->
+			
+			<evaluation name="U3L2C4_1_evaluation" componentID="u3l2c4_1" label="Thinking About My Future Processing Questions">
+				
+				<assetComplete action="U3L2C4_1Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[How does your future timeline compare to your past timeline?]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L2C4_2_evaluation" componentID="u3l2c4_2">
+				
+				<assetComplete action="U3L2C4_2Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[How could your alcohol or drug choices help or hurt reaching your goals?]]></questionText>
+						<instructionText><![CDATA[Type your answers in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L2C4_3_evaluation" componentID="u3l2c4_3">
+				
+				<assetComplete action="U3L2C4_3Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[If you accomplished these things, how would you feel?]]></questionText>
+						<instructionText><![CDATA[Type your answers in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!--  U3L2C5     -->
+			
+			<evaluation name="U3L2C5_evaluation" componentID="u3l2c5" label="My Feelings About Low-Risk Choices">
+				<!--
+				<assetComplete action="gotoAndPlay" target="U3L2C6a_video"/>
+				-->
+				
+				<c1 action="gotoAndPlay" target="U3L2C6B_video" />
+				<c2 action="gotoAndPlay" target="U3L2C6A_video" />
+				<c3 action="gotoAndPlay" target="U3L2C6C_video" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect">
+						<questionText><![CDATA[Please review the statements below and select which one you most strongly agree with:]]></questionText>
+						<instructionText><![CDATA[Choose your answer, then click Submit.]]></instructionText>
+						<audio src="U3L2C5.mp3"/>
+						<titleText><![CDATA[My Feelings About Low-Risk Choices]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[I'm ready to make low-risk choices and I need to put together a plan.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[I'm considering making low-risk choices, but I'm not sure yet.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[I'm already making low-risk choices and I need to keep the momentum going.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!--  U3L2C6a	HV + EV	Host + Expert Video 1: Feedback on Feelings About Low-Risk Choices ("Still Thinking")
+									HV + EV	Host + Expert Video 2: Feedback on  Feelings About Low-Risk Choices ("Ready")
+									HV	Host + Expert Video 3: Feedback on Feelings About Low-Risk Choices ("Already Making LRCs")
+									HV	Host Video 2: Summary  of Thinking About My Future -->
+	
+			<brightcoveVideo name="U3L2C6A_video" source="1481503357001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U3L2C6Complete_progressBar" frequency="5" />
+			  <complete action="U3L2C6Complete_interaction"/>
+			  <caption source="data/Unit_3/captions/lesson_02/U3L2C6A_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U3L2C6B_video" source="760720589001" width="768" height="432" >
+			  <playheadUpdate action="setProgress" value="U3L2C6Complete_progressBar" frequency="5" />
+			  <complete action="U3L2C6Complete_interaction"/>
+			  <caption source="data/Unit_3/captions/lesson_02/U3L2C6B_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U3L2C6C_video" source="760706670001" width="768" height="432" >
+			  <playheadUpdate action="setProgress" value="U3L2C6Complete_progressBar" frequency="5" />
+			  <complete action="U3L2C6Complete_interaction"/>
+			  <caption source="data/Unit_3/captions/lesson_02/U3L2C6C_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U3L2C7_video" source="761307061001" width="768" height="432" >
+			  <playheadUpdate action="setProgress" value="U3L2C7Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L2C8_evaluation"/>
+			  <caption source="data/Unit_3/captions/lesson_02/U3L2C7_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U3L2C8	NOTES	 -->
+	
+			<evaluation name="U3L2C8_evaluation" componentID="u3l2c8" label="Lesson Summary Screen">
+			
+				<assetComplete action="getNextScene" recordComplete="true" value="3649,1309"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Thinking About My Future]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[3]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

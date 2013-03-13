@@ -1,0 +1,153 @@
+<scene id="2817" title="What Kind of Person Develops Alcoholism?">
+
+	<interactions>
+		<interactionGroup name="U1L5C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="2817,U1L5C0Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L5C1_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L5C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L5C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L5C2Complete_interaction">
+			<interaction action="goto" target="U1L5C3_swf" />
+			<interaction action="callProperty" target="U1L5C3_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L5C3Complete_interaction">
+			<interaction action="setLastSavePoint" value="2817,U1L5C3Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L5C5_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L5C5Complete_interaction">
+			<interaction action="setLastSavePoint" value="2817,U1L5C5Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L5C6_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L5C6Complete_interaction">
+			<interaction action="setLastSavePoint" value="2817,U1L5C6Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L5C8_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L5C8Complete_interaction">
+			<interaction action="getNextScene" recordComplete="true" value="2817,1269" />
+		</interactionGroup>
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L5C1Init_progressBar" interaction="init_interaction" weight="25" />
+		<progressBar name="U1L5C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L5C2Complete_progressBar" />
+		<progressBar name="U1L5C3Complete_progressBar" interaction="U1L5C3Complete_interaction" weight="25" />
+		<progressBar name="U1L5C5Complete_progressBar" interaction="U1L5C5Complete_interaction" weight="25" />
+		<progressBar name="U1L5C6Complete_progressBar" interaction="U1L5C8Complete_interaction" weight="25" />
+		<progressBar name="U1L5C8Complete_progressBar" weight="25" />
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<evaluation name="U1L5C0_evaluation" visible="true" componentID="u1l5c0">
+			
+			<assetComplete action="U1L5C0Complete_interaction"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[What Kind of Person?]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll examine common perceptions around the kind of person who most people think typically develops alcoholism or addiction.]]></questionText>
+					<instructionText><![CDATA[Duration: 10 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!-- U1L5C1    TG    What Kind of Person Develops Alcoholism? -->
+			
+			<brightcoveVideo name="U1L5C1_video" source="738431218001" width="768" height="432"  complete="true" label="What Kind of Person Develops Alcoholism?">
+			  <playheadUpdate action="setProgress" value="U1L5C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L5C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L5C2    HV    Host Video 1 - Introduction - What Kind of Person? -->
+			
+			<brightcoveVideo name="U1L5C2_video" source="820057139001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L5C2Complete_progressBar" frequency="5" />
+				<complete action="U1L5C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_05/U1L5C2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L5C3    CI    Interaction 1 - What Kind of Person? - Select Words -->
+			<!-- U1L5C4    CI    Interaction 2 - What Kind of Person? - List Comparison -->
+			
+			<swf name="U1L5C3_swf" source="assets/media/U1L5C3.swf"  componentID="u1l5c3">
+				<assetComplete action="U1L5C3Complete_interaction" />
+			</swf>
+			
+			<!-- U1L5C5    RQ    Interaction 3 - What Kind of Person? - Reflection Question -->
+			
+			<evaluation name="U1L5C5_evaluation" componentID="u1l5c5" label="Reflection Question">
+			
+				<assetComplete action="U1L5C5Complete_interaction" />
+			
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What other words or phrases were missing from the list that you would expect to hear most people use to describe the kind of person who develops alcoholism?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L5C6   SV    Skype Video 1 - What Kind of Person? 
+								HV + EV    Host and Expert Video 1 - What Kind of Person - Summary -->
+			
+			<brightcoveVideo name="U1L5C6_video" source="1441526200001" width="768" height="432" label="Summary Video">
+				<playheadUpdate action="setProgress" value="U1L5C6Complete_progressBar" frequency="5" />
+				<complete action="U1L5C6Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_05/U1L5C6_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L5C8    My Notes -->
+			
+			<evaluation name="U1L5C8_evaluation" componentID="u1l5c8" label="Lesson Summary Screen">
+				
+				<assetComplete action="U1L5C8Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[What Kind of Person?]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

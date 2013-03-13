@@ -1,0 +1,103 @@
+<scene id="2811" title="Two Types of Problems">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L2C0_evaluation" />
+	
+		<interactionGroup name="U1L2C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="2811,U1L2C0Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L2C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L2C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L2C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L2C2Complete_interaction">
+			<interaction action="setLastSavePoint" value="2811,U1L2C2Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L2C3_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L2C3Complete_interaction">
+			<interaction action="getNextScene"  recordComplete="true" value="2811,1201" />
+		</interactionGroup>
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L2C1Init_progressBar" interaction="init_interaction" callInteraction="false"  weight="5" />
+		<progressBar name="U1L2C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L2C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L2C2Complete_progressBar" interaction="U1L2C2Complete_interaction" weight="25"/>
+		<progressBar name="U1L2C23Complete_progressBar"  weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+
+		<sequence label="Lesson Intro Screen">
+
+		<evaluation name="U1L2C0_evaluation" visible="true" componentID="u1l2c0" label="Lesson Intro Screen">
+			
+			<assetComplete action="U1L2C0Complete_interaction"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Two Types of Problems]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll examine the two types of problems that can occur as a result of alcohol and substance abuse: health problems and impairment problems.]]></questionText>
+					<instructionText><![CDATA[Duration: 2 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+
+		</sequence>
+		
+		<sequence label="Introduction">
+		
+			<!-- U1L2C1    TG    Two Types of Problems -->
+			
+			<brightcoveVideo name="U1L2C1_video" source="738431216001" width="768" height="432" complete="true" label="Two Types of Problems">
+			  <playheadUpdate action="setProgress" value="U1L2C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L2C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L2C2    HV    Two Types of Problems Intro -->
+			
+			<brightcoveVideo name="U1L2C2_video" source="1547518183001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L2C2Complete_progressBar" frequency="5" />
+				<complete action="U1L2C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_02/U1L2C2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L2C3    My Notes -->
+			
+			<evaluation name="U1L2C3_evaluation" componentID="u1l2c3" label="Lesson Summary Screen">
+				<assetComplete action="U1L2C3Complete_interaction"/>
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+					<questionText><![CDATA[Two Types of Problems]]></questionText>
+					<titleText><![CDATA[My Notes]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+			</evaluation>
+		
+		</sequence>
+		
+	</assets>
+  
+</scene>

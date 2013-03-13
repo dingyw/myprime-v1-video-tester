@@ -1,0 +1,415 @@
+<scene id="3448" title="Yellow Phase: High-Risk Choices">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U2L2C0_evaluation" />
+	
+		<interactionGroup name="U2L2C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3448,U2L2C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L2C3_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3448,U2L2C4Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L2C6_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C6Complete_interaction">
+			<interaction action="setLastSavePoint" value="3448,U2L2C6Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L2C8_video" />
+		</interactionGroup>
+		
+		
+		<interactionGroup name="U2L2C8Complete_interaction">
+			<interaction action="setLastSavePoint" value="3448,U2L2C8Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L2C9_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C9Complete_interaction">
+			<interaction action="goto" target="U2L2C10_swf"/>
+			<interaction action="callProperty" target="U2L2C10_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C10Init_interaction">
+			<interaction action="goto" target="U2L2C10_swf"/>
+			<interaction action="callProperty" target="U2L2C10_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C10Complete_interaction">
+			<interaction action="setLastSavePoint" value="3448,U2L2C10Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L2C15_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C11Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L2C11_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C11Complete_interaction">
+			<interaction action="setLastSavePoint" value="3448,U2L2C11Complete_interaction" />
+			<interaction action="callProperty" target="U2L2C10_swf.content" value="completeOutcome,tolerance" />
+			<interaction action="callInteraction" value="U2L2C10Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C12Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L2C12_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C12Complete_interaction">
+			<interaction action="callProperty" target="U2L2C10_swf.content" value="completeOutcome,thinkingMemoryChanges" />
+			<interaction action="callInteraction" value="U2L2C10Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C13Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L2C13_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C13Complete_interaction">
+			<interaction action="callProperty" target="U2L2C10_swf.content" value="completeOutcome,reboundEffects" />
+			<interaction action="callInteraction" value="U2L2C10Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C14AInit_interaction">
+			<interaction action="gotoAndPlay" target="U2L2C14A_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C14AComplete_interaction">
+			<interaction action="setLastSavePoint" value="3448,U2L2C14AComplete_interaction" />
+			<interaction action="callProperty" target="U2L2C10_swf.content" value="completeOutcome,problems" />
+			<interaction action="callInteraction" value="U2L2C10Init_interaction"/>
+		</interactionGroup>
+		
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U2L2C3Init_progressBar" interaction="init_interaction" callInteraction="false"  weight="25" />
+		<progressBar name="U2L3C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U2L2C3Complete_progressBar" weight="25"/>
+		<progressBar name="U2L2C4Complete_progressBar" interaction="U2L2C4Complete_interaction" weight="25"/>
+		<progressBar name="U2L2C5Complete_progressBar" />
+		<progressBar name="U2L2C6Complete_progressBar" interaction="U2L2C6Complete_interaction" weight="25"/>
+		<progressBar name="U2L2C8Complete_progressBar" interaction="U2L2C8Complete_interaction" weight="25"/>
+		<progressBar name="U2L2C9Complete_progressBar" />
+		<progressBar name="U2L2C10Complete_progressBar" interaction="U2L2C10Complete_interaction" weight="25"/>
+		<progressBar name="U2L2C15Complete_progressBar" />
+		<progressBar name="U2L2C17Complete_progressBar" />
+		<progressBar name="U2L2C18Complete_progressBar" />
+		<progressBar name="U2L2C20Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U2L2C0_evaluation" visible="true" componentID="u2l2c0">
+			
+			<assetComplete action="U2L2C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Yellow Phase - High-Risk Choices]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore the characteristics and experiences of the Yellow Phase, and examine how high-risk choices can lead to health and impairment problems.]]></questionText>
+					<instructionText><![CDATA[Duration: 40 minutes]]></instructionText>
+					<multimedia src="unit2_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+	
+			<!-- U2L2C3	TG	Yellow Phase: High-Risk Choices -->
+			
+			<brightcoveVideo name="U2L2C3_video" source="738431237001" width="768" height="432" label="Yellow Phase: High-Risk Choices">
+				<playheadUpdate action="setProgress" value="U2L2C3Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L2C4_video" />
+			</brightcoveVideo>
+			
+			<!-- U2L2C4	HV + EV	Host + Expert Video 2 - Yellow Phase Hallmark 
+								EV	Expert Video 1 - Yellow Phase Quantity and Frequency-->
+			
+			<brightcoveVideo name="U2L2C4_video" source="782446808001" width="768" height="432" label="Yellow Phase Hallmarks">
+				<playheadUpdate action="setProgress" value="U2L2C4Complete_progressBar" frequency="5" />
+				<complete action="U2L2C4Complete_interaction"/>
+				<caption source="data/Unit_2/captions/lesson_02/U2L2C4_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Characteristics">
+		
+			<!-- U2L2C6	NV	Narrative Video 1 - Yellow Phase Importance / Feelings of Use -->
+			
+			<brightcoveVideo name="U2L2C6_video" source="778783627001" width="768" height="432" label="Importance/Feelings of Use">
+				<playheadUpdate action="setProgress" value="U2L2C6Complete_progressBar" frequency="5" />
+				<complete action="U2L2C6Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_02/U2L2C6_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U2L2C8	NV	Narrative Video 2 - Yellow Phase Social Dependence -->
+			
+			<brightcoveVideo name="U2L2C8_video" source="1508125129001" width="768" height="432" label="Social Dependence">
+				<playheadUpdate action="setProgress" value="U2L2C8Complete_progressBar" frequency="5" />
+				<complete action="U2L2C8Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_02/U2L2C8_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Outcomes">
+		
+			<!-- U2L2C9	HV	Host Video 1 - Intro to Interaction - Menu of Yellow Phase Outcomes -->
+			
+			<brightcoveVideo name="U2L2C9_video" source="738342401001" width="768" height="432" label="Yellow Phase Outcomes Video">
+				<playheadUpdate action="setProgress" value="U2L2C9Complete_progressBar" frequency="5" />
+				<complete action="U2L2C9Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_02/U2L2C9_cc.xml" />
+			</brightcoveVideo>
+	
+			<!-- U2L2C10  CI Yellow Phase Outcomes -->
+			
+			<swf name="U2L2C10_swf" source="assets/media/U2L2C10.swf" componentID="u2l2c10" >
+				<assetComplete action="U2L2C10Complete_interaction" />
+			</swf>
+			
+			<!-- U2L2C11  -->
+			
+			<brightcoveVideo name="U2L2C11_video" source="739498744001" width="768" height="432" label="Tolerance">
+				<complete action="U2L2C11Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_02/U2L2C11_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U2L2C12     -->
+			
+			<brightcoveVideo name="U2L2C12_video" source="820184714001" width="768" height="432" label="Thinking  Memory Changes: Muddy Thinking">
+				<complete action="U2L2C12Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_02/U2L2C12_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U2L2C13     -->
+			
+			<brightcoveVideo name="U2L2C13_video" source="772425613001" width="768" height="432" label="Rebound Effects: Hangovers">
+				<complete action="U2L2C13Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_02/U2L2C13_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U2L2C14A -->
+			
+			<brightcoveVideo name="U2L2C14A_video" source="1452895272001" width="768" height="432" label="Problem Outcomes: Increased Risk for Problems">
+				<complete action="U2L2C14AComplete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_02/U2L2C14A_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Marketing">
+			
+			<!-- U2L2C15  -->
+			
+			<brightcoveVideo name="U2L2C15_video" source="1483692310001" width="768" height="432" label="Marketing Video">
+				<playheadUpdate action="setProgress" value="U2L2C15Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L2C17_video" />
+				<caption source="data/Unit_2/captions/lesson_02/U2L2C15_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U2L2C17  -->
+			
+			<brightcoveVideo name="U2L2C17_video" source="1538785981001" width="768" height="432" label="Summary Info Graphic">
+				<playheadUpdate action="setProgress" value="U2L2C17Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L2C18_video" />
+				<caption source="data/Unit_2/captions/lesson_02/U2L2C17_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U2L2C18  -->
+			
+			<brightcoveVideo name="U2L2C18_video" source="1537539672001" width="768" height="432" label="Progression Video">
+				<playheadUpdate action="setProgress" value="U2L2C18Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L2C19_1_evaluation" />
+				<caption source="data/Unit_2/captions/lesson_02/U2L2C18_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U2L2C19 -->
+			
+			<evaluation name="U2L2C19_1_evaluation" componentID="u2l2c19_1" label="Check for Understanding">
+			
+				<assetComplete action="gotoAndPlay" target="U2L2C19_2_evaluation" />
+				
+				<evaluation evalType="matching" randomize="true">
+					<titleText><![CDATA[Yellow Phase - Check Your Understanding]]></titleText>
+					<questionText><![CDATA[Match the description with the appropriate outcome.]]></questionText>
+					<instructionText><![CDATA[Choose the responses that are true, then click Submit.]]></instructionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Good job! You got them all right.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Not quite. Take a look at the correct answers below to see what you missed.<br/><b>Anticipation: </b> &nbsp; Looking forward to the opportunity to drink or use <br/><b>Increasing tolerance: </b> &nbsp;Biological adaptation that occurs as a result of being impaired<br/><b>Health and Impairment problems: </b>&nbsp;Includes things like stroke, assault, and arrest.<br/><b>Hangovers: </b>&nbsp;Physical side effects of high-risk drinking or drug use <br/><b>Social dependence: </b>&nbsp;Drinking or drug use is an expectation for normal functioning <br/><b>Muddy thinking: </b>&nbsp;Harder to figure things out; can’t get clear <br/>]]></feedbackText>
+					</feedback>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[Looking forward to the opportunity to drink or use]]></text>
+						 </choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[Biological adaptation that occurs as a result of being impaired]]></text>
+						 </choice>
+						<choice id="c3" valueID="v3">
+							<text><![CDATA[Includes things like stroke, assault, and arrest]]></text>
+						</choice>
+						<choice id="c4" valueID="v4">
+							<text><![CDATA[Physical side effects of high-risk drinking or drug use]]></text>
+						</choice>
+						<choice id="c5" valueID="v5">
+							<text><![CDATA[Drinking or drug use is an expectation for normal functioning ]]></text>
+						</choice>
+						<choice id="c6" valueID="v6">
+							<text><![CDATA[Harder to figure things out; can't get clear]]></text>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[Anticipation]]></value>
+						<value id="v2"><![CDATA[Increasing tolerance]]></value>
+						<value id="v3"><![CDATA[Health and impairment problems]]></value>
+						<value id="v4"><![CDATA[Hangovers]]></value>
+						<value id="v5"><![CDATA[Social dependence]]></value>
+						<value id="v6"><![CDATA[Muddy thinking]]></value>
+					</value-collection>
+					
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L2C19_2_evaluation" componentID="u2l2c19_2">
+			
+				<assetComplete action="gotoAndPlay" target="U2L2C19_3_evaluation" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect">
+						<questionText><![CDATA[Which two of the following statements are <b>TRUE</b> about tolerance in the Yellow Phase?]]></questionText>
+						<instructionText><![CDATA[Choose the best answers, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[You got it! First of all, as tolerance goes up, it takes more alcohol or substance to experience the same effects. Secondly, tolerance <u>can</u> go up slightly in a single night of heavy drinking or drug use. It is a small amount. Nobody would notice, but it adds up over time.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Actually, there are two true statements. First of all, as tolerance goes up, it takes more alcohol or substance to experience the same effects. Secondly, tolerance <u>can</u> go up slightly in a single night of heavy drinking or drug use. It is a small amount. Nobody would notice, but it adds up over time.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Yellow Phase - Check Your Understanding (Continued)]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[Tolerance increases as the trigger level gets lower.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[It takes more alcohol or substance to experience the same effects.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v2">
+								<text><![CDATA[Drinking more often won't increase my tolerance as long as I always drink the exact same amount.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[Tolerance can go up slightly in a single night of heavy drinking or drug use.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L2C19_3_evaluation" componentID="u2l2c19_3">
+			
+				<assetComplete action="gotoAndPlay" target="U2L2C19_4_evaluation" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect">
+						<questionText><![CDATA[What two key changes may occur in the Yellow Phase that were <b>NOT</b> present in the Green Phase?]]></questionText>
+						<instructionText><![CDATA[Choose the best answers, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[You selected all the right ones! In the Yellow Phase, if most people in the group are making similar choices, social dependence may begin. As a result of making high-risk choices, we may also begin to experience impairment problems.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[You didn't select the right ones. In the Yellow Phase, social dependence may begin if most people in the group are making similar choices. Also, as a result of making high-risk choices, we may begin to experience impairment problems.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Yellow Phase - Test Your Knowledge (Continued)]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[Social dependence may begin.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[May experience impairment problems.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v2">
+								<text><![CDATA[Drug-related problems do not occur.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v2">
+								<text><![CDATA[The outcomes are typically positive.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U2L2C19_4_evaluation" componentID="u2l2c19_4">
+			
+				<assetComplete action="gotoAndPlay" target="U2L2C20_video" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect">
+						<questionText><![CDATA[Which one of the following statements is TRUE about social dependence in the Yellow Phase?]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[Excellent job. In the Yellow Phase, social dependence normalizes the level of alcohol or drug use in a group because if <i>most people</i> in the group are making high-risk choices, high-risk choices seem normal.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Not quite. Although group members may encourage others to drink or use drugs in the Yellow Phase, social dependence is different - it can exist with or without peer pressure. In the Yellow Phase, social dependence normalizes the level of alcohol or drug use in a group because if <i>most people</i> in the group are making high-risk choices, high-risk choices seem normal.]]></feedbackText>
+							<feedbackText valueID="v3"><![CDATA[You've missed something here. Although group members may drink the same alcohol or use the same drug, they just as easily might not. Social dependence doesn't mean that everyone always makes the exact same choices.  But social dependence <i>does</i> normalize the level of alcohol or drug use in a group because if <i>most people</i> in the group are making high-risk choices, high-risk choices seem normal.]]></feedbackText>
+							<feedbackText valueID="v4"><![CDATA[Caught you napping! Abstinence is actually something we see in the Green Phase.  People in the Yellow Phase are doing the opposite - they're making high-risk choices, and the choices are the path to the fun. Social dependence normalizes the level of alcohol or drug use in a group because if <i>most people</i> in the group are making high-risk choices, high-risk choices seem normal.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Yellow Phase - Test Your Knowledge (Continued)]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[Group members pressure other groups to drink or use drugs.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[It normalizes the level of alcohol or drug use in the group.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v3">
+								<text><![CDATA[Everyone drinks the same alcohol or uses the same drug.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v4">
+								<text><![CDATA[Group members have fun when everyone decides to abstain.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Review">
+		
+			<!-- U2L2C20  -->
+			
+			<brightcoveVideo name="U2L2C20_video" source="738346772001" width="768" height="432" label="Review Matrix Video">
+				<playheadUpdate action="setProgress" value="U2L2C20Complete_progressBar" frequency="5" />
+				<complete action="getNextScene" value="3448" />
+				<caption source="data/Unit_2/captions/lesson_02/U2L2C20_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+	</assets>
+</scene>

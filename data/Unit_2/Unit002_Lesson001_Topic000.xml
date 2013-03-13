@@ -1,0 +1,228 @@
+<scene id="3573" title="Green Phase: Low-Risk Choices">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U2L1C0_evaluation" />
+		
+		<interactionGroup name="U2L1C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3573,U2L1C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L1C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L1C4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3573,U2L1C4Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L1C6_video" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U2L1C1Init_progressBar" interaction="init_interaction" callInteraction="false"  weight="25" />
+		<progressBar name="U2L1C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U2L1C1Complete_progressBar" weight="25" />
+		<progressBar name="U2L1C2Complete_progressBar" />
+		<progressBar name="U2L1C3Complete_progressBar" />
+		<progressBar name="U2L1C4Complete_progressBar" interaction="U2L1C4Complete_interaction" weight="25" />
+		<!--		<progressBar name="U2L1C5Complete_progressBar" interaction="U2L1C5Complete_interaction" weight="25" />		-->
+		<progressBar name="U2L1C6Complete_progressBar" />
+		<progressBar name="U2L1C7Complete_progressBar" />
+		<progressBar name="U2L1C8Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U2L1C0_evaluation" visible="true" componentID="u2l1c0">
+			
+			<assetComplete action="U2L1C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Green Phase - Low-Risk Choices]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore the characteristics and experiences of the Green Phase, and examine the benefits of making low-risk choices.]]></questionText>
+					<instructionText><![CDATA[Duration: 10 minutes]]></instructionText>
+					<multimedia src="unit2_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U2L1C1   -->
+			
+			<brightcoveVideo name="U2L1C1_video" source="738436461001" width="768" height="432" complete="true" label="Green Phase: Low-Risk Choices">
+			  <playheadUpdate action="setProgress" value="U2L1C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L1C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U2L1C2   -->
+			
+			<brightcoveVideo name="U2L1C2_video" source="1452873373001" width="768" height="432" label="Green Phase Hallmarks">
+			  <playheadUpdate action="setProgress" value="U2L1C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L1C3_video"/>
+			  <caption source="data/Unit_2/captions/lesson_01/U2L1C2_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Characteristics">
+		
+			<!--  U2L1C3   -->
+			
+			<brightcoveVideo name="U2L1C3_video" source="1452873372001" width="768" height="432" label="Importance and Feelings of Use">
+			  <playheadUpdate action="setProgress" value="U2L1C3Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L1C4_video"/>
+			  <caption source="data/Unit_2/captions/lesson_01/U2L1C3_cc.xml" />
+			</brightcoveVideo>
+		
+			<!--  U2L1C4    -->
+			
+			<brightcoveVideo name="U2L1C4_video" source="834932935001" width="768" height="432" label="Other Characteristics Video">
+			  <playheadUpdate action="setProgress" value="U2L1C4Complete_progressBar" frequency="5" />
+			  <complete action="U2L1C4Complete_interaction" />
+			  <caption source="data/Unit_2/captions/lesson_01/U2L1C4_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U2L1C5    
+			
+			<brightcoveVideo name="U2L1C5_video" source="774908274001" width="768" height="432" label="Other Characteristics Animation">
+			  <playheadUpdate action="setProgress" value="U2L1C5Complete_progressBar" frequency="5" />
+			  <complete action="U2L1C5Complete_interaction" />
+			</brightcoveVideo>
+			-->
+			
+			<!-- U2L1C6    -->
+			
+			<brightcoveVideo name="U2L1C6_video" source="738359089001" width="768" height="432" label="Check for Understanding">
+			  <playheadUpdate action="setProgress" value="U2L1C6Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L1C7_1_evaluation" />
+			  <caption source="data/Unit_2/captions/lesson_01/U2L1C6_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U2L1C7    -->
+			
+			<evaluation name="U2L1C7_1_evaluation" componentID="u2l1c7_1" label="Check for Understanding Questions">
+				
+				<assetComplete action="gotoAndPlay" target="U2L1C7_2_evaluation" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect">
+						<questionText><![CDATA[What one thing would tell us that a person is in the Green Phase?]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[Eureka! You got it right!]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Actually, anytime we get drunk we have increased our risk for a lot of different problems. If we get drunk a few times a year, that would not be the Green Phase. What  tells us we are in the Green Phase is that we don't use any illegal drugs and never drink more than 2 daily or 3 on any day.]]></feedbackText>
+							<feedbackText valueID="v3"><![CDATA[OK, we were just joking on this one, and you probably were too. Contrary to what you might read on pro-marijuana websites, smoking pot is not a low-risk choice, and would not be part of the Green Phase. What tells us we are in the green phase is that we don't use any illegal drugs and never drink more than 2 daily or 3 on any day.]]></feedbackText>
+							<feedbackText valueID="v4"><![CDATA[Oops; you have the right idea, but these numbers are too high. What  tells us we are in the green phase is that we don't use any illegal drugs and never drink more than 2 daily or 3 on any day.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Interaction 1 - Green Phase - Check for Understanding]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[If they only get drunk a few times a year.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v3">
+								<text><![CDATA[If they just smoke pot but don't use other drugs.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[If they don't use any illegal drugs and never drink more than 2 daily or 3 on any day.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v4">
+								<text><![CDATA[If they don't use any illegal drugs and never drink more than 3 daily or 5 on any day.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L1C7_2_evaluation" componentID="u2l1c7_2">
+				
+				<assetComplete action="gotoAndPlay" target="U2L1C8_video" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect">
+						<questionText><![CDATA[Why is there no increase in tolerance in the Green Phase? Pick the <b>best</b> answer.]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[That's right!  There's no increase in tolerance because people in the Green Phase consistently make low-risk choices by following the 0-1-2-3 Guidelines. Therefore, they do not become impaired, and they do not experience any significant increase in tolerance.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Not quite! Although the attitude towards drinking in the Green Phase is "take it or leave it", attitude doesn't have a link to tolerance. Remember, tolerance increases when a person becomes impaired. There's no increase in tolerance in the Green Phase because people consistently make low-risk choices by following the 0-1-2-3 Guidelines. Therefore, they do not become impaired, and they do not experience any significant increase in tolerance.]]></feedbackText>
+							<feedbackText valueID="v3"><![CDATA[Incorrect. Remember, our tolerance level is set by biology, and everyone has a different tolerance level.  Tolerance increases when a person becomes impaired. There's no increase in tolerance in the Green Phase because people consistently make low-risk choices. Therefore, they do not become impaired, and do not experience any significant increase in tolerance.]]></feedbackText>
+							<feedbackText valueID="v4"><![CDATA[You're close. But although people do have other ways of finding fun in the Green Phase, that doesn't have a link to tolerance. Remember, tolerance increases when a person becomes impaired. There's no increase in tolerance in the Green Phase because people consistently make low-risk choices by following the 0-1-2-3 Guidelines. Therefore, they do not become impaired, and they do not experience any significant increase in tolerance.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Interaction 1 - Green Phase - Check for Understanding]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[Because the attitude towards drinking is "take it or leave it."]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v3">
+								<text><![CDATA[Because everyone has a high tolerance when they're in the Green Phase.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[Because people in the Green Phase follow the 0-1-2-3 Guidelines.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v4">
+								<text><![CDATA[Because people have other ways of finding fun.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!-- U2L1C8    -->
+			
+			<brightcoveVideo name="U2L1C8_video" source="738346853001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U2L1C8Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L1C9_evaluation"/>
+			  <caption source="data/Unit_2/captions/lesson_01/U2L1C8_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U2L1C9    My Note -->
+			
+			<evaluation name="U2L1C9_evaluation" componentID="u2l1c9" label="Lesson Summary Screen">
+			
+				<assetComplete action="getNextScene" recordComplete="true" value="3573,1298"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Green Phase – Low-Risk Choices]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[2]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

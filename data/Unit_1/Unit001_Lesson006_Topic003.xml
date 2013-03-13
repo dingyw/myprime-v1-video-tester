@@ -1,0 +1,150 @@
+<scene id="3261" title="Psychological Influences">
+
+	<interactions>
+		<interactionGroup name="U1L6T3C1Ready_interaction">
+			<interaction action="setLastSavePoint" value="3262,U1L6T3C1Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T3C1_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L6T3C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T3C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T3C2Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T3C4_evaluation" />
+		</interactionGroup>
+			
+		<interactionGroup name="U1L6T3C4Complete_interaction">
+			
+			<interaction action="gotoAndPlay" target="U1L6T3C5_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T3C5Complete_interaction">
+			<interaction action="setLastSavePoint" value="3261,U1L6T3C5Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T3C6_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T3C6Complete_interaction">
+			<interaction action="goto" target="U1L6T3C7_swf" />
+			<interaction action="callProperty" target="U1L6T3C7_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T3C7Complete_interaction">
+			<interaction action="setLastSavePoint" value="3261,U1L6T3C7Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T3C8_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T3C8Complete_interaction">
+			<interaction action="getNextScene" recordComplete="true" value="3261,1287" />
+			<!--
+			Asked to remove : http://fogbugz.askpri.org/default.asp?10034
+			<interaction action="gotoAndPlay" target="U1L6T3C9_evaluation" />
+			-->
+		</interactionGroup>
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L6T3C1Init_progressBar" interaction="U1L6T3C1Ready_interaction" weight="15" />
+		<progressBar name="U1L6T3C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L6T3C2Complete_progressBar" />
+		<progressBar name="U1L6T3C4Complete_progressBar" interaction="U1L6T3C4Complete_interaction" weight="25" />
+		<progressBar name="U1L6T3C5Complete_progressBar" />
+		<progressBar name="U1L6T3C6Complete_progressBar" />
+		<progressBar name="U1L6T3C7Complete_progressBar" interaction="U1L6T3C7Complete_interaction" weight="25" />
+		<progressBar name="U1L6T3C8Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Introduction">
+		
+			<!-- U1L6T3C1    TG    Psychological Influences -->
+			
+			<brightcoveVideo name="U1L6T3C1_video" source="738433028001" width="768" height="432" visible="true" complete="true" label="Psychological Influences">
+			  <ready action="U1L6T3C1Ready_interaction" />
+			  <playheadUpdate action="setProgress" value="U1L6T3C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L6T3C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T3C2    HV    Host Video 1- Introduction - Psychological Influences -->
+			
+			<brightcoveVideo name="U1L6T3C2_video" source="738305095001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L6T3C2Complete_progressBar" frequency="5" />
+				<complete action="U1L6T3C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T3C2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T3C4    MC    Interaction 1 - Psychological Influences Question -->
+			
+			<evaluation name="U1L6T3C4_evaluation" componentID="u1l6t3c4" label="Psychological Influences Question">
+			
+				<assetComplete action="U1L6T3C4Complete_interaction" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect">
+					<questionText><![CDATA[For many years, people believed that psychological problems caused alcoholism. If this were true, what would the research show?]]></questionText>
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[This is interesting. If it were true that psychological problems cause alcoholism, the research would indeed show that the majority of people had psychological problems prior to developing alcoholism. But guess what - there's more to the story.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Actually, if it were true that psychological problems cause alcoholism, the research would indeed show that the majority of people had psychological problems prior to developing alcoholism.  You are ahead of the game, though! Let's find out why.]]></feedbackText>
+					</feedback>
+					<titleText><![CDATA[Do Psychological Problems Cause Alcoholism?]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[The majority of those who have alcoholism had psychological problems prior to having alcoholism.]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[The majority of those who developed alcoholism were psychologically normal prior to having alcoholism. ]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!-- U1L6T3C5    IG    Info Graphic 1 - Psychological Influences Research -->
+			
+			<brightcoveVideo name="U1L6T3C5_video" source="818781144001" width="768" height="432" label="Psychological Influences Research">
+				<playheadUpdate action="setProgress" value="U1L6T3C5Complete_progressBar" frequency="5" />
+				<complete action="U1L6T3C5Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T3C5_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T3C6    HV + EV    Host + Expert Video 1 - Personality Type -->
+			
+			<brightcoveVideo name="U1L6T3C6_video" source="738314959001" width="768" height="432" label="Personality Types">
+				<playheadUpdate action="setProgress" value="U1L6T3C6Complete_progressBar" frequency="5" />
+				<complete action="U1L6T3C6Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T3C6_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T3C7    P    Presentation 1 - Personality Types -->
+			
+			<swf name="U1L6T3C7_swf" source="assets/media/U1L6T3C7.swf">
+				<assetComplete action="U1L6T3C7Complete_interaction" />
+			</swf>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L6T3C8    HV + EV    Host and Expert Video 2 -  Personality and Choices 
+									 HV    Host Video 2 - Psychological Influences - Summary  -->
+			
+			<brightcoveVideo name="U1L6T3C8_video" source="1514222036001" width="768" height="432" label="Summary Video">
+				<playheadUpdate action="setProgress" value="U1L6T3C8Complete_progressBar" frequency="5" />
+				<complete action="U1L6T3C8Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T3C8_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T3C9    My Notes -->
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

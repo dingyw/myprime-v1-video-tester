@@ -1,0 +1,530 @@
+<scene id="2810" title="What Do I Value?">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L1C0_evaluation" />
+		
+		<interactionGroup name="U1L1C0Complete_interaction">
+		  <interaction action="gotoAndPlay" target="U1L1C1_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C1Complete_interaction">
+		  <interaction action="gotoAndPlay" target="U1L1C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C2Complete_interaction">
+		  <interaction action="gotoAndPlay" target="U1L1C5_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C5Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L1C7_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C7Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L1C8_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C8Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L1C9_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C9Complete_interaction">
+			<interaction action="setLastSavePoint" value="2810,U1L1C9Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L1C10_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C10Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L1C11_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C11Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L1C12_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C12Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L1C13_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C13Complete_interaction">
+			<interaction action="setLastSavePoint" value="2810,U1L1C13Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L1C14_swf" />
+			<interaction action="callProperty" target="U1L1C14_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C14Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L1C14B_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C14BComplete_interaction">
+			<interaction action="gotoAndPlay" target="U1L1C15_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C15Complete_interaction">
+			<interaction action="setLastSavePoint" value="2810,U1L1C15Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L1C16_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L1C16Complete_interaction">
+			<!-- recordSceneComplete, recordLessonComplete, getNextScene -->
+			<interaction action="getNextScene" recordComplete="true" value="2810,1266" />
+			<!--  -->
+		</interactionGroup>
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L1C1Init_progressBar" interaction="init_interaction"  callInteraction="false" weight="25" />
+		<progressBar name="U1L1C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L1C1Complete_progressBar"  weight="25"  />
+		<progressBar name="U1L1C2Complete_progressBar" interaction="U1L1C2Complete_interaction" weight="25"  />
+		<progressBar name="U1L1C5Complete_progressBar" interaction="U1L1C5Complete_interaction"  weight="25" />
+		<progressBar name="U1L1C6Complete_progressBar" />
+		<progressBar name="U1L1C7Complete_progressBar" />
+		<progressBar name="U1L1C8Complete_progressBar" interaction="U1L1C8Complete_interaction" weight="25" />
+		<progressBar name="U1L1C9Complete_progressBar" interaction="U1L1C9Complete_interaction" weight="25" />
+		<progressBar name="U1L1C10Complete_progressBar" />
+		<progressBar name="U1L1C11Complete_progressBar" interaction="U1L1C11Complete_interaction"  weight="25" />
+		<progressBar name="U1L1C12Complete_progressBar" />
+		<progressBar name="U1L1C13Complete_progressBar" interaction="U1L1C13Complete_interaction" weight="25" />
+		<progressBar name="U1L1C14Complete_progressBar" interaction="U1L1C14Complete_interaction" weight="25" />
+		<progressBar name="U1L1C14BComplete_progressBar" interaction="U1L1C14BComplete_interaction" callInteraction="false" weight="25" />
+		<progressBar name="U1L1C15Complete_progressBar"  interaction="U1L1C15Complete_interaction"  weight="25"/>
+		<progressBar name="U1L1C16Complete_progressBar"    weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Introduction" action="start_interaction">
+		
+			<evaluation name="U1L1C0_evaluation" visible="true" componentID="u1l1c0">
+			
+				<assetComplete action="U1L1C0Complete_interaction" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<titleText><![CDATA[Values]]></titleText>
+						<questionText><![CDATA[In this lesson, you'll explore values, and begin to look at how choices can impact the things we care about.]]></questionText>
+						<instructionText><![CDATA[Duration: 10 minutes]]></instructionText>
+						<multimedia src="intro_temp.swf"/>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		
+			<!-- U1L1C1    TG    What Do I Value? -->
+			
+			<brightcoveVideo name="U1L1C1_video" source="738433022001" width="768" height="432" complete="true" label="What Do I Value?">
+			  <playheadUpdate action="setProgress" value="U1L1C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L1C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L1C2    HV    Host Video 1
+									MOS    MOS Video 1 
+									HV    Host Video 2 -->
+			
+			<brightcoveVideo name="U1L1C2_video" source="754369878001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L1C2Complete_progressBar" frequency="5" />
+				<complete action="U1L1C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_01/U1L1C2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!--
+				U1L1C5    CI    Values Interaction 1 - Sort List
+			-->
+			
+			<evaluation name="U1L1C5_evaluation" componentID="u1l1c5" label="Values Sort">
+			
+				<assetComplete action="U1L1C5Complete_interaction" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+					<questionText><![CDATA[Did you notice that I overwrote the original text?]]></questionText>
+					<instructionText><![CDATA[Put each word on the Top Ten or Less Important list, then click Submit.]]></instructionText>
+					<multimedia src="U1L1C5.swf" />
+					<data-dependency id="u1l1c5_data" />
+					<audio src="U1L1C5.mp3" />
+					<titleText><![CDATA[My Values]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[Acceptance]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[Achievement]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c3" valueID="v1">
+							<text><![CDATA[Attractiveness]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c4" valueID="v1">
+							<text><![CDATA[Challenge]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c5" valueID="v1">
+							<text><![CDATA[Community]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c6" valueID="v1">
+							<text><![CDATA[Creativity]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c7" valueID="v1">
+							<text><![CDATA[Family]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c8" valueID="v1">
+							<text><![CDATA[Forgiveness]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c9" valueID="v1">
+							<text><![CDATA[Freedom]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c10" valueID="v1">
+							<text><![CDATA[Friendship]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c11" valueID="v1">
+							<text><![CDATA[Fun]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c12" valueID="v1">
+							<text><![CDATA[God's Will]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c13" valueID="v1">
+							<text><![CDATA[Health]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c14" valueID="v1">
+							<text><![CDATA[Honesty]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c15" valueID="v1">
+							<text><![CDATA[Hope]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c16" valueID="v1">
+							<text><![CDATA[Independence]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c17" valueID="v1">
+							<text><![CDATA[Job/Work]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c18" valueID="v1">
+							<text><![CDATA[Learning]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c19" valueID="v1">
+							<text><![CDATA[Love/Being Loved]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c20" valueID="v1">
+							<text><![CDATA[Money]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c21" valueID="v1">
+							<text><![CDATA[Passion]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c22" valueID="v1">
+							<text><![CDATA[Purpose]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c23" valueID="v1">
+							<text><![CDATA[Responsibility]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c24" valueID="v1">
+							<text><![CDATA[Taking Risks]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c25" valueID="v1">
+							<text><![CDATA[Sexuality]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c26" valueID="v1">
+							<text><![CDATA[Self-Control]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c27" valueID="v1">
+							<text><![CDATA[Self-Respect]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c28" valueID="v1">
+							<text><![CDATA[Spirituality]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c29" valueID="v1">
+							<text><![CDATA[Stability]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c30" valueID="v1">
+							<text><![CDATA[Tradition]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+			</evaluation>
+		
+		</sequence>
+		
+		<sequence label="Something Bad Happens">
+		
+			<!-- U1L1C7    HV    Host Video 3 - "Now imagine something bad happens..." -->
+			
+			<brightcoveVideo name="U1L1C7_video" source="742130421001" width="768" height="432">
+				<playheadUpdate action="setProgress" value="U1L1C7Complete_progressBar" frequency="5" />
+				<complete action="U1L1C7Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_01/U1L1C7_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L1C8    CI    Values Interaction 3 - First and Second Eliminations -->
+			
+			<evaluation name="U1L1C8_evaluation" componentID="u1l1c8" label="First and Second Eliminations">
+			
+				<assetComplete action="U1L1C8Complete_interaction" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+					<questionText><![CDATA[Did you notice that I overwrote the original text?]]></questionText>
+					<instructionText><![CDATA[Click three values you would give up if you had to.]]></instructionText>
+					<multimedia src="U1L1C8.swf" />
+					<data-dependency id="u1l1c5" />
+					<audio src="U1L1C8.mp3" />
+					<titleText><![CDATA[My Values]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c3" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c4" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c5" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c6" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c7" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c8" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c9" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c10" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<!-- U1L1C9    RQ    Reflection Question -->
+			
+			<evaluation name="U1L1C9_evaluation" componentID="u1l1c9" label="Reflection Question">
+			
+				<assetComplete action="U1L1C9Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+					<questionText><![CDATA[What is it that makes these values worth keeping, in comparison with those that you chose to lose?]]></questionText>
+					<titleText><![CDATA[Reflection Question]]></titleText>
+					<audio src="U1L1C9.mp3" />
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<!-- U1L1C10    HV    Host Video 4 - "Now you're down to four values..." -->
+			
+			<brightcoveVideo name="U1L1C10_video" source="738305100001" width="768" height="432" label="Down to Four Values">
+				<playheadUpdate action="setProgress" value="U1L1C10Complete_progressBar" frequency="5" />
+				<complete action="U1L1C10Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_01/U1L1C10_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L1C11    CI    Values Interaction 4 - Final Elimination --> 
+			
+			<evaluation name="U1L1C11_evaluation" componentID="u1l1c11" label="Final Elimination">
+				
+				<assetComplete action="U1L1C11Complete_interaction" />
+			
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+					<questionText><![CDATA[Did you notice that I overwrote the original text?]]></questionText>
+					<instructionText><![CDATA[Select three more values you would give up if you had to, then click Submit.]]></instructionText>
+					<multimedia src="U1L1C11.swf" />
+					<data-dependency id="u1l1c8" />
+					<audio src="U1L1C11.mp3" />
+					<titleText><![CDATA[My Values]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c3" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c4" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<!-- U1L1C12    HV    Host Video 5 - "Imagine what it would be like to actually lose these things from your life..." -->
+			
+			<brightcoveVideo name="U1L1C12_video" source="738313156001" width="768" height="432" label="Imagine What It Would Be Like">
+				<playheadUpdate action="setProgress" value="U1L1C12Complete_progressBar" frequency="5" />
+				<complete action="U1L1C12Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_01/U1L1C12_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L1C13    CI    Values Interaction 5 - One Word -->
+			
+			<evaluation name="U1L1C13_evaluation" componentID="u1l1c13" label="One Word">
+				
+				<assetComplete action="U1L1C13Complete_interaction" />
+			
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<questionText><![CDATA[One word that describes how it would feel to actually lose these things from my life is: ]]></questionText>
+						<instructionText><![CDATA[Type one word into the textbox, then click Submit.]]></instructionText>
+						<multimedia src="U1L1C13.swf"/>
+						<audio src="U1L1C13.mp3"/>
+						<titleText><![CDATA[My Values]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<!-- U1L1C14    GB    Values Globe -->
+			
+			<swf name="U1L1C14_swf" source="flash/googleMap.swf" localSource="flash/globe.swf" componentID="u1l1c14" label="Values Globe">
+				<assetComplete action="U1L1C14Complete_interaction" />
+			</swf>
+			
+			<evaluation name="U1L1C14B_evaluation" componentID="u1l1c14b" label="Share Your Response">
+			
+				<assetComplete action="U1L1C14BComplete_interaction" />
+			
+				<evaluation evalType="multipleChoiceSingleSelect" design="true" >
+					<questionText><![CDATA[Would you like to share your response with others?  ]]></questionText>
+					<instructionText><![CDATA[Choose one of the following repsonses.]]></instructionText>
+					<multimedia src="U1L1C15.swf"/>
+					<audio src="U1L1C14_2.mp3" />
+					<titleText><![CDATA[Share Your Response?]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[no]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		</sequence>
+		
+		
+		
+		
+		
+		<sequence label="Summary">
+			
+			<!-- U1L1C15    HV    Values Summary into Grocery Store Scene -->
+	
+			<brightcoveVideo name="U1L1C15_video" source="1547416198001" width="768" height="432" label="Summary Video">
+				<playheadUpdate action="setProgress" value="U1L1C15Complete_progressBar" frequency="5" />
+				<complete action="U1L1C15Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_01/U1L1C15_cc.xml" />
+			</brightcoveVideo>
+
+		
+			<!-- U1L1C15    My Notes -->
+		
+		
+			<evaluation name="U1L1C16_evaluation" componentID="u1l1c16" label="Lesson Summary Screen">
+				
+				<assetComplete action="U1L1C16Complete_interaction" />
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+					<questionText><![CDATA[Values]]></questionText>
+					<titleText><![CDATA[My Notes]]></titleText>
+					<audio src="U1L1C16.mp3"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+			</evaluation>
+		
+		</sequence>
+		
+	</assets>
+  
+</scene>

@@ -31,23 +31,12 @@
 			<select ng-model="videoData" ng-change="updateVideo()">
 				<option value="{{brightcoveElem.id}},{{brightcoveElem.captionSrc}}" ng-repeat="brightcoveElem in brightcoveElems">{{brightcoveElem.name}}</option>
 			</select>
-
-			<button class="btn" onclick="init();">Refresh</button>
-			<script>
-
-				function init() {
-					// var data = {{videoId}}
-					
-					
-				}
-			</script>
 		</div>
 
 		<div id="page">
 
 			<a id="player" style="display:block;width:520px;height:330px"></a>
 			
-
 		</div>
 	</body>
 </html>

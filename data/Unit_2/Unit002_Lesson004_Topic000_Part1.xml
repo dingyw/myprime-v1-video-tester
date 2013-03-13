@@ -1,0 +1,604 @@
+<scene id="3589" title="Red Phase: Addiction">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U2L4C0_evaluation" />
+	
+		<interactionGroup name="U2L4C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3589,U2L4C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L4C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3589,U2L4C2Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L4C5_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C5Complete_interaction">
+			<interaction action="setLastSavePoint" value="3589,U2L4C5Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L4C7_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C8BComplete_interaction">
+			<interaction action="setLastSavePoint" value="3589,U2L4C8BComplete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L4C9_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C11Complete_interaction">
+			<interaction action="setLastSavePoint" value="3589,U2L4C11Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L4C12_video"  />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C12Complete_interaction">
+			<interaction action="setLastSavePoint" value="3589,U2L4C12Complete_interaction" />
+			<interaction action="goto" target="U2L4C15_swf"/>
+			<interaction action="callProperty" target="U2L4C15_swf.content" value="transitionIn" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C15Init_interaction">
+			<interaction action="goto" target="U2L4C15_swf"/>
+			<interaction action="callProperty" target="U2L4C15_swf.content" value="transitionIn" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C15Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C20_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C16Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C16_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C16Complete_interaction">
+			<interaction action="setLastSavePoint" value="3589,U2L4C16Complete_interaction" />
+			<interaction action="callProperty" target="U2L4C15_swf.content" value="completeOutcome,tolerance" />
+			<interaction action="callInteraction" value="U2L4C15Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C17AInit_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C17A_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C17BComplete_interaction">
+			<interaction action="setLastSavePoint" value="3589,U2L4C17BComplete_interaction" />
+			<interaction action="callProperty" target="U2L4C15_swf.content" value="completeOutcome,thinkingMemoryChanges" />
+			<interaction action="callInteraction" value="U2L4C15Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C18Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C18_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C18Complete_interaction">
+			<interaction action="setLastSavePoint" value="3589,U2L4C18Complete_interaction" />
+			<interaction action="callProperty" target="U2L4C15_swf.content" value="completeOutcome,reboundEffects" />
+			<interaction action="callInteraction" value="U2L4C15Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C19Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L4C19_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L4C19Complete_interaction">
+			<interaction action="setLastSavePoint" value="3589,U2L4C19Complete_interaction" />
+			<interaction action="callProperty" target="U2L4C15_swf.content" value="completeOutcome,problems" />
+			<interaction action="callInteraction" value="U2L4C15Init_interaction"/>
+		</interactionGroup>
+		
+		<!-- end call by U2L4C15_swf -->
+	
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U2L4C1Init_progressBar" interaction="init_interaction"  callInteraction="false" weight="25" />
+		<progressBar name="U2L4C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U2L4C1Complete_progressBar" weight="25"/>
+		<progressBar name="U2L4C2Complete_progressBar" interaction="U2L4C2Complete_interaction" weight="25"/>
+		<progressBar name="U2L4C5Complete_progressBar" interaction="U2L4C5Complete_interaction" weight="25"/>
+		<progressBar name="U2L4C7Complete_progressBar" weight="25"/>
+		<progressBar name="U2L4C8BComplete_progressBar" interaction="U2L4C8BComplete_interaction"  weight="25"/>
+		<progressBar name="U2L4C9Complete_progressBar" weight="25"/>
+		<progressBar name="U2L4C11Complete_progressBar" interaction="U2L4C11Complete_interaction"  weight="25"/>
+		<progressBar name="U2L4C12Complete_progressBar" interaction="U2L4C12Complete_interaction" weight="25" />
+		<progressBar name="U2L4C16Complete_progressBar" interaction="U2L4C16omplete_interaction"  weight="25"/>
+		<progressBar name="U2L4C17BComplete_progressBar" interaction="U2L4C17BComplete_interaction" weight="25"/>
+		<progressBar name="U2L4C18Complete_progressBar" interaction="U2L4C18Complete_interaction"  weight="25"/>
+		<progressBar name="U2L4C19Complete_progressBar"  interaction="U2L4C19Complete_interaction"  weight="25"/>
+		<progressBar name="U2L4C20Complete_progressBar" weight="25"/>
+		<progressBar name="U2L4C22AComplete_progressBar" weight="25"/>
+		<progressBar name="U2L4C22BComplete_progressBar" weight="25"/>
+		<progressBar name="U2L4C24Complete_progressBar" weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U2L4C0_evaluation" visible="true" componentID="u2l4c0">
+			
+			<assetComplete action="U2L4C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Red Phase - Addiction]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore the characteristics and experiences of the Red Phase, and examine what happens when addiction develops.]]></questionText>
+					<instructionText><![CDATA[Duration: 95 minutes]]></instructionText>
+					<multimedia src="unit2_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!-- U2L4C1	TG	Red Phase: Addiction -->
+			
+			<brightcoveVideo name="U2L4C1_video" source="738431282001" width="768" height="432" label="Red Phase: Addiction">
+				<playheadUpdate action="setProgress" value="U2L4C1Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L4C2_video" />
+			</brightcoveVideo>
+			
+			<!-- U2L4C2	HV + EV	Host and Expert Video 1 - Red Phase Hallmarks -->
+			
+			<brightcoveVideo name="U2L4C2_video" source="1553875099001" width="768" height="432" label="Red Phase Hallmarks">
+				<playheadUpdate action="setProgress" value="U2L4C2Complete_progressBar" frequency="5" />
+				<complete action="U2L4C2Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Characteristics">
+		
+			<!-- U2L4C5	IG	Info Graphic 1: Nature of Choices - Loss of Control (Part 1) -->
+			
+			<brightcoveVideo name="U2L4C5_video" source="1519737692001" width="768" height="432" label="Nature of Choices: Loss of Control Info Graphic">
+				<playheadUpdate action="setProgress" value="U2L4C5Complete_progressBar" frequency="5" />
+				<complete action="U2L4C5Complete_interaction"  />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C5_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C7	TV	Testimonial Video 2: Nature of Choices - Loss of Control (Part 2) -->
+			
+			<brightcoveVideo name="U2L4C7_video" source="1544048472001" width="768" height="432" label="Nature of Choices: Loss of Control Video">
+				<playheadUpdate action="setProgress" value="U2L4C7Complete_progressBar" frequency="5" />
+				<complete action="goto" target="U2L4C8B_swf" />
+				<complete action="callProperty" target="U2L4C8B_swf.content" value="initContent" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C7_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C8B	P	Presentation 1: Importance - Central to Life (Part 2) -->
+			
+			<swf name="U2L4C8B_swf" source="assets/media/U2L4C8B.swf">
+				<assetComplete action="U2L4C8BComplete_interaction" />
+			</swf>
+			
+			<!-- U2L4C9	EV	Expert Video 1: Psychological Dependence - Change in Sense of Relationship (Part 1) -->
+			
+			<brightcoveVideo name="U2L4C9_video" source="1544044134001" width="768" height="432" label="Psychological Dependence: Change in Sense of Relationship">
+				<playheadUpdate action="setProgress" value="U2L4C9Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L4C11_video" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C9_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C11	A	Animation 2: Psychological Dependence - Changes in Defense of Choices (PART 3) -->
+			
+			<brightcoveVideo name="U2L4C11_video" source="1532650632001" width="768" height="432" label="Psychological Dependence: Changes in Defense of Choices">
+				<playheadUpdate action="setProgress" value="U2L4C11Complete_progressBar" frequency="5" />
+				<complete action="U2L4C11Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C11_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C12	EV	Expert Video 2: Social Dependence (Part 1) -->
+			
+			<brightcoveVideo name="U2L4C12_video" source="1547306061001" width="768" height="432" label="Social Dependence">
+				<playheadUpdate action="setProgress" value="U2L4C12Complete_progressBar" frequency="5" />
+				<complete action="U2L4C12Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C12_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Outcomes">
+		
+			<!-- U2L4C15   CI  Phase Outcomes -->
+			
+			<swf name="U2L4C15_swf" source="assets/media/U2L4C15.swf" componentID="u2l4c15" >
+				<assetComplete action="U2L4C15Complete_interaction" />
+			</swf>
+			
+			<!-- U2L4C16 -->
+			
+			<brightcoveVideo name="U2L4C16_video" source="1467112355001" width="768" height="432" label="Changes in  Tolerance">
+				<complete action="U2L4C16Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C16_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C17A -->
+			
+			<brightcoveVideo name="U2L4C17A_video" source="1558808562001" width="768" height="432" label="Thinking Memory Changes: Memory Blackouts">
+				<complete action="goto" target="U2L4C17B_swf" />
+				<complete action="callProperty" target="U2L4C17B_swf.content" value="initContent" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C17A_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C17A -->
+			
+			<swf name="U2L4C17B_swf" source="assets/media/U2L4C17B.swf" >
+				<assetComplete action="U2L4C17BComplete_interaction" />
+			</swf>
+			
+			<!-- U2L4C18 -->
+			
+			<brightcoveVideo name="U2L4C18_video" source="1544044118001" width="768" height="432" label="Rebound Effects: Varying Degrees of Withdrawal">
+				<complete action="U2L4C18Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C18_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C19 -->
+			
+			<brightcoveVideo name="U2L4C19_video" source="1544044098001" width="768" height="432" label="Problem Outcomes: Health and Impairment Problems">
+				<complete action="U2L4C19Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C19_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+			
+			<brightcoveVideo name="U2L4C20_video" source="1544039573001" width="768" height="432" label="Summary">
+				<complete action="gotoAndPlay" target="U2L4C22A_video" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C20_cc.xml"/>
+			</brightcoveVideo>
+							
+			<!-- U2L4C22A -->
+			
+			<brightcoveVideo name="U2L4C22A_video" source="792516124001" width="768" height="432" label="Summary Info Graphic">
+				<playheadUpdate action="setProgress" value="U2L4C22AComplete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay"  target="U2L4C22B_video" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C22A_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C22B -->
+			
+			<brightcoveVideo name="U2L4C22B_video" source="755132167001" width="768" height="432" label="Progression and Recovery">
+				<playheadUpdate action="setProgress" value="U2L4C22BComplete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay"  target="U2L4C23_1_evaluation" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C22B_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L4C23 -->
+			
+			<evaluation name="U2L4C23_1_evaluation" componentID="u2l4c23_1" label="Check for Understanding">
+			
+				<assetComplete action="gotoAndPlay" target="U2L4C23_2_evaluation" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[In the Red Phase, the quantity and frequency of my drinking increases dramatically.]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[While it may be true that the quantity and frequency of my drinking increase dramatically early in the Red Phase, they may later decrease if and when I reach a state of reverse tolerance. ]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[No, sorry! While it may be true that the quantity and frequency of my drinking increase dramatically early in the Red Phase, they may later decrease if and when I reach a state of reverse tolerance. ]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[May or May Not Be True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[False]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L4C23_2_evaluation" componentID="u2l4c23_2">
+			
+				<assetComplete action="gotoAndPlay" target="U2L4C23_3_evaluation" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[In the Red Phase, I have crossed my trigger level.]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Correct. In the Red Phase, it is true that I have crossed my trigger level.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[No, sorry! In the Red Phase, it is true that I have crossed my trigger level.]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[May or May Not Be True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[False]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L4C23_3_evaluation" componentID="u2l4c23_3">
+			
+				<assetComplete action="gotoAndPlay" target="U2L4C23_4_evaluation" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[About half of those in the Orange Phase will return to low-risk drinking, while very few, if any, will return to low-risk drinking in the Red Phase.]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[You're right. It is true that about half of those in the Orange Phase will return to low-risk drinking, while very few, if any, will return to low-risk drinking in the Red Phase.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Oops! Actually, it is true that about half of those in the Orange Phase will return to low-risk drinking, while very few, if any, will return to low-risk drinking in the Red Phase.]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[May or May Not Be True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[False]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L4C23_4_evaluation" componentID="u2l4c23_4">
+			
+				<assetComplete action="gotoAndPlay" target="U2L4C23_5_evaluation" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[The only low-risk choice in the Red Phase is abstinence-not using at all.]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Well done! The only low-risk choice in the Red Phase is abstinence-not using at all.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Although other options may sound helpful, the <b>ONLY</b> low-risk choice in the Red Phase is abstinence-not using at all.]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[May or May Not Be True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[False]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U2L4C23_5_evaluation" componentID="u2l4c23_5">
+			
+				<assetComplete action="gotoAndPlay" target="U2L4C23_6_evaluation" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[In the Red Phase, I no longer experience social dependence. ]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Good job. While it may be true that I experience social dependence early in the Red Phase, it may become less important as I begin to isolate myself later in the phase. ]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[This was a tough one, but it may or may not be true that I experience social dependence in the Red Phase. It's possible that I experience social dependence early in the phase, but it may become less important as I begin to isolate myself as I progress further in the phase.]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[May or May Not Be True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[False]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L4C23_6_evaluation" componentID="u2l4c23_6">
+			
+				<assetComplete action="gotoAndPlay" target="U2L4C23_7_evaluation" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[It is possible for a person in the Red Phase to abstain for a month.  True or False?]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Correct! A person in the Red Phase <b>can</b> abstain for any period of time, including for the rest of their lives. What a person in the Red Phase  <b>cannot</b> do is consistently drink within the low-risk range.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Actually, a person in the Red Phase <b>can</b> abstain for any period of time, including for the rest of their lives. What a person in the Red Phase  <b>cannot</b> do is consistently drink within the low-risk range.]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[False]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U2L4C23_7_evaluation" componentID="u2l4c23_7">
+			
+				<assetComplete action="gotoAndPlay" target="U2L4C23_8_evaluation" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[Which two of the following statements are true about tolerance in the Red Phase?]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[You got it! My tolerance may begin to decrease in the late Red Phase because the body is breaking down. My tolerance may also become unpredictable and erratic. It is not true, however, that my tolerance becomes so high that I no longer experience blackouts. I may experience a blackout, but due to my high tolerance I don't appear to be impaired. And, no matter what phase I'm in, my mental tolerance level will always remain lower than my physical tolerance level.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[You've missed something somewhere. It is true that my tolerance may begin to decrease in the late Red Phase because the body is breaking down. My tolerance may also become unpredictable and erratic. However, it is <b>not</b> true that my tolerance becomes so high that I no longer experience blackouts. I may experience a blackout, but due to my high tolerance I don't appear to be impaired. And, no matter what phase I'm in, my mental tolerance level will always remain lower than my physical tolerance level.]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[My tolerance may begin to decrease in the Red Phase.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[My tolerance may become unpredictable in the Red Phase. ]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[In the Red Phase, my mental and physical tolerance levels become equal. ]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c4" valueID="v2">
+							<text><![CDATA[In the Red Phase, my tolerance becomes so high that I no longer experience memory blackouts. ]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L4C23_8_evaluation" componentID="u2l4c23_8">
+			
+				<assetComplete action="gotoAndPlay" target="U2L4C23_9_evaluation" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[Which two of the following statements are true about withdrawal?]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Exactly! Withdrawal is a physical response that results from my body attempting to adjust to functioning without drugs or alcohol. Alcohol withdrawal includes irritability, difficulty concentrating, restlessness, shakiness, or difficulty in sleeping. Withdrawal is not an emotional response to stopping the alcohol or drugs. Not everyone experiences withdrawal in the Red Phase. Some people in the Red Phase can experience loss of control without noticeable withdrawal, because they never try to stop their drinking or drug usage.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[You've missed something here. Withdrawal is a physical response that results from my body attempting to adjust to functioning without drugs or alcohol. Alcohol withdrawal includes irritability, difficulty concentrating, restlessness, shakiness, or difficulty in sleeping. Withdrawal is not an emotional response to stopping the alcohol or drugs. Not everyone experiences withdrawal in the Red Phase. People in the Red Phase can experience loss of control without noticeable withdrawal, because they never try to stop their drinking or drug usage.]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[Withdrawal is an emotional response to stopping the alcohol or drugs.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[Withdrawal is a physical response that results from my body attempting to adjust to functioning without drugs or alcohol.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[Everyone who enters the Red Phase will experience withdrawal as a result of crossing their trigger level. ]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c4" valueID="v1">
+							<text><![CDATA[Alcohol withdrawal includes irritability, difficulty concentrating, restlessness, shakiness, or difficulty in sleeping.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L4C23_9_evaluation" componentID="u2l4c23_9">
+			
+				<assetComplete action="gotoAndPlay" target="U2L4C24_video" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA["Loss of control," as an indicator of addiction, means...]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Well done! "Loss of control" means once I start drinking or using, I drink or use until something else causes me to stop. It also means I cannot consistently drink in low-risk amounts or only occasionally use drugs. Loss of control does <b>not</b> mean that I do crazy things when I drink or use drugs, or that I let the people who drink or use drugs with me make all my choices. While I may indeed do these things, these experiences are not specific to the Red Phase... they can happen to anyone who makes high-risk choices. ]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Nope! "Loss of control" means once I start drinking or using, I drink or use until something else causes me to stop. It also means I cannot consistently drink in low-risk amounts or only occasionally use drugs. Loss of control does <b>not</b> mean that I do crazy things when I drink or use drugs, or that I let the people who drink or use drugs with me make all my choices. While I may indeed do these things, these experiences are not specific to the Red Phase... they can happen to anyone who makes high-risk choices. ]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[Once I start drinking or using, I drink or use until something else causes me to stop.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[I do crazy things when I drink or use drugs.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[I let the people who drink or use drugs with me make all my choices.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c4" valueID="v1">
+							<text><![CDATA[I cannot consistently drink in low-risk amounts or only occasionally use drugs.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Review">
+		
+			<!-- U2L4C24 -->
+			
+			<brightcoveVideo name="U2L4C24_video" source="754411258001" width="768" height="432" label="Review Matrix Video">
+				<playheadUpdate action="setProgress" value="U2L4C24Complete_progressBar" frequency="5" />
+				<complete action="getNextScene" value="3589" />
+				<caption source="data/Unit_2/captions/lesson_04/U2L4C24_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+	</assets>	
+</scene>

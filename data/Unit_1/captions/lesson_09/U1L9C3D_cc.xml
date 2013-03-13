@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>  </styling>
+  </head>
+  <body>
+    <div xml:lang="en">
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Narrator:</b>
+        <br/>
+	   Now let’s say Pat drinks, on average, more than 2 drinks a day.
+Health problems are more common for people who average more than two drinks per day. Some examples of health problems that can occur at an average of three or more per day are high blood pressure, cirrhosis of the liver, and various cancers.
+Alcohol risks can also interact with other risks, such as smoking or diet. There are many variables in risk for specific health problems.
+      </p>
+    </div>
+  </body>
+</tt>

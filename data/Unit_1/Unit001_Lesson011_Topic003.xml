@@ -1,0 +1,87 @@
+<scene id="3490" title="What About Drugs and Impairment">
+
+	<interactions>
+		<interactionGroup name="U1L11T3C1Ready_interaction">
+			<interaction action="gotoAndPlay" target="U1L11T3C1_video" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L11T3C1Init_progressBar" interaction="U1L11T3C1Ready_interaction" weight="5" />
+		<progressBar name="U1L11T3C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L11T3C2Complete_progressBar" weight="25" />
+		<progressBar name="U1L11T3C5Complete_progressBar" />
+		<progressBar name="U1L11T3C6Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		
+		<!--  U1L11T3C1    TG    What About Drugs and Impairment?  -->
+		
+		<brightcoveVideo name="U1L11T3C1_video" source="738433019001" width="768" height="432" visible="true" complete="true">
+		  <ready action="U1L11T3C1Ready_interaction" />
+		  <playheadUpdate action="setProgress" value="U1L11T3C1Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U1L11T3C2_video"/>
+		</brightcoveVideo>
+		
+		<!--  U1L11T3C2   HV    Drugs and Impairment - Host Video 1 - Introduction 
+								  TV    Drugs and Impairment - Testimonial Video 1 - Driving Under the Influence of Drugs 
+								  HV    Drugs and Impairment - Host Video 2 - Transition to Expert -->
+		
+		<brightcoveVideo name="U1L11T3C2_video" source="772417662001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U1L11T3C2Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U1L11T3C5_video"/>
+		</brightcoveVideo>
+		
+		<!--  U1L11T3C5     EV    Drugs and Impairment - Expert Video 1 - Drugs and Impairment  -->
+		
+		<brightcoveVideo name="U1L11T3C5_video" source="1561023710001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U1L11T3C5Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U1L11T3C6_video"/>
+		</brightcoveVideo>
+		
+		<!--  U1L11T3C6     HV    Drugs and Impairment - Host Video 3 - Summary -->
+		
+		<brightcoveVideo name="U1L11T3C6_video" source="742650962001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U1L11T3C6Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U1L11T3C7_evaluation"/>
+		</brightcoveVideo>
+		
+		<!--  U1L11T3C7    RQ    Drugs and Impairment - User-Generated Content  -Reflection Question  -->
+		
+		<evaluation name="U1L11T3C7_evaluation" componentID="u1l11t3c7">
+		
+			<assetComplete action="gotoAndPlay" target="U1L11T3C8_evaluation"/>
+			
+			<evaluation evalType="ReflectionQuestion">
+					<questionText><![CDATA[Something new or surprising to me about tolerance and impairment is...]]></questionText>
+					<titleText><![CDATA[Reflection Question]]></titleText>
+					<audio src="RQ_SINGLE_QUESTION.mp3" />
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+		</evaluation>
+		
+		<!-- U1L11T3C8    My Note -->
+		
+		<evaluation name="U1L11T3C8_evaluation" componentID="u1l11t3c8">
+		
+			<assetComplete action="getNextScene" value="3490"/>
+			
+			<evaluation evalType="ReflectionQuestion" templateType="notes">
+				<questionText><![CDATA[What will you most remember about What About Drugs and Impairment?]]></questionText>
+				<titleText><![CDATA[My Notes]]></titleText>
+				<audio src="NOTES.mp3" />
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+
+		</evaluation>
+		
+	</assets>
+  
+</scene>

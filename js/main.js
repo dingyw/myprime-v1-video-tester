@@ -88,11 +88,11 @@ function Main($scope, $http, $templateCache) {
 
 		player = flowplayer("player", "flowplayer/flowplayer-3.2.16.swf", {
 			clip : {
-				url : '../../../../DVD/Myprime_adapt_course/video/' + videoArray[0] + '.f4v',
+				url : 'video/' + videoArray[0] + '.f4v',
 
 				// this is the Timed Text file with captions info
 				// captionUrl : "../../../../DVD/Myprime_adapt_course/myPRIME/data/Unit_1/captions/lesson_00/U1L0C2_cc.xml"
-				captionUrl : "test.xml"
+				captionUrl : videoArray[1]
 			},
 			plugins : {
 

@@ -1,0 +1,618 @@
+<scene id="3480" title="Orange Phase: Psychological Dependence">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U2L3C0_evaluation" />
+
+		<interactionGroup name="U2L3C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3480,U2L3C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L3C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3480,U2L3C2Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L3C4_video"  />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3480,U2L3C4Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L3C5A_video"  />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C5BComplete_interaction">
+			<interaction action="setLastSavePoint" value="3480,U2L3C5BComplete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L3C6A_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C6CComplete_interaction">
+			<interaction action="setLastSavePoint" value="3480,U2L3C6CComplete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L3C6D_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C10Complete_interaction">
+			<interaction action="setLastSavePoint" value="3480,U2L3C10Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L3C12_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C12Complete_interaction">
+			<interaction action="setLastSavePoint" value="3480,U2L3C12Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L3C13_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C13Complete_interaction">
+			<interaction action="goto" target="U2L3C14_swf"/>
+			<interaction action="callProperty" target="U2L3C14_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C14Init_interaction">
+			<interaction action="goto" target="U2L3C14_swf"/>
+			<interaction action="callProperty" target="U2L3C14_swf.content" value="transitionIn" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C14Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C22_video"/>
+		</interactionGroup>
+		
+		<!-- call by U2L3C14_swf -->
+		
+		<interactionGroup name="U2L3C15AInit_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C15A_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C15BComplete_interaction">
+			<interaction action="callProperty" target="U2L3C14_swf.content" value="completeOutcome,tolerance" />
+			<interaction action="callInteraction" value="U2L3C14Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C16Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C16_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C16Complete_interaction">
+			<interaction action="setLastSavePoint" value="3480,U2L3C16Complete_interaction" />
+			<interaction action="callProperty" target="U2L3C14_swf.content" value="completeOutcome,thinkingMemoryChanges" />
+			<interaction action="callInteraction" value="U2L3C14Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C19Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C19_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C20Complete_interaction">
+			<interaction action="setLastSavePoint" value="3480,U2L3C20Complete_interaction" />
+			<interaction action="callProperty" target="U2L3C14_swf.content" value="completeOutcome,reboundEffects" />
+			<interaction action="callInteraction" value="U2L3C14Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C21Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L3C21_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C21Complete_interaction">
+			<interaction action="setLastSavePoint" value="3480,U2L3C21Complete_interaction" />
+			<interaction action="callProperty" target="U2L3C14_swf.content" value="completeOutcome,problems" />
+			<interaction action="callInteraction" value="U2L3C14Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C22Complete_interaction">
+			<interaction action="setLastSavePoint" value="3480,U2L3C22Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L3C24_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L3C25Complete_interaction">
+			<interaction action="setLastSavePoint" value="3480,U2L3C25Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L3C28_1_evaluation"/>
+		</interactionGroup>
+		
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U2L3C1Init_progressBar" interaction="init_interaction"  callInteraction="false" weight="25" />
+		<progressBar name="U2L3C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U2L3C1Complete_progressBar" weight="25"/>
+		<progressBar name="U2L3C2Complete_progressBar" interaction="U2L3C2Complete_interaction" weight="25"/>
+		<progressBar name="U2L3C4Complete_progressBar" interaction="U2L3C4Complete_interaction" weight="25"/>
+		<progressBar name="U2L3C5AComplete_progressBar" interaction="U2L3C5AComplete_interaction" weight="25"/>
+		<progressBar name="U2L3C5BComplete_progressBar" weight="25"/>
+		<progressBar name="U2L3C6AComplete_progressBar" weight="25"/>
+		<progressBar name="U2L3C6BComplete_progressBar" weight="25"/>
+		<progressBar name="U2L3C6CComplete_progressBar" interaction="U2L3C6CComplete_interaction" weight="25"/>
+		<progressBar name="U2L3C6DComplete_progressBar" weight="25"/>
+		<progressBar name="U2L3C6EComplete_progressBar" weight="25"/>
+		<progressBar name="U2L3C9Complete_progressBar" weight="25"/>
+		<progressBar name="U2L3C10Complete_progressBar" interaction="U2L3C10Complete_interaction" weight="25"/>
+		<progressBar name="U2L3C12Complete_progressBar" interaction="U2L3C12Complete_interaction" weight="25" />
+		<progressBar name="U2L3C13Complete_progressBar" weight="25"/>
+		<progressBar name="U2L3C16Complete_progressBar" interaction="U2L3C16Complete_interaction" weight="25"/>
+		<progressBar name="U2L3C20Complete_progressBar" interaction="U2L3C20Complete_interaction" weight="25"/>
+		<progressBar name="U2L3C21Complete_progressBar" interaction="U2L3C21Complete_interaction" weight="25"/>
+		<progressBar name="U2L3C22Complete_progressBar" interaction="U2L3C22Complete_interaction" weight="25"/>
+		<progressBar name="U2L3C24Complete_progressBar" weight="25"/>
+		<progressBar name="U2L3C25Complete_progressBar" interaction="U2L3C25Complete_interaction" weight="25" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U2L3C0_evaluation" visible="true" componentID="u2l3c0">
+			
+			<assetComplete action="U2L3C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Orange Phase - Psychological Dependence]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore the characteristics and experiences of the Orange Phase, and examine how continued high-risk use can lead to psychological dependence.]]></questionText>
+					<instructionText><![CDATA[Duration: 60 minutes]]></instructionText>
+					<multimedia src="unit2_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+	
+			<!-- U2L3C1	TG	Orange Phase: Psychological Dependence -->
+			
+			<brightcoveVideo name="U2L3C1_video" source="738436462001" width="768" height="432" label="Orange Phase: Psychological Dependence">
+				<playheadUpdate action="setProgress" value="U2L3C1Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L3C2_video" />
+			</brightcoveVideo>
+			
+			<!-- U2L3C2	HV + EV	Host and Expert Video 1 - Orange Phase Hallmark and Expert Video 1 - Orange Phase Hallmark - Psychological Dependence and Expert Video 1 - Orange Phase Hallmark - Psychological Dependence -->
+			
+			<brightcoveVideo name="U2L3C2_video" source="1560964863001" width="768" height="432" labe="Orange Phase Hallmarks">
+				<playheadUpdate action="setProgress" value="U2L3C2Complete_progressBar" frequency="5" />
+				<complete action="U2L3C2Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C2_cc.xml"/>
+			</brightcoveVideo>
+		
+		</sequence>
+		
+		<sequence label="Characteristics">
+		
+			<!-- U2L3C4	NV	Narrative Video 1 - Psychological Dependence - Importance, Integration and Preoccupation -->
+			
+			<brightcoveVideo name="U2L3C4_video" source="778783624001" width="768" height="432" label="Psychological Dependence">
+				<playheadUpdate action="setProgress" value="U2L3C4Complete_progressBar" frequency="5" />
+				<complete action="U2L3C4Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C4_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C5A	EV	Expert Video 2A - Intro to State Dependent Learning -->
+			
+			<brightcoveVideo name="U2L3C5A_video" source="738346770001" width="768" height="432" label="State Dependent Learning">
+				<playheadUpdate action="setProgress" value="U2L3C5AComplete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L3C5B_video" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C5A_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C5B	A	Animation  6 - State Dependent Learning - The SDL Window -->
+			
+			<brightcoveVideo name="U2L3C5B_video" source="821417097001" width="768" height="432" label="The State Dependent Learning Window">
+				<playheadUpdate action="setProgress" value="U2L3C5BComplete_progressBar" frequency="5" />
+				<complete action="U2L3C5BComplete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C5B_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C6A	NV + Illustration	Dramatization Video + Animation 1A - State Dependent Learning in Action, Part 1 -->
+			
+			<brightcoveVideo name="U2L3C6A_video" source="1554079965001" width="768" height="432" label="State Dependent Learning in Action">
+				<playheadUpdate action="setProgress" value="U2L3C6AComplete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L3C6B_video" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C6A_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C6B	A	Animation  7 - State Dependent Learning - Tolerance and SDL -->
+			
+			<brightcoveVideo name="U2L3C6B_video" source="821406617001" width="768" height="432" label="Tolerance and State Dependent Learning">
+				<playheadUpdate action="setProgress" value="U2L3C6BComplete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L3C6C_video" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C6B_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C6C	NV + Illustration	Dramatization Video + Animation 1B - State Dependent Learning in Action, Part 2 -->
+			
+			<brightcoveVideo name="U2L3C6C_video" source="760565542001" width="768" height="432" label="State Dependent Learning in Action, Part 2">
+				<playheadUpdate action="setProgress" value="U2L3C6CComplete_progressBar" frequency="5" />
+				<complete action="U2L3C6CComplete_interaction"  />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C6C_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C6D	A	Animation  8 - State Dependent Learning - Q/F Increase, Tolerance, Window and Psychological Dependence -->
+			
+			<brightcoveVideo name="U2L3C6D_video" source="821399162001" width="768" height="432" label="Other Characteristics">
+				<playheadUpdate action="setProgress" value="U2L3C6DComplete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L3C6E_video" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C6D_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C6E	NV + Illustration	Dramatization Video + Animations 1B - State Dependent Learning in Action, Part 3 -->
+			
+			<brightcoveVideo name="U2L3C6E_video" source="820182808001" width="768" height="432" label="State Dependent Learning in Action, Part 3">
+				<playheadUpdate action="setProgress" value="U2L3C6EComplete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L3C9_video" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C6E_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C9A	A	Animation 1A - Psychological Dependence - Defense of Choices (Part 2) 
+				U2L3C9B	A	Animation 1B - Summary of Psychological Dependence 
+				Both are combined according to Daniel and the storyboard doesn't agree with the tracker -->
+			
+			<brightcoveVideo name="U2L3C9_video" source="1507831872001" width="768" height="432" label="Defense of Choices">
+				<playheadUpdate action="setProgress" value="U2L3C9Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L3C10_video" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C9_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C10	EV	Expert Video 5 - Orange Phase Quantity and Frequency of Alcohol and Drug Choices -->
+			
+			<brightcoveVideo name="U2L3C10_video" source="820184718001" width="768" height="432" label="Quantity and Frequency of Alcohol and Drug Choices">
+				<playheadUpdate action="setProgress" value="U2L3C10Complete_progressBar" frequency="5" />
+				<complete action="U2L3C10Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C10_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C12	NV	Narrative Video 2: Orange Phase Social Dependence -->
+			
+			<brightcoveVideo name="U2L3C12_video" source="1452895212001" width="768" height="432" label="Social Dependence">
+				<playheadUpdate action="setProgress" value="U2L3C12Complete_progressBar" frequency="5" />
+				<complete action="U2L3C12Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C12_cc.xml"/>
+			</brightcoveVideo>
+		
+		</sequence>
+		
+		<sequence label="Outcomes">
+			
+			<!-- save point -->
+			
+			<!-- U2L3C13	HV	Host Video 1: Intro to Interaction - Menu of Orange Phase Outcomes -->
+			
+			<brightcoveVideo name="U2L3C13_video" source="738315029001" width="768" height="432" label="Orange Phase Outcomes Video">
+				<playheadUpdate action="setProgress" value="U2L3C13Complete_progressBar" frequency="5" />
+				<complete action="U2L3C13Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C13_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C14   CI   Orange Phase Outcomes -->
+			
+			<swf name="U2L3C14_swf" source="assets/media/U2L3C14.swf" componentID="u2l3c14">
+				<assetComplete action="U2L3C14Complete_interaction" />
+			</swf>
+			
+			<!-- U2L3C15A  -->
+			
+			<brightcoveVideo name="U2L3C15A_video" source="760720641001" width="768" height="432" label="Tolerance">
+				<complete action="gotoAndPlay" target="U2L3C15B_evaluation" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C15A_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C15B  -->
+			
+			<evaluation name="U2L3C15B_evaluation" componentID="u2l3c15b_1" label="Tolerance Questions">
+			
+				<assetComplete action="gotoAndPlay" target="U2L3C15B_2_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect">
+					<questionText><![CDATA[Which one of the following statements is true?]]></questionText>
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<feedback>
+					<feedbackText valueID="v1"><![CDATA[That's correct! Tolerance to physical things like walking goes up <b>&nbsp;faster</b> than tolerance to mental abilities like dealing with several things at once.]]></feedbackText>
+					<feedbackText valueID="v2"><![CDATA[Actually, there are two kinds of tolerance, mental and physical. Tolerance to physical things like walking goes up <b>faster</b> than tolerance to mental abilities like dealing with several things at once.]]></feedbackText>
+					<feedbackText valueID="v3"><![CDATA[No, the opposite is actually true. Tolerance to physical things like walking goes up <b>faster</b> than tolerance to mental abilities like dealing with several things at once.]]></feedbackText>
+				</feedback>
+				<titleText><![CDATA[Tolerance - Check Your Understanding]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v2">
+						<text><![CDATA[All tolerance is the same.]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v1">
+						<text><![CDATA[Tolerance to physical things like walking goes up <b>faster</b> than tolerance to mental abilities like dealing with several things at once.]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v3">
+						<text><![CDATA[Tolerance to physical things like walking goes up <b>slower</b> than tolerance to mental abilities like dealing with several things at once.]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L3C15B_2_evaluation" componentID="u2l3c15b_2">
+			
+				<assetComplete action="U2L3C15BComplete_interaction"/>
+			
+				<evaluation evalType="multipleChoiceSingleSelect">
+						<questionText><![CDATA[Compared to people with a low tolerance, people with a high tolerance are:]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[You've got it!  People with high tolerance become less sensitive to the effects of alcohol and don't realize how impaired they are.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[It might seem that way, but in reality, people with high tolerance become less sensitive to the effects of alcohol and don't realize how impaired they are.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Tolerance - Check Your Understanding]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[More aware of when they are impaired.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Less aware of when they are impaired.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+
+			</evaluation>
+			
+			<evaluation name="U2L3C15B_3_evaluation" componentID="u2l3c15b_3">
+			
+				<assetComplete action="gotoAndPlay" target="U2L3C16_video"/>
+			
+				<evaluation evalType="multipleChoiceSingleSelect">
+						<questionText><![CDATA[People with a high tolerance:]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v2"><![CDATA[Darn... you missed this one. Let's review. People with high tolerance are <i>more</i> likely to experience problems because they think they are not impaired when they really are.]]></feedbackText>
+							<feedbackText valueID="v1"><![CDATA[Great job! This is an important thing to keep in mind. In the Orange Phase a lot of people end up experiencing problems because they do not always know when they are impaired.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Tolerance - Check Your Understanding]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[Are less likely to experience impairment problems.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Are more likely to experience impairment problems.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>	
+				
+			</evaluation>
+			
+			<!-- U2L3C16 Thinking and Memory    U2L3C16, U2L3C17, U2L3C18  are combined -->
+			
+			<brightcoveVideo name="U2L3C16_video" source="1543723670001" width="768" height="432" label="Thinking and Memory Changes: Impaired Mental Abilities">
+				<complete action="U2L3C16Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C16_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- Note: Waiting for integration -
+			
+			<brightcoveVideo name="U2L3C18_video" source="1537539665001" width="768" height="432" >
+
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C18_cc.xml"/>
+			</brightcoveVideo>
+			
+			-->
+			
+			<!-- U2L3C19 -->
+			
+			<brightcoveVideo name="U2L3C19_video" source="1543704577001" width="768" height="432" label="Rebound Effects: Drinking to Cure Hangovers">
+				<complete action="gotoAndPlay" target="U2L3C20_video" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C19_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C20 -->
+			
+			<brightcoveVideo name="U2L3C20_video" source="1450519970001" width="768" height="432" label="Rebound Effects: Marijuana and Theta Waves">
+				<complete action="U2L3C20Complete_interaction"  />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C20_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C21 -->
+			
+			<brightcoveVideo name="U2L3C21_video" source="1467194488001" width="768" height="432" label="Problem Outcomes: Health and Impairment Problems Likely">
+				<complete action="U2L3C21Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C21_cc.xml"/>
+			</brightcoveVideo>
+		
+		</sequence>
+		
+		<sequence label="Marketing">
+			<!-- U2L3C22 -->
+			
+			<brightcoveVideo name="U2L3C22_video" source="820280290001" width="768" height="432" label="Marketing Video">
+				<playheadUpdate action="setProgress" value="U2L3C22Complete_progressBar" frequency="5" />
+				<complete action="U2L3C22Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C22_cc.xml"/>
+			</brightcoveVideo>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+			
+			<!-- U2L3C24 -->
+			
+			<brightcoveVideo name="U2L3C24_video" source="1538785979001" width="768" height="432" label="Summary Info Graphic">
+				<playheadUpdate action="setProgress" value="U2L3C24Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay"  target="U2L3C25_video" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C24_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C25 -->
+			
+			<brightcoveVideo name="U2L3C25_video" source="1545567916001" width="768" height="432" label="50/50 Split Video">
+				<playheadUpdate action="setProgress" value="U2L3C25Complete_progressBar" frequency="5" />
+				<complete action="U2L3C25Complete_interaction" />
+				<caption source="data/Unit_2/captions/lesson_03/U2L3C25_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L3C28 -->
+			
+			<evaluation name="U2L3C28_1_evaluation" componentID="u2l3c28_1" label="Check for Understanding ">
+			
+				<assetComplete action="gotoAndPlay" target="U2L3C28_2_evaluation" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect">
+						<questionText><![CDATA[For people in the Orange Phase, what are some benefits of making a commitment to low-risk choices and returning to the Green Phase? Check all that apply.]]></questionText>
+						<instructionText><![CDATA[Choose the best answers, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[That's exactly right! All of the items listed are benefits of making low-risk choices and returning to the Green Phase.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[You missed a few. <b>ALL</b> of the items listed here are benefits of making low-risk choices and returning to the Green Phase.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Orange Phase - Check Your Understanding]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[They stop the progression toward the trigger level.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Some of their health problems are reversible.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[They are better able to re-establish relationships with people they care about.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[They are better able to protect other things they value in life. ]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+
+			</evaluation>
+			
+			<evaluation name="U2L3C28_2_evaluation" componentID="u2l3c28_2">
+			
+				<assetComplete action="gotoAndPlay" target="U2L3C28_3_evaluation" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect">
+						<questionText><![CDATA[When I use my psychological defenses in the Orange Phase... (Select the three statements that apply.)]]></questionText>
+						<instructionText><![CDATA[Choose the best answers, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[That's right. When I use my psychological defenses in the Orange Phase, my defenses trick <i>me</i>. It's not that I am intentionally lying to others; I'm lying to myself, and I believe it. Furthermore, my defenses can prevent me from seeing that some of my problems are related to my drinking or drug use.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Sorry, but you're off on something here. When I use my psychological defenses in the Orange Phase, my defenses trick <i>me</i>. It's not that I am intentionally lying to others; I'm lying to myself, and I believe it. Furthermore, my defenses can prevent me from seeing that some of my problems are related to my drinking or drug use.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Orange Phase - Check Your Understanding (Continued)]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[I am just lying to other people and I know it.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[I am lying to myself.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[I might say things like, "It's not my fault," and really believe it, even if it is my fault.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[I might fail to see that some of my problems are related to my drinking or drug use.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+
+			</evaluation>
+			
+			<evaluation name="U2L3C28_3_evaluation" componentID="u2l3c28_3">
+			
+				<assetComplete action="gotoAndPlay" target="U2L3C28_4_evaluation" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect">
+						<questionText><![CDATA[Which three of the following statements are <b>TRUE</b>  about how people progress beyond the Orange Phase?]]></questionText>
+						<instructionText><![CDATA[Choose the best answers, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[Yes! People in the Orange Phase will eventually progress in one of two ways. Either they will go back to making low-risk choices, or they will continue making high-risk choices and cross their trigger level. Everyone in the Orange Phase <i>could</i> go back to the Green Phase if they made a commitment to low-risk choices.  Or, they  &nbsp;<i>could</i> cross their trigger level if they continue to make high-risk choices. ]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Not quite. People in the Orange Phase will eventually progress in one of two ways. Either they will go back to making low-risk choices, or they will continue making high-risk choices and cross their trigger level. Everyone in the Orange Phase <i>could</i> go back to the Green Phase if they made a commitment to low-risk choices.  Or, they  &nbsp;<i>could</i> cross their trigger level if they continue to make high-risk choices.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Orange Phase - Check Your Understanding (Continued)]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[50% go on to cross their trigger level.  ]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Everyone in the Orange Phase could go back to the Green Phase if they made a commitment to low-risk choices. ]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v2">
+								<text><![CDATA[People in the Orange Phase typcially go back to the Yellow Phase because they cut back on their quantity and frequency, but still occasionally make high-risk choices.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[Everyone in the Orange phase could cross their trigger level if they continue to make high-risk choices.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L3C28_4_evaluation" componentID="u2l3c28_4">
+			
+				<assetComplete action="getNextScene" value="3480" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect">
+						<questionText><![CDATA[Which two of the following statements are <b>TRUE</b> about psychological dependence?]]></questionText>
+						<instructionText><![CDATA[Choose the best answers, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[That's it! Psychological dependence becomes a powerful influence on continued high-risk use AND can lead to a "relationship" with alcohol or drugs.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[That's not quite accurate. Psychological dependence is quite normal, and it becomes a powerful influence on continued high-risk use. It can lead to a "relationship" with alcohol or drugs. Most people develop psychological dependence long before becoming addicted, though, so it is not a sign of addiction in and of itself.]]></feedbackText>
+						</feedback>
+						<titleText><![CDATA[Orange Phase - Check Your Understanding (Continued)]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v2">
+								<text><![CDATA[It is abnormal.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[It can lead to a relationship with alcohol or drugs that is similar to a relationship with a lover.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v2">
+								<text><![CDATA[It means I must have alcoholism or drug addiction.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[It becomes a powerful influence on continued high-risk use.]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+
+			</evaluation>
+		
+		</sequence>
+		
+	</assets>
+	
+</scene>

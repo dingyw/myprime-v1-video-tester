@@ -1,0 +1,98 @@
+<scene id="3647" title="Protecting Unit Introduction">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U3L0C0_evaluation" />
+	
+		<interactionGroup name="U3L0C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3647,U3L0C0Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L0C1_video" />
+		</interactionGroup>
+		<interactionGroup name="U3L0C5Complete_interaction">
+			<interaction action="setLastSavePoint" value="3647,U3L0C5Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L0C6_evaluation" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U3L0C1Init_progressBar" interaction="init_interaction"  callInteraction="false"  weight="25" />
+		<progressBar name="U3L0C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U3L0C1Complete_progressBar" weight="25" />
+		<progressBar name="U3L0C5Complete_progressBar" weight="25" />
+		<progressBar name="U3L0C6Complete_progressBar" weight="25" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U3L0C0_evaluation" visible="true" componentID="u1l0c0">
+			
+			<assetComplete action="U3L0C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Protecting Unit Reflection]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll revisit the formula and look at another way to think about lifestyle-related health problems.]]></questionText>
+					<instructionText><![CDATA[Duration: 5 minutes]]></instructionText>
+					<multimedia src="unit3_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+		<!--  U3L0C1    TG      -->
+		
+		<brightcoveVideo name="U3L0C1_video" source="821406638001" width="768" height="432" complete="true" label="Unit 3: Protecting">
+		  <playheadUpdate action="setProgress" value="U3L0C1Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U3L0C5_video"/>
+		</brightcoveVideo>
+		
+		<!--  U3L0C2  
+		
+		<brightcoveVideo name="U3L0C2_video" source="760691659001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U3L0C2Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U3L0C5_video"/>
+		</brightcoveVideo>
+		 -->
+		 
+		<!--  U3L0C5     -->
+		
+		<brightcoveVideo name="U3L0C5_video" source="763675189001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U3L0C5Complete_progressBar" frequency="5" />
+		  <complete action="U3L0C5Complete_interaction" />
+		  <caption source="data/Unit_3/captions/lesson_00/U3L0C5_cc.xml"/>
+		</brightcoveVideo>
+		
+		<evaluation name="U3L0C6_evaluation" componentID="u3l0c6" label="Lesson Summary Screen">
+		
+			<assetComplete action="getNextScene" recordComplete="true" value="3647,1307"/>
+			
+			<evaluation evalType="ReflectionQuestion" templateType="notes">
+					<questionText><![CDATA[Protecting Unit Introduction]]></questionText>
+					<titleText><![CDATA[My Notes]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[3]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		</sequence>
+		
+	</assets>
+  
+</scene>

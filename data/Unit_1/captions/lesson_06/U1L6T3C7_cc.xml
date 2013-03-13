@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>  </styling>
+  </head>
+  <body>
+    <div xml:lang="en">
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Narrator:</b>
+        <br/>
+	   To view a presentation, click Play. Click Pause at any time to read what's on the screen. At the end of the presentation, click Next to continue. You'll see several other presentations like this throughout the course.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Narrator:</b>
+        <br/>
+	   While there is no addictive personality type that causes alcoholism, research has identified several personality traits that are more common among people who develop alcoholism or addiction. 
+The first is sensation-seeking. People who are sensation-seekers need to experience new things. They are easily bored unless there is a lot of activity and stimulation. 
+Gregarious people are outgoing and like to be with groups. People who are impulsive tend to do things without planning or forethought. And rebellious people do not like to follow rules; they want to do things their own way. 
+      </p>
+    </div>
+  </body>
+</tt>

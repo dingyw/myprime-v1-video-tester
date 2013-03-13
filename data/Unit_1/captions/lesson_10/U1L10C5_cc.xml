@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>  </styling>
+  </head>
+  <body>
+    <div xml:lang="en">
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Narrator:</b>
+        <br/>
+	   To view a presentation, click Play. Click Pause at any time to read what's on the screen. At the end of the presentation, click Next to continue. You'll see several other presentations like this throughout the course.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Narrator: </b>
+        <br/>
+	   When it comes to drugs, a single trigger level doesn’t apply to all substances.  And for some drugs, the trigger level for addiction is lower than the trigger level for alcoholism.  For example, people can become addicted to nicotine very quickly.  This is one of the reasons why ‘zero-use’ is the only low-risk choice for drugs. 
+The strength and purity of illegal drugs are unpredictable.  Some drug-related deaths aren’t even from the drug; they’re from other substances that are mixed in.  Additionally the strength levels of drugs can vary dramatically from batch to batch.  Because of this, people can’t predict their level of impairment, or whether or not they will overdose. 
+Most adults can have a drink, without significant impairment.  But the typical dose of drugs is generally enough to cause impairment.
+People may drink a beer because it’s refreshing, or enjoy the taste of wine with steak but they don’t smoke a joint for the flavor, or pop an amphetamine because it goes so well with pizza.  People use drugs to become impaired, and impairment is always high-risk, whether caused by alcohol or drugs.
+      </p>
+    </div>
+  </body>
+</tt>

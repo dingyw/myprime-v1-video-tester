@@ -1,0 +1,375 @@
+<scene id="3653" title="Finding Fun">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U3L6C0_evaluation" />
+	
+		<interactionGroup name="U3L6C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3653,U3L6C0Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L6C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L6C5_1Complete_interaction">
+			
+			<interaction action="gotoAndPlay"  target="U3L6C5_2_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L6C5_2Complete_interaction">
+			
+			<interaction action="gotoAndPlay" target="U3L6C5_3_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L6C5_3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3653,U3L6C5_3Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L6C6_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L6C7_3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3653,U3L6C7_3Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L6C8_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L6C8Complete_interaction">
+			<interaction action="setLastSavePoint" value="3653,U3L6C8Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L6C12A_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L6C13Complete_interaction">
+			<interaction action="setLastSavePoint" value="3653,U3L6C13Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L6C14_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L6C14Complete_interaction">
+			<!-- <interaction action="recordComplete" value="Lesson,3653" /> -->
+			<interaction action="recordComplete" value="Scene,3653,Lesson,1313" />
+			<interaction action="getScene" value="3763" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U3L6C1Init_progressBar" interaction="init_interaction"   callInteraction="false" weight="5" />
+		<progressBar name="U3L6C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U3L6C1Complete_progressBar" weight="25" />
+		<progressBar name="U3L6C2Complete_progressBar"  />
+		<progressBar name="U3L6C5Complete_progressBar"  interaction="U3L6C5_3Complete_interaction" weight="25"/>
+		<progressBar name="U3L6C6Complete_progressBar"  />
+		<progressBar name="U3L6C7Complete_progressBar"   interaction="U3L6C7_3Complete_interaction" weight="25"/>
+		<progressBar name="U3L6C8Complete_progressBar"  interaction="U3L6C8Complete_interaction" weight="25"/>
+		<progressBar name="U3L6C12AComplete_progressBar"  />
+		<progressBar name="U3L6C13Complete_progressBar" interaction="U3L6C13Complete_interaction" />
+		<progressBar name="U3L6C14Complete_progressBar"  />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U3L6C0_evaluation" visible="true" componentID="u3l6c0">
+			
+			<assetComplete action="U3L6C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Finding Fun]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore ways of reigniting the fun in life by creating a plan for future activities.]]></questionText>
+					<instructionText><![CDATA[Duration: 15 minutes]]></instructionText>
+					<multimedia src="unit3_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U3L6C1  TG     -->
+			
+			<brightcoveVideo name="U3L6C1_video" source="738436467001" width="768" height="432" complete="true" label="Finding Fun">
+			  <playheadUpdate action="setProgress" value="U3L6C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L6C2_video"/>
+			</brightcoveVideo>
+	
+			<!--  U3L6C2   -->
+			
+			<brightcoveVideo name="U3L6C2_video" source="1540444458001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U3L6C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L6C5_1_evaluation"/>
+			  <caption source="data/Unit_3/captions/lesson_06/U3L6C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Fun">
+	
+			<!--  U3L6C5	 -->
+			
+			<evaluation name="U3L6C5_1_evaluation" componentID="u3l6c5_1" label="Finding Fun Questions">
+			
+				<assetComplete action="U3L6C5_1Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[Something I enjoyed in the past and will begin doing again is...]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Finding Fun]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U3L6C5_2_evaluation" componentID="u3l6c5_2">
+			
+				<assetComplete action="U3L6C5_2Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[Something I would like to do that I have not done before is...]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Finding Fun]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U3L6C5_3_evaluation" componentID="u3l6c5_3">
+			
+				<assetComplete action="U3L6C5_3Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[I think it would be fun to...]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Finding Fun]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!--  U3L6C6	HV	-->
+			
+			<brightcoveVideo name="U3L6C6_video" source="761250231001" width="768" height="432" label="Finding Fun Video">
+			  <playheadUpdate action="setProgress" value="U3L6C6Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L6C6_evaluation"/>
+			  <caption source="data/Unit_3/captions/lesson_06/U3L6C6_cc.xml"/>
+			</brightcoveVideo>
+			
+			<evaluation name="U3L6C6_evaluation" componentID="u3l6c6" >
+				
+				<c1 action="gotoAndPlay" target="U3L6C7_1_evaluation" />
+				<c2 action="gotoAndPlay" target="U3L6C8_video"/>
+				
+				<assetComplete action="hide" target="U3L6C6_evaluation" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<instructionText><![CDATA[]]></instructionText>
+					<questionText><![CDATA[To view the Sensation-Seeking Scale, click Start. To skip the interaction, click Next.]]></questionText>
+					<titleText><![CDATA[]]></titleText>
+					<multimedia src="solidBlackPopup.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[Start]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[Next]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[Yes]]></value>
+						<value id="v2"><![CDATA[No]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Sensation-Seekers">
+		
+			<!--  U3L6C7 -->
+			
+			<evaluation name="U3L6C7_1_evaluation" componentID="u3l6c7_1" label="Brief Sensation-Seeking Scale">
+			
+				<assetComplete action="gotoAndPlay" target="U3L6C7_2_evaluation"/>
+				
+				<evaluation evalType="assessment" layout="vertical" customBG="sampleBG.swf">
+						<titleText><![CDATA[Sensation-Seeking Scale]]></titleText>
+						<instructionText><![CDATA[Choose the answers that best describe you, then click Submit.]]></instructionText>
+						<audio src="U3L6C7.mp3"/>
+						<choice-collection type="agree">
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[I like to explore strange places.]]></text>
+							 </choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[I get restless when I spend too much time alone.]]></text>
+							 </choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[I like to do frightening things.]]></text>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[I like wild parties.]]></text>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[yes]]></value>
+							<value id="v2"><![CDATA[no]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U3L6C7_2_evaluation" componentID="u3l6c7_2">
+			
+				<assetComplete action="gotoAndPlay" target="U3L6C7_3_evaluation"/>
+				
+				<evaluation evalType="assessment" layout="vertical" customBG="sampleBG.swf">
+						<titleText><![CDATA[Sensation-Seeking Scale]]></titleText>
+						<instructionText><![CDATA[Choose the answers that best describe you, then click Submit.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[Thank you for answering, press "Next" to move on.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Incorrect!  Custom feedback goes here!]]></feedbackText>
+						</feedback>
+						<choice-collection type="agree">
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[I would like to take off on a trip with no pre-planned routes or timetables.]]></text>
+							 </choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[I prefer friends who are excitingly unpredictable.]]></text>
+							 </choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[I would like to try bungee jumping.]]></text>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[I would love to have new and exciting experiences, even if they are illegal.]]></text>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[yes]]></value>
+							<value id="v2"><![CDATA[no]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U3L6C7_3_evaluation" componentID="u3l6c7_3">
+			
+				<assetComplete action="U3L6C7_3Complete_interaction" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+						<questionText><![CDATA[Did you notice that I overwrote the original text?]]></questionText>
+						<instructionText><![CDATA[]]></instructionText>
+						<multimedia src="U3L6C7_3.swf"/>
+						<data-dependency id="U3L6C7_1"/>
+						<data-dependency id="U3L6C7_2"/>
+						<titleText><![CDATA[My Experiences]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c5" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c6" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c7" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c8" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<!--  U3L6C8	HV + EV	Host and Expert Video 2: Discussion of Sensation Seeking
+								TV	Finding Fun - Testimonial Video (Part 2)
+								HV	Host Video 3: Transition to Other Video
+								OV	Other Video 1: Re-Wired for Pleasure - THIS IS THE POOL VIDEO, SEE IF ALLAN RECORDED VO, OTHERWISE WE WILL HAVE TO HAVE ROBERT RECORD IT -->
+								
+			<brightcoveVideo name="U3L6C8_video" source="1533260341001" width="768" height="432" label="Sensation-Seeking Video">
+			  <playheadUpdate action="setProgress" value="U3L6C8Complete_progressBar" frequency="5" />
+			  <complete action="U3L6C8Complete_interaction" />
+			  <caption source="data/Unit_3/captions/lesson_06/U3L6C8_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U3L6C12A	EV	Expert Video 1: Adolescent Brain Changes due to HRCs (Part 1) -->
+			
+			<brightcoveVideo name="U3L6C12A_video" source="776286662001" width="768" height="432" label="Adolescent Brain Changes due to High-Risk Choices">
+			  <playheadUpdate action="setProgress" value="U3L6C12AComplete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L6C13_video"/>
+			  <caption source="data/Unit_3/captions/lesson_06/U3L6C12A_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!--  U3L6C13	HV	Host Video 4: Finding Fun Summary -->
+			
+			<brightcoveVideo name="U3L6C13_video" source="1533240860001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U3L6C13Complete_progressBar" frequency="5" />
+			  <complete action="U3L6C13Complete_interaction" />
+			  <caption source="data/Unit_3/captions/lesson_06/U3L6C13_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U3L6C14	NOTES	 -->
+			
+			<evaluation name="U3L6C14_evaluation" componentID="u3l6c14" label="Lesson Summary Screen">
+			
+				<assetComplete action="U3L6C14Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Finding Fun]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[3]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

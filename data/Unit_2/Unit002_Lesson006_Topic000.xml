@@ -1,0 +1,1102 @@
+<scene id="7622" title="The Spiral">
+  <interactions>
+    <interaction name="start_interaction" action="goto" target="U2L6C0_evaluation"/>
+	
+    <interactionGroup name="U2L6C0Complete_interaction">
+      <interaction action="setLastSavePoint" value="7622,U2L6C0Complete_interaction"/>
+      <interaction action="gotoAndPlay" target="U2L6C1_video"/>
+    </interactionGroup>
+	
+    <interactionGroup name="U2L6C2AComplete_interaction">
+      <interaction action="setLastSavePoint" value="7622,U2L6C2AComplete_interaction"/>
+      <interaction action="goto" target="U2L6C4_swf"/>
+      <interaction action="play" target="U2L6C4_swf.content" />
+    </interactionGroup>
+	
+    <interactionGroup name="U2L6C6AComplete_interaction">
+      <interaction action="setLastSavePoint" value="7622,U2L6C6AComplete_interaction"/>
+      <interaction action="gotoAndPlay" target="U2L6C6B_evaluation"/>
+    </interactionGroup>
+	
+	<interactionGroup name="U2L6C9Complete_interaction">
+      <interaction action="setLastSavePoint" value="7622,U2L6C9Complete_interaction"/>
+      <interaction action="gotoAndPlay" target="U2L6C10_evaluation"/>
+    </interactionGroup>
+	
+	<interactionGroup name="U2L6C13Complete_interaction">
+      <interaction action="setLastSavePoint" value="7622,U2L6C13Complete_interaction"/>
+      <interaction action="gotoAndPlay" target="U2L6C14_evaluation"/>
+    </interactionGroup>
+	
+	<interactionGroup name="U2L6C17Complete_interaction">
+      <interaction action="setLastSavePoint" value="7622,U2L6C17Complete_interaction"/>
+      <interaction action="gotoAndPlay" target="U2L6C18_evaluation"/>
+    </interactionGroup>
+	
+	<interactionGroup name="U2L6C22Complete_interaction">
+		<interaction action="setLastSavePoint" value="7622,U2L6C22Complete_interaction" />
+		<interaction action="gotoAndPlay" target="U2L6C23_evaluation" />
+	</interactionGroup>
+	
+	<interactionGroup name="U2L6C23Complete_interaction">
+		<interaction action="gotoAndPlay" target="U2L6C25_evaluation" />
+	</interactionGroup>
+	
+  </interactions>
+  
+  <progressIndicator x="0" y="432" width="768" height="24">
+    <progressBar name="U2L6C1Init_progressBar" interaction="init_interaction" callInteraction="false" weight="5"/>
+    <progressBar name="U2L6C0Start_progressBar" interaction="start_interaction" weight="0"/>
+    <progressBar name="U2L6C1Complete_progressBar" weight="25"/>
+    <progressBar name="U2L6C2Complete_progressBar" weight="25"/>
+    <progressBar name="U2L6C2AComplete_progressBar" interaction="U2L6C2AComplete_interaction" weight="25"/>
+	<!--
+    <progressBar name="U2L6C4Complete_progressBar"/>
+	-->
+    <progressBar name="U2L6C5Complete_progressBar"/>
+    <progressBar name="U2L6C6AComplete_progressBar" interaction="U2L6C6AComplete_interaction" weight="25"/>
+	<progressBar name="U2L6C7Complete_progressBar"/>
+	<progressBar name="U2L6C8AComplete_progressBar"/>
+	<progressBar name="U2L6C9Complete_progressBar" interaction="U2L6C9Complete_interaction" weight="25"/>
+	<progressBar name="U2L6C10AComplete_progressBar"/>
+	<progressBar name="U2L6C11Complete_progressBar"/>
+	<progressBar name="U2L6C12AComplete_progressBar"/>
+	<progressBar name="U2L6C13Complete_progressBar" interaction="U2L6C13Complete_interaction" weight="25"/>
+	<progressBar name="U2L6C14AComplete_progressBar"/>
+	<progressBar name="U2L6C15Complete_progressBar"/>
+	<progressBar name="U2L6C16AComplete_progressBar"/>
+	<progressBar name="U2L6C17Complete_progressBar" interaction="U2L6C17Complete_interaction" weight="25"/>
+	<progressBar name="U2L6C18AComplete_progressBar"/>
+	<progressBar name="U2L6C19Complete_progressBar"/>
+	<progressBar name="U2L6C20Complete_progressBar"/>
+	<progressBar name="U2L6C22Complete_progressBar" interaction="U2L6C22Complete_interaction" weight="25"/>
+	<progressBar name="U2L6C25Complete_progressBar" />
+  </progressIndicator>
+  
+  <assets visible="false">
+  
+    <evaluation name="U2L6C0_evaluation" visible="true" componentID="u2l6c0">
+      <assetComplete action="U2L6C0Complete_interaction"/>
+      <evaluation evalType="multipleChoiceSingleSelect" design="true">
+        <titleText><![CDATA[The Spiral]]></titleText>
+        <questionText>
+         <![CDATA[In this lesson, we'll explore some of the reasons why issues that result from alcohol or drug use can seem very different to the person who is experiencing the problems than those issues appear to others around them.]]>
+        </questionText>
+        <instructionText><![CDATA[Duration: 40 minutes]]></instructionText>
+        <multimedia src="unit2_intro.swf"/>
+        <choice-collection>
+          <choice id="c1" valueID="v1">
+            <text><![CDATA[1]]></text>
+            <userEntry controlID=""/>
+          </choice>
+        </choice-collection>
+        <value-collection>
+          <value id="v1"><![CDATA[true]]></value>
+          <value id="v2"><![CDATA[false]]></value>
+        </value-collection>
+      </evaluation>
+    </evaluation>
+	
+    <sequence label="Introduction">
+      
+	  <!-- U2L6C1 TG The Spiral  -->
+      
+	  <brightcoveVideo name="U2L6C1_video" source="738436500001" width="768" height="432" complete="true" label="The Spiral">
+        <playheadUpdate action="setProgress" value="U2L6C1Complete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C2_video"/>
+      </brightcoveVideo>
+	  
+      <!-- U2L6C2 HV  Host Video 1 - Introduction to the Spiral -->
+	  
+      <brightcoveVideo name="U2L6C2_video" source="1526521973001" width="768" height="432" label="Introduction Video">
+        <playheadUpdate action="setProgress" value="U2L6C2Complete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C2A_video"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C2_cc.xml"/>
+      </brightcoveVideo>
+	  
+      <!-- U2L6C2A IG The Spiral in the Formula  -->
+	  
+      <brightcoveVideo name="U2L6C2A_video" source="1502831340001" width="768" height="432" label="The Spiral in the Formula">
+        <playheadUpdate action="setProgress" value="U2L6C2AComplete_progressBar" frequency="5"/>
+		<!--
+        <complete action="gotoAndPlay" target="U2L6C4_swf"/>
+		<complete action="play" target="U2L6C4_swf.content"/>
+		-->
+		<complete action="U2L6C2AComplete_interaction" />
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C2A_cc.xml"/>
+      </brightcoveVideo>
+	  
+	 </sequence>
+	
+    <sequence label="The Spiral Activity">
+      <!-- U2L6C4 A Animation 1: Intro to the Spiral  -->
+	  
+	  <!--
+      <brightcoveVideo name="U2L6C4_video" source="1530755175001" width="768" height="432" label="Intro to the Spiral">
+        <playheadUpdate action="setProgress" value="U2L6C4Complete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C5_video"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C4_cc.xml"/>
+      </brightcoveVideo>
+	  -->
+	  
+	  <swf name="U2L6C4_swf" source="assets/media/U2L6C4.swf">
+		<assetComplete action="callProperty" target="U2L6C4_swf.content" value="gotoAndStop,1"/>
+        <assetComplete action="gotoAndPlay" target="U2L6C5_video"/>
+		<!--
+		<caption source="data/Unit_2/captions/lesson_06/U2L6C4_cc.xml"/>
+		-->
+      </swf>
+	  
+	  <!-- Note: Component 5 - 18 should not label - otherwise the learner will able to cheat. -->
+	  
+	  <!-- U2L6C5 A Testimonial Video 1: Social Dependence  -->
+	  
+      <brightcoveVideo name="U2L6C5_video" source="1511103460001" width="768" height="432" label="Spiral Activity Intro">
+        <playheadUpdate action="setProgress" value="U2L6C5Complete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C6_evaluation"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C5_cc.xml"/>
+      </brightcoveVideo>
+	  
+	   <!-- U2L6C6 CI Interaction 1: Social Dependence  -->
+	  
+	  <evaluation name="U2L6C6_evaluation" componentID="u2l6c6">
+		
+			<assetComplete action="gotoAndPlay" target="U2L6C6A_video"/>
+				
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<feedback>
+					<feedbackText valueID="v1"><![CDATA[Good choice, that's it! Social dependence means that our social group engages in high-risk drinking or drug use to the point that it becomes a defining part of our group. If we are together, we are going to be making high-risk choices. It just seems normal.]]></feedbackText>
+					<feedbackText valueID="v2"><![CDATA[That's not quite it. Remember that social dependence means that our social group engages in high-risk drinking or drug use to the point that it becomes a defining part of our group. If we are together, we are going to be making high-risk choices. It just seems normal. In fact, if someone in our group was not drinking or using it would stand out. This comes to trick us about what is normal. We come to believe most everyone does this. Not only does that level of use come to seem normal, all the problems that go with it seem normal.]]></feedbackText>
+				</feedback>
+				<multimedia src="U2L6C6.swf"/>
+				<audio src="U2L6C6.mp3"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+		
+      </evaluation>
+	  
+	   <!-- U2L6C6A Animation 2: Social Dependence Explanation  -->
+	  
+      <brightcoveVideo name="U2L6C6A_video" source="1519073621001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C6AComplete_progressBar" frequency="5"/>
+        <complete action="U2L6C6AComplete_interaction"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C6A_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <evaluation name="U2L6C6B_evaluation" componentID="U2L6C6B">
+		
+		<assetComplete action="gotoAndPlay" target="U2L6C7_video"/>
+		
+		<evaluation evalType="multipleChoiceSingleSelect" design="true">
+			<questionText><![CDATA[sdfgsdfg]]></questionText>
+			<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+			<multimedia src="U2L6C6B.swf"/>
+			<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+			<choice-collection>
+				<choice id="c1" valueID="v1">
+					<text><![CDATA[0]]></text>
+					<userEntry controlID=""></userEntry>
+				</choice>
+				<choice id="c2" valueID="v1">
+					<text><![CDATA[]]></text>
+					<userEntry controlID=""></userEntry>
+				</choice>
+				<choice id="c3" valueID="v1">
+					<text><![CDATA[]]></text>
+					<userEntry controlID=""></userEntry>
+				</choice>
+				<choice id="c4" valueID="v1">
+					<text><![CDATA[]]></text>
+					<userEntry controlID=""></userEntry>
+				</choice>
+				<choice id="c5" valueID="v1">
+					<text><![CDATA[]]></text>
+					<userEntry controlID=""></userEntry>
+				</choice>
+				<choice id="c6" valueID="v1">
+					<text><![CDATA[]]></text>
+					<userEntry controlID=""></userEntry>
+				</choice>
+				<choice id="c7" valueID="v1">
+					<text><![CDATA[]]></text>
+					<userEntry controlID=""></userEntry>
+				</choice>
+			</choice-collection>
+			<value-collection>
+				<value id="v1"><![CDATA[true]]></value>
+				<value id="v2"><![CDATA[false]]></value>
+			</value-collection>
+		</evaluation>
+		
+	  </evaluation>
+	  
+	   <!-- U2L6C7 Testimonial 2: Testimonial Video 2: Enabling  -->
+	  
+	  <brightcoveVideo name="U2L6C7_video" source="1511128991001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C7Complete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C8_evaluation"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C7_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <!-- U2L6C8  CI Testimonial 2: Testimonial Video 2: Enabling  -->
+	  
+	  <evaluation name="U2L6C8_evaluation" componentID="u2l6c8">
+	  
+		<assetComplete action="gotoAndPlay" target="U2L6C8A_video" />
+				
+			 <evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<feedback>
+					<feedbackText valueID="v1"><![CDATA[That's correct. Enabling someone in their use of alcohol and drugs means that we encourage the continuation of high-risk choices by doing things to help remove or lessen the consequences of their drinking or drug use. This prevents the person who's making those choices from experiencing negative outcomes. If my choices don't cause me pain, I am less likely to perceive them as causing problems. Also, the very fact that people are helping me implies that my high-risk choices are acceptable.]]></feedbackText>
+					<feedbackText valueID="v2"><![CDATA[Not quite. This is an example of enabling. Enabling someone in their use of alcohol and drugs means that we encourage the continuation of high-risk choices by doing things to help remove or lessen the consequences of their drinking or drug use. This prevents the person who's making those choices from experiencing negative outcomes. If my choices don't cause me pain, I am less likely to perceive them as causing problems. Also, the very fact that people are helping me implies that my high-risk choices are acceptable.]]></feedbackText>
+				</feedback>
+				<multimedia src="U2L6C8.swf"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+		
+		</evaluation>
+		
+		<!-- U2L6C8A  Animation 3: Enabling Explanation -->
+	  
+	  <brightcoveVideo name="U2L6C8A_video" source="1519075038001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C8AComplete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C8B_evaluation"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C8A_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <evaluation name="U2L6C8B_evaluation" componentID="u2l6c8b">
+	  
+		<assetComplete action="gotoAndPlay" target="U2L6C9_video"/>
+		
+		<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<multimedia src="U2L6C6B.swf"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v1">
+						<text><![CDATA[1]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+		
+	  </evaluation>
+	  
+	  <!-- U2L6C9  Testimonial Video 3: Psychological Defenses -->
+	  
+	  <brightcoveVideo name="U2L6C9_video" source="1511128989001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C9Complete_progressBar" frequency="5"/>
+        <complete action="U2L6C9Complete_interaction" />
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C9_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <!-- U2L6C10  CI Interaction 3: Psychological Defenses  -->
+	  
+	  <evaluation name="U2L6C10_evaluation" componentID="u2l6c10">
+	  
+		<assetComplete action="gotoAndPlay" target="U2L6C10A_video"/>
+		
+		<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<feedback>
+					<feedbackText valueID="v1"><![CDATA[Well done! Psychological defenses are the unconscious and automatic "mind tricks" that we play on ourselves to calm our fears that something might be wrong. We convince ourselves that nothing unusual is happening, that problems are normal, or that someone else is at fault when we experience negative outcomes as a result of our choices.]]></feedbackText>
+					<feedbackText valueID="v2"><![CDATA[That is not the right answer. This person gave examples of psychological defenses, which are the unconscious and automatic "mind tricks" that we play on ourselves to calm our fears that something might be wrong. We convince ourselves that nothing unusual is happening, that problems are normal, or that someone else is at fault when we experience negative outcomes as a result of our choices.]]></feedbackText>
+				</feedback>
+				<multimedia src="U2L6C10.swf"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+		
+	</evaluation>
+	
+	<!-- U2L6C10A  Animation 4: Psychological Defenses Explanation -->
+	  
+	  <brightcoveVideo name="U2L6C10A_video" source="1519075037001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C10AComplete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C10B_evaluation"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C10A_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <evaluation name="U2L6C10B_evaluation" componentID="u2l6c10b">
+	  
+		<assetComplete action="gotoAndPlay" target="U2L6C11_video"/>
+		
+		<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<multimedia src="U2L6C6B.swf"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v1">
+						<text><![CDATA[2]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+		
+	  </evaluation>
+	  
+	  <!-- U2L6C11 Testimonial Video 4: State-Dependent Learning -->
+	  
+	  <brightcoveVideo name="U2L6C11_video" source="1532994241001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C11Complete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C12_evaluation"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C11_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <!-- U2L6C12  CI Interaction 4: State-Dependent Learning  -->
+	  
+	  <evaluation name="U2L6C12_evaluation" componentID="u2l6c12">
+	  
+		<assetComplete action="gotoAndPlay" target="U2L6C12A_video"/>
+		
+		<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<feedback>
+					<feedbackText valueID="v1"><![CDATA[You got it! State-dependent learning means that what we learn in one mental or emotional state is best remembered in that same state. This is one reason why we might remember long-forgotten things when we encounter a smell, sound or place associated with a blocked memory. For alcohol and drugs, it means that if we learn something under the influence, we might not remember it as well until we are under the influence again. So if I only dance after I've had several drinks, I may not be as good a dancer or feel comfortable dancing without alcohol. State dependent learning can also happen with emotions. If I experience a problem when drunk or high, I may not experience the emotions surrounding it until I get back to the same level of intoxication.]]></feedbackText>
+					<feedbackText valueID="v2"><![CDATA[Close, but that's not it. This clip was all about state dependent learning. Remember, state-dependent learning means that what we learn in one mental or emotional state is best remembered in that same state. This is one reason why we might remember long-forgotten things when we encounter a smell, sound or place associated with a blocked memory. For alcohol and drugs, it means that if we learn something under the influence, we might not remember it as well until we are under the influence again. So if I only dance after I've had several drinks, I may not be as good a dancer or feel comfortable dancing without alcohol. State dependent learning can also happen with emotions. If I experience a problem when drunk or high, I may not experience the emotions surrounding it until I get back to the same level of intoxication.]]></feedbackText>
+				</feedback>
+				<multimedia src="U2L6C12.swf"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+		
+	  </evaluation>
+	  
+	  <!-- U2L6C12A  Animation 5: State-Dependent Learning Explanation -->
+	  
+	  <brightcoveVideo name="U2L6C12A_video" source="1526786234001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C12AComplete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C12B_evaluation"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C12A_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <evaluation name="U2L6C12B_evaluation" componentID="u2l6c12b">
+	  
+		<assetComplete action="gotoAndPlay" target="U2L6C13_video"/>
+		
+		<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<multimedia src="U2L6C6B.swf"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v1">
+						<text><![CDATA[3]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+		
+	  </evaluation>
+	  
+	  <!-- U2L6C13 Dramatization Video 1: Withdrawal Learning -->
+	  
+	  <brightcoveVideo name="U2L6C13_video" source="1481227056001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C13Complete_progressBar" frequency="5"/>
+        <complete action="U2L6C13Complete_interaction" />
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C13_cc.xml"/>
+      </brightcoveVideo>
+	  
+	   <!-- U2L6C14  CI Interaction 5: Withdrawal Learning  -->
+	  
+	  <evaluation name="U2L6C14_evaluation" componentID="u2l6c14">
+	  
+		<assetComplete action="gotoAndPlay" target="U2L6C14A_video"/>
+		
+		<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<feedback>
+					<feedbackText valueID="v1"><![CDATA[Right. Withdrawal learning occurs when withdrawal makes us sick— perhaps even making us fear we are dying— and we learn that another drink or drug takes the uncomfortable feelings away. Withdrawal learning teaches us that alcohol and drugs is not the source of our problems- it is the solution.]]></feedbackText>
+					<feedbackText valueID="v2"><![CDATA[Nope! Actually, this is an example of withdrawal learning, the learning that occurs when withdrawal makes us sick— perhaps even making us fear we are dying— and we find that another drink or drug takes the uncomfortable feelings away. Withdrawal learning teaches us that alcohol and drugs is not the source of our problems- it is the solution.]]></feedbackText>
+				</feedback>
+				<multimedia src="U2L6C14.swf"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+		
+	  </evaluation>
+	  
+	  <!-- U2L6C14A Animation 6: Withdrawal Learning Explanation -->
+	  
+	  <brightcoveVideo name="U2L6C14A_video" source="1519075031001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C14AComplete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C14B_evaluation"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C14A_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <evaluation name="U2L6C14B_evaluation" componentID="u2l6c14b">
+	  
+		<assetComplete action="gotoAndPlay" target="U2L6C15_video"/>
+		
+		<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<multimedia src="U2L6C6B.swf"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v1">
+						<text><![CDATA[4]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+
+	  </evaluation>
+	  
+	  <!-- U2L6C15 Dramatization Video 2: Abstract Impairment -->
+	  
+	  <brightcoveVideo name="U2L6C15_video" source="1481227014001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C15Complete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C16_evaluation"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C15_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <!-- U2L6C16  CI Interaction 6: Abstract Impairment  -->
+	  
+	  <evaluation name="U2L6C16_evaluation" componentID="u2l6c16">
+	  
+		<assetComplete action="gotoAndPlay" target="U2L6C16A_video"/>
+		
+		<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<feedback>
+					<feedbackText valueID="v1"><![CDATA[Great! Abstract impairment reduces our ability to understand things that we cannot touch or directly see. The ability to understand that two things which are not directly connected are nevertheless related, is diminished. When we experience abstract impairment, we have a harder time doing math in our heads, solving complex problems, figuring out puzzles, or making connections between cause and effect.]]></feedbackText>
+					<feedbackText valueID="v2"><![CDATA[This is a tough one. What we see here is abstract impairment. This impairment reduces our ability to understand things that we cannot touch or directly see. The ability to understand that two things which are not directly connected are nevertheless related, is diminished. When we experience abstract impairment, we have a harder time doing math in our heads, solving complex problems, figuring out puzzles, or making connections between cause and effect.]]></feedbackText>
+				</feedback>
+				<multimedia src="U2L6C16.swf"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+
+	  </evaluation>
+	  
+	  <!-- U2L6C16A Animation 7: Abstract Impairment Explanation -->
+	  
+	  <brightcoveVideo name="U2L6C16A_video" source="1519073617001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C16AComplete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C16B_evaluation"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C16A_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <evaluation name="U2L6C16B_evaluation" componentID="u2l6c16b">
+	  
+		<assetComplete action="gotoAndPlay" target="U2L6C17_video"/>
+		
+		<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<multimedia src="U2L6C6B.swf"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v1">
+						<text><![CDATA[5]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+		
+	  </evaluation>
+	  
+	  <!-- U2L6C17 Testimonial Video 5: Memory Blackouts -->
+	  
+	  <brightcoveVideo name="U2L6C17_video" source="1559360737001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C17Complete_progressBar" frequency="5"/>
+        <complete action="U2L6C17Complete_interaction" />
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C17_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <!-- U2L6C18  CI Interaction 7: Memory Blackouts -->
+	  
+	  <evaluation name="U2L6C18_evaluation" componentID="u2l6c18">
+	  
+		<assetComplete action="gotoAndPlay" target="U2L6C18A_video"/>
+		
+		<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<feedback>
+					<feedbackText valueID="v1"><![CDATA[Excellent job! Memory blackouts refer to memories that are not recorded in the brain, or are not accessible. In a blackout, there is a period of time when we are making high-risk choices that we will have no memory of later. We will have no idea what we did, where we were, or how we got from one place to another.]]></feedbackText>
+					<feedbackText valueID="v2"><![CDATA[You've forgotten something here. The experiences you just heard about are examples of memory blackouts. They refer to memories that are not recorded in the brain, or are not accessible. In a blackout, there is a period of time when we are making high-risk choices that we will have no memory of later. We will have no idea what we did, where we were, or how we got from one place to another.]]></feedbackText>
+				</feedback>
+				<multimedia src="U2L6C18.swf"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v2">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+		
+	  </evaluation>
+	  
+	  <!-- U2L6C18A Animation 8: Memory Blackouts Explanation -->
+	  
+	  <brightcoveVideo name="U2L6C18A_video" source="1526595960001" width="768" height="432">
+        <playheadUpdate action="setProgress" value="U2L6C18AComplete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C18B_evaluation"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C18A_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <evaluation name="U2L6C18B_evaluation" componentID="u2l6c18b">
+	  
+		<assetComplete action="gotoAndPlay" target="U2L6C19_video"/>
+		
+		<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<questionText><![CDATA[sdfgsdfg]]></questionText>
+				<instructionText><![CDATA[fsgdfgsdfgs]]></instructionText>
+				<multimedia src="U2L6C6B.swf"/>
+				<titleText><![CDATA[Experiences in the Spiral.]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v1">
+						<text><![CDATA[6]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c2" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c3" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c4" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c5" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c6" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+					<choice id="c7" valueID="v1">
+						<text><![CDATA[]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+		</evaluation>
+		
+	  </evaluation>
+	  
+	</sequence>
+	
+	<sequence label="Review">
+	  
+	  <!-- U2L6C19 Infographic 1: Spiral Review -->
+	  
+	  <brightcoveVideo name="U2L6C19_video" source="1502809675001" width="768" height="432" label="Spiral Review">
+        <playheadUpdate action="setProgress" value="U2L6C19Complete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C20_video"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C19_cc.xml"/>
+      </brightcoveVideo>
+	  
+	  <!-- U2L6C20 Expert Video 2: Wrapping Up the Spiral  -->
+	  
+	  <brightcoveVideo name="U2L6C20_video" source="1526556352001" width="768" height="432" label="Wrapping Up the Spiral">
+        <playheadUpdate action="setProgress" value="U2L6C20Complete_progressBar" frequency="5"/>
+        <complete action="gotoAndPlay" target="U2L6C21_evaluation"/>
+        <caption source="data/Unit_2/captions/lesson_06/U2L6C20_cc.xml"/>
+      </brightcoveVideo>
+	  
+	   <!-- U2L6C21  CI   Spiral Response Scale -->
+	  
+	  <evaluation name="U2L6C21_evaluation" componentID="u2l6c21">
+	  
+		<!--<assetComplete action="gotoAndPlay" target="U2L6C22_evaluation"/>-->
+		<assetComplete action="U2L6C22Complete_interaction" />
+		
+		<evaluation evalType="multipleChoiceMultipleSelect">
+					<questionText><![CDATA[I have personally experienced these elements of the spiral...]]></questionText>
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<titleText><![CDATA[My Experiences With the Spiral]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[Social dependence]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[Enabling]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c3" valueID="v1">
+							<text><![CDATA[Memory blackouts]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c4" valueID="v1">
+							<text><![CDATA[State dependent learning]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c5" valueID="v1">
+							<text><![CDATA[Psychological defenses]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c6" valueID="v1">
+							<text><![CDATA[Withdrawal learning]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c7" valueID="v1">
+							<text><![CDATA[Abstract impairment]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+		
+	  </evaluation>
+	  
+	 </sequence>
+	 
+	 <sequence label="Summary">
+	
+		<!-- U2L6C23    GB    Values Globe -->
+			
+		<evaluation name="U2L6C23_evaluation" componentID="u2l6c23" label="Spiral Reflections">
+		
+			<assetComplete action="U2L6C23Complete_interaction" />
+			
+			<evaluation evalType="FIB" layout="vertical">
+					<questionText><![CDATA[1. What I most want to remember about the spiral is...<input id="c1"/>2. What I have noticed about the spiral in relation to my family or my friends, is...<input id="c2"/>3. What stands out to me about my own experiences with the spiral in my life is...<input id="c3"/>]]></questionText>
+					<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+					<titleText><![CDATA[Reflecting on the Spiral]]></titleText>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+
+		</evaluation>
+	
+		<evaluation name="U2L6C25_evaluation" componentID="u2l6c25">
+			
+			<assetComplete action="getNextScene" recordComplete="true" value="7622,1304"/>
+			<!--
+			<assetComplete action="gotoAndPlay" target="U2L6C27_evaluation"/>
+			-->
+			<evaluation evalType="ReflectionQuestion" templateType="notes">
+				<questionText><![CDATA[The Spiral]]></questionText>
+				<titleText><![CDATA[My Notes]]></titleText>
+				<choice-collection>
+					<choice id="c1" valueID="v1">
+						<text><![CDATA[1]]></text>
+						<userEntry controlID=""></userEntry>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+			</evaluation>
+		</evaluation>
+<!--
+		<evaluation name="U2L6C27_evaluation" componentID="u2l6c27">
+	  
+			<assetComplete action="getNextScene" recordComplete="true" value="7622,1304"/>
+		
+			<evaluation evalType="ReflectionQuestion" templateType="notes">
+				<questionText><![CDATA[Now that you've completed this section, what do you want to remember about Lesson 6: The Spiral?]]></questionText>
+				<titleText><![CDATA[My Notes]]></titleText>
+				<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[2]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[true]]></value>
+					<value id="v2"><![CDATA[false]]></value>
+				</value-collection>
+			</evaluation>
+		
+	  </evaluation>
+-->
+	</sequence>
+	
+  </assets>
+</scene>

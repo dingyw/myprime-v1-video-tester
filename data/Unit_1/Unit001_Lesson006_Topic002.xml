@@ -1,0 +1,82 @@
+<scene id="3260" title="Alcohol and Drug Choices">
+
+	<interactions>
+		
+		<interactionGroup name="U1L6T2C1Ready_interaction">
+			<interaction action="setLastSavePoint" value="3260,U1L6T2C1Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T2C1_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L6T2C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T2C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T2C2Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T2C3_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T2C3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3260,U1L6T2C3Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T2C4_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T2C4Complete_interaction">
+			<interaction action="getNextScene" recordComplete="true" value="3260,1275" />
+		</interactionGroup>
+		
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L6T2C1Init_progressBar" interaction="U1L6T2C1Ready_interaction" weight="15" />
+		<progressBar name="U1L6T2C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L6T2C2Complete_progressBar" />
+		<progressBar name="U1L6T2C3Complete_progressBar" interaction="U1L6T2C3Complete_interaction" />
+		<progressBar name="U1L6T2C4Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Introduction">
+		
+			<!-- U1L6T2C1    TG    Choices -->
+			
+			<brightcoveVideo name="U1L6T2C1_video" source="738431221001" width="768" height="432" visible="true" complete="true" label="Choices">
+			  <ready action="U1L6T2C1Ready_interaction" />
+			  <playheadUpdate action="setProgress" value="U1L6T2C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L6T2C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T2C2    HV    Host Video 1 - Introduction - Choices -->
+			
+			<brightcoveVideo name="U1L6T2C2_video" source="738696923001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L6T2C2Complete_progressBar" frequency="5" />
+				<complete action="U1L6T2C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T2C2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T2C3    A    Animation 1 - Choices -->
+			
+			<brightcoveVideo name="U1L6T2C3_video" source="1510693835001" width="768" height="432" label="Choices Animation">
+				<playheadUpdate action="setProgress" value="U1L6T2C3Complete_progressBar" frequency="5" />
+				<complete action="U1L6T2C3Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T2C3_cc.xml" />
+			</brightcoveVideo>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L6T2C4    HV    Host Video 2 - Summary - Choices -->
+			
+			<brightcoveVideo name="U1L6T2C4_video" source="808087631001" width="768" height="432" label="Summary Video">
+				<playheadUpdate action="setProgress" value="U1L6T2C4Complete_progressBar" frequency="5" />
+				<complete action="U1L6T2C4Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T2C4_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T2C5    My Notes -->
+			
+		</sequence>
+		
+	</assets>
+</scene>

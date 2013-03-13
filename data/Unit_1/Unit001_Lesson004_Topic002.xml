@@ -1,0 +1,169 @@
+<scene id="2815" title="Choices">
+
+	<interactions>
+		
+		<interactionGroup name="U1L4T2C1Ready_interaction">
+			<interaction action="setLastSavePoint" value="2815,U1L4T2C1Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U1L4T2C1_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L4T2C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L4T2C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T2C2Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L4T2C3_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T2C3Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L4T2C4_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T2C4Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L4T2C5_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T2C5Complete_interaction">
+			<interaction action="setLastSavePoint" value="2815,U1L4T2C5Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L4T2C5A_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T2C5AComplete_interaction">
+			<interaction action="gotoAndPlay" target="U1L4T2C6_swf" />
+			<interaction action="play" target="U1L4T2C6_swf.content" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T2C6Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L4T2C7_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T2C7Complete_interaction">
+			<interaction action="setLastSavePoint" value="2815,U1L4T2C7Complete_interaction" />
+			<interaction action="getNextScene" recordComplete="true" value="2815,1267" />
+		</interactionGroup>
+		
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L4T2C1Init_progressBar" interaction="U1L4T2C1Ready_interaction" weight="25" />
+		<progressBar name="U1L4T2C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L4T2C2Complete_progressBar" />
+		<progressBar name="U1L4T2C3Complete_progressBar" />
+		<progressBar name="U1L4T2C4Complete_progressBar" />
+		<progressBar name="U1L4T2C5Complete_progressBar" interaction="U1L4T2C5Complete_interaction" weight="25" />
+		<progressBar name="U1L4T2C5AComplete_progressBar" />
+		<progressBar name="U1L4T2C7Complete_progressBar" interaction="U1L4T2C7Complete_interaction" weight="25" />
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Introduction">
+		
+			<!-- U1L4T2C1    TG    Choices -->
+			
+			<brightcoveVideo name="U1L4T2C1_video" source="738431217001" width="768" height="432" visible="true" complete="true" label="Choices">
+			  <ready action="U1L4T2C1Ready_interaction" />
+			  <playheadUpdate action="setProgress" value="U1L4T2C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L4T2C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L4T2C2    HV    Choices - Host Video 1 - Introduction -->
+			
+			<brightcoveVideo name="U1L4T2C2_video" source="1456756738001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L4T2C2Complete_progressBar" frequency="5" />
+				<complete action="U1L4T2C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T2C2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L4T2C3    IG    Choices - Info Graphic 1 - Choices and Risk -->
+			
+			<brightcoveVideo name="U1L4T2C3_video" source="818776313001" width="768" height="432" label="Choices and Risk Info Graphic">
+				<playheadUpdate action="setProgress" value="U1L4T2C3Complete_progressBar" frequency="5" />
+				<complete action="U1L4T2C3Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T2C3_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L4T2C4    A    Choices - Animation 1 - Choices and Risk -->
+			
+			<brightcoveVideo name="U1L4T2C4_video" source="739427227001" width="768" height="432" label="Choices and Risk Animation">
+				<playheadUpdate action="setProgress" value="U1L4T2C4Complete_progressBar" frequency="5" />
+				<complete action="U1L4T2C4Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T2C4_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L4T2C5    MC    Choices - Interactivity 1 - Multiple Choice Question -->
+			
+			<evaluation name="U1L4T2C5_evaluation" componentID="u1l4t2c5" label="Choices Question">
+			
+				<assetComplete action="U1L4T2C5Complete_interaction"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" multimedia="true" layout="splitScreenLeft">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[If these three people all make the same high-risk choices, what do you think is true about their risk for developing heart disease? ]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[That's right! Person 3 is likely to develop heart disease more quickly than Person 1 and Person 2.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Not quite! Although their choices make it more likely that they could all develop heart disease, they are not all predestined to develop the disease. However, due to a lower trigger level, Person 3 is likely to develop heart disease more quickly than Person 1 and Person 2.]]></feedbackText>
+						<feedbackText valueID="v3"><![CDATA[Incorrect  Trigger levels are set by biology, so they will not change, no matter what choices these three people make. Due to a lower trigger level, Person 3 is likely to develop heart disease more quickly than Person 1 and Person 2.]]></feedbackText>
+						<feedbackText valueID="v4"><![CDATA[Not exactly. Although Person 1 does have a higher trigger level, they do still have a risk for heart disease, because everyone has some risk. However, due to a lower trigger level, Person 3 is likely to develop heart disease more quickly than Person 1]and Person 2.]]></feedbackText>				
+					</feedback>
+					<titleText><![CDATA[Choices and Risk]]></titleText>
+					<multimedia src="U1L4T2C5_Image.jpg"/>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[All three of them will definitely develop heart disease.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v3">
+							<text><![CDATA[Their trigger levels will go down, so it's easier for all of them to develop heart disease.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v1">
+							<text><![CDATA[Person 3 is likely to develop heart disease more quickly than Person 1 and Person 2. ]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c4" valueID="v4">
+							<text><![CDATA[Person 1 will not develop heart disease.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<!-- U1L4T2C5A    SV    Choices - Skype Video -->
+			
+			<brightcoveVideo name="U1L4T2C5A_video" source="822945520001" width="768" height="432" label="Choices Skype Video">
+				<playheadUpdate action="setProgress" value="U1L4T2C5AComplete_progressBar" frequency="5" />
+				<complete action="U1L4T2C5AComplete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T2C5A_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L4T2C6    IA    Choices - Interactivity 2 - Choices and Risk Animation -->
+			
+			<swf name="U1L4T2C6_swf" source="assets/media/U1L4T2C6_Final.swf">
+				<!-- <playheadUpdate action="setProgress" value="U1L4T2C6Complete_progressBar" frequency="5"/> -->
+				<assetComplete action="U1L4T2C6Complete_interaction"/>
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T2C6_cc.xml" />
+			</swf>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L4T2C7    HV    Choices - Host Video 2 - Summary -->
+			
+			<brightcoveVideo name="U1L4T2C7_video" source="738313141001" width="768" height="432" label="Summary Video">
+				<playheadUpdate action="setProgress" value="U1L4T2C7Complete_progressBar" frequency="5" />
+				<complete action="U1L4T2C7Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T2C7_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

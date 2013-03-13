@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>  </styling>
+  </head>
+  <body>
+    <div xml:lang="en">
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Antonio:</b>
+        <br/>
+	   So, Doctor, it's pretty straightforward.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Dr. Colliver: </b>
+        <br/>
+	   Yes it is.  The key thing you want to remember is anyone can develop heart disease.  And our biology sets the trigger level.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Antonio: </b>
+        <br/>
+	   Just to review—if I have a lower trigger level that means I can develop heart disease more easily…
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Dr. Colliver: </b>
+        <br/>
+	   Yes.  And the flip side—if I have a higher trigger level, then I have decreased risk. 
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Antonio: </b>
+        <br/>
+	   But everyone has some level of risk?
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Dr. Colliver:</b>
+        <br/>
+	   You got it. 
+      </p>
+    </div>
+  </body>
+</tt>

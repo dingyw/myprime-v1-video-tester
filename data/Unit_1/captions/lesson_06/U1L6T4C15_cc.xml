@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>  </styling>
+  </head>
+  <body>
+    <div xml:lang="en">
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Online user 1:</b>
+        <br/>
+	   So the basic formula for alcoholism is the same as heart disease, right?
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Online user 2:</b>
+        <br/>
+	   Yep. It's biology plus choice equals outcome. It's the same for any lifestyle-related health problem.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Online user 3:</b>
+        <br/>
+	   Can't control my body... I mean, my biology.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Online user 4:</b>
+        <br/>
+	   Right, I can't control my biology, but I can control my choices.
+      </p>
+    </div>
+  </body>
+</tt>

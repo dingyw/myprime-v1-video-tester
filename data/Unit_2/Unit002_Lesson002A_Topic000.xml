@@ -1,0 +1,40 @@
+<scene id="3574" title="The High-Risk Continuum">
+
+	<interactions>
+		<interactionGroup name="U2L2AC1Ready_interaction">
+			<interaction action="setLastSavePoint" value="3574,U2L2AC1Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U2L2AC1_video" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U2L2AC1Init_progressBar" interaction="U2L2AC1Ready_interaction" weight="25" />
+		<progressBar name="U2L2AC1Complete_progressBar" weight="25" />
+		<progressBar name="U2L2AC2Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		
+		<sequence label="Introduction">
+		
+			<!--  U2L2AC   -->
+			
+			<brightcoveVideo name="U2L2AC1_video" source="738433091001" width="768" height="432" visible="true" complete="true" label="The High-Risk Continuum">
+			  <ready action="U2L2AC1Ready_interaction" />
+			  <playheadUpdate action="setProgress" value="U2L2AC1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L2AC2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U2L2AC2   -->
+			
+			<brightcoveVideo name="U2L2AC2_video" source="782446809001" width="768" height="432" label="The High-Risk Continuum Video">
+			  <playheadUpdate action="setProgress" value="U2L2AC2Complete_progressBar" frequency="5" />
+			  <complete action="getNextScene" recordComplete="true" value="3574,1299"/>
+			  <caption source="data/Unit_2/captions/lesson_02/U2L2AC2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

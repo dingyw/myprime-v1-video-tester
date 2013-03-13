@@ -1,0 +1,342 @@
+<scene id="3578" title="Making the Risk Real">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U2L5C0_evaluation" />
+	
+		<interactionGroup name="U2L5C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3578,U2L5C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L5C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L5C3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3578,U2L5C3Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L5C5_video" />
+		</interactionGroup>
+		
+		
+		<interactionGroup name="U2L5C6_1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L5C6_2_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L5C6_2Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L5C6_3_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L5C6_3Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L5C6_4_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L5C6_4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3578,U2L5C6_4Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U2L5C8_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L5C10Complete_interaction">
+			<interaction action="gotoAndPlay" target="U2L5C11_evaluation" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U2L5C1Init_progressBar" interaction="init_interaction"  callInteraction="false" weight="5" />
+		<progressBar name="U2L5C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U2L5C1Complete_progressBar" weight="25" />
+		<progressBar name="U2L5C2Complete_progressBar" weight="25" />
+		<progressBar name="U2L5C3Complete_progressBar"  interaction="U2L5C3Complete_interaction" weight="25"/>
+		<progressBar name="U2L5C4Complete_progressBar" weight="25" />
+		<progressBar name="U2L5C5Complete_progressBar" weight="25" />
+		<progressBar name="U2L5C6Complete_progressBar" interaction="U2L5C6_4Complete_interaction"  weight="25"/>
+		<progressBar name="U2L5C8Complete_progressBar" weight="25"/>
+		<progressBar name="U2L5C10Complete_progressBar" weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U2L5C0_evaluation" visible="true" componentID="u2l5c0">
+			
+			<assetComplete action="U2L5C0Complete_interaction" target="U2L5C1_video"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Making the Risk Real]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll hear other people's stories of loss that they experienced as a result of high-risk alcohol or drug choices. ]]></questionText>
+					<instructionText><![CDATA[Duration: 60 minutes]]></instructionText>
+					<multimedia src="unit2_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U2L5C1    TG      -->
+			
+			<brightcoveVideo name="U2L5C1_video" source="738431238001" width="768" height="432" complete="true" label="Making the Risk Real">
+			  <playheadUpdate action="setProgress" value="U2L5C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L5C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U2L5C2   -->
+			
+			<brightcoveVideo name="U2L5C2_video" source="756527912001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U2L5C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L5C3_evaluation"/>
+			  <caption source="data/Unit_2/captions/lesson_05/U2L5C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Treasures Lost Videos">
+		
+			<!--  U2L5C3   -->
+			<!--  U2L5C4   -->
+			
+			<evaluation name="U2L5C3_evaluation" componentID="u2l5c3" label="Video Selection Menu">
+				
+				<c1 action="showInSequence" target="allen_video" />
+				<c2 action="showInSequence" target="armando_video" />
+				<c3 action="showInSequence" target="dave_video" />
+				<c4 action="showInSequence" target="derek_video" />
+				<c5 action="showInSequence" target="hailey_video" />
+				<c6 action="showInSequence" target="joe_video" />
+				<c7 action="showInSequence" target="jonErik_video" />
+				<!--<c8 action="showInSequence" target="stephanie_video" />-->
+				
+				<assetComplete action="gotoAndPlay" target="intro_video" />
+			
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+					<questionText><![CDATA[]]></questionText>
+					<instructionText><![CDATA[Choose 3 videos to watch, then click Play.]]></instructionText>
+					<multimedia src="U2L5C3.swf"/>
+					<audio src="U2L5C3.mp3"/>
+					<titleText><![CDATA[Making the Risk Real]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[U2L5C4_Allen]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[U2L5C4_Armando]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c3" valueID="v1">
+							<text><![CDATA[U2L5C4_Dave]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c4" valueID="v1">
+							<text><![CDATA[U2L5C4_Derek]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c5" valueID="v1">
+							<text><![CDATA[U2L5C4_Hailey]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c6" valueID="v1">
+							<text><![CDATA[U2L5C4_Joe]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c7" valueID="v1">
+							<text><![CDATA[U2L5C4_JonErik]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<!--<choice id="c8" valueID="v1">
+							<text><![CDATA[U2L5C4_stephanie]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>-->
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<sequence width="768" height="432" hideInSequence="true">
+			
+				<brightcoveVideo name="intro_video" source="1531066902001" hideInSequence="false">
+					<assetComplete action="gotoAndPlayNext" />
+					<caption source="data/Unit_2/captions/lesson_05/intro_cc.xml" hideInSequence="true"/>
+				</brightcoveVideo>
+				
+				<brightcoveVideo name="allen_video" source="755914567001">
+					<assetComplete action="gotoAndPlayNext" />
+					<caption source="data/Unit_2/captions/lesson_05/allen_cc.xml"/>
+				</brightcoveVideo>
+				
+				<brightcoveVideo name="armando_video" source="755914566001">
+					<assetComplete action="gotoAndPlayNext" />
+					<caption source="data/Unit_2/captions/lesson_05/armando_cc.xml"/>
+				</brightcoveVideo>
+				
+				<brightcoveVideo name="dave_video" source="755938163001">
+					<assetComplete action="gotoAndPlayNext" />
+					<caption source="data/Unit_2/captions/lesson_05/dave_cc.xml"/>
+				</brightcoveVideo>
+				
+				<brightcoveVideo name="derek_video" source="755905400001">
+					<assetComplete action="gotoAndPlayNext" />
+					<caption source="data/Unit_2/captions/lesson_05/derek_cc.xml"/>
+				</brightcoveVideo>
+				
+				<brightcoveVideo name="hailey_video" source="755938161001">
+					<assetComplete action="gotoAndPlayNext" />
+					<caption source="data/Unit_2/captions/lesson_05/hailey_cc.xml"/>
+				</brightcoveVideo>
+				
+				<brightcoveVideo name="joe_video" source="755905398001">
+					<assetComplete action="gotoAndPlayNext" />
+					<caption source="data/Unit_2/captions/lesson_05/joe_cc.xml"/>
+				</brightcoveVideo>
+				
+				<brightcoveVideo name="jonErik_video" source="755938158001">
+					<assetComplete action="gotoAndPlayNext" />
+					<caption source="data/Unit_2/captions/lesson_05/jonErik_cc.xml"/>
+				</brightcoveVideo>
+				
+				<brightcoveVideo name="stephanie_video" source="755217063001">
+					<assetComplete action="gotoAndPlayNext" />
+					<caption source="data/Unit_2/captions/lesson_05/stephanie_cc.xml"/>
+				</brightcoveVideo>
+				
+				<brightcoveVideo name="outro_video" source="755938164001" hideInSequence="false">
+					<assetComplete action="U2L5C3Complete_interaction"  />
+					<assetComplete action="hideInSequence" value="allen_video,armando_video,dave_video,derek_video,hailey_video,joe_video,jonErik_video,stephanie_video" />
+					<caption source="data/Unit_2/captions/lesson_05/outro_cc.xml"/>
+				</brightcoveVideo>
+				
+			</sequence>
+			
+			<!--  U2L5C5     -->
+			
+			<brightcoveVideo name="U2L5C5_video" source="756523369001" width="768" height="432" label="Processing Video">
+				<playheadUpdate action="setProgress" value="U2L5C5Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L5C6_1_evaluation"/>
+				<caption source="data/Unit_2/captions/lesson_05/U2L5C5_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U2L5C6      -->
+			
+			<evaluation name="U2L5C6_1_evaluation" componentID="u2l5c6_1" label="Treasures Lost Processing Questions">
+				
+				<assetComplete action="U2L5C6_1Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[Imagine that you were driving impaired and caused a crash that killed or crippled someone else.  How would you feel?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U2L5C6_2_evaluation" componentID="u2l5c6_2">
+				
+				<assetComplete action="U2L5C6_2Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What one thing about the film will help you the most as you think about making low-risk choices?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L5C6_3_evaluation" componentID="u2l5c6_3">
+				
+				<assetComplete action="U2L5C6_3Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[Have you ever tricked yourself into believing that it was safe to drive after drinking or using drugs?  If so, how?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L5C6_4_evaluation" componentID="u2l5c6_4">
+				
+				<assetComplete action="U2L5C6_4Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[Often times family members and good friends are affected by someone they love who made high-risk choices. Who are some important friends and family members in your life? Why do you value their relationship with you?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!--  U2L5C8      -->
+			
+			<brightcoveVideo name="U2L5C8_video" source="818951496001" width="768" height="432" label="Treasures Lost Processing Answers from Online Users">
+				<playheadUpdate action="setProgress" value="U2L5C8Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U2L5C10_evaluation"/>
+				<caption source="data/Unit_2/captions/lesson_05/U2L5C8_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U2L5C10  -->
+			
+			<evaluation name="U2L5C10_evaluation" componentID="u2l5c10" label="Reflection Questions">
+			
+				<assetComplete action="U2L5C10Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What I want to remember about this experience is...]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+		
+			</evaluation>
+			
+			<!-- U2L5C11  -->
+			
+			<evaluation name="U2L5C11_evaluation" componentID="u2l5c11" label="Lesson Summary Screen">
+			
+				<assetComplete action="getNextScene" recordComplete="true" value="3578,1303"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Making the Risk Real]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[2]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+		
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

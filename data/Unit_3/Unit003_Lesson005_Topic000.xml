@@ -1,0 +1,181 @@
+<scene id="3652" title="Support Within Me">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U3L5C0_evaluation" />
+	
+		<interactionGroup name="U3L5C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3652,U3L5C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L5C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L5C2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3652,U3L5C2Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L5C5_1_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L5C5_1Complete_interaction">
+			<interaction action="gotoAndPlay"  target="U3L5C5_2_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L5C5_2Complete_interaction">
+			<interaction action="gotoAndPlay" target="U3L5C5_3_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L5C5_3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3652,U3L5C5_3Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L5C6_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L5C6Complete_interaction">
+			<interaction action="setLastSavePoint" value="3652,U3L5C6Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L5C7_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L5C7Complete_interaction">
+			<!-- <interaction action="recordComplete" value="Lesson,3652" /> -->
+			<interaction action="recordComplete" value="Scene,3652,Lesson,1312" />
+			<interaction action="getScene" value="3763" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U3L5C1Init_progressBar" interaction="init_interaction"   callInteraction="false" weight="5" />
+		<progressBar name="U3L5C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U3L5C1Complete_progressBar" weight="25" />
+		<progressBar name="U3L5C2Complete_progressBar" interaction="U3L5C2Complete_interaction" weight="25"/>
+		<progressBar name="U3L5C5Complete_progressBar" interaction="U3L5C5_3Complete_interaction" weight="25"/>
+		<progressBar name="U3L5C6Complete_progressBar" interaction="U3L5C6Complete_interaction" weight="25"/>
+		<progressBar name="U3L5C7Complete_progressBar"  weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U3L5C0_evaluation" visible="true" componentID="u3l5c0">
+			
+			<assetComplete action="U3L5C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Support Within Me]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore the personal resources  that can help us in making low-risk choices.]]></questionText>
+					<instructionText><![CDATA[Duration: 35 minutes]]></instructionText>
+					<multimedia src="unit3_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U3L5C1  TG     -->
+			
+			<brightcoveVideo name="U3L5C1_video" source="738431242001" width="768" height="432" complete="true" label="Support Within Me">
+			  <playheadUpdate action="setProgress" value="U3L5C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L5C2_video"/>
+			</brightcoveVideo>
+	
+			<!--  U3L5C2   -->
+			
+			<brightcoveVideo name="U3L5C2_video" source="814457708001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U3L5C2Complete_progressBar" frequency="5" />
+			  <complete action="U3L5C2Complete_interaction" />
+			  <caption source="data/Unit_3/captions/lesson_05/U3L5C2_cc.xml" />
+			</brightcoveVideo>
+					
+			<!--  U3L5C5	RQ	Support Within Me - Interactivity - Processing Questions -->
+			
+			<evaluation name="U3L5C5_1_evaluation" componentID="u3l5c5_1" label="Processing Questions">
+			
+				<assetComplete action="U3L5C5_1Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What strengths do I have that will help me make these changes?]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U3L5C5_2_evaluation" componentID="u3l5c5_2">
+			
+				<assetComplete action="U3L5C5_2Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What would others who care about me say are my best qualities?]]></questionText>
+						<instructionText><![CDATA[Type your answer in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+			<evaluation name="U3L5C5_3_evaluation" componentID="u3l5c5_3">
+			
+				<assetComplete action="U3L5C5_3Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[How have I succeeded in tough situations before?]]></questionText>
+						<instructionText><![CDATA[Type your answe in the box, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!--  U3L5C6	HV	Support Within Me - Host Summary -->
+			
+			<brightcoveVideo name="U3L5C6_video" source="760720618001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U3L5C6Complete_progressBar" frequency="5" />
+			  <complete action="U3L5C6Complete_interaction" />
+			  <caption source="data/Unit_3/captions/lesson_05/U3L5C6_cc.xml" />
+			</brightcoveVideo>
+			
+			<!--  U3L5C7 -->
+			
+			<evaluation name="U3L5C7_evaluation" componentID="u3l5c7" label="Lesson Summary Screen">
+			
+				<assetComplete action="U3L5C7Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Support Within Me]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[3]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

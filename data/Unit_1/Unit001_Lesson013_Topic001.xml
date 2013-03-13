@@ -1,0 +1,67 @@
+<scene id="3495" title="Psychological Influences and Beliefs">
+	<!-- Note ::
+		This is a merge of U1L13 and U1L13T1
+	-->
+	<interactions>
+		<interactionGroup name="U1L13C1Ready_interaction">
+			<interaction action="gotoAndPlay" target="U1L13C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L13C2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3495,U1L13C2Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L13T1C2_video" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L13C1Init_progressBar" interaction="U1L13C1Ready_interaction" weight="5" />
+		<progressBar name="U1L13C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L13C2Complete_progressBar" weight="25" interaction="U1L13C2Complete_interaction"/>
+
+		<progressBar name="U1L13T1C2Complete_progressBar" weight="25" />
+		<progressBar name="U1L13T1C7Complete_progressBar" weight="25" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		
+		<!-- TG -->
+		
+		<brightcoveVideo name="U1L13C1_video" source="786752383001" width="768" height="432" visible="true" complete="true">
+		  <ready action="U1L13C1Ready_interaction" />
+		  <playheadUpdate action="setProgress" value="U1L13C1Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U1L13C2_video"/>
+		</brightcoveVideo>
+		
+		<!--  U1L13C2   HV    -->
+		
+		<brightcoveVideo name="U1L13C2_video" source="777401350001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U1L13C2Complete_progressBar" frequency="5" />
+		  <complete action="U1L13C2Complete_interaction"/>
+		</brightcoveVideo>
+		
+		<!-- Topic 1 -->
+		
+		<!--  U1L13T1C2    EV    Can I Avoid Problems with a Designated Driver? Expert Video 
+									HV + EV    Can I Avoid Problems with a Designated Driver? Transition to Skype Video
+									SV     Can I Avoid Problems With a Designated Driver? Skype Video 
+									EV+Illustrations    Can I Avoid Problems with a Designated Driver? Expert Video With Illustrations 
+									HV + EV     Can I Avoid Problems With a Designated Driver? Host and Expert Video -->
+		
+		<brightcoveVideo name="U1L13T1C2_video" source="777395496001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U1L13T1C2Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U1L13T1C7_video"/>
+		</brightcoveVideo>
+		
+		<!--  U1L13T1C7    IG    Can I Avoid Problems with a Designated Driver? Info Graphic   -->
+		
+		<brightcoveVideo name="U1L13T1C7_video" source="744402076001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U1L13T1C7Complete_progressBar" frequency="5" />
+		  <complete action="getNextScene" value="3495"/>
+		</brightcoveVideo>
+		
+		<!-- U1L13T1C8    My Note -->
+		<!-- Removed :: http://fogbugz.askpri.org/default.asp?10060 -->
+		
+	</assets>
+  
+</scene>

@@ -1,0 +1,69 @@
+<scene id="3496" title="Can I Overcome Impairment with Extra Effort?">
+
+	<interactions>
+		<interactionGroup name="U1L13T2C1Ready_interaction">
+			<interaction action="gotoAndPlay" target="U1L13T2C1_video" />
+		</interactionGroup>
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L13T2C1Init_progressBar" interaction="U1L13T2C1Ready_interaction" weight="5" />
+		<progressBar name="U1L13T2C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L13T2C2Complete_progressBar" weight="25" />
+		<progressBar name="U1L13T2C3Complete_progressBar" weight="25" />
+		<progressBar name="U1L13T2C4Complete_progressBar" weight="25" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		
+		<!--  U1L13T2C1    TG     TG     Can We Overcome Impairment with Extra Effort?  -->
+		
+		<brightcoveVideo name="U1L13T2C1_video" source="738433021001" width="768" height="432" visible="true" complete="true">
+		  <ready action="U1L13T2C1Ready_interaction" />
+		  <playheadUpdate action="setProgress" value="U1L13T2C1Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U1L13T2C2_video"/>
+		</brightcoveVideo>
+		
+		<!--  U1L13T2C2   HV    Can We Overcome Impairment with Extra Effort? Intro Video -->
+		
+		<brightcoveVideo name="U1L13T2C2_video" source="753362436001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U1L13T2C2Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U1L13T2C3_video"/>
+		</brightcoveVideo>
+		
+		<!--  U1L13T2C3     IG    Can We Overcome Impairment with Extra Effort? Info Graphic  -->
+		
+		<brightcoveVideo name="U1L13T2C3_video" source="791702404001" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U1L13T2C3Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U1L13T2C4_video"/>
+		</brightcoveVideo>
+	
+		<!--  U1L13T2C4    HV    Can We Overcome Impairment with Extra Effort? Host Summary -->
+		
+		<brightcoveVideo name="U1L13T2C4_video" source="753330000001	" width="768" height="432" >
+		  <playheadUpdate action="setProgress" value="U1L13T2C4Complete_progressBar" frequency="5" />
+		  <complete action="gotoAndPlay" target="U1L13T2C5_evaluation"/>
+		</brightcoveVideo>
+		
+		<!-- U1L13T2C5    My Note -->
+		
+		<evaluation name="U1L13T2C5_evaluation" componentID="u1l13t2c5">
+		
+			<assetComplete action="getNextScene" value="3496"/>
+			
+			<evaluation evalType="ReflectionQuestion" templateType="notes">
+					<questionText><![CDATA[What will you most remember about Can I Overcome Impairment with Extra Effort?]]></questionText>
+					<titleText><![CDATA[My Notes]]></titleText>
+					<audio src="NOTES.mp3" />
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+
+		</evaluation>
+		
+	</assets>
+  
+</scene>

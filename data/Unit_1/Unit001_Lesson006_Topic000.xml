@@ -1,0 +1,75 @@
+<scene id="3084" title="Alcoholism and Drug Addiction">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L6C0_evaluation" />
+	
+		<interactionGroup name="U1L6C0Complete_interaction">
+		  <interaction action="gotoAndPlay" target="U1L6C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6C2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3084,U1L6C2Complete_interaction" />
+			<interaction action="getNextScene" recordComplete="true" value="3084,1271" />
+		</interactionGroup>
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L6C1Init_progressBar" interaction="init_interaction" callInteraction="false"  weight="5" />
+		<progressBar name="U1L6C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L6C1Complete_progressBar" interaction="U1L6C1Complete_interaction" weight="25" />
+		<progressBar name="U1L6C2Complete_progressBar" weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<evaluation name="U1L6C0_evaluation" visible="true" componentID="u1l6c0">
+			
+			<assetComplete action="U1L6C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Alcoholism and Addiction Are Lifestyle-Related Health Problems]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll take a closer look at the formula for lifestyle-related health problems, and learn how it applies to alcoholism and addiction. Biology, choices, psychological influences, and social influences all play their part... in some surprising ways.]]></questionText>
+					<instructionText><![CDATA[Duration: 1 hour 45 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!-- U1L6C1    TG    Alcoholism and Drug Addiction are Also Lifestyle-Related Health Problems -->
+			
+			<brightcoveVideo name="U1L6C1_video" source="1560928300001" width="768" height="432" complete="true" label="Alcoholism and Drug Addiction">
+			  <playheadUpdate action="setProgress" value="U1L6C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L6C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L6C2    HV    Host Video 1 - Introduction - Alcoholism and Addiction are Also LRHPs -->
+			
+			<brightcoveVideo name="U1L6C2_video" source="738313223001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L6C2Complete_progressBar" frequency="5" />
+				<complete action="U1L6C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6C2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6C3    My Notes -->
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

@@ -1,0 +1,85 @@
+<scene id="3095" title="Body, Brain, Biology">
+
+	<interactions>
+		<interactionGroup name="U1L6T1C1Ready_interaction">
+			<interaction action="setLastSavePoint" value="3095,U1L6T1C1Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1C1_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L6T1C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1C2Complete_interaction">
+			<interaction action="goto" target="U1L6T1C4_swf" />
+			<interaction action="callProperty" target="U1L6T1C4_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1C4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3095,U1L6T1C4Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1C5_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1C5Complete_interaction">
+			<interaction action="getNextScene" recordComplete="true" value="3095,1272" />
+		</interactionGroup>
+		
+		<!-- Removed  U1L6T1C6 :: http://fogbugz.askpri.org/default.asp?10020 -->
+	
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L6T1C1Init_progressBar" interaction="U1L6T1C1Ready_interaction" weight="15" />
+		<progressBar name="U1L6T1C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L6T1C2Complete_progressBar" />
+		<progressBar name="U1L6T1C4Complete_progressBar" interaction="U1L6T1C4Complete_interaction" weight="25" />
+		<progressBar name="U1L6T1C5Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Introduction">
+		
+			<!-- U1L6T1T1C1    TG    Body, Brain, Biology -->
+			
+			<brightcoveVideo name="U1L6T1C1_video" source="738433026001" width="768" height="432" visible="true" complete="true" label="Body, Brain, Biology">
+			  <ready action="U1L6T1C1Ready_interaction" />
+			  <playheadUpdate action="setProgress" value="U1L6T1C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L6T1C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1C2    HV    Host Video 1 - Introduction - Body, Brain, Biology 
+									HV    Host Video 2 - Transition to Interaction 1 - Inherited Traits -->
+									
+			<brightcoveVideo name="U1L6T1C2_video" source="818706622001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L6T1C2Complete_progressBar" frequency="5" />
+				<complete action="U1L6T1C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1C2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1C4    DD*    Interaction 1 - Inherited Traits -->
+			
+			<swf name="U1L6T1C4_swf" source="assets/media/U1L6T1C4.swf">
+				<assetComplete action="U1L6T1C4Complete_interaction" />
+			</swf>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L6T1C5    HV    Host Video 3 - Summary - Body, Brain, Biology -->
+			
+			<brightcoveVideo name="U1L6T1C5_video" source="738313180001" width="768" height="432" label="Host Video 3">
+				<playheadUpdate action="setProgress" value="U1L6T1C5Complete_progressBar" frequency="5" />
+				<complete action="U1L6T1C5Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1C5_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1C6    My Notes -->
+			<!-- Removed :: http://fogbugz.askpri.org/default.asp?10020 -->
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

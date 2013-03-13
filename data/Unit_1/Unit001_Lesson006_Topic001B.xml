@@ -1,0 +1,195 @@
+<scene id="3259" title="What is Inherited that Increases Risk?">
+
+	<interactions>
+		<interactionGroup name="U1L6T1BC1Ready_interaction">
+			<interaction action="setLastSavePoint" value="3259,U1L6T1BC1Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1BC1_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L6T1BC1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1BC2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1BC2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3259,U1L6T1BC2Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1BC4_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1BC4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3259,U1L6T1BC4Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1BC5A_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1BC5AComplete_interaction">
+			<interaction action="setLastSavePoint" value="3259,U1L6T1BC5AComplete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1BC5B_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T1BC5BComplete_interaction">
+			<interaction action="setLastSavePoint" value="3259,U1L6T1BC5BComplete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T1BC6_video" />
+		</interactionGroup>
+		
+		<!--<interactionGroup name="U1L6T1BC5_5Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T1BC6_video"/>
+		</interactionGroup>-->
+		
+		<interactionGroup name="U1L6T1BC6AComplete_interaction">
+			<interaction action="getNextScene" recordComplete="true" value="3259,1274" />
+		</interactionGroup>
+
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L6T1BC1Init_progressBar" interaction="U1L6T1BC1Ready_interaction" weight="15" />
+		<progressBar name="U1L6T1BC1Complete_progressBar" weight="25" />
+		<progressBar name="U1L6T1BC2Complete_progressBar" />
+		<progressBar name="U1L6T1BC4Complete_progressBar"  interaction="U1L6T1BC4Complete_interaction" weight="25" />
+		<progressBar name="U1L6T1BC5AComplete_progressBar" />
+		<progressBar name="U1L6T1BC5BComplete_progressBar" interaction="U1L6T1BC5BComplete_interaction" weight="25" />
+		<progressBar name="U1L6T1BC6Complete_progressBar" />
+		<progressBar name="U1L6T1BC6AComplete_progressBar" />		
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Introduction">
+		
+			<!-- U1L6T1BC1    TG    What is Inherited that Increases Risk? -->
+			
+			<brightcoveVideo name="U1L6T1BC1_video" source="738412505001" width="768" height="432" visible="true" complete="true" label="What is Inherited that Increases Risk?">
+			  <ready action="U1L6T1BC1Ready_interaction" />
+			  <playheadUpdate action="setProgress" value="U1L6T1BC1Complete_progressBar" frequency="5" />
+			  <complete action="U1L6T1BC1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1BC2    HV    Host Video 1 - Introduction - What is Inherited That Increases Risk? -->
+			
+			<brightcoveVideo name="U1L6T1BC2_video" source="820220093001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L6T1BC2Complete_progressBar" frequency="5" />
+				<complete action="U1L6T1BC2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1BC2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1BC4    IG    Info Graphic 1 - The Human Brain -->
+			
+			<brightcoveVideo name="U1L6T1BC4_video" source="1450519953001" width="768" height="432">
+				<playheadUpdate action="setProgress" value="U1L6T1BC4Complete_progressBar" frequency="5" />
+				<complete action="U1L6T1BC4Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1BC4_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1BC5A    EV    Expert Video 2 - The Brain and High-Risk Choices -->
+			
+			<brightcoveVideo name="U1L6T1BC5A_video" source="1511363373001" width="768" height="432" label="The Brain and High-Risk Choices">
+				<playheadUpdate action="setProgress" value="U1L6T1BC5AComplete_progressBar" frequency="5" />
+				<complete action="U1L6T1BC5AComplete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1BC5A_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1BC5B    IG    Info Graphic 2 - Brain Genetics and High-Risk Choices - Narration is Allan shot on video -->
+			
+			<brightcoveVideo name="U1L6T1BC5B_video" source="1534799754001" width="768" height="432" label="Brain Genetics and High-Risk Choices">
+				<playheadUpdate action="setProgress" value="U1L6T1BC5BComplete_progressBar" frequency="5" />
+				<complete action="U1L6T1BC5BComplete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1BC5B_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L6T1BC6    HV    Host Video 2 - Summary - What Is Inherited? 
+									   SV    Skype Video 1 - What Does Biology Do? 
+									   HV    Host Video 3 - Summary - Biology -->
+			<!--<evaluation name="U1L6T1BC5_5_evaluation" componentID="u1l6t1bc5_5" label="Addiction Question">
+			
+				<assetComplete action="U1L6T1BC5_5Complete_interaction" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect">
+					<questionText><![CDATA[People become addicted because:]]></questionText>
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Yes, people become addicted when their high-risk choices change their brain, taking them past their trigger level.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[There is no evidence that people are born addicted, with the exception of babies born to mothers who use heavily during pregnancy. People become addicted when their high-risk choices change their brain, taking them past their trigger level.]]></feedbackText>
+						<feedbackText valueID="v3"><![CDATA[There is little evidence to support the idea that an addictive personality causes addiction. People become addicted when their high-risk choices change their brain, taking them past their trigger level.]]></feedbackText>
+					</feedback>
+					<titleText><![CDATA[Inherited Risk Question]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[They are born with addiction.]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[Their high-risk choices change their brain.]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v3">
+							<text><![CDATA[They have an addictive personality.]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+			</evaluation>-->
+									   
+			<brightcoveVideo name="U1L6T1BC6_video" source="1514222041001" width="768" height="432" label="Summary Video">
+				<playheadUpdate action="setProgress" value="U1L6T1BC6Complete_progressBar" frequency="5" />
+				<complete action="gotoAndPlay" target="U1L6T1BC5_5_evaluation"/>
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1BC6_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- Note: See http://fogbugz.askpri.org/default.asp?10927 -->
+			
+			<evaluation name="U1L6T1BC5_5_evaluation" componentID="u1l6t1bc5_5" label="Addiction Question">
+			
+				<assetComplete action="gotoAndPlay" target="U1L6T1BC6A_video" />
+				
+				<evaluation evalType="multipleChoiceSingleSelect">
+					<questionText><![CDATA[People become addicted because:]]></questionText>
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Yes, people become addicted when their high-risk choices change their brain, taking them past their trigger level.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[There is no evidence that people are born addicted, with the exception of babies born to mothers who use heavily during pregnancy. People become addicted when their high-risk choices change their brain, taking them past their trigger level.]]></feedbackText>
+						<feedbackText valueID="v3"><![CDATA[There is little evidence to support the idea that an addictive personality causes addiction. People become addicted when their high-risk choices change their brain, taking them past their trigger level.]]></feedbackText>
+					</feedback>
+					<titleText><![CDATA[Inherited Risk Question]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[They are born with addiction.]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[Their high-risk choices change their brain.]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v3">
+							<text><![CDATA[They have an addictive personality.]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<!-- Note: See http://fogbugz.askpri.org/default.asp?10927 -->
+			
+			<brightcoveVideo name="U1L6T1BC6A_video" source="1514251517001" width="768" height="432" label="Summary Video">
+				<playheadUpdate action="setProgress" value="U1L6T1BC6AComplete_progressBar" frequency="5" />
+				<complete action="U1L6T1BC6AComplete_interaction"/>
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T1BC6A_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T1BC9    My Notes -->
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

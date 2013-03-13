@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>  </styling>
+  </head>
+  <body>
+    <div xml:lang="en">
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Antonio:</b>
+        <br/>
+	   Early in the program, people often want to know if they are close to their trigger level, or if they’ve already passed it. By now, most of us probably have an idea of whether or not we’ve passed our trigger level and which phase we are in. 
+Now, think about everything you’ve learned about the phases so far, and then answer the next couple of questions about your own experiences.
+      </p>
+    </div>
+  </body>
+</tt>

@@ -1,0 +1,74 @@
+<scene id="2813" title="Heart Disease is a Lifestyle-Related Health Problem">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L4C0_evaluation" />
+	
+		<interactionGroup name="U1L4C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="2813,U1L4C0Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L4C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L4C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4C2Complete_interaction">
+			<interaction action="getNextScene" recordComplete="true" value="2813,1204" />
+		</interactionGroup>
+		
+	</interactions>	
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L4C1Init_progressBar" interaction="init_interaction"  callInteraction="false" weight="5" />
+		<progressBar name="U1L4C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L4C1Complete_progressBar" interaction="U1L4C0Complete_interaction" weight="25" />
+		<progressBar name="U1L4C2Complete_progressBar"  weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<evaluation name="U1L4C0_evaluation" visible="true" componentID="u1l4c0">
+			
+			<assetComplete action="U1L4C0Complete_interaction"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Heart Disease Is a Lifestyle-Related Health Problem]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll learn about the formula for lifestyle-related health problems. We'll examine the formula by exploring the role of biology, choices, psychological influences, and social influences in the development of heart disease.]]></questionText>
+					<instructionText><![CDATA[Duration: 30 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!-- U1L4C1    TG    Two Types of Problems -->
+			
+			<brightcoveVideo name="U1L4C1_video" source="746406920001" width="768" height="432" complete="true" label="Heart Disease is a Lifestyle-Related Health Problem">
+			  <playheadUpdate action="setProgress" value="U1L4C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L4C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L4C2    HV    Two Types of Problems Intro -->
+			
+			<brightcoveVideo name="U1L4C2_video" source="738314949001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L4C2Complete_progressBar" frequency="5" />
+				<complete action="U1L4C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4C2_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

@@ -1,0 +1,645 @@
+<scene id="3499" title="Unit 1: Exploring Summary">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L15C0_evaluation" />
+		
+		<interactionGroup name="U1L15C0Completion_interaction">
+			<interaction action="setLastSavePoint" value="3499,U1L15C0Completion_interaction" />
+		  <interaction action="gotoAndPlay" target="U1L15C1_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U1L15C4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3499,U1L15C4Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L15C5_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L15C6Complete_interaction">
+			<interaction action="setLastSavePoint" value="3499,U1L15C6Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L15C7_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L15C8Complete_interaction">
+			<interaction action="setLastSavePoint" value="3499,U1L15C8Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L15C9_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L15C12Complete_interaction">
+			<interaction action="recordComplete" value="Unit,1081" />  
+			<interaction action="getNextScene" recordComplete="true" value="3499,1296" />
+		</interactionGroup>
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L15C1Init_progressBar" interaction="init_interaction" callInteraction="false" weight="5" />
+		<progressBar name="U1L15C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L15C1Complete_progressBar"  weight="25"/>
+		<progressBar name="U1L15C2Complete_progressBar"  weight="25"/>
+		<progressBar name="U1L15C3Complete_progressBar"  weight="25"/>
+		<progressBar name="U1L15C4Complete_progressBar" interaction="U1L15C4Complete_interaction" weight="25"/>
+		<progressBar name="U1L15C5Complete_progressBar" weight="25"/>
+		<progressBar name="U1L15C6Complete_progressBar" interaction="U1L15C6Complete_interaction"  weight="25"/>
+		<progressBar name="U1L15C7Complete_progressBar" weight="25"/>
+		<progressBar name="U1L15C8Complete_progressBar" interaction="U1L15C8Complete_interaction" weight="25"/>
+		<progressBar name="U1L15C9Complete_progressBar" weight="25"/>
+		<progressBar name="U1L15C11Complete_progressBar" weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U1L15C0_evaluation" visible="true" componentID="u1l15c0">
+			
+			<assetComplete action="U1L15C0Completion_interaction"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Exploring Unit Summary]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll review the most important concepts of the Exploring Unit, and we'll give you a chance to test your knowledge and see how much you learned.]]></questionText>
+					<instructionText><![CDATA[Duration: 15 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U1L15C1    TG    Exploring Unit Summary & Review   -->
+			
+			<brightcoveVideo name="U1L15C1_video" source="821417107001" width="768" height="432" complete="true" label="Exploring Unit Summary Review">
+			  <playheadUpdate action="setProgress" value="U1L15C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L15C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U1L15C2    HV    Exploring Unit Summary - Host Intro to Info Graphic -->
+			
+			<brightcoveVideo name="U1L15C2_video" source="746406948001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U1L15C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L15C3_video"/>
+			  <caption source="data/Unit_1/captions/lesson_15/U1L15C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Formula">
+		
+			<!--  U1L15C3    IG    Exploring Unit Summary - Info Graphic: The Formula  -->
+			
+			<brightcoveVideo name="U1L15C3_video" source="819943203001" width="768" height="432" label="The Formula Info Graphic">
+			  <playheadUpdate action="setProgress" value="U1L15C3Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L15C4_1_evaluation"/>
+			  <caption source="data/Unit_1/captions/lesson_15/U1L15C3_cc.xml"/>
+			</brightcoveVideo>
+		
+			<!--	U1L15C4	MC    Exploring Unit Summary - Questions: The Formula  -->
+		
+			<evaluation name="U1L15C4_1_evaluation" componentID="u1l15c4_1" label="The Formula Questions">
+			
+				<assetComplete action="gotoAndPlay" target="U1L15C4_2_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[_____________ has/have some level of biological risk for alcoholism and addiction.]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Well done! While some people have an increased level of biological risk, due to a family history of alcoholism or a high tolerance, &nbsp; <u>everyone</u> has some level of biological risk.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Oops! While it's true that some people increase their overall risk for problems by making high-risk choices, and while others have an increased level of biological risk due to a family history of alcoholism or high tolerance, everyone has some level of biological risk.]]></feedbackText>
+						<feedbackText valueID="v3"><![CDATA[Oops! While it's true that some people have an increased level of biological risk, due to a family history of alcoholism or a high tolerance, &nbsp; <i>everyone</i> has <b>some</b> level of biological risk.]]></feedbackText>
+					</feedback>
+					<titleText><![CDATA[Check Your Understanding - The Formula]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[Only people who drink or use drugs]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[Everyone]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v3">
+							<text><![CDATA[Only people who come from a family history of alcohol or drug use]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U1L15C4_2_evaluation" componentID="u1l15c4_2">
+			
+				<assetComplete action="gotoAndPlay" target="U1L15C4_3_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[Our biology sets our trigger level but doesn't determine if we will develop alcoholism. True or False?]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[True! Our biology sets our trigger level, but biology alone doesn't determine if we will develop alcoholism. Our choices will determine the outcome.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Actually, this is <b>true</b>. Our biology sets our trigger level, but biology alone doesn't determine if we will develop alcoholism. Our choices will determine the outcome.]]></feedbackText>
+					</feedback>
+					<titleText><![CDATA[Check Your Understanding - The Formula]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[False]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U1L15C4_3_evaluation" componentID="u1l15c4_3">
+			
+				<assetComplete action="gotoAndPlay" target="U1L15C4_4_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[We cannot change everything, but we can change our ________.]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Indeed! We cannot change our biology or our trigger level but we can change our choices.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Hmmm, if you find a way to do this, let us know. While we can change things like our weight and body mass we cannot change our biological risk. We can, however, change our choices.]]></feedbackText>
+						<feedbackText valueID="v3"><![CDATA[No, this is not true. Remember, our biology sets our trigger level, which we cannot change. But we can change our choices.  Our choices determine whether or not we will cross our trigger level.]]></feedbackText>
+					</feedback>
+					<titleText><![CDATA[Check Your Understanding - The Formula]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[Choices]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v3">
+							<text><![CDATA[Biology]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[Trigger level]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U1L15C4_4_evaluation" componentID="u1l15c4_4">
+			
+				<assetComplete action="U1L15C4Complete_interaction" target="U1L15C5_video"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[Which of the following factors influence our choices?]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[<p>Exactly! Psychological factors, like our attitudes and personality, and social factors, like our family and friends, <b><i>do</i></b> influence our alcohol and drug choices.<p>&nbsp;<br/></p><p>Want to review the formula for lifestyle-related health problems? Go to the <b>Review</b> page and visit Lesson: <i>Heart Disease</i> or Lesson: <i>&nbsp; Alcoholism and Addiction</i>.</p>]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[<p>Sorry! The correct answer is psychological and social influences. While our age and weight may influence the choices we make in some aspect of our life, the key to remember here is that psychological factors, like our attitudes and personality, and social factors, like our family and friends, influence our alcohol and drug choices.<p>&nbsp;<br/></p><p>Want to review the formula for lifestyle-related health problems? Go to the <b>Review</b> page and visit Lesson: <i>Heart Disease</i> or Lesson: <i>&nbsp; Alcoholism and Addiction</i>.</p>]]></feedbackText>
+						<feedbackText valueID="v3"><![CDATA[<p>OK this one is tricky! The answer we were looking for is psychological and social influences. Biological factors, such as having a family history of alcoholism, set our trigger level. Things like tolerance, taste preference and the pleasure we receive from using are biological factors that influence our choices; but you were working at a Ph. D. level!  Good thinking if that is what you meant. But to keep it simple, the formula focuses on psychological factors, like our attitudes and personality, and social factors, like our family and friends, <b><i>which most often</i></b> influence our alcohol and drug choices.</p> <p>&nbsp;<br/></p><p>Want to review the formula for lifestyle-related health problems? Go to the <b>Review</b> page and visit Lesson: <i>Heart Disease</i> or Lesson: <i>&nbsp; Alcoholism and Addiction</i>.</p>]]></feedbackText>
+					</feedback>
+					<titleText><![CDATA[Check Your Understanding - The Formula]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v3">
+							<text><![CDATA[Psychological and biological]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[Psychological and social]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[Age and weight]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Drink Measurement">
+		
+			<!--	U1L15C5    IG    Exploring Unit Summary - Info Graphic: Drink Measurement -->
+			
+			<brightcoveVideo name="U1L15C5_video" source="822873613001" width="768" height="432" label="Drink Measurement Info Graphic">
+			  <playheadUpdate action="setProgress" value="U1L15C5Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L15C6_1_evaluation"/>
+			  <caption source="data/Unit_1/captions/lesson_15/U1L15C5_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- 	U1L15C6    MC    Exploring Unit Summary - Questions: Drink Measurement -->
+			
+			<evaluation name="U1L15C6_1_evaluation" componentID="u1l15c6_1" label="Drink Measurement Questions">
+			
+				<assetComplete action="gotoAndPlay" target="U1L15C6_2_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[What is a standard drink? ]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Awesome! A standard drink is one 12-oz. serving of beer, a 5-oz. serving of wine, or 1.5 oz. of 80-proof liquor, all of which contain .6 oz. of pure alcohol.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Not quite. A standard drink is one 12-oz. serving of beer, a 5-oz. serving of wine, or 1.5 oz. of 80-proof liquor, all of which contain .6 oz. of pure alcohol.]]></feedbackText>
+						<feedbackText valueID="v3"><![CDATA[Good try, but a standard drink is one 12-oz. serving of beer, a 5-oz. serving of wine, or 1.5 oz. of 80-proof liquor, all of which contain .6 oz. of pure alcohol.]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[One 12-oz. serving of beer, one 5-oz. serving of wine, or 1.5 oz. of 80-proof liquor, all of which contain .6 oz. of pure alcohol.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[One 16-oz. serving of beer, one 3-oz. serving of wine, or .6 oz. of 80-proof liquor, all of which contain 1.5 oz. of pure alcohol.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v3">
+							<text><![CDATA[One 12-oz. serving of beer, one 4-oz. serving of wine, or .5 oz. of 100-proof liquor, all of which contain .6 oz. of pure alcohol.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U1L15C6_2_evaluation" componentID="u1l15c6_2">
+			
+				<assetComplete action="U1L15C6Complete_interaction"/>
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" randomize="false" design="false" multimedia="true" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose all that apply, then click Submit.]]></instructionText>
+					<questionText><![CDATA[Which of these drinks represents one standard drink? Mark all that apply.]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[<p>You got them all! Each of the drinks you selected represents one standard drink.</p><p>&nbsp;</p><p>Want to refresh your memory on what a standard drink is? Go to the <b>Review</b> page and visit Lesson: <i>What Is Low Risk for Alcohol</i>?</p>]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[<p>Almost! Some of these represent one standard drink, but anything more than 12 oz. of beer, 5 oz. of wine, or 1.5 oz. of 80-proof liquor is more than one standard drink.</p><p>&nbsp;</p><p>Want to refresh your memory on what a standard drink is? Go to the <b>Review</b> page and visit Lesson: <i>What Is Low Risk for Alcohol</i>?</p>]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<multimedia src="U1L15C6_Image.jpg" />
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[A.  Margarita]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[B.  5 oz. wine]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[C.  16 oz. beer]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c4" valueID="v2">
+							<text><![CDATA[D.  4 oz. of wine ]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c5" valueID="v1">
+							<text><![CDATA[E.  12 oz. of beer]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c6" valueID="v1">
+							<text><![CDATA[F.  1.5 oz. whiskey]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c7" valueID="v2">
+							<text><![CDATA[G.  Long island iced tea]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Low-Risk Guidelines">
+		
+			<!--  U1L15C7    IG    Exploring Unit Summary - Info Graphic: 0-1-2-3 Guidelines  -->
+			
+			<brightcoveVideo name="U1L15C7_video" source="1526556322001" width="768" height="432" label="0-1-2-3 Guidelines Info Graphic">
+			  <playheadUpdate action="setProgress" value="U1L15C7Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L15C8_1_evaluation"/>
+			  <caption source="data/Unit_1/captions/lesson_15/U1L15C7_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U1L15C8    MC    Exploring Unit Summary - Questions: 0-1-2-3 Guidelines -->
+			
+			<evaluation name="U1L15C8_1_evaluation" componentID="u1l15c8_1" label="0-1-2-3 Guidelines Questions">
+			
+				<assetComplete action="gotoAndPlay" target="U1L15C8_2_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose all that apply, then click Submit.]]></instructionText>
+					<questionText><![CDATA[What are the low-risk guidelines? Select all that apply.]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[That's correct! The low-risk guidelines mean no more than one drink per hour, no more than two drinks daily, and no more than three on any one day. That's a total of 14 drinks a week, and never more than three in any day. Zero is always low risk for alcohol, and the only low-risk choice for drugs. It's as easy as 0-1-2-3!]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[You missed a few. The low-risk guidelines mean no more than one drink per hour, no more than two drinks daily, and no more than three on any one day. That's a total of 14 drinks a week, and never more than three in any day. Zero is always low risk for alcohol, and the only low-risk choice for drugs. Just remember, it's as easy as 0-1-2-3!]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[No more than two drinks daily]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[No more than two drinks per hour.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[One standard dose of drugs other than alcohol.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c4" valueID="v1">
+							<text><![CDATA[No more than three on any one day.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c5" valueID="v2">
+							<text><![CDATA[No more than 14 drinks a week, and never more than four in any day.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c6" valueID="v1">
+							<text><![CDATA[No more than one drink per hour.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c7" valueID="v1">
+							<text><![CDATA[No more than 14 drinks a week, and never more than three in any day.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+								<choice id="c8" valueID="v1">
+							<text><![CDATA[Zero illegal drugs.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U1L15C8_2_evaluation" componentID="u1l15c8_2">
+				
+				<assetComplete action="gotoAndPlay" target="U1L15C8_3_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[Anytime we average more than two drinks daily, _____________.]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Exactly! Anytime we average more than two drinks a day, we increase our risk for health and impairment problems. The higher the quantity and frequency above two per day, the greater the risk for health and impairment problems.]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Sorry, no. Although our tolerance can increase, our trigger level doesn't go up or down, no matter what our choices are - it's set by our biology. Anytime we average more than two drinks a day, we increase our risk for health and impairment problems. Remember, the higher the quantity and frequency above two per day, the greater the risk for health and impairment problems.]]></feedbackText>
+						<feedbackText valueID="v3"><![CDATA[This was a bit tricky.  Two a day is following the low-risk guidelines, but more than two a day exceeds the low-risk guidelines. Therefore, anytime we average more than two drinks a day we increase our risk for health and impairment problems.  And the higher the quantity and frequency above two per day, the greater the risk for health and impairment problems.]]></feedbackText>
+						</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[Our trigger level goes up.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[We increase our risk for health and impairment problems.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v3">
+							<text><![CDATA[We are safe from health or impairment problems because we're following the low-risk guidelines.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U1L15C8_3_evaluation" componentID="u1l15c8_3">
+				
+				<assetComplete action="U1L15C8Complete_interaction"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="true" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[Abstinence is the <i>only</i> low-risk choice for drugs because the trigger level for addiction is lower for many drugs.]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[<p>Yes, this is true. Most drugs do have a lower trigger level for addiction compared to alcohol. It is not true for all, but true enough to be a general principle. This, along with the fact that drugs are unpredictable in their strength and purity, and the standard dose always causes impairment, is why abstinence is the <b>only</b> low-risk choice for drugs.</p><p>&nbsp;</p><p>Want to refresh your memory on the 0-1-2-3 Guidelines? Go to the <b>Review</b> page and visit Lesson: <i>Risk Is Related to Quantity and Frequency</i>.</p>]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[<p>Most drugs do have a lower trigger level for addiction compared to alcohol. It is not true for all cases, but it is true enough to be a general principle.  This, along with the fact that drugs are unpredictable in their strength and purity, and the standard dose always cause impairment, is why abstinence is the only low-risk choice for drugs.</p><p>&nbsp;</p><p>Want to refresh your memory on the 0-1-2-3 Guidelines? Go to the <b>Review</b> page and visit Lesson: <i>Risk Is Related to Quantity and Frequency</i>.</p>]]></feedbackText>
+					</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[True]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v2">
+							<text><![CDATA[False]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Tolerance">
+		
+			<!-- U1L15C9    IG    Exploring Unit Summary - Info Graphic: Tolerance and Impairment -->
+			
+			<brightcoveVideo name="U1L15C9_video" source="773739149001" width="768" height="432" label="Tolerance and Impairment Info Graphic">
+			  <playheadUpdate action="setProgress" value="U1L15C9Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L15C10_1_evaluation"/>
+			  <caption source="data/Unit_1/captions/lesson_15/U1L15C9_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U1L15C10    MC    Exploring Unit Summary - Questions: Tolerance and Impairment -->
+			
+			<evaluation name="U1L15C10_1_evaluation" componentID="u1l15c10_1" label="Tolerance and Impairment Questions">
+			
+				<assetComplete action="gotoAndPlay" target="U1L15C10_2_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="true" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[If a person has high tolerance it means they are _________sensitive to the affects of alcohol.]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[Good job! High tolerance makes us less sensitive to alcohol, which makes us less aware of how impaired we are. As a result, we believe that we can drink more without experiencing an impairment problem. ]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[Hey, this one slipped past you! It can seem tricky. High tolerance actually makes us less sensitive to alcohol, which makes us less aware of how impaired we are. As a result, we believe that we can drink more without experiencing an impairment problem.]]></feedbackText>
+					</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[More]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[Less]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U1L15C10_2_evaluation" componentID="u1l15c10_2">
+			
+				<assetComplete action="gotoAndPlay" target="U1L15C10_3_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answers, then click Submit.]]></instructionText>
+					<questionText><![CDATA[High tolerance... ]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[<p>Right on! High tolerance can occur when people repeatedly drink to the point of impairment and their tolerance increases. No matter how high our tolerance gets, our mental tolerance is always lower than our physical tolerance. High tolerance is dangerous because we may drink enough to pass our trigger level for alcoholism. This makes it a liability, not an ability.</p>]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[<p>Not quite. Remember, high tolerance can occur when people repeatedly drink to the point of impairment and their tolerance increases. No matter how high our tolerance gets, our mental tolerance is always lower than our physical tolerance. High tolerance is dangerous because we may drink enough to pass our trigger level for alcoholism. This makes it a liability, not an ability. </p>]]></feedbackText>
+					</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[Protects us because it makes us less sensitive to alcohol.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[Can occur when people drink to the point of impairment and their tolerance increases.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v2">
+							<text><![CDATA[Means my mental tolerance is higher than my physical tolerance.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c4" valueID="v1">
+							<text><![CDATA[Is dangerous because we may drink enough to pass our trigger level for alcoholism.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c5" valueID="v1">
+							<text><![CDATA[Is a liability.]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U1L15C10_3_evaluation" componentID="u1l15c10_3">
+			
+				<assetComplete action="gotoAndPlay" target="U1L15C11_video"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" randomize="false" design="false" multimedia="false" layout="vertical" maxAttempts="2">
+					<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+					<questionText><![CDATA[If I have _________, I have increased biological risk for alcoholism or addiction.]]></questionText>
+					<feedback>
+						<feedbackText valueID="v1"><![CDATA[<p>You've got it. There are two factors that increase biological risk for alcoholism and addiction: family history and high tolerance. If I have a parent, grandparent, or sibling with alcoholism, I will have increased biological risk for alcoholism or addiction. If I have a high tolerance, I will also have increased risk. Go to the <b>Review</b> page and visit Lesson: <i>Do We All Respond the Same?</i></p>]]></feedbackText>
+						<feedbackText valueID="v2"><![CDATA[<p>This was a close one! Although drinking more than 14 drinks a week does increase my risk for problems, it does <b>not</b> impact my biological risk. However, if I have a biological relative with alcoholism or a high tolerance, I will have increased biological risk for alcoholism or addiction.</p><p>&nbsp;</p><p>Want to refresh your memory on tolerance? Go to the <b>Review</b> page and visit Lesson: <i>Do We All Respond the Same?</i></p>]]></feedbackText>
+						<feedbackText valueID="v3"><![CDATA[<p>You had to read this one a little more closely. While friends who use drugs might influence my choices and thereby increase my overall risk for problems, they do <b>not</b> impact my biological risk. However, if I have a biological relative with alcoholism or a high tolerance, I will have increased biological risk for alcoholism or addiction.</p><p>&nbsp;</p><p>Want to refresh your memory on tolerance? Go to the <b>Review</b> page and visit Lesson: <i>Do We All Respond the Same?</i></p>]]></feedbackText>
+						<feedbackText valueID="v4"><![CDATA[<p>Let's think about this one more closely. Although a high trigger level <i>is</i> set by biology, having a high trigger level actually decreases my biological risk.  However, if I have a biological relative with alcoholism or a high tolerance, I will have increased biological risk for alcoholism or addiction. </p><p>&nbsp;</p><p>Want to refresh your memory on tolerance? Go to the <b>Review</b> page and visit Lesson: <i>Do We All Respond the Same?</i></p>]]></feedbackText>
+						<feedbackText valueID="v5"><![CDATA[<p>This is an interesting response. Although having a DUI indicates that I have engaged in high-risk behavior, and might suggest that I am at greater overall risk for developing alcoholism or addiction, it does not impact my biological risk. However, if I have a biological relative with alcoholism or a high tolerance, I will have increased biological risk for alcoholism or addiction.</p><p>&nbsp;</p><p>Want to refresh your memory on tolerance? Go to the <b>Review</b> page and visit Lesson: <i>Do We All Respond the Same?</i></p>]]></feedbackText>
+					</feedback>
+					<titleText><![CDATA[Check Your Understanding]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA[More than 14 drinks per week]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[A biological relative with alcoholism]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c3" valueID="v3">
+							<text><![CDATA[Friends who use drugs]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c4" valueID="v4">
+							<text><![CDATA[A high trigger level]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c5" valueID="v1">
+							<text><![CDATA[High tolerance]]></text>
+							<userEntry controlID=""/>
+						</choice>
+						<choice id="c6" valueID="v5">
+							<text><![CDATA[A DUI]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L15C11    HV    Exploring Unit Summary - Host Summary of Exploring Unit -->
+			
+			<brightcoveVideo name="U1L15C11_video" source="746406949001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U1L15C11Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L15C12_evaluation"/>
+			  <caption source="data/Unit_1/captions/lesson_15/U1L15C11_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U1L15C12    My Notes  -->
+			
+			<evaluation name="U1L15C12_evaluation" componentID="u1l15c12" label="Lesson Summary Screen">
+			
+				<assetComplete action="U1L15C12Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Exploring Unit Summary]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

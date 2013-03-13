@@ -1,0 +1,132 @@
+<scene id="3438" title="What Is Low Risk for Alcohol?">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L8C0_evaluation" />
+	
+		<interactionGroup name="U1L8C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3438,U1L8C0Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L8T1C1A_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L8T1C1AComplete_interaction">
+			<interaction action="gotoAndPlay" target="U1L8T1C1B_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L8T1C1BComplete_interaction">
+			<interaction action="setLastSavePoint" value="3438,U1L8T1C1BComplete_interaction" />
+			<interaction action="goto" target="U1L8T1C4A_swf" />
+			<interaction action="callProperty" target="U1L8T1C4A_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L8T1C4AComplete_interaction">
+			<interaction action="gotoAndPlay" target="U1L8T1C5_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L8T1C5Complete_interaction">
+			<interaction action="setLastSavePoint" value="3438,U1L8T1C5Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L8T1C6_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L8T1C6Complete_interaction">
+			<interaction action="getNextScene" recordComplete="true" value="3438,1278" />
+		</interactionGroup>
+	
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L8T1C1AInit_progressBar" interaction="init_interaction"  callInteraction="false" weight="25" />
+		<progressBar name="U1L8C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L8T1C1AComplete_progressBar" weight="25" />
+		<progressBar name="U1L8T1C1BComplete_progressBar" interaction="U1L8T1C1BComplete_interaction" weight="25" />
+		<progressBar name="U1L8T1C5Complete_progressBar" interaction="U1L8T1C5Complete_interaction" weight="25"/>
+		<progressBar name="U1L8T1C6Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U1L8C0_evaluation"  visible="true" componentID="u1l8c0">
+			
+			<assetComplete action="gotoAndPlay" target="U1L8T1C1A_video"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[What Is Low Risk for Alcohol?]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore common drinking advice that people hear for how to avoid problems with alcohol. We'll also learn about standard drink measurement and practice applying the standard.]]></questionText>
+					<instructionText><![CDATA[Duration: 30 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!-- U1L8T1C1A    TG    What Is Low Risk for Alcohol? Common Drinking Advice -->
+			
+			<brightcoveVideo name="U1L8T1C1A_video" source="738431223001" width="768" height="432" complete="true" label="Common Drinking Advice">
+			  <playheadUpdate action="setProgress" value="U1L8T1C1AComplete_progressBar" frequency="5" />
+			  <complete action="U1L8T1C1AComplete_interaction" />
+			</brightcoveVideo>
+		
+		</sequence>
+		
+		<sequence label="Common Advice">
+		
+			<!-- U1L8T1C1B    HV+EV    Common Drinking Advice - Host Intro -
+										MOS    Common Drinking Advice - MOS Advice - Ray and Antonio go back and forth with MOS for a few clips
+										HV + EV    Common Drinking Advice - Host and Expert Video - Response - Ray and Antonio go back and forth with MOS for a few clips -->
+			
+			<brightcoveVideo name="U1L8T1C1B_video" source="819903085001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L8T1C1BComplete_progressBar" frequency="5" />
+				<complete action="U1L8T1C1BComplete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_08/U1L8T1C1B_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U1L8T1C4A    CI    Common Drinking Advice - Interactive Skype Menu  -->
+			<!-- U1L8T1C4B    SV+EV    Common Drinking Advice - Interactive Skype with responses from Ray (U1L8T1C4B1, B2, B3...) -->
+			
+			<swf name="U1L8T1C4A_swf" source="assets/media/U1L8C4_Final.swf" componentID="u1l8t1c4a" >
+				<assetComplete action="U1L8T1C4AComplete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_08/U1L8T1C4A_cc.xml" />
+			</swf>
+			
+			<!-- U1L8T1C5    RQ    Common Drinking Advice - Reflection Question -->
+			
+			<evaluation name="U1L8T1C5_evaluation" componentID="u1l8t1c5" label="Reflection Question">
+				<assetComplete action="U1L8T1C5Complete_interaction"/>
+				<evaluation evalType="ReflectionQuestion">
+						<questionText><![CDATA[What other advice have you heard for preventing problems with alcohol or drugs?]]></questionText>
+						<titleText><![CDATA[Reflection Question]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L8T1C6    HV    Common Drinking Advice - Host Summary - IN MASTER SCRIPT AS C7 -->
+			
+			<brightcoveVideo name="U1L8T1C6_video" source="1557029343001" width="768" height="432" label="Summary Video">
+				<playheadUpdate action="setProgress" value="U1L8T1C6Complete_progressBar" frequency="5" />
+				<complete action="U1L8T1C6Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_08/U1L8T1C6_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>  </styling>
+  </head>
+  <body>
+    <div xml:lang="en">
+      <p begin="00:00:00.00" dur="00:00:01.00">
+		 (Party noises--people scoializing, music playing in the background)
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>John:</b>
+        <br/>
+	   What was that?
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Steve:</b>
+        <br/>
+	   What was what?
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>John:</b>
+        <br/>
+	   You throw like a girl.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Girl:</b>
+        <br/>
+	   Yeah, a lame girl.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Steve:</b>
+        <br/>
+	   Thanks, partner.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+		(Cups falling to the ground)
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Phil:</b>
+        <br/>
+	   Sorry.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>John:</b>
+        <br/>
+	   Okay… time for round 2!
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Steve:</b>
+        <br/>
+	   No way, I can't!
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>John:</b>
+        <br/>
+	   Come on, man, you said you would! Just one more...
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Come on, man, you said you would! Just one more...</b>
+        <br/>
+	   I don't know how you do it man.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>John:</b>
+        <br/>
+	   Practice--lots of practice.
+      </p>
+    </div>
+  </body>
+</tt>

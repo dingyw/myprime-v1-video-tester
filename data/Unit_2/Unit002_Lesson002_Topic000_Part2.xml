@@ -1,0 +1,198 @@
+<scene id="3494" title="Yellow Phase: High-Risk Choices">
+
+	<interactions>
+		<interactionGroup name="init_interaction">
+			<interaction action="setLastSavePoint" value="3494,init_interaction" />
+			<interaction action="goto" target="U2L2C21_swf"/>
+			<interaction action="callProperty" target="U2L2C21_swf.content" value="transitionIn" />
+			<interaction action="callProperty" target="returnToMenu_swf.content" value="label,Return to Menu"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C4Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L2C4_video" />
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C4Complete_interaction">
+			<interaction action="callProperty" target="U2L2C21_swf.content" value="completeOutcome,highRiskChoices" />
+			<interaction action="callInteraction" value="U2L2C21Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C6Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L2C6_video" />
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C6Complete_interaction">
+			<interaction action="callProperty" target="U2L2C21_swf.content" value="completeOutcome,anticipation" />
+			<interaction action="callInteraction" value="U2L2C21Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C8Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L2C8_video" />
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C8Complete_interaction">
+			<interaction action="callProperty" target="U2L2C21_swf.content" value="completeOutcome,socialDependence" />
+			<interaction action="callInteraction" value="U2L2C21Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C11Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L2C11_video" />
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C11Complete_interaction">
+			<interaction action="callProperty" target="U2L2C21_swf.content" value="completeOutcome,tolerance" />
+			<interaction action="callInteraction" value="U2L2C21Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C12Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L2C12_video" />
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C12Complete_interaction">
+			<interaction action="callProperty" target="U2L2C21_swf.content" value="completeOutcome,thinkingMemoryChanges" />
+			<interaction action="callInteraction" value="U2L2C21Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C13Init_interaction">
+			<interaction action="gotoAndPlay" target="U2L2C13_video" />
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C13Complete_interaction">
+			<interaction action="callProperty" target="U2L2C21_swf.content" value="completeOutcome,reboundEffects" />
+			<interaction action="callInteraction" value="U2L2C21Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C14AInit_interaction">
+			<interaction action="gotoAndPlay" target="U2L2C14A_video" />
+			<interaction action="show" target="returnToMenu_swf" delay="3000" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C14AComplete_interaction">
+			<interaction action="callProperty" target="U2L2C21_swf.content" value="completeOutcome,problemOutcomes" />
+			<interaction action="callInteraction" value="U2L2C21Init_interaction"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U2L2C21Init_interaction">
+			<interaction action="hide" target="returnToMenu_swf" />
+			<interaction action="goto" target="U2L2C21_swf"/>
+			<interaction action="callProperty" target="U2L2C21_swf.content" value="transitionIn" />
+		</interactionGroup>
+	
+		<interactionGroup name="U2L2C22Complete_interaction">
+			<interaction action="recordComplete" value="Scene,3448"/>
+			<interaction action="getNextScene" recordComplete="true" value="3494,1300" />
+		</interactionGroup>
+	</interactions>
+  <!--
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U2L2Complete_progressBar" />
+		
+		<progressBar name="U2L2C4Complete_progressBar" />
+		<progressBar name="U2L2C6Complete_progressBar" />
+		<progressBar name="U2L2C8Complete_progressBar" />
+		<progressBar name="U2L2C11Complete_progressBar" />
+		<progressBar name="U2L2C12Complete_progressBar" />
+		<progressBar name="U2L2C13Complete_progressBar" />
+		<progressBar name="U2L2C14AComplete_progressBar" />
+		
+	</progressIndicator>
+  -->
+	<assets visible="false">
+	
+		<swf name="returnToMenu_swf" source="assets/media/greenBtn.swf" x="10" y="394" z="1" visible="false">
+			<interactions>
+				<interaction type="click" action="hide" target="returnToMenu_swf" />
+				<interaction type="click" action="callInteraction" value="U2L2C21Init_interaction" />
+			</interactions>
+		</swf>
+		
+		<!-- U2L2C4  -->
+		
+		<brightcoveVideo name="U2L2C4_video" source="782446808001" width="768" height="432">
+			<complete action="U2L2C4Complete_interaction" />
+			<caption source="data/Unit_2/captions/lesson_02/U2L2C4_cc.xml" />
+		</brightcoveVideo>
+		
+		<!-- U2L2C6  -->
+		
+		<brightcoveVideo name="U2L2C6_video" source="778783627001" width="768" height="432">
+			<complete action="U2L2C6Complete_interaction" />
+			<caption source="data/Unit_2/captions/lesson_02/U2L2C6_cc.xml" />
+		</brightcoveVideo>
+		
+		<!-- U2L2C8  -->
+		
+		<brightcoveVideo name="U2L2C8_video" source="1508125129001" width="768" height="432">
+			<complete action="U2L2C8Complete_interaction" />
+			<caption source="data/Unit_2/captions/lesson_02/U2L2C8_cc.xml" />
+		</brightcoveVideo>
+		
+		<!-- U2L2C11 -->
+		
+		<brightcoveVideo name="U2L2C11_video" source="739498744001" width="768" height="432">
+			<complete action="U2L2C11Complete_interaction" />
+			<caption source="data/Unit_2/captions/lesson_02/U2L2C11_cc.xml" />
+		</brightcoveVideo>
+		
+		<!-- U2L2C12 -->
+		
+		<brightcoveVideo name="U2L2C12_video" source="820184714001" width="768" height="432">
+			<complete action="U2L2C12Complete_interaction" />
+			<caption source="data/Unit_2/captions/lesson_02/U2L2C12_cc.xml" />
+		</brightcoveVideo>
+		
+		<!-- U2L2C13  -->
+		
+		<brightcoveVideo name="U2L2C13_video" source="772425613001" width="768" height="432">
+			<complete action="U2L2C13Complete_interaction" />
+			<caption source="data/Unit_2/captions/lesson_02/U2L2C13_cc.xml" />
+		</brightcoveVideo>
+		
+		<!-- U2L2C14A  -->
+		
+		<brightcoveVideo name="U2L2C14A_video" source="1452895272001" width="768" height="432">
+			<complete action="U2L2C14AComplete_interaction" />
+			<caption source="data/Unit_2/captions/lesson_02/U2L2C14A_cc.xml" />
+		</brightcoveVideo>
+		
+		<sequence label="Review">
+		
+			<!-- U2L2C21  -->
+			
+			<swf name="U2L2C21_swf" source="assets/media/U2L2C21.swf" componentID="u2l2c21" >
+				<assetComplete action="gotoAndPlay" target="U2L2C22_evaluation"  />
+			</swf>
+			
+			<!-- U2L2C22  My Notes -->
+			
+			<evaluation name="U2L2C22_evaluation" componentID="u2l2c22" label="Lesson Summary Screen">
+			
+				<assetComplete action="U2L2C22Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+					<questionText><![CDATA[Yellow Phase - High-Risk Choices]]></questionText>
+					<titleText><![CDATA[My Notes]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[2]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+</scene>

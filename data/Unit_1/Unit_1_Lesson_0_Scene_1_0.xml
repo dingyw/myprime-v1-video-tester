@@ -1,0 +1,85 @@
+<scene id="3769">
+	<interactions>
+		
+		<interactionGroup name="U1L0C0Init_interaction">
+		  <interaction action="setLastSavePoint" value="3769,U1L0C0Init_interaction" />
+		  <interaction action="goto" target="U1L0C3_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1TGInit_interaction">
+		  <interaction action="gotoAndPlay" target="U1TG_video" />
+		</interactionGroup>
+		
+	</interactions>
+	
+  <progressIndicator x="0" y="432" width="768" height="24">
+	<progressBar name="U1L0C0Init_progressBar" interaction="U1L0C0Init_interaction" weight="25" />
+	<progressBar name="splashComplete_progressBar"  />
+	<progressBar name="U1L0C3Complete_progressBar"  />
+	<progressBar name="U1TGComplete_progressBar"  />
+  </progressIndicator>
+  
+  <assets visible="false">
+  
+	<evaluation name="U1L0C3_evaluation" componentID="u1l0c3">
+			
+			<c1 action="gotoAndPlay" target="U1L0C3_video" />
+			<c2 action="goto" target="offline_swf" />
+			<c2 action="callProperty" target="offline_swf.content" value="initContent" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+				<instructionText><![CDATA[]]></instructionText>
+				<questionText><![CDATA[To view a guided tour of the myPrime interface, click Take Tour. To begin the course, click Start.  To access the tour later, click on the Support icon.]]></questionText>
+				<titleText><![CDATA[]]></titleText>
+				<multimedia src="U1L0C3.swf"/>
+				
+				<choice-collection>
+					<choice id="c1" valueID="v1">
+						<text><![CDATA[Take Tour]]></text>
+						<userEntry controlID=""/>
+					</choice>
+					<choice id="c2" valueID="v1">
+						<text><![CDATA[Start]]></text>
+						<userEntry controlID=""/>
+					</choice>
+				</choice-collection>
+				<value-collection>
+					<value id="v1"><![CDATA[Take Tour]]></value>
+					<value id="v2"><![CDATA[Start]]></value>				
+				</value-collection>
+			</evaluation>
+			
+		</evaluation>
+
+		<!-- Splash Intro -->
+		
+		<brightcoveVideo name="splash_video" source="810394067001" width="768" height="432">
+			<ready action="gotoAndPlay" target="U1L0C3_evaluation" />
+			<playheadUpdate action="setProgress" value="splashComplete_progressBar" frequency="5"/>
+			<complete action="gotoAndPlay" target="U1L0C3_video"/>
+		</brightcoveVideo>
+		
+		<!-- Interface Tour (U1L0C3) -->
+		
+		<brightcoveVideo name="U1L0C3_video" source="1550734628001" width="768" height="432">
+			<playheadUpdate action="setProgress" value="U1L0C3Complete_progressBar" frequency="5"/>
+			<complete action="goto" target="offline_swf"/>
+			<complete action="callProperty" target="offline_swf.content" value="initContent"/>
+			<caption source="data/Unit_1/captions/lesson_00/U1L0C3_cc.xml" />
+		</brightcoveVideo>
+		
+		<!-- Prompt the user to start online or offline -->
+		
+		<swf name="offline_swf" source="assets/media/offlineMsg.swf">	
+		</swf>
+		
+		<!-- Lesson 1 TG -->
+		
+		<brightcoveVideo name="U1TG_video" source="822945890001" width="768" height="432">
+			<playheadUpdate action="setProgress" value="U1TGComplete_progressBar" frequency="5"/>
+			<complete action="getNextScene" recordComplete="true" value="3769,1265"/>
+		</brightcoveVideo>
+		
+  </assets>
+  
+</scene>

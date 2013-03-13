@@ -1,0 +1,354 @@
+<scene id="3650" title="Preparing for Success">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U3L3C0_evaluation" />
+	
+		<interactionGroup name="U3L3C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3650,U3L3C0Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L3C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L3C2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3650,U3L3C2Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L3C5_1_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L3C5Complete_interaction">
+			<interaction action="setLastSavePoint" value="3650,U3L3C5Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L3C6_1_swf"/>
+			<interaction action="callProperty" target="U3L3C6_1_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L3C6Complete_interaction">
+			<interaction action="setLastSavePoint" value="3650,U3L3C6Complete_interaction" />
+			<interaction action="gotoAndPlay"  target="U3L3C7_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L3C7Complete_interaction">
+			<interaction action="setLastSavePoint" value="3650,U3L3C7Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U3L3C8_evaluation"/>
+		</interactionGroup>
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U3L3C1Init_progressBar" interaction="init_interaction"   callInteraction="false" weight="5" />
+		<progressBar name="U3L8C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U3L3C1Complete_progressBar" weight="25" />
+		<progressBar name="U3L3C2Complete_progressBar"  weight="25"/>
+		<progressBar name="U3L3C5Complete_progressBar"  interaction="U3L3C5Complete_interaction" weight="25"/>
+		<progressBar name="U3L3C6Complete_progressBar" interaction="U3L3C6Complete_interaction" weight="25"/>
+		<progressBar name="U3L3C7Complete_progressBar"  interaction="U3L3C7Complete_interaction" weight="25"/>
+		<progressBar name="U3L3C8Complete_progressBar"  weight="5"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U3L3C0_evaluation" visible="true" componentID="u3l3c0">
+			
+			<assetComplete action="U3L3C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Preparing for Success]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore the five key elements that aid in creating a plan for success in achieving our goals.]]></questionText>
+					<instructionText><![CDATA[Duration: 35 minutes]]></instructionText>
+					<multimedia src="unit3_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U3L3C1    TG     -->
+			
+			<brightcoveVideo name="U3L3C1_video" source="738436466001" width="768" height="432" complete="true" label="Preparing for Success">
+			  <playheadUpdate action="setProgress" value="U3L3C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L3C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U3L3C2   -->
+			
+			<brightcoveVideo name="U3L3C2_video" source="1540444478001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U3L3C2Complete_progressBar" frequency="5" />
+			  <complete action="U3L3C2Complete_interaction"/>
+			  <caption source="data/Unit_3/captions/lesson_03/U3L3C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="My Preparation">
+						
+			<!--  U3L3C5     -->
+			
+			<evaluation name="U3L3C5_1_evaluation" componentID="u3l3c5_1" label="Preparing for Success Questions">
+				
+				<assetComplete action="gotoAndPlay" target="U3L3C5_2_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[1. One significant thing I did in the past that I consider a success is...<input id="c1"/>2. What helped you make this change or be successful?<input id="c2"/>3. How did you know it was a success? In other words, how did you measure your success?<input id="c3"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[My Past Success - Things to Think About]]></titleText>
+						<remediation>
+							<file href="remFile.htm" windowOptions="height=500,width=300,top=100,left=400"/>
+							<remediationText valueID="c1"><![CDATA[Think broadly on this. Did you graduate from high school? If not, did you get a GED? Have you learned how to repair a car? Did you save money for something big? Did you quit smoking? Did you learn to play a guitar, or were you a good team member on a sports team? It could be anything that took effort.]]></remediationText>
+							<remediationText valueID="c2"><![CDATA[A lot of things can help people succeed. Sometimes it is a feeling like, "I wanted to feel proud," or a motivation like "This was something I really wanted to do." Other times, the support of a person made a huge difference. "I had a friend who was doing this too," or "It really meant a lot to my parents." Other times it is a personal goal, such as "I wanted to be a mechanic and this is what I needed to do to succeed." Sometimes it is surviving something negative like "I survived being in war," or "My dad abused me and I don't abuse anyone." Think about the reasons why you have wanted to succeed or make big changes in the past.]]></remediationText>
+							<remediationText valueID="c3"><![CDATA[There is always something that tells us when we are done or when we have been successful. Your car started when you finished working on it. Maybe someone once told you, "Congratulations." Maybe you had a feeling of satisfaction, or maybe you just survived something difficult.]]></remediationText>
+							<linkText><![CDATA[Want some ideas to help you answer these questions? <font color="#FFFF99"><u>Click here for some suggestions.</u></font>]]></linkText>
+						</remediation>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L3C5_2_evaluation" componentID="u3l3c5_2">
+				
+				<assetComplete action="gotoAndPlay" target="U3L3C5_3_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[4. What obstacles did you encounter, and what helped you succeed when these obstacles were encountered?<input id="c1"/>5. Describe any cost or sacrifice you made in order to succeed.<input id="c2"/>6. Why didn't you quit when faced with an obstacle?<input id="c3"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[My Past Success (Continued)]]></titleText>
+						<remediation>
+							<file href="remFile.htm" windowOptions="height=500,width=300,top=100,left=400"/>
+							<remediationText valueID="c1"><![CDATA[Sometimes success comes easily, but not usually. Typically we encounter things that make it harder, like people telling us we cannot succeed, running out of money, or being tired. Sometimes the obstacles are inside us, like negative thoughts or feelings. What did you have to overcome to succeed?]]></remediationText>
+							<remediationText valueID="c2"><![CDATA[Everything that is worthwhile costs something. Sometimes it is money. Sometimes it is time or effort. Sometimes people give up friendships or possessions to get something they value more.]]></remediationText>
+							<remediationText valueID="c3"><![CDATA[Something made it harder for you to succeed, but you went on. What did you do when you ran out of money, when people said you could not succeed, or when you felt too tired to go on?]]></remediationText>
+							<linkText><![CDATA[Want some ideas to help you answer these questions? <font color="#FFFF99"><u>Click here for some suggestions.</u></font>]]></linkText>
+						</remediation>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L3C5_3_evaluation" componentID="u3l3c5_3">
+				
+				<assetComplete action="U3L3C5Complete_interaction" />
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[7. What support was available? How did you utilize the support that was available?<input id="c1"/>8. How can you use your experience to help you be successful in making new choices about alcohol or drug use?<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[My Past Success (Continued)]]></titleText>
+						<remediation>
+							<file href="remFile.htm" windowOptions="height=500,width=300,top=100,left=400"/>
+							<remediationText valueID="c1"><![CDATA[Were there people who encouraged you, taught you or loved you through this change?]]></remediationText>
+							<remediationText valueID="c2"><![CDATA[The skills needed to succeed at one thing can help us with another. The same strength, the same people, or the same principles that helped you before can help you again.]]></remediationText>
+							<linkText><![CDATA[Want some ideas to help you answer these questions? <font color="#FFFF99"><u>Click here for some suggestions.</u></font>]]></linkText>
+						</remediation>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!--  U3L3C6 -->
+			
+			<swf name="U3L3C6_1_swf" source="assets/media/U3L3C6_1.swf" componentID="u3l3c6_1">
+				<assetComplete action="gotoAndPlay" target="U3L3C6_2_evaluation"/>
+				<!-- <assetComplete action="U3L3C6Complete_interaction"/> -->
+			</swf>
+			
+			<evaluation name="U3L3C6_2_evaluation" componentID="u3l3c6_2">
+			
+				<assetComplete action="gotoAndPlay" target="U3L3C6_3_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<instructionText><![CDATA[Enter a number in the box below, then click Next.]]></instructionText>
+					<questionText><![CDATA[Set a date. (NOTE: This date should be different than the date you set for achieving the goal.)]]></questionText>
+					<titleText><![CDATA[Developing a Plan for Success ]]></titleText>
+					<multimedia src="U3L3C6_2.swf"/>
+					<data-dependency id="U3L3C6_1"/>
+					<choice-collection>
+						<choice id="c1" valueID="v2">
+							<text><![CDATA["month,day,year"]]></text>
+							<userEntry controlID=""/>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>				
+					</value-collection>
+				</evaluation>
+			</evaluation>
+			
+			<evaluation name="U3L3C6_3_evaluation" componentID="u3l3c6_3">
+			
+				<assetComplete action="gotoAndPlay" target="U3L3C6_4_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[1. I'm going to tell these people about my goal... <input id="c1"/>2. Here's what I'll tell them...<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Developing a Plan for Success]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U3L3C6_4_evaluation" componentID="u3l3c6_4">
+			
+				<assetComplete action="gotoAndPlay" target="U3L3C6_5_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[3. Changes I can make in my life to help me meet this goal...<input id="c1"/>]]></questionText>
+						<instructionText><![CDATA[Type your answer in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Developing a Plan for Success]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U3L3C6_5_evaluation" componentID="u3l3c6_5">
+			
+				<assetComplete action="gotoAndPlay" target="U3L3C6_6_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[4. The difficulties I might face are... <input id="c1"/>5. I will stay on track by...<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Developing a Plan for Success]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U3L3C6_6_evaluation" componentID="u3l3c6_6">
+			
+				<assetComplete action="gotoAndPlay" target="U3L3C6_7_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[6. Who I can ask for support... <input id="c1"/>7. How they can help me...<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Developing a Plan for Success]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+		
+			<evaluation name="U3L3C6_7_evaluation" componentID="u3l3c6_7">
+			
+				<assetComplete action="U3L3C6Complete_interaction" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+					<questionText><![CDATA[Did you notice that I overwrote the original text?]]></questionText>
+					<instructionText><![CDATA[Click on each tab to view your plan data. When you are finished, click Next.]]></instructionText>
+					<multimedia src="U3L3C6_7.swf"/>
+					<data-dependency id="U3L3C6_1"/>
+					<data-dependency id="U3L3C6_2"/>
+					<data-dependency id="U3L3C6_3"/>
+					<data-dependency id="U3L3C6_4"/>
+					<data-dependency id="U3L3C6_5"/>
+					<data-dependency id="U3L3C6_6"/>
+					<titleText><![CDATA[Developing a Plan for Success ]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c3" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c4" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c5" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c6" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c7" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c8" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c9" valueID="v1">
+							<text><![CDATA[yes]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U3L3C7 -->
+			
+			<brightcoveVideo name="U3L3C7_video" source="761307061001" width="768" height="432" label="Preparing for Success - Host Summary">
+			  <playheadUpdate action="setProgress" value="U3L3C7Complete_progressBar" frequency="5" />
+			  <complete action="U3L3C7Complete_interaction" />
+			  <caption source="data/Unit_3/captions/lesson_03/U3L3C7_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U3L3C8	NOTES	 -->
+	
+			<evaluation name="U3L3C8_evaluation" componentID="u3l3c8" label="Lesson Summary Screen">
+			
+				<assetComplete action="getNextScene" recordComplete="true" value="3650,1310"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Preparing for Success]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[3]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

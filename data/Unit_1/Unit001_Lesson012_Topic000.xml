@@ -1,0 +1,201 @@
+<scene id="3491" title="Problems: Chance or Choice?">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L12C0_evaluation" />
+	
+		<interactionGroup name="U1L12C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3491,U1L12C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U1L12C1_video"/>
+		</interactionGroup>
+			
+		<interactionGroup name="U1L12C8Complete_interaction">
+			<interaction action="setLastSavePoint" value="3491,U1L12C8Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L12C9_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L12C11Complete_interaction">
+			<interaction action="setLastSavePoint" value="3491,U1L12C11Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L12C12_evaluation" />
+		</interactionGroup>
+		
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L12C1Init_progressBar" interaction="init_interaction"  callInteraction="false" weight="5" />
+		<progressBar name="U1L12C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L12C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L12C2Complete_progressBar" weight="25" />
+		<progressBar name="U1L12C8Complete_progressBar" interaction="U1L12C8Complete_interaction" weight="25"/>
+		<progressBar name="U1L12C9Complete_progressBar" weight="25"/>
+		<progressBar name="U1L12C11Complete_progressBar" interaction="U1L12C11Complete_interaction" weight="25"/>
+		<progressBar name="U1L12C12Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U1L12C0_evaluation"  visible="true" componentID="u1l12c0">
+			
+			<assetComplete action="U1L12C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Chance or Choice?]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore what research shows about the relationship between high-risk choices and the risk for impairment problems.]]></questionText>
+					<instructionText><![CDATA[Duration: 10 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U1L12C1    TG    Problems: Chance or Choice?  -->
+			
+			<brightcoveVideo name="U1L12C1_video" source="738431214001" width="768" height="432" complete="true" label="Problems: Chance or Choice?">
+			  <playheadUpdate action="setProgress" value="U1L12C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L12C2_video"/>
+			</brightcoveVideo>
+		
+		</sequence>
+
+		<sequence label="Just Bad Luck?">
+		
+			<!--  U1L12C2    HV    Keeping Our Eyes on the Ball Intro 
+									A    Keeping Our Eyes on the Ball Animation - NOTE: THIS IS DONE BOTH BY ANTONIO ON THE BASKETBALL COURT AND ANIMATION - This is done as Pat, but not needed to be Pat.
+									A    Is it Just Bad Luck? Animation Part 1
+									HV    Is It Just Bad Luck? Host Video
+									HV    Is It Just Bad Luck? Transition to Interactions -->
+			
+			<brightcoveVideo name="U1L12C2_video" source="743217885001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U1L12C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L12C7_evaluation"/>
+			  <caption source="data/Unit_1/captions/lesson_12/U1L12C2_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U1L12C7    MC    Is it Just Bad Luck? Interaction 1 -->
+			
+			<evaluation name="U1L12C7_evaluation" componentID="u1l12c7" label="Is it Just Bad Luck? Question">
+			
+				<assetComplete action="gotoAndPlay" target="U1L12C8_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="false" multimedia="false" hotspot="true" layout="horizontal">
+						<questionText><![CDATA[If risk for a crash has nothing to do with how much a person drinks, what would we expect to see in the rate of crashes as the BAL goes up? ]]></questionText>
+						<instructionText><![CDATA[Choose the best answer, then click Submit.]]></instructionText>
+						<titleText><![CDATA[Is it Just Bad Luck?]]></titleText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[Yes! We would expect the rate of crashes to stay the same, or be random. Let's see if that's actually the case.]]></feedbackText>
+							<feedbackText valueID="v3"><![CDATA[Interesting! We would be more likely to expect the rate of crashes to stay the same as the BAL goes up, or to be random, if indeed there were no relationship between risk for a crash and BAC. But you might be on to something! ]]></feedbackText>
+						</feedback>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[U1L12C7_Image_1.jpg]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[U1L12C7_Image_2.jpg]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v3">
+								<text><![CDATA[U1L12C7_Image_3.jpg]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+		
+			<!--  U1L12C8    SL    Is it Just Bad Luck? Interaction 2 -  -->
+			
+			<evaluation name="U1L12C8_evaluation" componentID="u1l12c8" label="Is it Just Bad Luck? Slider">
+			
+				<assetComplete action="U1L12C8Complete_interaction"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="true">
+						<questionText><![CDATA[What percentage of all drinkers consume 10% of the alcohol in the U.S.?]]></questionText>
+						<instructionText><![CDATA[Drag the slider to see what research shows about risk as BAL / BAC increases.]]></instructionText>
+						<multimedia src="U1L12C8.swf"/>
+						<titleText><![CDATA[Is it Just Bad Luck? (Continued)]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[.08]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[.10]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[.15]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!--  U1L12C9    IG    Is It Just Bad Luck? Info Graphic  
+									A    Is it Just Bad Luck? Animation Part 2 -->
+			
+			<brightcoveVideo name="U1L12C9_video" source="1502688390001" width="768" height="432" label="Is It Just Bad Luck? Info Graphic">
+			  <playheadUpdate action="setProgress" value="U1L12C9Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L12C11_video"/>
+			  <caption source="data/Unit_1/captions/lesson_12/U1L12C9_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U1L12C11    HV  -->
+			
+			<brightcoveVideo name="U1L12C11_video" source="772269084001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U1L12C12Complete_progressBar" frequency="5" />
+			  <complete action="U1L12C11Complete_interaction"/>
+			  <caption source="data/Unit_1/captions/lesson_12/U1L12C11_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U1L12C12    My Note -->
+			
+			<evaluation name="U1L12C12_evaluation" componentID="u1l12c12" label="Lesson Summary Screen">
+			
+				<assetComplete action="getNextScene" recordComplete="true" value="3491,1291"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Problems: Chance or Choice?]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>  </styling>
+  </head>
+  <body>
+    <div xml:lang="en">
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Online user 1:</b>
+        <br/>
+	   So what about drugs and impairment?
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Online user 2:</b>
+        <br/>
+	   It's not the same--I would never drink and drive, but I'm actually a lot better driver when I'm high.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Online user 3:</b>
+        <br/>
+	   Oh come on, there's no way you're a better driver when you're stoned.
+      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Online user 4:</b>
+        <br/>
+	   No, it's true, I can't drink and drive for nothing, but when I'm high, I'm able to focus on the road.
+      </p>
+    </div>
+  </body>
+</tt>

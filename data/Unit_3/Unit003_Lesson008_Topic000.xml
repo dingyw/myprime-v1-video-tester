@@ -1,0 +1,206 @@
+<scene id="3655" title="Rewarding Myself">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U3L8C0_evaluation" />
+	
+		<interactionGroup name="U3L8C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3655,U3L8C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L8C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L8C3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3655,U3L8C3Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L8C4_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U3L8C4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3655,U3L8C4Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L8C5_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L8C7Complete_interaction">
+			<interaction action="setLastSavePoint" value="3655,U3L8C7Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L8C8_video"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L8C8Complete_interaction">
+			<interaction action="setLastSavePoint" value="3655,U3L8C8Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U3L8C9_evaluation"/>
+		</interactionGroup>
+		
+		<interactionGroup name="U3L8C9Complete_interaction">
+			<!-- <interaction action="recordComplete" value="Lesson,3655" /> -->
+			<interaction action="recordComplete" value="Scene,3655,Lesson,1315" />
+			<interaction action="getScene" value="3763" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U3L8C1Init_progressBar" interaction="init_interaction"  callInteraction="false"  weight="5" />
+		<progressBar name="U3L8C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U3L8C1Complete_progressBar" weight="25" />
+		<progressBar name="U3L8C2Complete_progressBar"  />
+		<progressBar name="U3L8C3Complete_progressBar"  interaction="U3L8C3Complete_interaction" weight="25"/>
+		<progressBar name="U3L8C4Complete_progressBar"  interaction="U3L8C4Complete_interaction" weight="25"/>
+		<progressBar name="U3L8C5Complete_progressBar"  />
+		<progressBar name="U3L8C7Complete_progressBar"  interaction="U3L8C7Complete_interaction" weight="25"/>
+		<progressBar name="U3L8C8Complete_progressBar" interaction="U3L8C8Complete_interaction" weight="25" />
+		<progressBar name="U3L8C9Complete_progressBar"  />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U3L8C0_evaluation" visible="true" componentID="u3l8c0">
+			
+			<assetComplete action="U3L8C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Rewarding Myself]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll learn the importance of rewarding ourselves. We'll calculate the costs of problems resulting from high-risk choices, and create a plan for what we might do with all the money we could be saving.]]></questionText>
+					<instructionText><![CDATA[Duration: 15 minutes]]></instructionText>
+					<multimedia src="unit3_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U3L8C1  TG     -->
+			
+			<brightcoveVideo name="U3L8C1_video" source="810271546001" width="768" height="432" complete="true" label="Rewarding Myself">
+			  <playheadUpdate action="setProgress" value="U3L8C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L8C2_video"/>
+			</brightcoveVideo>
+	
+			<!--  U3L8C2   -->
+			
+			<brightcoveVideo name="U3L8C2_video" source="1481473950001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U3L8C2Complete_progressBar" frequency="5" />
+			  <complete action="goto" target="U3L8C3_swf"/>
+			  <complete action="callProperty" target="U3L8C3_swf.content" value="initContent"/>
+			  <caption source="data/Unit_3/captions/lesson_08/U3L8C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Potential Rewards">
+		
+			<!--  U3L8C3	 -->
+			
+			<swf name="U3L8C3_swf" source="assets/media/U3L8C3.swf" >
+			  <assetComplete action="U3L8C3Complete_interaction" />
+			</swf>
+			
+			<!--  U3L8C4	 -->
+			
+			<evaluation name="U3L8C4_evaluation" componentID="u3l8c4" label="Identify Rewards">
+			
+				<assetComplete action="U3L8C4Complete_interaction" />
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[1. What little things can I use as short-term rewards on a weekly and/or monthly basis?<input id="c1"/>2. What longer term rewards am I interested in planning for?<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Planning My Rewards]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Processing">
+		
+			<!--  U3L8C5	 -->
+			
+			<brightcoveVideo name="U3L8C5_video" source="1481473945001" width="768" height="432" label="Processing Video">
+			  <playheadUpdate action="setProgress" value="U3L8C5Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U3L8C7_1_evaluation"/>
+			  <caption source="data/Unit_3/captions/lesson_08/U3L8C5_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U3L8C7 -->
+			
+			<evaluation name="U3L8C7_1_evaluation" componentID="u3l8c7_1" label="Processing Questions">
+			
+				<assetComplete action="gotoAndPlay" target="U3L8C7_2_evaluation"/>
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[1. It's important to recognize our own progress. How will I measure my success?<input id="c1"/>2. Immediate rewards can be everywhere. Our feelings are one kind of reward. How will I feel when I succeed?<input id="c2"/>3. Think about the next time you have a chance to make high-risk choices but choose to make low-risk choices instead. What would you like to do the next day that you may not have been able to do if you had been making high-risk choices?<input id="c3"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Other Rewards]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U3L8C7_2_evaluation" componentID="u3l8c7_2">
+			
+				<assetComplete action="U3L8C7Complete_interaction" />
+				
+				<evaluation evalType="FIB" layout="vertical">
+						<questionText><![CDATA[4. Helping others feel good about us is another kind of reward. How will the person closest to me feel when I succeed?<input id="c1"/>5. The most important reward for me is...<input id="c2"/>]]></questionText>
+						<instructionText><![CDATA[Type your answers in the boxes, then click Next.]]></instructionText>
+						<titleText><![CDATA[Other Rewards]]></titleText>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!--  U3L8C8 -->
+			
+			<brightcoveVideo name="U3L8C8_video" source="1481193478001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U3L8C8Complete_progressBar" frequency="5" />
+			  <complete action="U3L8C8Complete_interaction" />
+			  <caption source="data/Unit_3/captions/lesson_08/U3L8C8_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U3L8C9 -->
+			
+			<evaluation name="U3L8C9_evaluation" componentID="u3l8c9" label="Lesson Summary Screen">
+			
+				<assetComplete action="U3L8C9Complete_interaction"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Rewarding Myself]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[3]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

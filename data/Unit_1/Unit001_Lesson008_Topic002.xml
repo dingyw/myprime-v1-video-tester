@@ -1,0 +1,167 @@
+<scene id="3467" title="Defining a Drink">
+
+	<interactions>
+		<interactionGroup name="U1L8T2C1Ready_interaction">
+			<interaction action="setLastSavePoint" value="3467,U1L8T2C1Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U1L8T2C1_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L8T2C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L8T2C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L8T2C2Complete_interaction">
+			<interaction action="setLastSavePoint" value="3467,U1L8T2C2Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L8T2C5_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L8T2C5Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L8T2C7_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L8T2C7Complete_interaction">
+			<interaction action="setLastSavePoint" value="3467,U1L8T2C7Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L8T2C10_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L8T2C10Complete_interaction">
+			<interaction action="setLastSavePoint" value="3467,U1L8T2C10Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L8T2C14_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L8T2C14Complete_interaction">
+			<interaction action="setLastSavePoint" value="3467,U1L8T2C14Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L8T2C15_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L8T2C15Complete_interaction">
+			<interaction action="getNextScene" recordComplete="true" value="3467,1279" />
+		</interactionGroup>
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L8T2C1Init_progressBar" interaction="U1L8T2C1Ready_interaction" weight="25" />
+		<progressBar name="U1L8T2C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L8T2C2Complete_progressBar" />
+		<progressBar name="U1L8T2C5Complete_progressBar" weight="25"/>
+		<progressBar name="U1L8T2C7Complete_progressBar" interaction="U1L8T2C7Complete_interaction" />
+		<progressBar name="U1L8T2C10Complete_progressBar" interaction="U1L8T2C10Complete_interaction"/>
+		<progressBar name="U1L8T2C14Complete_progressBar" />
+		<progressBar name="U1L8T2C15Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Introduction">
+		
+			<!-- U1L8T2C1    TG    Defining a Drink -->
+			
+			<brightcoveVideo name="U1L8T2C1_video" source="738412507001" width="768" height="432" visible="true" complete="true" label="Defining a Drink">
+				<ready action="U1L8T2C1Ready_interaction" />
+				<playheadUpdate action="setProgress" value="U1L8T2C1Complete_progressBar" frequency="5" />
+				<complete action="U1L8T2C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- 
+				U1L8T2C2    	HV + EV	Defining a Drink - Intro to Standard Drink Measurement 
+									MIB			Defining a Drink - MOS Part 1 - How Much? - THIS IS REALLY MAN IN THE BAR
+									EV			Defining a Drink - Expert Video - Response to How Much?
+			-->
+			
+			<brightcoveVideo name="U1L8T2C2_video" source="1514222031001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L8T2C2Complete_progressBar" frequency="5" />
+				<complete action="U1L8T2C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_08/U1L8T2C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Drink Pour Interaction">
+		
+			<!-- U1L8T2C5    IG    Info Graphic 1 - Beer and Wine -->
+			
+			<brightcoveVideo name="U1L8T2C5_video" source="739424296001" width="768" height="432" label="Beer and Wine">
+				<playheadUpdate action="setProgress" value="U1L8T2C5Complete_progressBar" frequency="5" />
+				<complete action="U1L8T2C5Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_08/U1L8T2C5_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U1L8T2C7    CI    Defining a Drink - Drink Pour Interactivity Branching 
+									 CI    Defining a Drink Interaction - Beer 
+									 CI    Defining a Drink - Wine   -->
+			
+			<evaluation name="U1L8T2C7_evaluation" componentID="u1l8t2c7" label="Choose Beer or Wine">
+			
+				<assetComplete action="U1L8T2C7Complete_interaction" />
+				
+				<evaluation evalType="multipleChoiceMultipleSelect" design="true">
+					<questionText><![CDATA[Did you notice that I overwrote the original text?]]></questionText>
+					<instructionText><![CDATA[Select Beer or Wine.]]></instructionText>
+					<multimedia src="U1L8T2C7.swf"/>
+					<audio src="U1L8T2C7.mp3"/>
+					<titleText><![CDATA[Drink Measurement]]></titleText>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[Beer]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+						<choice id="c2" valueID="v1">
+							<text><![CDATA[Wine]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!-- U1L8T2C10    IG    Defining a Drink, Part 2 - Info Graphic 2 - Mixed Drinks -->
+			
+			<brightcoveVideo name="U1L8T2C10_video" source="790210591001" width="768" height="432" label="Mixed Drinks">
+				<playheadUpdate action="setProgress" value="U1L8T2C10Complete_progressBar" frequency="5" />
+				<complete action="U1L8T2C10Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_08/U1L8T2C10_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L8T2C14    HV    Defining a Drink - Host Summary -->
+			
+			<brightcoveVideo name="U1L8T2C14_video" source="738313149001" width="768" height="432" label="Summary Video">
+				<playheadUpdate action="setProgress" value="U1L8T2C14Complete_progressBar" frequency="5" />
+				<complete action="U1L8T2C14Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_08/U1L8T2C14_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U1L8T2C15    My Notes -->
+			
+			<evaluation name="U1L8T2C15_evaluation" componentID="u1l8t2c15" label="Lesson Summary Screen">
+				
+				<assetComplete action="U1L8T2C15Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[What Is Low Risk for Alcohol?]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

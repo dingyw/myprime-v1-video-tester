@@ -1,0 +1,119 @@
+<scene id="2816" title="Influences">
+
+	<interactions>
+	
+		<interactionGroup name="U1L4T3C1Ready_interaction">			
+			<interaction action="gotoAndPlay" target="U1L4T3C1_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L4T3C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L4T3C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T3C2Complete_interaction">		
+			<interaction action="setLastSavePoint" value="2816,U1L4T3C2Complete_interaction" />
+			<interaction action="goto" target="U1L4T3C4B_swf" />
+			<interaction action="callProperty" target="U1L4T3C4B_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T3C4BComplete_interaction">
+			<interaction action="setLastSavePoint" value="2816,U1L4T3C4BComplete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L4T3C5_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T3C5Complete_interaction">
+			<interaction action="setLastSavePoint" value="2816,U1L4T3C5Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L4T3C6_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T3C6Complete_interaction">
+			<interaction action="setLastSavePoint" value="2816,U1L4T3C6Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L4T3C7_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L4T3C7Complete_interaction">
+			<interaction action="getNextScene" recordComplete="true" value="2816,1268" />
+		</interactionGroup>
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L4T3C1Init_progressBar" interaction="U1L4T3C1Ready_interaction" />
+		<progressBar name="U1L4T3C1Complete_progressBar" />
+		<progressBar name="U1L4T3C2Complete_progressBar" interaction="U1L4T3C2Complete_interaction" />
+		<progressBar name="U1L4T3C4BComplete_progressBar" interaction="U1L4T3C4BComplete_interaction" />
+		<progressBar name="U1L4T3C5Complete_progressBar" interaction="U1L4T3C5Complete_interaction"/>
+		<progressBar name="U1L4T3C6Complete_progressBar" interaction="U1L4T3C6Complete_interaction"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Introduction">
+		
+			<!-- U1L4T3C1    TG    Influences -->
+			
+			<brightcoveVideo name="U1L4T3C1_video" source="738412503001" width="768" height="432" visible="true" complete="true" label="Influences">
+			  <ready action="U1L4T3C1Ready_interaction" />
+			  <playheadUpdate action="setProgress" value="U1L4T3C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L4T3C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L4T3C2    HV    Influences - Host Video 1 - Introduction -->
+			
+			<brightcoveVideo name="U1L4T3C2_video" source="1483740521001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L4T3C2Complete_progressBar" frequency="5" />
+				<complete action="U1L4T3C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T3C2_cc.xml"/>
+			</brightcoveVideo>		
+		
+			<!-- U1L4T3C4B    SL    Influences - Interaction 1 - Putting It All Together -->
+			
+			<swf name="U1L4T3C4B_swf" source="assets/media/U1L4T3C4B_v2.swf">
+				<assetComplete action="U1L4T3C4BComplete_interaction" />
+			</swf>
+			
+			<!-- U1L4T3C5    A    Influences - Animation 1 - Formula Review -->
+			
+			<brightcoveVideo name="U1L4T3C5_video" source="818776307001" width="768" height="432" label="Formula Review">
+				<playheadUpdate action="setProgress" value="U1L4T3C5Complete_progressBar" frequency="5" />
+				<complete action="U1L4T3C5Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T3C5_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L4T3C6    HV    Influences - Host Video 2 - Summary -->
+			
+			<brightcoveVideo name="U1L4T3C6_video" source="818613136001" width="768" height="432" label="Summary Video">
+				<playheadUpdate action="setProgress" value="U1L4T3C6Complete_progressBar" frequency="5" />
+				<complete action="U1L4T3C6Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_04/U1L4T3C6_cc.xml"/>
+			</brightcoveVideo>
+			
+			<evaluation name="U1L4T3C7_evaluation" componentID="u1l4t3c7" label="Lesson Summary Screen">
+				
+				<assetComplete action="U1L4T3C7Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Influences]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

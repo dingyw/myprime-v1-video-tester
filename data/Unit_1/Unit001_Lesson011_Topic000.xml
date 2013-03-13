@@ -1,0 +1,207 @@
+<scene id="3475" title="Impairment Problems">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U1L11C0_evaluation" />
+	
+		<interactionGroup name="U1L11C0Complete_interaction">
+			<interaction action="setLastSavePoint" value="3475,U1L11C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U1L11C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11C1Ready_interaction">
+			<interaction action="setLastSavePoint" value="3475,U1L11C1Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U1L11C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T1C3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3475,U1L11T1C3Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L11T1C4_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T1C4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3475,U1L11T1C4Complete_interaction" />
+			<interaction action="goto" target="U1L11T1C8_swf" />
+			<interaction action="callProperty" target="U1L11T1C8_swf.content" value="initContent" />
+		</interactionGroup>
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L11C1Init_progressBar" interaction="init_interaction"  callInteraction="false" weight="5" />
+		<progressBar name="U1L11C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U1L11C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L11C2Complete_progressBar" weight="25" />
+		<progressBar name="U1L11C3Complete_progressBar" />
+		
+		<progressBar name="U1L11T1C2Complete_progressBar" />
+		<progressBar name="U1L11T1C3Complete_progressBar" interaction="U1L11T1C3Complete_interaction" weight="25" />
+		<progressBar name="U1L11T1C4Complete_progressBar" interaction="U1L11T1C4Complete_interaction" />
+		<progressBar name="U1L11T1C8Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U1L11C0_evaluation" visible="true" componentID="u1l11c0">
+			
+			<assetComplete action="U1L11C0Complete_interaction"/>
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Impairment Problems]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll explore how impairment happens, and learn about the differences between physical and mental impairment. We'll also examine the two types of tolerance, and discover the risks associated with high tolerance.]]></questionText>
+					<instructionText><![CDATA[Duration: 40 minutes]]></instructionText>
+					<multimedia src="intro_temp.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U1L11C1    TG    Impairment Problems -->
+			
+			<brightcoveVideo name="U1L11C1_video" source="738431212001" width="768" height="432"  complete="true" label="Impairment Problems">
+			  <playheadUpdate action="setProgress" value="U1L11C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L11C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U1L11C2   HV    Impairment Problems - Host Video 1 - Introduction -->
+			
+			<brightcoveVideo name="U1L11C2_video" source="738314968001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U1L11C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L11C3_video"/>
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Who Got the DUI?">
+			
+			<!--  U1L11C3    NV    Impairment Problems -Narrative Video 1 - Who Got the DUI? Part 1  -->
+			
+			<brightcoveVideo name="U1L11C3_video" source="836502408001" width="768" height="432" label="Who Got the DUI? Dramatization">
+			  <playheadUpdate action="setProgress" value="U1L11C3Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L11T1C2_video" />
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11C3_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U1L11T1C2   HV    Recognizing Impairment - Host Video 1 - Intro to Interaction 1 - Who Got the DUI? -->
+			
+			<brightcoveVideo name="U1L11T1C2_video" source="739598846001" width="768" height="432" label="Who Got the DUI? Video">
+			  <playheadUpdate action="setProgress" value="U1L11T1C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L11T1C3_1_evaluation"/>
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T1C2_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U1L11T1C3    MC    Recognizing Impairment - Interaction 1 - Who Got the DUI?  -->
+			
+			<evaluation name="U1L11T1C3_1_evaluation" componentID="u1l11t1c3_1" label="Who Got the DUI? Question">
+			
+				<assetComplete action="gotoAndPlay" target="U1L11T1C3_2_evaluation"/>
+				
+				<evaluation evalType="multipleChoiceSingleSelect" design="false" scoreType="noScore" hotspot="true" layout="horizontal">
+						<questionText><![CDATA[Which one of these people do you think is most likely to have gotten the DUI? ]]></questionText>
+						<instructionText><![CDATA[Select ONE of the characters below, and click Submit.]]></instructionText>
+						<titleText><![CDATA[Who Got the DUI?]]></titleText>
+						<audio src="U1L11T1C3.mp3" />
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[U1L11T1C3_Image_John.jpg]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[U1L11T1C3_Image_Phil.jpg]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[U1L11T1C3_Image_Steve.jpg]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[U1L11T1C3_Image_Suzy.jpg]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U1L11T1C3_2_evaluation" componentID="u1l11t1c3_2">
+			
+				<assetComplete action="U1L11T1C3Complete_interaction"/>
+
+				<evaluation evalType="multipleChoiceMultipleSelect" randomize="false" design="false" multimedia="false" hotspot="true" layout="horizontal">
+						<questionText><![CDATA[Which of these people do you think is impaired? Click on <b>any</b> of the characters below.]]></questionText>
+						<instructionText><![CDATA[Select ANY of the characters below, and click Submit.]]></instructionText>
+						<titleText><![CDATA[Who Is Impaired?]]></titleText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[You are the ultimate sleuth. You’re right! ALL of the people we showed you at the party are impaired. Sleepiness, difficulty walking, and decreased coordination are all visible signs of impairment. Exceeding the 0-1-2-3 Guidelines and having more than 1 standard drink an hour also leads to impairment. As we will learn, certain types of impairment can be hard to detect unless you have special training (like police officers get). Hang on for more information!]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[<p>Suzy’s impairment was hard to miss... She had 3 beers, and fell asleep on the couch while people were talking around her. That’s a definite sign of impairment.</p> <p><br/>John may not be showing visible signs of impairment, but he’s had a lot more than 1 an hour. He  <b>is</b> impaired. </p><p><br/>Steve’s stumbling is a dead giveaway. He’s clearly impaired.</p><p><br/>Phil’s loss of coordination is a strong indication of impairment.</p>]]></feedbackText>
+						</feedback>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[U1L11T1C3_Image_John.jpg]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[U1L11T1C3_Image_Phil.jpg]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[U1L11T1C3_Image_Steve.jpg]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[U1L11T1C3_Image_Suzy.jpg]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+
+	
+			</evaluation>
+			
+			<!--  savePoint  -->
+			<!--  U1L11T1C4    HV    Recognizing Impairment - Host Video 2 - Transition to MOS Video 1 
+										MOS    Recognizing Impairment - MOS Video 1 - How Do You Know you've Had Too Much?  
+										EV    Recognizing Impairment - Expert Video 1 - Transition to Other Video 1  
+										NV    Recognizing Impairment - Other Video 1 - Who Got the DUI? Recap - THIS IS REUSING THE PARTY SCENE FOOTAGE  -->
+										
+			<brightcoveVideo name="U1L11T1C4_video" source="760706657001" width="768" height="432" label="Recognizing Impairment">
+			  <playheadUpdate action="setProgress" value="U1L11T1C4Complete_progressBar" frequency="5" />
+			  <complete action="U1L11T1C4Complete_interaction"/>
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T1C4_cc.xml"/>
+			</brightcoveVideo>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!--  U1L11T1C8     P    Recognizing Impairment - Presentation 1 - Mental Impairment  -->
+			<!--  completeLesson  -->
+			<!--  getNextScene  -->
+			
+			<swf name="U1L11T1C8_swf" source="assets/media/U1L11T1C8.swf">
+				<assetComplete action="getNextScene" recordComplete="true" value="3475,1289"/>
+			</swf>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>

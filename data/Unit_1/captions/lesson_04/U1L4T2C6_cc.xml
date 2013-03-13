@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt xmlns="http://www.w3.org/2006/04/ttaf1" xmlns:tts="http://www.w3.org/2006/04/ttaf1#styling" xml:lang="en">
+  <head>
+    <styling>  </styling>
+  </head>
+  <body>
+    <div xml:lang="en">
+      <p begin="00:00:00.00" dur="00:00:01.00">
+        <b>Narrator:</b>
+        <br/>
+	   Click on the high-risk choices option to see what happens when all three of them make high-risk choices over time.
+	   <br/>
+	   <br/>
+		Person 3 crossed their trigger level and now has heart disease. Because their trigger level is the lowest, this person is likely to develop heart disease more quickly than the others. They may not have even realized it was happening until it was too late to prevent it. 
+		<br/>
+		<br/>
+		What happens if Person 1 and Person 2 keep making high-risk choices?  Click the high-risk choices option and see. 
+		<br/>
+		<br/>
+		Now Person 2 has heart disease, as well.
+		<br/>
+		<br/>
+		Keep in mind that it is possible for Person 1 to develop heart disease as well if he or she continues to make high-risk choices.
+      </p>
+    </div>
+  </body>
+</tt>

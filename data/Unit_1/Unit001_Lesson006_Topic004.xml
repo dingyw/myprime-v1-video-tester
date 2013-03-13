@@ -1,0 +1,318 @@
+<scene id="3262" title="Social Influences">
+
+	<interactions>
+		<interactionGroup name="U1L6T4C1Ready_interaction">
+			<interaction action="setLastSavePoint" value="3262,U1L6T4C1Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T4C1_video" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L6T4C1Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T4C2_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C2Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T4C3_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3262,U1L6T4C3Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T4C4_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3262,U1L6T4C4Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T4C5_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C5Complete_interaction">
+			<interaction action="setLastSavePoint" value="3262,U1L6T4C5Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T4C6_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C6Complete_interaction">
+			<interaction action="goto" target="U1L6T4C7A_swf" />
+			<interaction action="callProperty" target="U1L6T4C7A_swf.content" value="initContent" />
+		</interactionGroup>
+
+		<interactionGroup name="U1L6T4C7AComplete_interaction">
+			<interaction action="goto" target="U1L6T4C7B_swf" />
+			<interaction action="callProperty" target="U1L6T4C7B_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C7BComplete_interaction">
+			<interaction action="setLastSavePoint" value="3262,U1L6T4C7DComplete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T4C8_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C8Complete_interaction">
+			<interaction action="setLastSavePoint" value="3262,U1L6T4C8Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T4C9_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C9Complete_interaction">
+			<interaction action="setLastSavePoint" value="3262,U1L6T4C9Complete_interaction" />			
+			<interaction action="gotoAndPlay" target="U1L6T4C10_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C10Complete_interaction">
+			<interaction action="setLastSavePoint" value="3262,U1L6T4C10Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T4C11_swf" />
+			<interaction action="callProperty" target="U1L6T4C11_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C11Complete_interaction">
+			<interaction action="setLastSavePoint" value="3262,U1L6T4C11Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T4C11B_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="UL6T4C11BComplete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T4C12_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C12Complete_interaction">
+			<interaction action="setLastSavePoint" value="3262,U1L6T4C12Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T4C14_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C14Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T4C15_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C15Complete_interaction">
+			<interaction action="gotoAndPlay" target="U1L6T4C16_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C16Complete_interaction">
+			<interaction action="setLastSavePoint" value="3262,U1L6T4C16Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L6T4C17_evaluation" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L6T4C17Complete_interaction">
+			<interaction action="getNextScene" recordComplete="true" value="3262,1276" />
+		</interactionGroup>
+	</interactions>
+  
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L6T4C1Init_progressBar" interaction="U1L6T4C1Ready_interaction" weight="25" />
+		<progressBar name="U1L6T4C1Complete_progressBar" weight="25" />
+		<progressBar name="U1L6T4C2Complete_progressBar" />
+		<progressBar name="U1L6T4C3Complete_progressBar" interaction="U1L6T4C3Complete_interaction" weight="25" />
+		<progressBar name="U1L6T4C4Complete_progressBar" />
+		<progressBar name="U1L6T4C5Complete_progressBar" />
+		<progressBar name="U1L6T4C6Complete_progressBar" />
+		<progressBar name="U1L6T4C8Complete_progressBar" interaction="U1L6T4C8Complete_interaction"  weight="25"/>
+		<progressBar name="U1L6T4C9Complete_progressBar" interaction="U1L6T4C9Complete_interaction" weight="25" />
+		<progressBar name="U1L6T4C10Complete_progressBar" />
+		<progressBar name="U1L6T4C11Complete_progressBar" interaction="U1L6T4C11Complete_interaction" weight="25" />
+		<progressBar name="U1L6T4C12Complete_progressBar" interaction="U1L6T4C12Complete_interaction"/>
+		<progressBar name="U1L6T4C14Complete_progressBar" />
+		<progressBar name="U1L6T4C15Complete_progressBar" />
+		<progressBar name="U1L6T4C16Complete_progressBar" />
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Introduction">
+		
+			<!-- U1L6T4C1    TG    Social Influences  -->
+			
+			<brightcoveVideo name="U1L6T4C1_video" source="738412506001" width="768" height="432" visible="true" complete="true" label="Social Influences ">
+			  <ready action="U1L6T4C1Ready_interaction" />
+			  <playheadUpdate action="setProgress" value="U1L6T4C1Complete_progressBar" frequency="5" />
+			  <complete action="U1L6T4C1Complete_interaction" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T4C2    HV    Host Video 1 - Introduction - Social Influences -->
+			
+			<brightcoveVideo name="U1L6T4C2_video" source="738313148001" width="768" height="432" label="Introduction Video">
+				<playheadUpdate action="setProgress" value="U1L6T4C2Complete_progressBar" frequency="5" />
+				<complete action="U1L6T4C2Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T4C2_cc.xml" />
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Social Influences">
+		
+			<!-- U1L6T4C3    MC    Interaction  1 - Social Influences -->
+			
+			<evaluation name="U1L6T4C3_evaluation" componentID="u1l6t4c3" label="Social Influences Question">
+				
+				<assetComplete action="U1L6T4C3Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+					<questionText><![CDATA[What are some of the things you see around you in everyday life that might influence people to drink more?]]></questionText>
+					<titleText><![CDATA[Reflection Question]]></titleText>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!-- U1L6T4C4    EV    Expert Video 1 - Social Influences Overview -->
+			
+			<brightcoveVideo name="U1L6T4C4_video" source="738313168001" width="768" height="432" label="Social Influences Overview">
+				<playheadUpdate action="setProgress" value="U1L6T4C4Complete_progressBar" frequency="5" />
+				<complete action="U1L6T4C4Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T4C4_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T4C5    IG    Info Graphic 1 - Social Influences - Family, Friends, and Social Groups  -->
+			
+			<brightcoveVideo name="U1L6T4C5_video" source="1534932514001" width="768" height="432" label="Family, Friends, and Social Groups">
+				<playheadUpdate action="setProgress" value="U1L6T4C5Complete_progressBar" frequency="5" />
+				<complete action="U1L6T4C5Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T4C5_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T4C6    EV    Expert Video 2 - Introduction to Interactivity - Social Encouragement -->
+			
+			<brightcoveVideo name="U1L6T4C6_video" source="745649534001" width="768" height="432" label="Social Encouragement">
+				<playheadUpdate action="setProgress" value="U1L6T4C6Complete_progressBar" frequency="5" />
+				<complete action="U1L6T4C6Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T4C6_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T4C7A    CI    -->
+			
+			<swf name="U1L6T4C7A_swf" source="assets/media/U1L6T4C7A.swf">
+				<assetComplete action="U1L6T4C7AComplete_interaction" />
+			</swf>
+			
+			<!-- U1L6T4C7B    CI    -->
+			
+			<swf name="U1L6T4C7B_swf" source="assets/media/U1L6T4C7B.swf" >
+				<assetComplete action="U1L6T4C7BComplete_interaction" />
+			</swf>
+			
+			<!-- U1L6T4C8    EV    Expert Video 3 - Media and Advertising -->
+			
+			<brightcoveVideo name="U1L6T4C8_video" source="820280296001" width="768" height="432" label="Media and Advertising">
+				<playheadUpdate action="setProgress" value="U1L6T4C8Complete_progressBar" frequency="5" />
+				<complete action="U1L6T4C8Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T4C8_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T4C9    RQ    Interaction 3 -  Reflection Questions -->
+			
+			<evaluation name="U1L6T4C9_evaluation" componentID="u1l6t4c9" label="Reflection Questions">
+				
+				<assetComplete action="U1L6T4C9Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion">
+					<questionText><![CDATA[Something that is new or surprising to me is...]]></questionText>
+					<titleText><![CDATA[Reflection Question]]></titleText>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<!-- U1L6T4C10    SV    Media Reactions -->
+			
+			<brightcoveVideo name="U1L6T4C10_video" source="818961193001" width="768" height="432" label="Media Reactions">
+				<playheadUpdate action="setProgress" value="U1L6T4C10Complete_progressBar" frequency="5" />
+				<complete action="U1L6T4C10Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T4C10_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T4C11    GB    Media Globe -->
+			
+			<swf name="U1L6T4C11_swf" source="flash/googleMap.swf" localSource="flash/globe.swf" componentID="u1l6t4c11" label="Media Globe">
+				<assetComplete action="U1L6T4C11Complete_interaction" />
+			</swf>
+			
+			<evaluation name="U1L6T4C11B_evaluation" componentID="u1l6t4c11b">
+			
+				<assetComplete action="UL6T4C11BComplete_interaction" />
+			
+				<evaluation evalType="multipleChoiceSingleSelect" design="true" >
+						<questionText><![CDATA[Would you like to share your response with others?  ]]></questionText>
+						<instructionText><![CDATA[Select one of the choices below.]]></instructionText>
+						<multimedia src="U1L1C15.swf"/>
+						<titleText><![CDATA[Share Your Response?]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[Yes]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+							<choice id="c2" valueID="v2">
+								<text><![CDATA[No]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+			</evaluation>
+		
+		</sequence>
+		
+		<sequence label="Summary">
+		
+			<!-- U1L6T4C12    HV    Host Video 2 - Social Influences Summary -->
+			
+			<brightcoveVideo name="U1L6T4C12_video" source="738305101001" width="768" height="432" label="Social Influences Summary Video">
+				<playheadUpdate action="setProgress" value="U1L6T4C12Complete_progressBar" frequency="5" />
+				<complete action="U1L6T4C12Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T4C12_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T4C14    IG    Presentation 1 - Putting the Formula Together -->
+			
+			<brightcoveVideo name="U1L6T4C14_video" source="1532717118001" width="768" height="432" label="Putting the Formula Together">
+				<playheadUpdate action="setProgress" value="U1L6T4C14Complete_progressBar" frequency="5" />
+				<complete action="U1L6T4C14Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T4C14_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T4C15    SV    Skype Video 2 - Putting the Formula Together -->
+			
+			<brightcoveVideo name="U1L6T4C15_video" source="1456743617001" width="768" height="432" label="Putting the Formula Together Reactions">
+				<playheadUpdate action="setProgress" value="U1L6T4C15Complete_progressBar" frequency="5" />
+				<complete action="U1L6T4C15Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T4C15_cc.xml" />
+			</brightcoveVideo>
+		
+			<!-- U1L6T4C16    HV    Host Video 3 - Formula Summary -->
+			
+			<brightcoveVideo name="U1L6T4C16_video" source="738313154001" width="768" height="432" label="Formula Summary Video">
+				<playheadUpdate action="setProgress" value="U1L6T4C16Complete_progressBar" frequency="5" />
+				<complete action="U1L6T4C16Complete_interaction" />
+				<caption source="data/Unit_1/captions/lesson_06/U1L6T4C16_cc.xml" />
+			</brightcoveVideo>
+			
+			<!-- U1L6T4C17    My Notes   -->
+			
+			<evaluation name="U1L6T4C17_evaluation" componentID="u1l6t4c17" label="Lesson Summary Screen">
+				
+				<assetComplete action="U1L6T4C17Complete_interaction" />
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Alcoholism and Addiction Are Lifestyle-Related Health Problems]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+		
+		</sequence>
+		
+	</assets>
+  
+</scene>

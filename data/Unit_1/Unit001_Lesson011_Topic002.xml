@@ -1,0 +1,215 @@
+<scene id="3485" title="High Tolerance">
+
+	<interactions>
+		<interactionGroup name="U1L11T2C1Ready_interaction">
+			<interaction action="setLastSavePoint" value="3485,U1L11T2C1Ready_interaction" />
+			<interaction action="gotoAndPlay" target="U1L11T2C1_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T2C3Complete_interaction">
+			<interaction action="setLastSavePoint" value="3485,U1L11T2C3Complete_interaction" />
+		 <interaction action="gotoAndPlay" target="U1L11T2C4_video" />
+		</interactionGroup>
+			
+		<interactionGroup name="U1L11T2C4Complete_interaction">
+			<interaction action="setLastSavePoint" value="3485,U1L11T2C4Complete_interaction" />
+			<interaction action="goto" target="U1L11T2C5_swf" />
+			<interaction action="callProperty" target="U1L11T2C5_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T2C5Complete_interaction">
+			<interaction action="goto" target="U1L11T2C6_swf" />
+			<interaction action="callProperty" target="U1L11T2C6_swf.content" value="initContent" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T2C6Complete_interaction">
+			<interaction action="setLastSavePoint" value="3485,U1L11T2C6Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L11T2C7_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T2C10Complete_interaction">
+			<interaction action="setLastSavePoint" value="3485,U1L11T2C10Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L11T2C12_video" />
+		</interactionGroup>
+		
+		<!-- *** Call by the U1L11T2C10_swf ***  -->
+		<interactionGroup name="U1L11T2C11Init_interaction">
+			<interaction action="callProperty" target="U1L11T2C10_swf.content" value="gotoAndStop,1"/>
+			<interaction action="gotoAndPlay" target="U1L11T2C11_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T2C12Complete_interaction">
+			<interaction action="setLastSavePoint" value="3485,U1L11T2C12Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L11T2C13_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U1L11T3C6Complete_interaction">
+			<interaction action="setLastSavePoint" value="3485,U1L11T3C6Complete_interaction" />
+			<interaction action="gotoAndPlay" target="U1L11T2C15_evaluation" />
+		</interactionGroup>
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U1L11T2C1Init_progressBar" interaction="U1L11T2C1Ready_interaction" weight="25" />
+		<progressBar name="U1L11T2C1Complete_progressBar" weight="10" />
+		<progressBar name="U1L11T2C2Complete_progressBar" />
+		<progressBar name="U1L11T2C3Complete_progressBar" />
+		<progressBar name="U1L11T2C4Complete_progressBar" interaction="U1L11T2C4Complete_interaction"  weight="25" />
+		<progressBar name="U1L11T2C5Complete_progressBar" />
+		<progressBar name="U1L11T2C6Complete_progressBar" interaction="U1L11T2C6Complete_interaction" weight="25" />
+		<progressBar name="U1L11T2C7Complete_progressBar" />
+		<progressBar name="U1L11T2C10Complete_progressBar" interaction="U1L11T2C10Complete_interaction"  weight="25"/>
+		<progressBar name="U1L11T2C11Complete_progressBar" weight="25"/>
+		<progressBar name="U1L11T2C12Complete_progressBar" weight="25"/>
+		<progressBar name="U1L11T2C13Complete_progressBar" weight="25"/>
+		<progressBar name="U1L11T3C6Complete_progressBar" weight="25"/>
+		<progressBar name="U1L11T2C15Complete_progressBar" weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+	
+		<sequence label="Introduction">
+		
+			<!--  U1L11T2C1     TG    High Tolerance -->
+			
+			<brightcoveVideo name="U1L11T2C1_video" source="738431213001" width="768" height="432" visible="true" complete="true" label="High Tolerance">
+			  <ready action="U1L11T2C1Ready_interaction" />
+			  <playheadUpdate action="setProgress" value="U1L11T2C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L11T2C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U1L11T2C2   HV    High Tolerance - Host Video 1 - Introduction -->
+			
+			<brightcoveVideo name="U1L11T2C2_video" source="818961485001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U1L11T2C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L11T2C3_video"/>
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T2C2_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Tolerance">
+		
+			<!--  U1L11T2C3    A    High Tolerance - Animation 1 - How Tolerance Works  -->
+			
+			<brightcoveVideo name="U1L11T2C3_video" source="1510693824001" width="768" height="432" label="How Tolerance Works">
+			  <playheadUpdate action="setProgress" value="U1L11T2C3Complete_progressBar" frequency="5" />
+			  <complete action="U1L11T2C3Complete_interaction"/>
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T2C3_cc.xml"/>
+			</brightcoveVideo>
+		
+			<!--  U1L11T2C4    HV    High Tolerance - Host Video 2 - Two Types of Tolerance  -->
+			
+			<brightcoveVideo name="U1L11T2C4_video" source="739616281001" width="768" height="432" label="Two Types of Tolerance Question">
+			  <playheadUpdate action="setProgress" value="U1L11T2C4Complete_progressBar" frequency="5" />
+			  <complete action="U1L11T2C4Complete_interaction"/>
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T2C4_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!--  U1L11T2C5     A    High Tolerance - Interaction 1 - Two Types of Tolerance  -->
+			
+			<swf name="U1L11T2C5_swf" source="assets/media/U1L11T2C5.swf" >
+				<playheadUpdate action="setProgress" value="U1L11T2C5Complete_progressBar" frequency="5" />
+				<assetComplete action="U1L11T2C5Complete_interaction" />
+				<assetComplete action="callProperty" target="U1L11T2C5_swf.content" value="gotoAndStop,1" />
+			</swf>
+			
+			<!--  U1L11T2C6    A    High Tolerance - Interaction 2 - The Tolerance Gap -->
+			
+			<swf name="U1L11T2C6_swf" source="assets/media/U1L11T2C6.swf">
+				<playheadUpdate action="setProgress" value="U1L11T2C6Complete_progressBar" frequency="5" />
+				<assetComplete action="U1L11T2C6Complete_interaction" />
+				<assetComplete action="callProperty" target="U1L11T2C6_swf.content" value="gotoAndStop,1"/>
+			</swf>
+			
+			<!--  U1L11T2C7    EV    High Tolerance - Expert Video 2 - Tolerance Gap Summary 
+										NV + Images    High Tolerance - Narrative Video 1 - Who Got the DUI? Part 2  
+										HV    High Tolerance - Host Video 3 - Bridge to Interaction -->
+										
+			<brightcoveVideo name="U1L11T2C7_video" source="1511127734001" width="768" height="432" label="Tolerance Gap Summary">
+			  <playheadUpdate action="setProgress" value="U1L11T2C7Complete_progressBar" frequency="5" />
+			  <complete action="goto" target="U1L11T2C10_swf"/>
+			  <complete action="callProperty" target="U1L11T2C10_swf.content" value="initContent"/>
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T2C7_cc.xml"/>
+			</brightcoveVideo>
+		
+		</sequence>
+		
+		<sequence label="Sensitivity">
+	
+			<!-- U1L11T2C10    A + CI    High Tolerance - Interaction 3 - Sensitivity -->
+			<!-- Note : Branching involve	-->
+			
+			<swf name="U1L11T2C10_swf" source="assets/media/U1L11T2C10v03.swf">
+				<playheadUpdate action="setProgress" value="U1L11T2C10Complete_progressBar" frequency="5" />
+				<assetComplete action="U1L11T2C10Complete_interaction" />
+				<assetComplete action="callProperty" target="U1L11T2C10_swf.content" value="gotoAndStop,1"/>
+			</swf>
+			
+			<!-- savePoint -->
+			
+			<!-- U1L11T2C11   A    High Tolerance - Animation 2 - Tolerance and Sensitivity (OPTIONAL) -->
+			
+			<brightcoveVideo name="U1L11T2C11_video" source="1537006098001" width="768" height="432" label="Tolerance and Sensitivity">
+			  <playheadUpdate action="setProgress" value="U1L11T2C11Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L11T2C12_video"/>
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T2C11_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+			
+			<!-- U1L11T2C12    HV    High Tolerance - Host Video 4 - Tolerance and Sensitivity Summary -->
+			
+			<brightcoveVideo name="U1L11T2C12_video" source="1463356512001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U1L11T2C12Complete_progressBar" frequency="5" />
+			  <complete action="U1L11T2C12Complete_interaction" />
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T2C12_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U1L11T2C13    IG    High Tolerance - Info Graphic 1 - How High Tolerance Tricks Us -->
+			
+			<brightcoveVideo name="U1L11T2C13_video" source="1492332889001" width="768" height="432" label="How High Tolerance Tricks Us">
+			  <playheadUpdate action="setProgress" value="U1L11T2C13Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U1L11T3C6_video"/>
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T2C13_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U1L11T3C6    -->
+			
+			<brightcoveVideo name="U1L11T3C6_video" source="806643353001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U1L11T3C6Complete_progressBar" frequency="5" />
+			  <complete action="U1L11T3C6Complete_interaction" />
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T3C6_cc.xml"/>
+			</brightcoveVideo>
+			
+			<!-- U1L11T2C15    My Note -->
+			
+			<evaluation name="U1L11T2C15_evaluation" componentID="u1l11t2c15" label="Lesson Summary Screen">
+			
+				<assetComplete action="getNextScene" recordComplete="true" value="3485,1283"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Impairment Problems]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[1]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+		
+		</sequence>
+		
+	</assets>
+  
+</scene>

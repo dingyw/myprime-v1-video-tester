@@ -1,0 +1,212 @@
+<scene id="3572" title="Reflecting Unit Introduction">
+
+	<interactions>
+		<interaction name="start_interaction" action="goto" target="U2L0C0_evaluation" />
+		
+		<interactionGroup name="U2L0C0Complete_interaction">
+		  <interaction action="setLastSavePoint" value="3572,U2L0C0Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L0C1_video" />
+		</interactionGroup>
+		<interactionGroup name="U2L0C3Complete_interaction">
+		  <interaction action="setLastSavePoint" value="3572,U2L0C3Complete_interaction" />
+		  <interaction action="gotoAndPlay" target="U2L0C4_video" />
+		</interactionGroup>
+		
+		<interactionGroup name="U2L0C4Complete_interaction">
+		  <interaction action="setLastSavePoint" value="3572,U2L0C4Complete_interaction" />
+		  <interaction action="getNextScene" recordComplete="true" value="3572,1297" />
+		</interactionGroup>
+		
+	</interactions>
+	
+	<progressIndicator x="0" y="432" width="768" height="24">
+		<progressBar name="U2L0C1Init_progressBar" interaction="init_interaction"  callInteraction="false" weight="5" />
+		<progressBar name="U3L8C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U2L0C0Start_progressBar" interaction="start_interaction" weight="0" />
+		<progressBar name="U2L0C1Complete_progressBar" weight="25" />
+		<progressBar name="U2L0C2Complete_progressBar" weight="25"/>
+		<progressBar name="U2L0C3Complete_progressBar" interaction="init_interaction" weight="25"/>
+		<progressBar name="U2L0C4Complete_progressBar" weight="25"/>
+	</progressIndicator>
+  
+	<assets visible="false">
+		<evaluation name="U2L0C0_evaluation" visible="true" componentID="u2l0c0">
+			
+			<assetComplete action="U2L0C0Complete_interaction" />
+			
+			<evaluation evalType="multipleChoiceSingleSelect" design="true">
+					<titleText><![CDATA[Reflecting Unit Introduction]]></titleText>
+					<questionText><![CDATA[In this lesson, we'll review what we've learned in the Exploring Unit and begin to discover more about how our choices can affect our lives.]]></questionText>
+					<instructionText><![CDATA[Duration: 5 minutes]]></instructionText>
+					<multimedia src="unit2_intro.swf"/>
+					<choice-collection>
+						<choice id="c1" valueID="v1">
+							<text><![CDATA[1]]></text>
+							<userEntry controlID=""></userEntry>
+						</choice>
+					</choice-collection>
+					<value-collection>
+						<value id="v1"><![CDATA[true]]></value>
+						<value id="v2"><![CDATA[false]]></value>
+					</value-collection>
+			</evaluation>
+			
+		</evaluation>
+		
+		<sequence label="Introduction">
+		
+			<!--  U2L0C1   -->
+			
+			<brightcoveVideo name="U2L0C1_video" source="738431236001" width="768" height="432" complete="true" label="Unit 2: Reflecting">
+			  <playheadUpdate action="setProgress" value="U2L0C1Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L0C2_video"/>
+			</brightcoveVideo>
+			
+			<!--  U2L0C2   -->
+			
+			<brightcoveVideo name="U2L0C2_video" source="1540444480001" width="768" height="432" label="Introduction Video">
+			  <playheadUpdate action="setProgress" value="U2L0C2Complete_progressBar" frequency="5" />
+			  <complete action="gotoAndPlay" target="U2L0C3_1_evaluation"/>
+			  <caption source="data/Unit_2/captions/lesson_00/U2L0C2_cc.xml" />
+			</brightcoveVideo>
+			
+			<!--  U2L0C3   -->
+			
+			<evaluation name="U2L0C3_1_evaluation" componentID="u2l0c3_1" label="My Experiences Assessment">
+			
+				<assetComplete action="gotoAndPlay" target="U2L0C3_2_evaluation" />
+				
+				<evaluation evalType="assessment" layout="vertical" customBG="sampleBG.swf">
+						<titleText><![CDATA[My Experiences]]></titleText>
+						<instructionText><![CDATA[Choose an appropriate response to each listing, then click Next.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[Thank you for answering, press "Next" to move on.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Incorrect!  Custom feedback goes here!]]></feedbackText>
+						</feedback>
+						<audio src="U2L0C3.mp3"/>
+						<choice-collection type="yesNo">
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[When I drink, I often drink more than the 0-1-2-3 Guidelines.]]></text>
+							 </choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Occasionally, I use illegal drugs or use a prescription drug to get high.]]></text>
+							 </choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[It now takes more drugs or alcohol for me to get high or intoxicated than when I first started.]]></text>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[I function best in groups when I am making high-risk drinking or drug choices.]]></text>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[yes]]></value>
+							<value id="v2"><![CDATA[no]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+			<evaluation name="U2L0C3_2_evaluation" componentID="u2l0c3_2" >
+			
+				<assetComplete action="gotoAndPlay" target="U2L0C3_3_evaluation" />
+				
+				<evaluation evalType="assessment" layout="vertical" customBG="sampleBG.swf">
+						<titleText><![CDATA[My Experiences]]></titleText>
+						<instructionText><![CDATA[Choose an appropriate response to each listing, then click Next.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[Thank you for answering, press "Next" to move on.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Incorrect!  Custom feedback goes here!]]></feedbackText>
+						</feedback>
+						<choice-collection type="yesNo">
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[Have you wanted or needed to cut down on your drinking or drug use in the last year?]]></text>
+							 </choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[In the last year, have you ever drunk or used drugs more than you meant to?]]></text>
+							 </choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[Have you had a feeling of guilt or remorse after drinking or drug use?]]></text>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[Have you failed to do what was normally expected from you because of drinking or drug use?]]></text>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[yes]]></value>
+							<value id="v2"><![CDATA[no]]></value>
+						</value-collection>
+				</evaluation>
+	
+			</evaluation>
+			
+			<evaluation name="U2L0C3_3_evaluation" componentID="u2l0c3_3" >
+			
+				<assetComplete action="U2L0C3Complete_interaction" />
+				
+				<evaluation evalType="assessment" layout="vertical" customBG="sampleBG.swf">
+						<titleText><![CDATA[My Experiences]]></titleText>
+						<instructionText><![CDATA[Choose an appropriate response to each listing, then click Next.]]></instructionText>
+						<feedback>
+							<feedbackText valueID="v1"><![CDATA[Thank you for answering, press "Next" to move on.]]></feedbackText>
+							<feedbackText valueID="v2"><![CDATA[Incorrect!  Custom feedback goes here!]]></feedbackText>
+						</feedback>
+						<choice-collection type="yesNo">
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[Have you been unable to remember what happened the night before because you had been drinking or using?]]></text>
+							 </choice>
+							<choice id="c2" valueID="v1">
+								<text><![CDATA[Have you needed a drink (or drug) in the morning to get yourself going after a heavy drinking or drug using episode?]]></text>
+							 </choice>
+							<choice id="c3" valueID="v1">
+								<text><![CDATA[Have you tried to cut back on your drinking or drug use but could not?]]></text>
+							</choice>
+							<choice id="c4" valueID="v1">
+								<text><![CDATA[When you start drinking or using drugs, do you sometimes feel like something takes over and you get drunk or high without meaning to?]]></text>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[yes]]></value>
+							<value id="v2"><![CDATA[no]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+		<sequence label="Summary">
+	
+			<!--  U2L0C4    -->
+			
+			<brightcoveVideo name="U2L0C4_video" source="819903068001" width="768" height="432" label="Summary Video">
+			  <playheadUpdate action="setProgress" value="U2L0C4Complete_progressBar" frequency="5" />
+			  <complete action="U2L0C4Complete_interaction" />
+			  <caption source="data/Unit_2/captions/lesson_00/U2L0C4_cc.xml" />
+			</brightcoveVideo>
+			
+			<evaluation name="U2L0C5_evaluation" componentID="u2l0c5" label="Lesson Summary Screen">
+			
+				<assetComplete action="getNextScene" recordComplete="true" value="3572,1297"/>
+				
+				<evaluation evalType="ReflectionQuestion" templateType="notes">
+						<questionText><![CDATA[Reflecting Unit Introduction]]></questionText>
+						<titleText><![CDATA[My Notes]]></titleText>
+						<choice-collection>
+							<choice id="c1" valueID="v1">
+								<text><![CDATA[2]]></text>
+								<userEntry controlID=""></userEntry>
+							</choice>
+						</choice-collection>
+						<value-collection>
+							<value id="v1"><![CDATA[true]]></value>
+							<value id="v2"><![CDATA[false]]></value>
+						</value-collection>
+				</evaluation>
+				
+			</evaluation>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>
