@@ -49,7 +49,7 @@ function Main($scope, $http, $templateCache) {
 
 	$scope.updateLessonSrc = function() {
 		console.log("Update Lesson Src :: " + $scope.lessonSrc);
-		
+
 		var lessonURL = 'data/Unit_' + $scope.unitId + '/' + $scope.lessonSrc + '.xml';
 
 		// Clear out old data.
@@ -70,7 +70,7 @@ function Main($scope, $http, $templateCache) {
 			for (var i = 0; i < $brightcoveElems.length; i++) {
 				var videoName = $($brightcoveElems[i]).attr('name');
 				var videoId = $($brightcoveElems[i]).attr('source');				var videoLabel = $($brightcoveElems[i]).attr('label');				var captionElem = $($brightcoveElems[i]).find('caption');				var captionSrc = $(captionElem).attr('source');
-				
+
 				$scope.brightcoveElems.push({
 					name : videoName,
 					id : videoId,
@@ -85,18 +85,17 @@ function Main($scope, $http, $templateCache) {
 
 	$scope.updateVideo = function() {
 		console.log("Update Video :: " + $scope.videoData);
-		
+
 		update();
 	};
-	
-	$scope.refresh = function () {
+
+	$scope.refresh = function() {
 		console.log("Refresh Video :: " + $scope.videoData);
 		update();
 	}
-	
-	function update(){
+	function update() {
 		var videoArray = $scope.videoData.split(',');
-		
+
 		$scope.currentClosedCaption = videoArray[1];
 
 		player = flowplayer("player", "flowplayer/flowplayer-3.2.16.swf", {
@@ -122,8 +121,8 @@ function Main($scope, $http, $templateCache) {
 					bottom : 25,
 					width : '100%',
 					height : 40,
-					backgroundColor : 'transparent',
-					backgroundGradient : 'high',
+					backgroundColor : '#000000',
+					backgroundGradient : 'none',
 					borderRadius : 4,
 					border : 0,
 
@@ -135,8 +134,24 @@ function Main($scope, $http, $templateCache) {
 							color : '#ffffff'
 						}
 					}
+				},
+				controls : {
+
+					// location of the controlbar plugin
+					url : 'flowplayer/flowplayer.controls-3.2.15.swf',
+
+					backgroundGradient : 'none',
+
+					// controlbar specific settings
+					timeColor : '#980118',
+					all : true,
+					play : true,
+					scrubber : true,
+					autoHide: false
+
 				}
 			}
 		});
 	}
+
 }
