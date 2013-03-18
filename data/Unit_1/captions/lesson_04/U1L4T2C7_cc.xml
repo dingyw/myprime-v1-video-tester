@@ -5,53 +5,16 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   Okay, I think we’ve got it now.
-Our level of biological risk—our trigger level—might suggest making that we make more conservative choices than others make, especially if I have a very low trigger level.  
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Dr. Colliver: </b>
-        <br/>
-	   Exactly.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   So what's considered “low-risk” for some people might not apply to someone who has a strong family history of heart disease?
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Dr. Colliver: </b>
-        <br/>
-	   That’s right.  Or if, for example, a person trouble controlling their cholesterol with their diet, they may need different guidelines.  Some people even need medications to help prevent heart disease. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   So, what about people who already have heart disease? 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Dr. Colliver: </b>
-        <br/>
-	   Good question.  They’d need to follow a different set of guidelines, as well.  The basic recommendations are intended to reduce the risk in people that don’t already have heart disease.
-And again, if your biological risk is greater, then you would need to make even lower risk choices to reduce the likelihood of disease. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   So it’s good to know how much biological risk you have, so you can do something about it.  I mean, people who end up with heart disease didn't intentionally set out to pass their trigger level. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Dr. Colliver:</b>
-        <br/>
-	   Right.  They make high-risk choices, without knowing it, hoping or believing that heart disease won’t happen to them. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   Or, maybe they don’t think about their choices and the consequences at all.
-      </p>
+      <p begin="00:00:00.25" dur="00:00:12.75">ANTONIO: Okay, I think we've got it now. Our level of biological risk—our trigger level—might suggest making that we make more conservative choices than others make, especially if I have a very low trigger level.</p>
+      <p begin="00:00:13.00" dur="00:00:02.50">DR. COLLIVER: Exactly.</p>
+      <p begin="00:00:15.00" dur="00:00:07.00">ANTONIO: So what's considered "low-risk" for some people might not apply to someone who has a strong family history of heart disease?</p>
+      <p begin="00:00:22.00" dur="00:00:12.00">DR. COLLIVER: That's right. Or if, for example, a person trouble controlling their cholesterol with their diet, they may need different guidelines. Some people even need take medications to help prevent heart disease. </p>
+      <p begin="00:00:34.00" dur="00:00:04.00">ANTONIO: So, what about people who already have heart disease? </p>
+      <p begin="00:00:38.00" dur="00:00:11.00">DR. COLLIVER: Good question. They'd need to follow a different set of guidelines, as well. The basic recommendations are intended to reduce the risk in people that don't already have heart disease.</p>
+      <p begin="00:00:49.00" dur="00:00:09.00">DR. COLLIVER: And again, if your biological risk is greater, then you would need to make even lower risk choices to reduce the likelihood of disease. </p>
+      <p begin="00:00:58.00" dur="00:00:11.00">ANTONIO: So it's good to know how much biological risk you have, so you can do something about it. I mean, people who end up with heart disease didn't intentionally set out to pass their trigger level.</p>
+      <p begin="00:01:09.00" dur="00:00:09.00">DR. COLLIVER: Right. They make high-risk choices, without knowing it, hoping or believing that heart disease won't happen to them.</p>
+      <p begin="00:01:18.00" dur="00:00:05.00">ANTONIO: Or, maybe they don't think about their choices and the consequences at all.</p>
     </div>
   </body>
 </tt>

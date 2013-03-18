@@ -1,26 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   So together, my biology and my choices determine whether or not I will develop heart disease. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Dr. Colliver: </b>
-        <br/>
-	   Exactly, it’s a simple formula:  Biology + Choices = Outcome.  And the outcome is either an increased or decreased risk for heart disease or other health problems. 
-That’s the basic equation for all lifestyle-related health problems.  
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   Okay, so now that we’ve got the formula:  Biology + Choices = Outcome, let’s take a closer look at the role each piece plays. 
-      </p>
+      <p begin="00:00:00.25" dur="00:00:05.75">ANTONIO: So together, my biology and my choices determine whether or not I will develop heart disease.</p>
+      <p begin="00:00:06.00" dur="00:00:06.00">DR. COLLIVER: Exactly, it's a simple formula:  Biology + Choices = Outcome. </p>
+      <p begin="00:00:12.00" dur="00:00:11.00">DR. COLLIVER: And the outcome is either an increased or decreased risk for heart disease or other health related problems. That's the basic equation for all lifestyle-related health problems.</p>
+      <p begin="00:00:23.00" dur="00:00:11.00">ANTONIO: Okay, so now that we've got the formula:  Biology + Choices = Outcome, let's take a closer look at the role each piece plays. </p>
     </div>
   </body>
 </tt>

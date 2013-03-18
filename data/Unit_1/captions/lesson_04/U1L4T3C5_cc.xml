@@ -5,16 +5,11 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   First we have the risks we cannot change—biological.  Biology sets our trigger level. 
-And then, we have risks we can change—our choices.  High-risk choices increase the risk of hitting our trigger level.  Low-risk choices reduce our risk for heart disease.  
-Because we all have a different level of biological risk, low-risk choices are not the same for everyone. 
-Psychological and social factors influence our choices—but do not cause or prevent the health problem. 
-Our choices interact with our biology to determine the outcome.  If we make enough high-risk choices, heart disease will develop no matter what kind of person we are.  
-On the other hand, if we understand our level of risk, and know what heart specialists have recommended as low-risk choices, we can reduce our risk for heart disease by consistently following those guidelines. 
-      </p>
+      <p begin="00:00:00.25" dur="00:00:12.75">NARRATOR: First we have the risks we cannot change—biological. Biology sets our trigger level. And then, we have risks we can change—our choices. </p>
+      <p begin="00:00:13.00" dur="00:00:16.00">NARRATOR: High-risk choices increase the risk of hitting our trigger level. Low-risk choices reduce our risk for heart disease. Because we all have a different level of biological risk, low-risk choices are not the same for everyone.</p>
+      <p begin="00:00:29.00" dur="00:00:12.00">NARRATOR: Psychological and social factors influence our choices—but do not cause or prevent the health problem. Our choices interact with our biology to determine the outcome.</p> 
+      <p begin="00:00:41.00" dur="00:00:07.00">NARRATOR: If we make enough high-risk choices, heart disease will develop no matter what kind of person we are. </p>
+      <p begin="00:00:48.00" dur="00:00:15.00">NARRATOR: On the other hand, if we understand our level of risk, and know what heart specialists have recommended as low-risk choices, we can reduce our risk for heart disease by consistently following those guidelines.</p>
     </div>
   </body>
 </tt>

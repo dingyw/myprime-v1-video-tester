@@ -1,30 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 1: </b>
-        <br/>
-	   Hey wait a minute… Everyone is at risk for heart disease.  All three of them are making high-risk choices. Doesn't that mean they're all going to get heart disease? 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 2:</b>
-        <br/>
-	   Yeah, I mean, we all know that if you eat crappy food all day and don't go to the gym, you're gonna end up getting sick.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 3:</b>
-        <br/>
-	   I don't know though, we all know about that one guy who lives to be 100, and he eats junk food every day.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 4:</b>
-        <br/>
-	   I'd like to be like that guy, that's not a bad deal at all. I love cheese and bacon.
-      </p>
+      <p begin="00:00:00.25" dur="00:00:11.75">ONLINE USER 1: Hey wait a minute... Everyone is at risk for heart disease. All three of them are making high-risk choices. Doesn't that mean they're all going to get heart disease?</p>
+      <p begin="00:00:12.00" dur="00:00:07.00">ONLINE USER 2: Yeah, I mean, we all know that if you eat crappy food all day and don't go to the gym, you're gonna end up getting sick.</p>
+      <p begin="00:00:19.00" dur="00:00:09.00">ONLINE USER 3: I don't know though, we all know about that one guy who lives to be 100, and he eats junk food every day.</p>
+      <p begin="00:00:26.00" dur="00:00:04.00">ONLINE USER 4: I'd like to be like that guy, that's not a bad deal at all. I love cheese and bacon.</p>
     </div>
   </body>
 </tt>

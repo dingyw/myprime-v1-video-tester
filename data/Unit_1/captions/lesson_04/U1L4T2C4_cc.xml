@@ -5,14 +5,8 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   Consider 3 people with the following risk profiles. 
-Person 1 was born with standard biological risk, or a standard trigger level for heart disease.
-Person 2 has a family history of heart disease, so he has increased biological risk. 
-And Peron 3 was born with even greater biological risk, and has an even lower trigger level. 
-      </p>
+      <p begin="00:00:00.25" dur="00:00:10.75">NARRATOR: Consider 3 people with the following risk profiles. Person 1 was born with standard biological risk, or a standard trigger level for heart disease. </p>
+      <p begin="00:00:11.00" dur="00:00:12.00">NARRATOR: Person 2 has a family history of heart disease, so he has increased biological risk. And Peron 3 was born with even greater biological risk, and has an even lower trigger level.</p>
     </div>
   </body>
 </tt>

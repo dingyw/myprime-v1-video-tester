@@ -5,36 +5,12 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   So, Doctor, it's pretty straightforward.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Dr. Colliver: </b>
-        <br/>
-	   Yes it is.  The key thing you want to remember is anyone can develop heart disease.  And our biology sets the trigger level.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   Just to review—if I have a lower trigger level that means I can develop heart disease more easily…
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Dr. Colliver: </b>
-        <br/>
-	   Yes.  And the flip side—if I have a higher trigger level, then I have decreased risk. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   But everyone has some level of risk?
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Dr. Colliver:</b>
-        <br/>
-	   You got it. 
-      </p>
+      <p begin="00:00:00.25" dur="00:00:02.50">ANTONIO: So, Doctor, it's pretty straightforward.</p>
+      <p begin="00:00:02.00" dur="00:00:07.00">DR. COLLIVER: Yes it is. The key thing you want to remember is anyone can develop heart disease. And our biology sets the trigger level.</p>
+      <p begin="00:00:09.00" dur="00:00:07.00">ANTONIO: Just to review—if I have a lower trigger level that means I can develop heart disease more easily...</p>
+      <p begin="00:00:16.00" dur="00:00:06.00">DR. COLLIVER: Yes. And the flip side—if I have a higher trigger level, then I have decreased risk of heart disease.</p>
+      <p begin="00:00:22.00" dur="00:00:03.00">ANTONIO: But everyone has some level of risk?</p>
+      <p begin="00:00:25.00" dur="00:00:02.00">DR. COLLIVER: You got it.</p>
     </div>
   </body>
 </tt>

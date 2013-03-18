@@ -1,54 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   The risks for lifestyle-related health problems can be divided into two categories:  risks we can change, and risks we cannot change.   We deal with both types of risk every day. 
-Right now, the sun is shining…  
-But the forecast calls for rain.   And unfortunately, I cannot control the weather.  But if I choose to carry an umbrella…
-I can avoid getting wet.  That’s a risk I can change.  On the other hand, I can't avoid lighting striking my umbrella or the wind blowing it away.  
-To get a better idea how this applies to heart disease… we’re going to get some help from a doctor.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Antonio:</b>
-		 <br />
-		 I’m with Dr. Virginia Colliver, a cardiologist and representative for the American Heart Association.  Dr. Colliver, thank you for joining us.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Dr. Colliver:</b>
-		 <br />
-		 Thank you for having me. Please step on the treadmill.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Antonio:</b>
-		 <br />
-		 Sure. So Dr. Colliver, since heart disease is a lifestyle-related health problem, are there things we can all do to reduce our risk for developing it? 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Dr. Colliver: </b>
-		 <br />
-		 Sure many of the risk factors for heart disease are controllable.  
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Antonio:</b>
-		 <br />
-		 For example, I can control what I eat every day...
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Dr. Colliver:</b>
-		 <br />
-		 Right, that’s one of them.  But there are many things you can do to prevent or decrease your chances of developing heart disease and having a heart attack.   Here at the American Heart Association we publish a list of cardiac-related risks.  Some of them you can control and others you can’t.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Antonio:</b>
-		 <br />
-		 Interesting, I wonder which risks our learners think they can control?
-      </p>
+      <p begin="00:00:00.25" dur="00:00:11.75">ANTONIO: The risks for lifestyle-related health problems can be divided into two categories: risk we can change, and risk we cannot change. We deal with both types of risk every day.</p> 
+      <p begin="00:00:12.00" dur="00:00:02.50">ANTONIO: Right now, the sun is shining... </p> 
+      <p begin="00:00:14.00" dur="00:00:09.00">ANTONIO: But the forecast calls for rain.  And unfortunately, I cannot control the weather. But if I choose to carry an umbrella...</p>
+      <p begin="00:00:23.00" dur="00:00:12.00">ANTONIO: I can avoid getting wet. That's a risk I can change. On the other hand, I can't avoid the posibility of lighting striking my umbrella or the wind blowing it away. </p>
+      <p begin="00:00:35.00" dur="00:00:06.00">ANTONIO: To get a better idea how this applies to heart disease... we're going to get some help from a doctor.</p>
+      <p begin="00:00:41.00" dur="00:00:11.00">ANTONIO: I'm with Dr. Virginia Colliver, a cardiologist and representative for the American Heart Association. Dr. Colliver, thank you for joining us.</p>
+      <p begin="00:00:52.00" dur="00:00:02.50">DR. COLLIVER: Thank you for having me. Please step on the treadmill.</p>
+      <p begin="00:00:54.00" dur="00:00:10.00">ANTONIO: Sure. So Dr. Colliver, since heart disease is a lifestyle-related health problem, are there things we can all do to reduce our risk for developing it? </p>
+      <p begin="00:01:04.00" dur="00:00:04.00">DR. COLLIVER: Sure many of the risk factors for heart disease are controllable.</p>
+      <p begin="00:01:08.00" dur="00:00:03.00">ANTONIO: For example, I can control what I eat every day...</p>
+      <p begin="00:01:10.00" dur="00:00:09.00">DR. COLLIVER: Right, that's one of them. But there are many things you can do to prevent or decrease your chances of developing heart disease and having a heart attack.</p>  
+      <p begin="00:01:19.00" dur="00:00:08.00">DR. COLLIVER: Here at the American Heart Association we publish a list of cardiac-related risks. Some of them you can control and others you can't.</p>
+      <p begin="00:01:27.00" dur="00:00:05.00">ANTONIO: Interesting, I wonder which risks our learners think they can control?</p>
     </div>
   </body>
 </tt>

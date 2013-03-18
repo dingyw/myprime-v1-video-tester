@@ -1,89 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   Okay, now let’s see how your answers matched up with our results. 
-	   So the first thing we asked people when we stopped them was:
-Do you think it’s possible that you could one day develop cancer one day? 
-I know, it’s not the best icebreaker.  Here are some of the responses we got back.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Person on the street:</b>
-		 <br />
-		 Oh absolutely. It's in my family. I think about that. I think we all do, it's just too prevalent nowadays.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Person on the street:</b>
-		 <br />
-		 It's very possible that I will develop cancer, because in terms of my genetics, I have family members who died.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Person on the street:</b>
-		 <br />
-		 Yeah, I've lived my life a long time, and cancer developing is defintely a valid concern. It could come from anywhere.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>People on the street:</b>
-		 <br />
-		 Yes, absolutely. I think the chances of anybody developing cancer is a strong possibility.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Antonio:</b>
-		 <br />
-		 Obviously no one wants cancer, but it seems most people believe it is at least a possibility.  
-Next, we asked them if there was any chance they could one day develop heart disease.  
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Person on the street:</b>
-		 <br />
-		 Yeah, there's a lot of things I think I might end up with the older I get in life.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>People on the street:</b>
-		 <br />
-		 It's very possible to develop heart disease. Yeah, I think it's one of the leading killers in the United States. So, heart disease probably could be more of a factor than cancer for a lot of people.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Person on the street:</b>
-		 <br />
-		 Yes I believe someday I could develop heart disease.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Person on the street:</b>
-		 <br />
-		 Absolutely. I smoke, I drink a lot. In this country, heart disease is a huge thing. Yeah, I do actually worry about it, quite a lot.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Antonio:</b>
-		 <br />
-		 Even more people we talked to saw heart disease as something that could potentially affect them.  But then we asked them was it possible, if they drink, could they someday develop alcoholism?
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Person on the street:</b>
-		 <br />
-		 No I don't think it's possible.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Person on the street:</b>
-		 <br />
-		 Well, me personally, I don't think so. I think I should be fine.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Person on the street:</b>
-		 <br />
-		 I don't feel like, me personally, I can.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-		 <b>Person on the street:</b>
-		 <br />
-		 No, I don't think it's possible to develop any kind of alcoholism.
-      </p>
+      <p begin="00:00:00.25" dur="00:00:04.75">ANTONIO: Okay, now let's see how your answers matched up with our results.</p> 
+      <p begin="00:00:05.00" dur="00:00:07.00">ANTONIO: So the first thing we asked people was: Do you think it's possible that you could one day develop cancer one day?</p> 
+      <p begin="00:00:12.00" dur="00:00:06.00">ANTONIO: I know, it's not the best icebreaker.  Here are some of the responses we got back.</p>
+      <p begin="00:00:18.00" dur="00:00:10.00">PERSON ON THE STREET: Oh absolutely. It's in my family. I think about that. I think we all do, it's just too prevalent nowadays.</p>
+      <p begin="00:00:28.00" dur="00:00:09.50">PERSON ON THE STREET: It's very possible that I will develop cancer, because in terms of my genetics, I have family members who died.</p>
+      <p begin="00:00:37.50" dur="00:00:07.50">PERSON ON THE STREET: Yeah, I've lived my life a long time, and cancer developing is defintely a valid concern. It could come from anywhere.</p>
+      <p begin="00:00:45.00" dur="00:00:09.00">PEOPLE ON THE STREET: Yes, absolutely. I think the chances of anybody developing cancer is a strong possibility.</p>
+      <p begin="00:00:54.00" dur="00:00:07.00">ANTONIO:	Obviously no one wants cancer, but it seems most people believe it is at least a possibility.</p>  
+      <p begin="00:01:01.00" dur="00:00:05.00">ANTONIO:	Next, we asked them if there was any chance they could one day develop heart disease.</p>      
+      <p begin="00:01:06.00" dur="00:00:06.00">PERSON ON THE STREET: Yeah, there's a lot of things I think I might end up with the older I get in life.</p>
+      <p begin="00:01:12.00" dur="00:00:12.00">PEOPLE ON THE STREET: It's very possible to develop heart disease. Yeah, I think it's one of the leading killers in the United States. So, heart disease probably could be more of a factor than cancer for a lot of people.</p>
+      <p begin="00:01:24.00" dur="00:00:02.50">PERSON ON THE STREET: Yes I believe someday I could develop heart disease.</p>
+      <p begin="00:01:26.00" dur="00:00:11.00">PERSON ON THE STREET: Absolutely, In this country. I smoke, I drink a lot. Heart disease is a huge thing. Yeah, I do actually worry about it, quite a lot.</p>
+      <p begin="00:01:37.00" dur="00:00:12.00">ANTONIO: Even more people we talked to saw heart disease as something that could potentially affect them.  But then we asked was it was possible, if they drink, could they someday develop alcoholism?</p>
+      <p begin="00:01:49.00" dur="00:00:04.00">PERSON ON THE STREET: No I don't think it's possible.</p>
+      <p begin="00:01:53.00" dur="00:00:05.00">PERSON ON THE STREET: Well, me personally, I don't think so. I think I should be fine.</p>
+      <p begin="00:01:58.00" dur="00:00:04.00">PERSON ON THE STREET: I don't feel like, me personally, I can.</p>
+      <p begin="00:02:01.00" dur="00:00:04.00">PERSON ON THE STREET: No, I don't think it's possible to develop any kind of alcoholism.</p>
     </div>
   </body>
 </tt>
