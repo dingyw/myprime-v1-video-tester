@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   It’s common for most people to believe that alcoholism or drug addiction run in families because of the effect of living in that environment, not because of biology. But, is this true? 
-Let's look at what research shows us about why alcoholism runs in families.
-      </p>
+      <p begin="00:00:00.25" dur="00:00:11.75">ANTONIO: It's common for most people to believe that alcoholism or drug addiction run in families because of the effect of living in that environment, not because of biology. But, is this true? </p>
+      <p begin="00:00:12.00" dur="00:00:07.00">ANTONIO: Let's look at what research shows us about why alcoholism runs in families.</p>
     </div>
   </body>
 </tt>

@@ -1,88 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   Okay, so lets talk about what this research means.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Ray:</b>
-        <br/>
-	   The first takeaway is that heredity establishes our level of biological risk for developing alcoholism.  
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   But, alcoholism isn’t completely determined by our genetics? 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Ray: </b>
-        <br/>
-	   That's correct. Some of us are biologically predisposed to developing alcoholism, but none of us are genetically predestined.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   So, just because I have an increased biological risk, doesn’t mean that I’ll definitely develop alcoholism.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Ray: </b>
-        <br/>
-	   That's absolutely right.  If you think back to those children whose birth parents had alcoholism, they were four times more likely to develop alcoholism themselves, but not all of them did.  In fact, 80% of those with a family history of alcoholism did not develop it. 
-On the other hand, some who had no biological history of alcoholism  did develop it.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   So, clearly, they were not immune...
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Ray: </b>
-        <br/>
-	   Right. What this research tells us is that while all of us have some level of biological risk for developing alcoholism,  some people have increased risk. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   Thanks, Ray. If you’re still curious, there’s been further research on twins and alcoholism that can tell us even more about inherited risk.  Visit this link to the resources section if you’d like to find out more. 
-So Ray, what about drug addiction?
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Ray: </b>
-        <br/>
-	   Well, the original adoption research was done with just alcohol and alcoholism. Later research has shown that people who have a birth parent with alcoholism are also four times more likely to experience serious problems with drugs.
-And, even later research has gotten more specific, linking it to marijuana, to opiates such as morphine, to stimulants such as cocaine, and sedatives such as Valium.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   And what about people who didn’t have a birth parent with alcoholism? 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Ray: </b>
-        <br/>
-	   Well, while those who did have a family history were more likely to develop it, many people with drug addiction come from a family without any alcoholism or drug addiction.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   So, just like alcoholism, drug addiction can happen to anyone? 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Ray:</b>
-        <br/>
-	   That's right. It can happen to anyone, some people have increased biological risk, and our family history can be a clue to our level of biological risk. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   Thanks, Ray.
-      </p>
+      <p begin="00:00:00.25" dur="00:00:03.00">ANTONIO: Okay, so lets talk about what this research means.</p>
+      <p begin="00:00:03.00" dur="00:00:08.00">RAY: The first takeaway from this research is that heredity establishes our level of biological risk for developing alcoholism. </p>
+      <p begin="00:00:11.00" dur="00:00:04.00">ANTONIO: But, alcoholism isn't completely determined by our genetics?</p>
+      <p begin="00:00:15.00" dur="00:00:10.00">RAY: That's correct. Some of us are biologically predisposed to developing alcoholism, but none of us are genetically predestined.</p>
+      <p begin="00:00:25.00" dur="00:00:07.00">ANTONIO: So, just because I have an increased biological risk, doesn't mean that I'll definitely develop alcoholism.</p>
+      <p begin="00:00:32.00" dur="00:00:11.00">RAY: That's absolutely right. If you think back to those who had a birth parent with alcoholism, they were four times more likely to develop alcoholism themselves, but not all of them did.</p>
+      <p begin="00:00:43.00" dur="00:00:05.00">RAY: In fact, 80% of those with a family history of alcoholism did not develop it.</p> 
+      <p begin="00:00:48.00" dur="00:00:06.00">RAY: On the other hand, some who had no biological family history of alcoholism did develop it.</p>
+      <p begin="00:00:54.00" dur="00:00:03.00">ANTONIO: So, clearly, they were not immune...</p>
+      <p begin="00:00:57.00" dur="00:00:10.00">RAY: That's Right. What this research tells us is that all of us have some level of biological risk for developing alcoholism, some people have increased risk.</p>
+      <p begin="00:01:07.00" dur="00:00:09.00">ANTONIO: Okay. Thanks, Ray. If you're still curious, there's been further research on twins and alcoholism that can tell us even more about inherited risk.</p>  
+      <p begin="00:01:16.00" dur="00:00:04.00">ANTONIO: Visit this link to the resources section if you'd like to find out more.</p> 
+      <p begin="00:01:20.00" dur="00:00:03.00">ANTONIO: So Ray, what about drug addiction?</p>
+      <p begin="00:01:23.00" dur="00:00:05.00">RAY: Well, the original adoption research was done with just alcohol and alcoholism.</p> 
+      <p begin="00:01:28.00" dur="00:00:09.00">RAY: Later research has shown that those who have a birth parent with alcoholism are also four times more likely to experience serious problems with drugs.</p>
+      <p begin="00:01:37.00" dur="00:00:11.00">RAY: And, even later research has gotten more specific, linking it to marijuana, to opiates such as morphine, to stimulants such as cocaine, and sedatives such as Valium.</p>
+      <p begin="00:01:48.00" dur="00:00:04.00">ANTONIO: And what about people who didn't have a birth parent with alcoholism? </p>
+      <p begin="00:01:52.00" dur="00:00:11.00">RAY: Well, while those who did have a family history were more likely to, still many people who develop drug addictions do not have any family history of either alcoholism or drug addiction.</p>
+      <p begin="00:02:03.00" dur="00:00:04.00">ANTONIO: So, just like alcoholism, drug addiction can happen to anyone?</p>
+      <p begin="00:02:07.00" dur="00:00:09.00">RAY: That's right. It can happen to anyone, some people have increased biological risk, and our family history can be a clue to our level of biological risk.</p>
+      <p begin="00:02:16.00" dur="00:00:03.00">ANTONIO: Thanks, Ray.</p>
     </div>
   </body>
 </tt>

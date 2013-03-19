@@ -1,37 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 1:</b>
-        <br/>
-	   Well biology determines how much risk you have…
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 2:</b>
-        <br/>
-	   Right, so if you have biological risk factors like heredity and high tolerance, than you have a higher risk.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 3:</b>
-        <br/>
-	   Biology sets the trigger level…
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 4:</b>
-        <br/>
-	   Yeah, but biology alone doesn’t determine whether I’ll develop alcoholism… right?
-      </p>	 
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   Right!  Our biology establishes our level of risk, but it doesn’t control whether or not we develop alcoholism or drug addiction. Choices are the other key piece of the formula.
-The principles we established for the development of heart disease are the same for the development of alcoholism and addiction. 
-Biology sets our trigger level.  Some people have a standard trigger level.  Other people have a lower trigger level, because they have increased biological risk.  But, our level of biological risk isn’t the only factor. 
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ONLINE USER 1: Well biology determines how much risk you have...</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ONLINE USER 2: Right, so if you have biological risk factors like heredity and high tolerance, than you have a higher risk.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ONLINE USER 3: Biology sets the trigger level...</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ONLINE USER 4: Yeah, but biology alone doesn't determine whether I'll develop alcoholism... right?</p>	 
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: Right! Our biology establishes our level of risk, but it doesn't control whether or not we develop alcoholism or drug addiction. Choices are the other key piece of the formula.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: The principles we established for the development of heart disease are the same for the development of alcoholism and addiction.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: Biology sets our trigger level. Some people have a standard trigger level. Other people have a lower trigger level, because they have increased biological risk. But, our level of biological risk isn't the only factor.</p>
     </div>
   </body>
 </tt>

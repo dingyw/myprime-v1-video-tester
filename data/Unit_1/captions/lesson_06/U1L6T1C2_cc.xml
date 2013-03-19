@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   Okay, so most everyone gets that biology is a big part of the risk for heart disease.  But people aren’t so clear about this when it comes to alcoholism or drug addiction.  
-Heart disease is centered in the heart and blood vessels, but alcoholism and drug addiction are centered in the brain.  So when we talk about biology, we mean both the body, and the brain. 
-Later, we’ll look more closely at what role the brain plays.  But first we’ll begin by looking at research to explore whether or not people can be born with increased biological risk for alcoholism or drug addiction.  This will help us understand our own level of biological risk. 
-Most people have heard that alcoholism runs in families, and that’s true.  But things can run in families for a couple different reasons.  Some things run in families because of the environment children grow up in, while other things run in families because of genetics or biology.  
-In order to understand the nature of our risk for developing alcoholism or drug addiction, let’s explore the difference between biological and environmental traits. 
-      </p>
+      <p begin="00:00:00.25" dur="00:00:10.75">ANTONIO: Okay, so most everyone gets that biology is a big part of the risk for heart disease. But people aren't so clear about this when it comes to alcoholism or drug addiction.</p>  
+      <p begin="00:00:11.00" dur="00:00:13.00">ANTONIO: Heart disease is centered in the heart and blood vessels, but alcoholism and drug addiction are centered in the brain. So when we talk about biology, we mean both the body, and the brain. </p>
+      <p begin="00:00:24.00" dur="00:00:04.00">ANTONIO: Later, we'll look more closely at what role the brain plays. </p> 
+      <p begin="00:00:28.00" dur="00:00:15.00">ANTONIO: But first we'll begin by looking at research to explore whether or not people can be born with increased biological risk for alcoholism or drug addiction. This will help us understand our own level of biological risk.</p> 
+      <p begin="00:00:43.00" dur="00:00:09.00">ANTONIO: Most people have heard that alcoholism runs in families, and that's true. But things can run in families for a couple different reasons.</p>  
+      <p begin="00:00:52.00" dur="00:00:09.00">ANTONIO: Some things run in families because of the environment children grow up in, while other things run in families because of genetics or biology.</p>  
+      <p begin="00:01:01.00" dur="00:00:12.00">ANTONIO: In order to understand the nature of our risk for developing alcoholism or drug addiction, let's explore the difference between biological and environmental traits. </p>
     </div>
   </body>
 </tt>

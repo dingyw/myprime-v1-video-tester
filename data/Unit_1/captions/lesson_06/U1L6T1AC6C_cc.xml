@@ -1,20 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   Interesting!  You predicted that If the common belief were true, we would expect to see no difference in the rates of alcoholism between adults whose adoptive parents did not have alcoholism, and adults who had an adoptive parent with alcoholism. 
-Most people would say, however, that we would expect to see more alcoholism in those adults who had lived with parents who had alcoholism, because of the influence of growing up in an environment where alcoholism was present.
-But guess what!  The research indicated that as adults, the two groups of adoptees actually had the same rate of alcoholism. Just like you predicted!
-This tells us that alcoholism does not run in families because of the effect of being raised by a parent who has alcoholism.
-It also tells us that alcoholism can and does occur among people who have no family history of alcoholism.
-So, why does alcoholism run in families, then? To answer that, let’s look at the adoption research from a different direction.
-      </p>
+      <p begin="00:00:00.25" dur="00:00:11.75">NARRATOR: Interesting! You predicted that If the common belief were true, we would expect to see no difference in the rates of alcoholism between adults whose adoptive parents did not have alcoholism,</p> 
+      <p begin="00:00:12.00" dur="00:00:04.00">and adults who had an adoptive parent with alcoholism. </p>
+      <p begin="00:00:16.00" dur="00:00:08.00">NARRATOR: Most people would say, however, that we would expect to see more alcoholism in those adults who had lived with parents who had alcoholism,</p> 
+      <p begin="00:00:24.00" dur="00:00:05.00">because of the influence of growing up in an environment where alcoholism was present.</p>
+      <p begin="00:00:29.00" dur="00:00:11.00">NARRATOR: But guess what! The research indicated that as adults, the two groups of adoptees actually had the same rate of alcoholism. Just like you predicted!</p>
+      <p begin="00:00:40.00" dur="00:00:08.00">NARRATOR: This tells us that alcoholism does not run in families because of the effect of being raised by a parent who has alcoholism.</p>
+      <p begin="00:00:48.00" dur="00:00:07.00">NARRATOR: It also tells us that alcoholism can and does occur among people who have no family history of alcoholism.</p>
+      <p begin="00:00:55.00" dur="00:00:09.00">NARRATOR: So, why does alcoholism run in families, then? To answer that, let's look at the adoption research from a different direction.</p>
     </div>
   </body>
 </tt>

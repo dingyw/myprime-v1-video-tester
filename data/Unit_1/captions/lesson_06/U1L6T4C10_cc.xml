@@ -5,26 +5,10 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 1: </b>
-        <br/>
-	   I never paid attention to the ads, but, seeing all those ads together made me really wanna have a drink. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 2:</b>
-        <br/>
-	   Yeah I wish some of that stuff happened in my life. They make it look pretty good!
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 3:</b>
-        <br/>
-	   Imagine what the ads would look like if it was the shy introverts who made more high-risk choices than the rest of us.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 4:</b>
-	   I don't know, I guess you'd see a lot more ads for people drinking at book clubs or something.
-        <br/>
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ONLINE USER 1: I never paid attention to the ads, but, seeing all those ads together made me really wanna have a drink. </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ONLINE USER 2: Yeah I wish some of that stuff happened in my life. They make it look pretty good!</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ONLINE USER 3: Imagine what the ads would look like if it was the shy introverts who made more high-risk choices than the rest of us.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ONLINE USER 4: I don't know, I guess you'd see a lot more ads for people drinking at book clubs or something.</p>
     </div>
   </body>
 </tt>

@@ -1,19 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
-    <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   Yes!  This is exactly what researchers expected to see. If the common belief were true, we would expect to see more alcoholism in those adults who had lived with parents who had alcoholism. 
-However, the research indicates that as adults, the two groups of adoptees actually had the same rate of alcoholism. 
-This tells us that alcoholism does not run in families because of the effect of being raised by a parent who has alcoholism.
-It also tells us that alcoholism can and does occur among people who have no family history of alcoholism.
-So, why does alcoholism run in families, then? To answer that, let’s look at the adoption research from a different direction.
-      </p>
+    <div xml:lang="en">  
+      <p begin="00:00:00.25" dur="00:00:12.75">NARRATOR: Yes!  This is exactly what researchers expected to see. If the common belief were true, we would expect to see more alcoholism in those adults who had lived with parents who had alcoholism.</p> 
+      <p begin="00:00:13.00" dur="00:00:09.00">NARRATOR: However, the research indicates that as adults, the two groups of adoptees actually had the same rate of alcoholism.</p> 
+      <p begin="00:00:22.00" dur="00:00:09.00">NARRATOR: This tells us that alcoholism does not run in families because of the effect of being raised by a parent who has alcoholism.</p>
+      <p begin="00:00:31.00" dur="00:00:08.00">NARRATOR: It also tells us that alcoholism can and does occur among people who have no family history of alcoholism.</p>
+      <p begin="00:00:39.00" dur="00:00:09.00">NARRATOR: So, why does alcoholism run in families, then? To answer that, let's look at the adoption research from a different direction.</p>
     </div>
   </body>
 </tt>

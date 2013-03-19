@@ -5,14 +5,13 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   Now, we're going to look at what research shows about the effect of having a birth parent with alcoholism. 
-These symbols represent large numbers of birth parents who decide to place their babies for adoption. This one represents those birth parents who do not have alcoholism. This one represents all the birth parents who do have alcoholism.
-These two symbols represent large numbers of adoptive parents. None of these adoptive parents have alcoholism. 
-Ready? Now, these two symbols represent large numbers of the children adopted by these parents. This one represents those adopted children whose birth parents do not have alcoholism and whose adoptive parents also do not have alcoholism. And this one represents those adopted children who have a birth parent with alcoholism, but whose adoptive parents do not have alcoholism. 
-      </p>
+      <p begin="00:00:00.25" dur="00:00:06.75">NARRATOR: Now, we're going to look at what research shows about the effect of having a birth parent with alcoholism.</p> 
+      <p begin="00:00:07.00" dur="00:00:07.00">NARRATOR: These symbols represent large numbers of birth parents who decide to place their babies for adoption.</p> 
+      <p begin="00:00:14.00" dur="00:00:09.00">NARRATOR: This one represents those birth parents who do not have alcoholism. This one represents all the birth parents who do have alcoholism.</p>
+      <p begin="00:00:23.00" dur="00:00:08.00">NARRATOR: These two symbols represent large numbers of adoptive parents. None of these adoptive parents have alcoholism.</p> 
+      <p begin="00:00:31.00" dur="00:00:08.00">NARRATOR: Ready? Now, these two symbols represent large numbers of the children adopted by these parents.</p>  
+      <p begin="00:00:39.00" dur="00:00:09.00">NARRATOR: This one represents those adopted children whose birth parents do not have alcoholism and whose adoptive parents also do not have alcoholism.</p> 
+      <p begin="00:00:48.00" dur="00:00:09.00">NARRATOR: And this one represents those adopted children who have a birth parent with alcoholism, but whose adoptive parents do not have alcoholism.</p>
     </div>
   </body>
 </tt>

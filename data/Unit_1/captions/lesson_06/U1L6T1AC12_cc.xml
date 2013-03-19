@@ -1,30 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 1: </b>
-        <br/>
-	   So environment isn't as important as our biology? I gotta admit… I didn't expect that.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 2:</b>
-        <br/>
-	   Yeah I always thought people learned this stuff from their parents, like, "Hey, I learned it from you, Dad."
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 3:</b>
-        <br/>
-	   So I guess I've got nothing to worry about. My parents haven't had a drink since their wedding.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 4:</b>
-        <br/>
-	   So, it doesn't mean you're safe. There's no get-out-of-jail-free card or anything. I mean, just because my dad was an alcoholic, it's no guarantee that I'm going to become one.
-      </p>
+      <p begin="00:00:00.25" dur="00:00:05.75">ONLINE USER 1: So environment isn't as important as our biology? I gotta admit... I didn't expect that.</p>
+      <p begin="00:00:06.00" dur="00:00:05.00">ONLINE USER 2: Yeah I always thought people learned this stuff from their parents, like, "Hey, I learned it from you, Dad."</p>
+      <p begin="00:00:11.00" dur="00:00:04.00">ONLINE USER 3: So I guess I've got nothing to worry about. My parents haven't had a drink since their wedding.</p>
+      <p begin="00:00:15.00" dur="00:00:25.00">ONLINE USER 4: So, it doesn't mean you're safe. There's no get-out-of-jail-free card or anything. I mean, just because my dad was an alcoholic, it's no guarantee that I'm going to become one.</p>
     </div>
   </body>
 </tt>

@@ -5,11 +5,7 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   Here is a set of traits. For each trait, decide if it's inherited, comes from the environment, or both, by selecting the best answer.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Here is a set of traits. For each trait, decide if it's inherited, comes from the environment, or both, by selecting the best answer.</p>
     </div>
   </body>
 </tt>

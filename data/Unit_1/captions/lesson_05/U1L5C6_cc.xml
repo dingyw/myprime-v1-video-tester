@@ -1,81 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 1:  </b>
-        <br/>
-	   What about older people, I'm gonna add older people to my list. I mean, when you're young, you can drink a lot more, but when you're old, there's no way.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 2: </b>
-        <br/>
-	   Older people?!  No, I think everybody would say criminals, cause, they're in jail for a reason.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 3: </b>
-        <br/>
-	   Yeah, I would definitely agree with that.  What about celebrities though? I mean, they've got all that money, people throwing them drinks all the time, you're bound to get alcoholism that way.  
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   So what you think about the list of words?  Does it surprise you? 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Michelle:</b>
-        <br/>
-	   Not at all.  It makes sense most people to believe this is the kind of person who develops alcoholism or drug addiction.  
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   Because of stereotypes they’ve seen or heard? 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Michelle:</b>
-        <br/>
-	   Yeah, and because of they’ve  own experiences.  For example, say I have a friend, and her mom and grandfather both have alcoholism, and then starts to have problems with her own drinking.  It feels like, to me, she's just living out a family tradition.
-Or, here's another one. Say a person says they'll only have one or two drinks, but then they end up closing down the bar. Or once they open a bottle, they finish it. It feels like they're weak, or have no self control.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   Okay, so it makes sense that people would have these beliefs, but why does it matter?  
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Michelle:</b>
-        <br/>
-	   Well, it matters for a couple reasons and it really revolves around our choices.  First off, how many of us would look at that list and say, "yeah, that's me."
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Internet dater:</b>
-        <br/>
-	   Ugh, look at this guy. Weak, depressed loser with no self-esteem. Is he for real??
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   Yeah, there aren’t many people who’d say they are a weak, depressed, loser with low-self esteem.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Michelle:</b>
-        <br/>
-	   Right, so if I don't see myself on the list, I may feel like I don't need to worry. My choices don't matter.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   Since so many people believe this list is true, there must be some accuracy to it, right? 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Michelle:</b>
-        <br/>
-	   Right, to check out if it's accurate or not, we need to look at one more question: “Is alcoholism and drug addiction caused by the kind of person I am or by the kind of choices I make?"
-      </p>
+      <p begin="00:00:00.25" dur="00:00:05.75">ONLINE USER 1: What about older people, I'm gonna add older people to my list. I mean, when you're young, you can drink a lot more, but when you're old, there's no way.</p>
+      <p begin="00:00:06.00" dur="00:00:07.00">ONLINE USER 2: Older people?!  No, I think everybody would say criminals, cause, they're in jail for a reason.</p>
+      <p begin="00:00:13.00" dur="00:00:09.00">ONLINE USER 3: Yeah, I would definitely agree with that.  What about celebrities though? I mean, they've got all that money, people throwing them drinks all the time, you're bound to get alcoholism that way.</p>
+      <p begin="00:00:22.00" dur="00:00:04.00">ANTONIO: So what you think about the list of words?  Does it surprise you?</p>
+      <p begin="00:00:26.00" dur="00:00:06.00">MICHELLE: Not at all.  It makes sense most people to believe this is the kind of person who develops alcoholism or drug addiction. </p>
+      <p begin="00:00:32.00" dur="00:00:03.00">ANTONIO: Because of stereotypes they've seen or heard? </p>
+      <p begin="00:00:35.00" dur="00:00:10.00">MICHELLE: Yeah, and because of they've  own experiences.  For example, say I have a friend, and her mom and grandfather both have alcoholism, and then starts to have problems with her own drinking.</p> 
+      <p begin="00:00:45.00" dur="00:00:03.00">MICHELLE: It feels like, to me, she's just living out a family tradition.</p>
+      <p begin="00:00:48.00" dur="00:00:11.00">MICHELLE: Or, here's another one. Say a person says they'll only have one or two drinks, but then they end up closing down the bar. Or once they open a bottle, they finish it. It feels like they're weak, or have no self control.</p>
+      <p begin="00:00:59.00" dur="00:00:05.00">ANTONIO: Okay, so it makes sense that people would have these beliefs, but why does it matter?</p>
+      <p begin="00:01:04.00" dur="00:00:07.00">MICHELLE: Well, it matters for a couple reasons and it really revolves around our choices.  First off, how many of us would look at that list and say, "yeah, that's me."</p>
+      <p begin="00:01:11.00" dur="00:00:10.00">INTERNET DATER: Ugh, look at this guy, Ladiesman123. Weak, depressed loser with no self-esteem. Is he for real?</p>
+      <p begin="00:01:21.00" dur="00:00:07.00">ANTONIO: Yeah, there aren't many people who'd say they are a weak, depressed, loser with low-self esteem.</p>
+      <p begin="00:01:28.00" dur="00:00:05.00">MICHELLE: Right, so if I don't see myself on the list, I may feel like I don't need to worry. My choices don't matter.</p>
+      <p begin="00:01:33.00" dur="00:00:06.00">ANTONIO: Since so many people believe this list is true, there must be some accuracy to it, right?</p>
+      <p begin="00:01:39.00" dur="00:00:10.00">MICHELLE: Right, to check out if it's accurate or not, we need to look at one more question: "Is alcoholism and drug addiction caused by the kind of person I am or by the kind of choices I make?"</p>
     </div>
   </body>
 </tt>
