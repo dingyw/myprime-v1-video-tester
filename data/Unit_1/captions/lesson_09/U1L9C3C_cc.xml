@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
@@ -6,12 +6,12 @@
   <body>
     <div xml:lang="en">
       <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   Suppose Pat drinks on occasion, and when he does, it’s typically between one and two drinks a day.
+        NARRATOR:
+        
+	   Suppose Pat drinks on occasion, and when he does, it's typically between one and two drinks a day.
 Overall, research indicates that one or two drinks per day does not increase risk for most people.
 Many studies show that people who on average drink between one and two per day may live longer than either abstainers or those drinking three or more. This seems to be due primarily to a reduction in risk for coronary heart disease.
-However, the small decrease in mortality at this level isn’t so great that any happy abstainer should start drinking for health benefits.
+However, the small decrease in mortality at this level isn't so great that any happy abstainer should start drinking for health benefits.
       </p>
     </div>
   </body>
