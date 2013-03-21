@@ -5,21 +5,9 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        ANTONIO:
-        
-	   Thanks for your help. Counting standard drinks is a consistent way to measure how much you've had. It makes a lot more sense than counting the number of glasses.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        Chrisdine:
-        
-	   Definitely. If you just measure by container you really won't get a sense of how much alcohol you are consuming. It depends on what you're drinking and who's pouring.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        ANTONIO:
-        
-	   That makes sense. This is all great information—now when we talk about how many drinks is "low risk," we'll know what one drink really is.
-      </p>
+      <p begin="00:00:00.25" dur="00:00:08.75">ANTONIO: Thanks for your help. Counting standard drinks is a consistent way to measure how much you've had. It makes a lot more sense than counting the number of glasses.</p>
+      <p begin="00:00:09.00" dur="00:00:08.00">CHRISDINE: Definitely. If you just measure by container you really won't get a sense of how much alcohol you are consuming. It depends on what you're drinking and who's pouring.</p>
+      <p begin="00:00:17.00" dur="00:00:10.00">ANTONIO: That makes sense. This is all great information—now when we talk about how many drinks is "low risk," we'll know what one drink really is.</p>
     </div>
   </body>
 </tt>

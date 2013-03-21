@@ -4,14 +4,11 @@
     <styling>  </styling>
   </head>
   <body>
-    <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        NARRATOR:
-        
-	   Look at these different wine glasses. Each of them has exactly five ounces of wine in them. It doesn't look like much, does it? A standard drink is often much less than we think. The same glasses filled to a typical level would contain anywhere from one to three standard drinks. 
-There's also a lot of variation in beer containers. The first glass holds one standard drink... 12 ounces. But the second and third ones hold 16 ounces, and the fourth mug holds 32 ounces of beer. That's 2 ½ standard drinks!
-And remember that different types of alcohol have different percentages. Beer is usually around 4 to 7 percent. Wine can vary from 8 to 12 percent alcohol.
-      </p>
+    <div xml:lang="en"> 
+      <p begin="00:00:00.25" dur="00:00:08.75">NARRATOR: Look at these different wine glasses. Each of them has exactly five ounces of wine in them. It doesn't look like much, does it?</p> 
+      <p begin="00:00:09.00" dur="00:00:13.00">NARRATOR: A standard drink is often much less than we think. The same glasses filled to a typical level would contain anywhere from one to three standard drinks. There's also a lot of variation in beer containers.</p>
+      <p begin="00:00:22.00" dur="00:00:15.00">NARRATOR: The first glass holds one standard drink... 12 ounces. But the second and third ones hold 16 ounces, and the fourth mug holds 32 ounces of beer. That's 2 ½ standard drinks!</p>
+      <p begin="00:00:37.00" dur="00:00:11.00">NARRATOR: And remember that different types of alcohol have different percentages. Beer is usually around 4 to 7 percent. Wine can vary from 8 to 12 percent alcohol.</p>
     </div>
   </body>
 </tt>

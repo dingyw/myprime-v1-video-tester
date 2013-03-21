@@ -5,26 +5,10 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        ONLINE USER 1:
-        
-	   How am I supposed to have a good time? Three beers and out? No way.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        ONLINE USER 2:
-        
-	   Hmm, I know a lot of people who drink way more than those guidelines.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        ONLINE USER 3:
-        
-	   Umm.. I don't think those guidelines are meant for people like me, who like to have a good time, you can't have any fun. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        ONLINE USER 4:
-        
-	   I drink more than that and I feel fine. I'm kinda surprised.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ONLINE USER 1: How am I supposed to have a good time? Three beers and out? No way.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ONLINE USER 2: Hmm, I know a lot of people who drink way more than those guidelines.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ONLINE USER 3: Umm.. I don't think those guidelines are meant for people like me, who like to have a good time, you can't have any fun.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ONLINE USER 4: I drink more than that and I feel fine. I'm kinda surprised.</p>
     </div>
   </body>
 </tt>

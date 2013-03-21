@@ -5,13 +5,9 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        NARRATOR:
-        
-	   Now let's say Pat drinks, on average, more than 2 drinks a day.
-Health problems are more common for people who average more than two drinks per day. Some examples of health problems that can occur at an average of three or more per day are high blood pressure, cirrhosis of the liver, and various cancers.
-Alcohol risks can also interact with other risks, such as smoking or diet. There are many variables in risk for specific health problems.
-      </p>
+      <p begin="00:00:00.25" dur="00:00:08.75">NARRATOR: Now let's say Pat drinks, on average, more than 2 drinks a day. Health problems are more common for people who average more than two drinks per day. </p> 
+      <p begin="00:00:09.00" dur="00:00:09.00">NARRATOR: Some examples of health problems that can occur at an average of three or more per day are high blood pressure, cirrhosis of the liver, and various cancers. </p>
+      <p begin="00:00:18.00" dur="00:00:11.00">NARRATOR: Alcohol risks can also interact with other risks, such as smoking or diet. There are many variables in risk for specific health problems. </p>
     </div>
   </body>
 </tt>
