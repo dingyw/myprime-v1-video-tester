@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   What you just saw doesn’t seem very unusual, does it?  Just a group of friends getting together for some burgers and beers.
-But this night didn’t end well.  Unfortunately, one of these people ended up getting pulled over and charged with a DUI.  So, here’s the question, can you tell which which one is most likely to get arrested?
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: What you just saw doesn't seem very unusual, does it? Just a group of friends getting together for some burgers and beers.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: But this night didn't end well. Unfortunately, one of these people ended up getting pulled over and charged with a DUI. So, here's the question, can you tell which which one is most likely to get arrested?</p>
     </div>
   </body>
 </tt>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
@@ -6,14 +6,14 @@
   <body>
     <div xml:lang="en">
       <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   A person’s tolerance is a measure of how impaired they are at any blood alcohol level.  People inherit an initial tolerance level set by genetics.   
-So, if three people all drink for the first time, one may go to sleep after a beer, another is feeling clumsy after three, and the third has a six-pack, and asks, “where’s the party?”
-This is because some people are born with a low tolerance level, and others are born with a high tolerance.  This is true for many drugs as well as alcohol.   
+        Narrator:
+        
+	   A person's tolerance is a measure of how impaired they are at any blood alcohol level. People inherit an initial tolerance level set by genetics.  
+So, if three people all drink for the first time, one may go to sleep after a beer, another is feeling clumsy after three, and the third has a six-pack, and asks, "where's the party?"
+This is because some people are born with a low tolerance level, and others are born with a high tolerance. This is true for many drugs as well as alcohol.  
 But regardless of their initial tolerance, as people drink more, their tolerance goes up.
-The brain adapts to change.  So if people increase their quantity or frequency of drinking or drug use, the brain responds by increasing tolerance.  This happens a small amount after just one night of heavy drinking. 
-And if we continue to use larger quantities, our tolerance continues to go up.  Then we can tolerate more before becoming impaired.  This is called acquired tolerance.
+The brain adapts to change. So if people increase their quantity or frequency of drinking or drug use, the brain responds by increasing tolerance. This happens a small amount after just one night of heavy drinking. 
+And if we continue to use larger quantities, our tolerance continues to go up. Then we can tolerate more before becoming impaired. This is called acquired tolerance.
 The more we drink to the point of impairment, the more our brains tries to adapt, and the higher our tolerance goes. 
       </p>
     </div>

@@ -5,34 +5,35 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: Research shows us that most people are making low-risk choices most of the time, but it can be hard to imagine how these patterns play out. Let's take a look...</p>
-      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Tanya and Michael invited three friends over for dinner—Clayton, Dan and Jenny. The night was a success--they talked, they ate, and they drank... quite a bit more than they realized.</p>
-      <p begin="00:00:00.00" dur="00:00:01.00">MICHAEL: Well, how about some dessert?  </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">GROUP: Sounds good! Great! This meal was so good.  </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">TANYA: You guys are gonna love this!  </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">GROUP: Cake! Look at that, that looks so good!  </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Just as they were about to dig into Michael's famous chocolate cake, Tanya went to pour herself a glass of wine, when she realized they were all out. </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">TANYA: How did we go through four bottles of wine?! </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">MICHAEL: Yeah, we couldn't have gone through four bottles of wine. </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">TANYA: We each had a few glasses... that adds up! </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">JENNY: No, we couldn't have had that much, we'd be drunk! </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">DAN: That's almost a bottle a person. </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">MICHAEL: That just doesn't add up. </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">TANYA: Well, here it is. </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Okay, let's rewind here and see what happened.</p>
-	  <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Before dinner, Clayton had a couple glasses of wine, and Dan had one.</p>
-      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: As they sit down, Michael pours a glass of wine for Clayton, and Jenny. Dan's glass is about half full, so Michael tops it off. Then Dan helps himself to a glass as Tanya brings out the food.</p> 
-      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Tanya is ready to sit down. They're about to toast but her glass is empty. As she pours some wine, Clayton holds up his empty glass for a refill.</p>
-      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: The food is delicious! Clayton helps himself to some wine. And then he helps himself to more wine.</p>
-      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Always on the lookout, Clayton see's Dan's glass is empty. He pours some for Dan and of course, he refills his own glass while he's at it. </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Michael pours his 2nd glass of the evening, tops off Tanya, and fills up Clayton.</p>
-      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: The fourth bottle is almost empty. Clayton spots it, and finishes it off before someone else does. Michael's  cake comes out, and that's just about when Tanya said...</p>
-      <p begin="00:00:00.00" dur="00:00:01.00">TANYA: Did we really go through four bottles of wine? </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: We've just seen that they really did go through four bottles of wine. How is that possible? It's possible because Clayton drank 8 glasses, or about two bottles.  </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">RAY: The fact that 70% of people who drink in America account for only 10% of all the alcohol consumed, tells us that most people who drink are making low-risk choices most of the time.</p>
-      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: So, the low-risk guidelines are very realistic if you think about it that way-- they reflect how most people drink.   </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">RAY: That's right, and if we follow these guidelines, it will also  help us protect the things we value most in life.  </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: Thanks so much, Ray. Now if you're wondering how your choices compare to these statistics, you're not alone. Here's an exercise you can complete to see how your drinking compares with the rest of the population.</p>
+      <p begin="00:00:00.25" dur="00:00:09.75">ANTONIO: Research shows us that most people are making low-risk choices most of the time, but it can be hard to imagine how these patterns play out. Let's take a look...</p>
+      <p begin="00:00:10.00" dur="00:00:21.00">NARRATOR: Tanya and Michael invited three friends over for dinner—Clayton, Dan and Jenny. The night was a success--they talked, they ate, and they drank... quite a bit more than they realized.</p>
+      <p begin="00:00:31.00" dur="00:00:02.00">MICHAEL: Well, how about some dessert?  </p>
+      <p begin="00:00:33.00" dur="00:00:05.00">GROUP: Sounds good! Great! This meal was so good.  </p>
+      <p begin="00:00:38.00" dur="00:00:02.00">TANYA: You guys are gonna love this!  </p>
+      <p begin="00:00:40.00" dur="00:00:05.00">GROUP: Cake! Look at that, that looks so good! </p>
+      <p begin="00:00:45.00" dur="00:00:05.00">TANYA: And what goes better with chocolate cake than red wine?</p>
+      <p begin="00:00:50.00" dur="00:00:06.00">NARRATOR: Just as they were about to dig into Michael's famous chocolate cake, Tanya went to pour herself a glass of wine, when she realized they were all out. </p>
+      <p begin="00:00:56.00" dur="00:00:04.00">TANYA: How did we go through four bottles of wine?! </p>
+      <p begin="00:01:00.00" dur="00:00:03.00">MICHAEL: Yeah, we couldn't have gone through four bottles of wine. </p>
+      <p begin="00:01:03.00" dur="00:00:02.00">TANYA: We each had a few glasses... that adds up! </p>
+      <p begin="00:01:05.00" dur="00:00:03.00">JENNY: No, we couldn't have had that much, we'd be drunk! </p>
+      <p begin="00:01:08.00" dur="00:00:02.00">DAN: That's almost a bottle a person. </p>
+      <p begin="00:01:10.00" dur="00:00:02.00">MICHAEL: That just doesn't add up. </p>
+      <p begin="00:01:12.00" dur="00:00:03.00">TANYA: Well, here it is empty. </p>
+      <p begin="00:01:15.00" dur="00:00:05.00">NARRATOR: Okay, let's rewind here and see what happened.</p>
+	  <p begin="00:01:20.00" dur="00:00:08.00">NARRATOR: Before dinner, Clayton had a couple glasses of wine, and Dan had one.</p>
+      <p begin="00:01:28.00" dur="00:00:26.00">NARRATOR: As they sit down, Michael pours a glass of wine for Clayton, and Jenny. Dan's glass is about half full, so Michael tops it off.</p> 
+      <p begin="00:01:54.00" dur="00:00:22.00">NARRATOR: Tanya is ready to sit down. They're about to toast but her glass is empty. As she pours some wine, Clayton holds up his empty glass for a refill.</p>
+      <p begin="00:02:16.00" dur="00:00:07.00">NARRATOR: The food is delicious! Clayton helps himself to some wine. And then he helps himself to more wine.</p>
+      <p begin="00:02:23.00" dur="00:00:09.00">NARRATOR: Always on the lookout, Clayton see's Dan's glass is empty. He pours some for Dan and of course, he refills his own glass while he's at it. </p>
+      <p begin="00:02:32.00" dur="00:00:15.00">NARRATOR: Michael pours his 2nd glass of the evening, tops off Tanya, and fills up Clayton.</p>
+      <p begin="00:02:47.00" dur="00:00:17.00">NARRATOR: The fourth bottle is almost empty. Clayton spots it, and finishes it off before someone else does. Michael's cake comes out, and that's just about when Tanya said...</p>
+      <p begin="00:03:04.00" dur="00:00:06.00">TANYA: Did we really go through four bottles of wine? </p>
+      <p begin="00:03:10.00" dur="00:00:14.00">NARRATOR: We've just seen that they really did go through four bottles of wine. How is that possible? It's possible because Clayton drank 8 glasses, or about two bottles.  </p>
+      <p begin="00:03:24.00" dur="00:00:13.00">RAY: The fact that 70% of all the people who drink in America account for only 10% of all the alcohol consumed, tells us that most people who drink are making low-risk choices most of the time.</p>
+      <p begin="00:03:37.00" dur="00:00:06.00">ANTONIO: So, the low-risk guidelines are very realistic if you think about them that way-- they reflect how most people drink.   </p>
+      <p begin="00:03:43.00" dur="00:00:06.00">RAY: That's right, and if we follow these guidelines, it will also  help us protect the things we value most in life.  </p>
+      <p begin="00:03:49.00" dur="00:00:13.00">ANTONIO: Thanks so much, Ray. Now if you're wondering how your choices compare to these statistics, you're not alone. Here's an exercise you can complete to see how your drinking compares with the rest of the population.</p>
     </div>
   </body>
 </tt>
