@@ -5,17 +5,19 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">(Party noises--people scoializing, music playing in the background) JOHN: What was that?</p>
-      <p begin="00:00:00.00" dur="00:00:01.00">STEVE: What was what? </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">JOHN: You throw like a girl.</p>
-      <p begin="00:00:00.00" dur="00:00:01.00">GIRL: Yeah, a lame girl.</p>
-      <p begin="00:00:00.00" dur="00:00:01.00">STEVE:  Thanks, partner.</p>     
-      <p begin="00:00:00.00" dur="00:00:01.00">(Cups falling to the ground) PHIL: Sorry. </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">JOHN: Okay... time for round 2! </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">STEVE: No way, I can't! </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">JOHN: Come on, man, you said you would! Just one more... </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">STEVE: I don't know how you do it man.</p>
-      <p begin="00:00:00.00" dur="00:00:01.00">JOHN: Practice--lots of practice. </p>
+      <p begin="00:00:00.25" dur="00:00:45.75">(Party noises--people scoializing, music playing in the background) JOHN: What was that?</p>
+      <p begin="00:00:46.00" dur="00:00:01.00">STEVE: What was what? </p>
+      <p begin="00:00:47.00" dur="00:00:02.00">JOHN: You throw like a girl.</p>
+      <p begin="00:00:49.00" dur="00:00:01.00">GIRL: Yeah, a lame girl.</p>
+      <p begin="00:00:50.00" dur="00:00:02.00">STEVE:  Thanks, partner.</p>     
+      <p begin="00:00:52.00" dur="00:00:22.00">(Guys stacking cups. Cups falling to the ground) PHIL: Oh. I'm sorry. I'll help you...</p>
+      <p begin="00:01:14.00" dur="00:00:17.00">GUYS STACING CUPS: Dude! Realy!?! It's cool...</p>  
+      <p begin="00:01:31.00" dur="00:00:04.00">JOHN: Okay... time for round 2! </p>
+      <p begin="00:01:36.00" dur="00:00:02.00">STEVE: No way, I can't! </p>
+      <p begin="00:01:38.00" dur="00:00:02.00">JOHN: Come on, man, you said you would! Just one more... </p>
+      <p begin="00:01:40.00" dur="00:00:02.00">STEVE: I don't know how you do it man.</p>
+      <p begin="00:01:42.00" dur="00:00:08.00">JOHN: Practice--lots of practice. </p>
+      <p begin="00:01:50.00" dur="00:00:28.00">(Suzy passed out on couch) JOHN: Take my picture. </p>
     </div>
   </body>
 </tt>

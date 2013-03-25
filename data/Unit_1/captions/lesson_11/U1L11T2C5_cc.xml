@@ -5,21 +5,9 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        Narrator:
-        
-	   Take a look at the two tolerance level lines on pat. One represents mental tolerance and the other represents physical tolerance. Given what you've learned about the differences between physical and mental impairment, drag the boxes to the appropriate tolerance level lines. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        Incorrect feedback:
-        
-	   Remember, skills like reacting, processing, and decision-making are affected more quickly than walking and talking. Try again.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        Correct feedback:
-        
-	   You've got it. Our mental tolerance is much lower than our physical tolerance.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Take a look at the two tolerance level lines on pat. One represents mental tolerance and the other represents physical tolerance. Given what you've learned about the differences between physical and mental impairment, drag the boxes to the appropriate tolerance level lines.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">INCORRECT FEEDBACK: Remember, skills like reacting, processing, and decision-making are affected more quickly than walking and talking. Try again.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">CORRECT FEEDBACK: You've got it. Our mental tolerance is much lower than our physical tolerance.</p>
     </div>
   </body>
 </tt>
