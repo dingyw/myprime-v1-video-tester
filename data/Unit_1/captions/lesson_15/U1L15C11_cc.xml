@@ -5,13 +5,9 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        ANTONIO:
-        
-	   Congratulations, you've successfully completed the Exploring Unit. 
-And now that you've learned all about drinking and drug choices, we're going to see how these choices can affect us... and how they affect the people around us.   
-The next unit is the "Reflecting Unit."  I'll meet you there.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: Congratulations, you've successfully completed the Exploring Unit.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: And now that you've learned all about drinking and drug choices, we're going to see how these choices can affect us... and how they affect the people around us.</p>   
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: The next unit is the "Reflecting Unit."  I'll meet you there.</p>
     </div>
   </body>
 </tt>
