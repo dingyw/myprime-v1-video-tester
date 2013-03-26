@@ -1,30 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Michelle:</b>
-        <br/>
-	   Another common belief is that we can overcome impairment with extra effort. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   What do you mean by that?  Like, believing I just need to drive really carefully if I’ve been drinking?
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Michelle:</b>
-        <br/>
-	   Yeah, and that kind of thinking can be really misleading.  It leads us to believe we can do things safely when we can’t. People pulled over for driving under the influence are often surprised to find that their extra effort can’t compensate for impairment. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   But, the fact they were pulled over shows they were wrong.  Let’s break down why “extra effort” can’t overcome impairment.  
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">MICHELLE: Another common belief is that we can overcome impairment with extra effort.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: What do you mean by that? Like, believing I just need to drive really carefully if I've been drinking?</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">MICHELLE: Yeah, and that kind of thinking can be really misleading. It leads us to believe we can do things safely when we can't.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">MICHELLE: People pulled over for driving under the influence are often surprised to find that their extra effort can't compensate for impairment.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: But, the fact they were pulled over shows they were wrong. Let's break down why "extra effort" can't overcome impairment.</p>
     </div>
   </body>
 </tt>

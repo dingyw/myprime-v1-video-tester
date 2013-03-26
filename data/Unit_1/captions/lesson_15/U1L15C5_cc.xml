@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
@@ -6,10 +6,10 @@
   <body>
     <div xml:lang="en">
       <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   Most of the common drinking advice we’ve heard to prevent alcoholism and impairment problems is not reliable, consistent, or specific.  
-To prevent problems, we have to remember what one standard drink is.  One standard drink is .60 ounces of pure alcohol. That’s roughly the amount of alcohol in one 12-ounce can or bottle of beer, one 5-ounce serving of wine, or one half ounce of 80-proof distilled spirits. 
+        NARRATOR:
+        
+	   Most of the common drinking advice we've heard to prevent alcoholism and impairment problems is not reliable, consistent, or specific. 
+To prevent problems, we have to remember what one standard drink is. One standard drink is .60 ounces of pure alcohol. That's roughly the amount of alcohol in one 12-ounce can or bottle of beer, one 5-ounce serving of wine, or one half ounce of 80-proof distilled spirits. 
 We also have to be aware that the type of alcohol, container or glass size, and the amount or percentage of alcohol in the container can all affect the actual amount of alcohol in the drink.
       </p>
     </div>

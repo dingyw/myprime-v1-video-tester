@@ -1,26 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   Okay, so by this point, we know low-risk choices are the key to preventing impairment problems. Now some of us might look for other ways to avoid problems. 
-Michelle Ellison from the Prevention Research Institute is back with us to discuss this.  Michelle, what do you think?  Is there a way to make high-risk choices once in a while and stay clear of problems? 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Michelle:</b>
-        <br/>
-	   Well Antonio, high-risk is high-risk.  And believing there are “loopholes,” or ways around that, can actually increase our risk for problems. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   Increase our problems, really? 
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: Okay, so by this point, we know low-risk choices are the key to preventing impairment problems. Now some of us might look for other ways to avoid problems.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: Michelle Ellison from the Prevention Research Institute is back with us to discuss this. Michelle, what do you think? Is there a way to make high-risk choices once in a while and stay clear of problems? </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">MICHELLE: Well Antonio, high-risk is high-risk. And believing there are "loopholes," or ways around that, can actually increase our risk for problems.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: Increase our problems, really? </p>
     </div>
   </body>
 </tt>

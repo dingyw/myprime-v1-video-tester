@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
@@ -6,9 +6,9 @@
   <body>
     <div xml:lang="en">
       <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   Just as we are born with a trigger level, we’re also born with an initial tolerance level, which varies from person to person. But unlike our trigger level, our tolerance level can change over time.
+        NARRATOR:
+        
+	   Just as we are born with a trigger level, we're also born with an initial tolerance level, which varies from person to person. But unlike our trigger level, our tolerance level can change over time.
 When we drink to the point of impairment, our body automatically increases our tolerance level. 
 And a high tolerance makes us less sensitive to alcohol, so we are less aware of how impaired we are. s
       </p>
