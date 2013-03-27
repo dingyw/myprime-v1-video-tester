@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
@@ -9,19 +9,19 @@
         (Talking/joking about darts game)
       </p>
       <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
+        NARRATOR:
+        
 	   As alcohol or drug use becomes more central to our social lives, we gravitate to people whose drinking or drug use is similar to our own. Over time, these relationships become increasingly important which can lead to social dependence.
-Social dependence means our social group relies on high-risk drinking or drug use for its normal social functioning. This doesn’t mean that people in the group pressure others to make high-risk choices.
-But it does mean that making high-risk choices is normal for any member of the group. It seems like “everybody does it.” And if everybody does it, how “high-risk” can it be?
+Social dependence means our social group relies on high-risk drinking or drug use for its normal social functioning. This doesn't mean that people in the group pressure others to make high-risk choices.
+But it does mean that making high-risk choices is normal for any member of the group. It seems like "everybody does it." And if everybody does it, how "high-risk" can it be?
       </p>
       <p begin="00:00:00.00" dur="00:00:01.00">
         (Talking/joking about poker game)
       </p>
       <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   So, how do you know if a group has social dependence?  Try to imagine what it would be like for the group to get together without drinking high-risk amounts or using drugs. Would it feel as comfortable? Would it be as fun?  You might even ask yourself, would they stay together at all?   
+        NARRATOR:
+        
+	   So, how do you know if a group has social dependence? Try to imagine what it would be like for the group to get together without drinking high-risk amounts or using drugs. Would it feel as comfortable? Would it be as fun? You might even ask yourself, would they stay together at all?  
       </p>
     </div>
   </body>
