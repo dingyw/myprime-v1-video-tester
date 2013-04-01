@@ -1,32 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-	 <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   So in the Orange Phase a person may relate to the alcohol or drugs like a friend or even a lover.
-      </p>
-	 <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Frosty:</b>
-        <br/>
-	   Right, and when we think about how psychological dependence is similar to a love relationship, we can understand how strongly the person in the Orange Phase will defend their high-risk choices.  It’s similar to the way we’d defend a relationship with a friend or family member we want to protect. 
-      </p>
-	 <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Ejna:</b>
-        <br/>
-	   So we might rationalize problems in various ways, making them seem minor or a small price to pay for the pleasure of drinking or drug use. And we are not likely to go places where our drinking or drug choices are criticized or unwelcome, just as we would not go somewhere a person we loved was not welcome. We are more likely to choose settings where people accept our high-risk choices.
-      </p>
-	 <p begin="00:44:00.00" dur="01:30:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   There are many ways we might rationalize our choices. For example, I might be in the Orange Phase but believe I’m in the Yellow or even the Green Phase. How have I tricked myself? 
-One way is that I might think I’m making low-risk choices. When in reality, I don’t bother to count my drinks, or to measure standard drinks when I do count. 
-Or, I may use a glass that holds two or three standard drinks, but I count it as one. And if I have a fourth or fifth glass, I don’t really pay much attention. In fact, I might be sort of “grazing” my way through the evening, having one drink or drug after another but not really counting at all. Combine all of these, and I might be drinking 6-10 standard drinks and still not think of myself as high-risk drinker. This is one common way defense mechanisms can work.
-      </p>	
+	 <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: So in the Orange Phase a person may relate to the alcohol or drugs like a friend or even a lover.</p>
+	 <p begin="00:00:00.00" dur="00:00:01.00">FROSTY: Right, and when we think about how psychological dependence is similar to a love relationship, we can understand how strongly the person in the Orange Phase will defend their high-risk choices.</p> 
+	 <p begin="00:00:00.00" dur="00:00:01.00">FROSTY: It's similar to the way we'd defend a relationship with a friend or family member we want to protect.</p>
+	 <p begin="00:00:00.00" dur="00:00:01.00">EJNA: So we might rationalize problems in various ways, making them seem minor or a small price to pay for the pleasure of drinking or drug use.</p> 
+	 <p begin="00:00:00.00" dur="00:00:01.00">EJNA: And we are not likely to go places where our drinking or drug choices are criticized or unwelcome, just as we would not go somewhere a person we loved was not welcome. </p>
+	 <p begin="00:00:00.00" dur="00:00:01.00">EJNA: We are more likely to choose settings where people accept our high-risk choices.</p>
+	 <p begin="00:44:00.00" dur="01:30:01.00">NARRATOR: There are many ways we might rationalize our choices. For example, I might be in the Orange Phase but believe I'm in the Yellow or even the Green Phase. </p>
+	 <p begin="00:44:00.00" dur="01:30:01.00">NARRATOR: How have I tricked myself? One way is that I might think I'm making low-risk choices. When in reality, I don't bother to count my drinks, or to measure standard drinks when I do count. </p>
+	 <p begin="00:44:00.00" dur="01:30:01.00">NARRATOR: Or, I may use a glass that holds two or three standard drinks, but I count it as one. And if I have a fourth or fifth glass, I don't really pay much attention.</p> 
+	 <p begin="00:44:00.00" dur="01:30:01.00">NARRATOR: In fact, I might be sort of "grazing" my way through the evening, having one drink or drug after another but not really counting at all.</p> 
+	 <p begin="00:44:00.00" dur="01:30:01.00">NARRATOR: Combine all of these, and I might be drinking 6-10 standard drinks and still not think of myself as high-risk drinker. This is one common way defense mechanisms can work.</p>	
     </div>
   </body>
 </tt>

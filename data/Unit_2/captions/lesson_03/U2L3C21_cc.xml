@@ -5,14 +5,11 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   High-risk choices in the Orange Phase are likely to cause an impairment problem. Some examples of this are arrests, fights, relationship problems, injuries, or missed days at work or school. In fact, a person in the Orange Phase has a greater risk of death from impaired driving crashes, fights, drowning, or falls. 
-Someone in the Orange Phase may also begin to develop health problems like pancreatitis, enlarged liver, stomach problems, or high blood pressure.
-These problems often create emotional, physical, and financial costs. But if social dependence is present, the problems may seem as normal as the high-risk choices. 
-People around me might enable me by making excuses for my problems, or covering them up. The combination of social dependence and enabling by others can keep me from seeing the seriousness of my problems.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: High-risk choices in the Orange Phase are likely to cause an impairment problem. Some examples of this are arrests, fights, relationship problems, injuries, or missed days at work or school.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: In fact, a person in the Orange Phase has a greater risk of death from impaired driving crashes, fights, drowning, or falls.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Someone in the Orange Phase may also begin to develop health problems like pancreatitis, enlarged liver, stomach problems, or high blood pressure.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: These problems often create emotional, physical, and financial costs. But if social dependence is present, the problems may seem as normal as the high-risk choices.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: People around me might enable me by making excuses for my problems, or covering them up. The combination of social dependence and enabling by others can keep me from seeing the seriousness of my problems.</p>
     </div>
   </body>
 </tt>

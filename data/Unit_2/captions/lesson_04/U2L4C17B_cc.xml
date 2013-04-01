@@ -1,18 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-      In the Red Phase, blackouts are likely to happen more frequently, and they may also last longer than they have in the past. On top of that, the nature of the blackouts may change in a way that’s unique to people in the Red Phase. <br />
-During a typical blackout in the Orange Phase, the person shows clear signs of physical impairment, and will appear to be intoxicated. <br />
-But in the Red Phase, it’s possible for tolerance to be so high that a person whose blood alcohol level is high enough to cause a blackout, might not show any outward signs of impairment. <br />
-People may not even know this person has been drinking; yet later on, they’ll have no memory of events that occurred during the blackout. These are known as alcoholic blackouts.<br />
-In addition, as a person progresses through the Red Phase and tolerance becomes erratic, blackouts may occur at a lower blood alcohol level than in the past.  
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: In the Red Phase, blackouts are likely to happen more frequently, and they may also last longer than they have in the past.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: On top of that, the nature of the blackouts may change in a way that's unique to people in the Red Phase. </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: During a typical blackout in the Orange Phase, the person shows clear signs of physical impairment, and will appear to be intoxicated.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: But in the Red Phase, it's possible for tolerance to be so high that a person whose blood alcohol level is high enough to cause a blackout, might not show any outward signs of impairment.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: People may not even know this person has been drinking; yet later on, they'll have no memory of events that occurred during the blackout. These are known as alcoholic blackouts.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: In addition, as a person progresses through the Red Phase and tolerance becomes erratic, blackouts may occur at a lower blood alcohol level than in the past.</p>
 	 
     </div>
   </body>
