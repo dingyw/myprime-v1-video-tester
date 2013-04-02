@@ -5,39 +5,12 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        (Wolf howling)
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Boy:</b>
-        <br/>
-	   What was that?
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Grandfather:</b>
-        <br/>
-	   That was a wolf, my son.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Boy:</b>
-        <br/>
-	   Can it hurts us?
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Grandfather:</b>
-        <br/>
-	   My son, there are two wolves inside every one of us. One has the power to destroy us. The other has the power to protect us, and all that we love. And these two wolves battle for control inside us. 
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Boy:</b>
-        <br/>
-	   So which wolf wins?
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Grandfater:</b>
-        <br/>
-	   That depends on the one that you choose to feed.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">(Wolf howling) BOY: What was that?</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">GRANDFATHER: That was a wolf, my son.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">BOY: Can it hurts us?</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">GRANDFATHER: My son, there are two wolves inside every one of us. One has the power to destroy us. The other has the power to protect us, and all that we love. And these two wolves battle for control inside us.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">BOY: So which wolf wins?</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">Grandfater: That depends on the one that you choose to feed.</p>
     </div>
   </body>
 </tt>

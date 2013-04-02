@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator: </b>
-		<br/>
-		Let’s look at  what happens to my perception of problems as I go through the Spiral.
-Social dependence makes problems seem normal. If everyone in our social group is experiencing the same problems, they don’t seem unusual.
-Enabling removes consequences. When people around us make excuses for us, they prevent us from experiencing the pain of consequences.
-Psychological defenses trick us. As we use more and more defenses, it becomes more difficult for us to connect our problems to drinking or drugs.
-Memory blackouts erase memories of our problems, since they often happen at the same time.
-State dependent learning increasingly locks up emotions and things that we learn when making high-risk choices, so that we are not able to remember them or do them as well when we are sober. <br />
-Impaired abstract thinking distorts cause and effect. This makes it hard for us to connect the problems to the alcohol or drug use. 
-Withdrawal learning teaches us that using is the solution to, and not the cause of, our problems. 
-When I am caught in the spiral, my drinking or drug use has so distorted my perception that I am not always aware of the true nature of the problem.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Let's look at  what happens to my perception of problems as I go through the Spiral.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Social dependence makes problems seem normal. If everyone in our social group is experiencing the same problems, they don't seem unusual.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Enabling removes consequences. When people around us make excuses for us, they prevent us from experiencing the pain of consequences.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Psychological defenses trick us. As we use more and more defenses, it becomes more difficult for us to connect our problems to drinking or drugs.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Memory blackouts erase memories of our problems, since they often happen at the same time.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: State dependent learning increasingly locks up emotions and things that we learn when making high-risk choices, so that we are not able to remember them or do them as well when we are sober.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Impaired abstract thinking distorts cause and effect. This makes it hard for us to connect the problems to the alcohol or drug use.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Withdrawal learning teaches us that using is the solution to, and not the cause of, our problems.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: When I am caught in the spiral, my drinking or drug use has so distorted my perception that I am not always aware of the true nature of the problem.</p>
     </div>
   </body>
 </tt>

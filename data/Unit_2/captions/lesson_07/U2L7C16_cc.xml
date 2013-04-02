@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   Let’s take a closer look at pros and cons. It's pretty safe to say that most of us want to avoid the cons of high-risk choices, just as most of us would want to experience the benefits that come with low-risk choices. But remember, I can't just pick up one side of a coin, and I can't get just one side of my choices. I always get both the good and the bad.
-In choosing to accept the pros of high-risk choices, I am also choosing to accept the cons of high-risk choices. If I've been making high-risk choices, to pros of making high-risk choices may outweigh the cons in the short term, but, if I continue to make high-risk choices, the cons of my high-risk choices will eventually outweigh the pros in the long term. 
-Making low-risk choices, on the other hand, will be uncomfortable to deal with in the short term, but if I deal with that short-term discomfort and continue to make low-risk choices,I will be rewarded by the pros of my low-risk choices in the long term. Imagine putting your own pros and cons for making low-risk choices on a scale. What carries more weight on the scale today. Then, think about what you want for the future. What will weigh more for you in the long term?
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Let's take a closer look at pros and cons. It's pretty safe to say that most of us want to avoid the cons of high-risk choices, just as most of us would want to experience the benefits that come with low-risk choices.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: But remember, I can't just pick up one side of a coin, and I can't get just one side of my choices. I always get both the good and the bad.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: In choosing to accept the pros of high-risk choices, I am also choosing to accept the cons of high-risk choices.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: If I've been making high-risk choices, to pros of making high-risk choices may outweigh the cons in the short term, but, if I continue to make high-risk choices, the cons of my high-risk choices will eventually outweigh the pros in the long term.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Making low-risk choices, on the other hand, will be uncomfortable to deal with in the short term, but if I deal with that short-term discomfort and continue to make low-risk choices,I will be rewarded by the pros of my low-risk choices in the long term.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Imagine putting your own pros and cons for making low-risk choices on a scale. What carries more weight on the scale today. Then, think about what you want for the future. What will weigh more for you in the long term?</p>
     </div>
   </body>
 </tt>

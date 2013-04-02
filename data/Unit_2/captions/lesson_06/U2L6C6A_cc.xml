@@ -5,11 +5,9 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator: </b>
-		<br/>
-		Earlier we saw how there is an interaction between social influences and our choices. The social influences in my life also react to any problem that I might experience. Social influences can be positive and supportive, but they can also support my high-risk choices if I am in a socially-dependent group. Social dependence makes problems seem like no big deal to me because, after all, similar things have happened to other people I know.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Earlier we saw how there is an interaction between social influences and our choices. The social influences in my life also react to any problem that I might experience.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Social influences can be positive and supportive, but they can also support my high-risk choices if I am in a socially-dependent group.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Social dependence makes problems seem like no big deal to me because, after all, similar things have happened to other people I know.</p>
     </div>
   </body>
 </tt>

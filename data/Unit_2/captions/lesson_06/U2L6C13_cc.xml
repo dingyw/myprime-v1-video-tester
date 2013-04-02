@@ -5,29 +5,10 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Woman: </b>
-		<br/>
-		Isn't it a little bit early for that?
-      </p>
-	  
-	    <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Man:</b>
-		<br/>
-		You kidding? This is what gets me going.
-      </p>
-	  
-	    <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Woman: </b>
-		<br/>
-		That is messed up. That right there is the source of all your problems.
-      </p>
-	  
-	    <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Man: </b>
-		<br/>
-		No, right here is the answer to all of my problems. What's messed up is how crappy life is without it.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">WOMAN: Isn't it a little bit early for that?</p>	  
+	  <p begin="00:00:00.00" dur="00:00:01.00">MAN: You kidding? This is what gets me going.</p>	  
+	  <p begin="00:00:00.00" dur="00:00:01.00">WOMAN:	That is messed up. That right there is the source of all your problems.</p>	  
+	  <p begin="00:00:00.00" dur="00:00:01.00">MAN: No, right here is the answer to all of my problems. What's messed up is how crappy life is without it.</p>
     </div>
   </body>
 </tt>

@@ -1,15 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Rachel:</b>
-		<br/>
-		I can’t tell you my first, but I can remember being around 14 years, and I was at a party with some older people, and there was a cute boy there, and again I was 13, 14… I remember talking to this person, and I remember this craziness of people opening a car door and dragging me out of the back of a car… Somehow, between when I had started drinking and gotten into a car, I had gotten drunk, gone off with a boy older than I, and ended up in a backseat of a car, in an incredibly vulnerable position. And I don’t remember what happened in between there. And it didn’t scare me! What’s wrong with that, you know? And I actually had forgotten completely about that until just recently. I blacked out all the time.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">RACHEL: I can't tell you my first, but I can remember being around 14 years, and I was at a party with some older people, and there was a cute boy there, and again I was 13, 14...</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">RACHEL: I remember talking to this person, and I remember this craziness of people opening a car door and dragging me out of the back of a car...</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">RACHEL: Somehow, between when I had started drinking and gotten into a car, I had gotten drunk, gone off with a boy older than I, and ended up in a backseat of a car, in an incredibly vulnerable position.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">RACHEL: And I don't remember what happened in between there. And it didn't scare me! What's wrong with that, you know? And I actually had forgotten completely about that until just recently. I blacked out all the time.</p>
     </div>
   </body>
 </tt>

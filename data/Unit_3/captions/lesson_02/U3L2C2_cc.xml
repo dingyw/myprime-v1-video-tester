@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
@@ -6,10 +6,10 @@
   <body>
     <div xml:lang="en">
       <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio:</b>
-        <br/>
-	   Earlier in the program, we made a timeline to represent our past. Now, it’s time to plan for the future.  Let’s say 5 years from now you were to sit down and make another timeline; what would you want it to look like? Or, to put it more simply, what do you want the next five years of your life to be like? What do you want to achieve? 
-While you’re working on this, imagine how you’d feel as you reach your goals.  Write in your hopes, goals, and those feelings on your timeline for the future.
+        ANTONIO:
+        
+	   Earlier in the program, we made a timeline to represent our past. Now, it's time to plan for the future. Let's say 5 years from now you were to sit down and make another timeline; what would you want it to look like? Or, to put it more simply, what do you want the next five years of your life to be like? What do you want to achieve? 
+While you're working on this, imagine how you'd feel as you reach your goals. Write in your hopes, goals, and those feelings on your timeline for the future.
       </p>
     </div>
   </body>

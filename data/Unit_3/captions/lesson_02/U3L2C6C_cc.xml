@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
@@ -6,9 +6,9 @@
   <body>
     <div xml:lang="en">
       <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Ray:</b>
-        <br/>
-	   You’re already making low-risk choices. This means you’ve made a commitment, and you’re acting on it. Research tells us that commitment and action are critical steps to achieving success. 
+        RAY:
+        
+	   You're already making low-risk choices. This means you've made a commitment, and you're acting on it. Research tells us that commitment and action are critical steps to achieving success. 
 Paying attention to sustaining that change is also essential. The activities in this unit will take you through a planning and implementation process to assist you in building a strong foundation for sustaining your low-risk choices. 
       </p>
     </div>

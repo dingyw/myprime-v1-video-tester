@@ -1,17 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Antonio: </b>
-        <br/>
-	   People may keep secrets, or hide things from themselves using defense mechanisms, but still… some things are simply overlooked. 
-Here’s an example.  Just about everyone is aware that their arrest, divorce, or job loss is costly. But most of us aren’t aware of how much these problems actually cost. Sometimes the costs get so spread out that we lose track of the total.
-We can learn a lot by determining how much our problems really cost us, so in the next activity we’ll do just that. Before we start calculating, you’ll need to answer some questions. Remember, your responses will be completely confidential.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: People may keep secrets, or hide things from themselves using defense mechanisms, but still... some things are simply overlooked.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: Here's an example.  Just about everyone is aware that their arrest, divorce, or job loss is costly. </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: But most of us aren't aware of how much these problems actually cost. Sometimes the costs get so spread out that we lose track of the total.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ANTONIO: We can learn a lot by determining how much our problems really cost us, so in the next activity we'll do just that. Before we start calculating, you'll need to answer some questions. Remember, your responses will be completely confidential.</p>
     </div>
   </body>
 </tt>

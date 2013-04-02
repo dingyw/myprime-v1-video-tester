@@ -5,11 +5,7 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Narrator:</b>
-        <br/>
-	   Answer the questions on the screen by choosing your answer from the options below. Remember, all of your answers are confidential. When you're ready, click submit.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Answer the questions on the screen by choosing your answer from the options below. Remember, all of your answers are confidential. When you're ready, click submit.</p>
     </div>
   </body>
 </tt>

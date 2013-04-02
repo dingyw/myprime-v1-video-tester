@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <tt xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#styling" xml:lang="en">
   <head>
     <styling>  </styling>
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Eric: </b>
-		<br/>
-		They sort of were replaced by people who drank like me, or didn’t mind my drinking, because they were doing the same thing…I guess it sort of made me feel normal, and made what I was doing seem OK.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">ERIC: They sort of were replaced by people who drank like me, or didn't mind my drinking, because they were doing the same thing...I guess it sort of made me feel normal, and made what I was doing seem OK.</p>
     </div>
   </body>
 </tt>
