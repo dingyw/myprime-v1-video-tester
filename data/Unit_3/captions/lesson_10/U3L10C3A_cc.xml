@@ -5,11 +5,10 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        NARRATOR:
-        
-	   First, take another look at your top value. At the beginning of this program, this is the one thing you chose to keep above all the other values you had to lose. Think about what you've put there for a minute. On the screen, you see a scale that goes from one to ten. How committed are you to protecting what you value? Move the slider to pick a number. One is not at all committed, and ten is completely committed. You may be at a 10, totally committed to protecting that value. Or, you may be a little less than that. Or, you may be somewhere else on the scale. But however committed you are to protecting that value, enter that number.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: First, take another look at your top value. At the beginning of this program, this is the one thing you chose to keep above all the other values you had to lose.</p> 
+	  <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Think about what you've put there for a minute. On the screen, you see a scale that goes from one to ten. How committed are you to protecting what you value? Move the slider to pick a number.</p> 
+	  <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: One is not at all committed, and ten is completely committed. You may be at a 10, totally committed to protecting that value. Or, you may be a little less than that.</p> 
+	  <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Or, you may be somewhere else on the scale. But however committed you are to protecting that value, enter that number.</p>
     </div>
   </body>
 </tt>

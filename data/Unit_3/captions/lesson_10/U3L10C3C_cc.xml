@@ -5,14 +5,12 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        NARRATOR:
-        
-	   Now think about your past experiences, everything you've learned in this program about choices, and the future you want for yourself. If you want to, you can review some of the responses you've provided in the other exercises by going to the mystuff page.
-Here's another scale that goes from 1 to 10. This scale represents how committed you are to implementing your plan. 
-How committed you are to implementing your plan? Move the slider to pick a number. One is not at all committed; 10 is completely committed.
-Again, you may be at a 10 for being committed to your plan, or you might be 6, or another number. Whatever your level of commitment is to your plan, enter that number. And by the way, it's okay if this number is different from the last one. 
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Now think about your past experiences, everything you've learned in this program about choices, and the future you want for yourself.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: If you want to, you can review some of the responses you've provided in the other exercises by going to the mystuff page.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Here's another scale that goes from 1 to 10. This scale represents how committed you are to implementing your plan.</p> 
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: How committed you are to implementing your plan? Move the slider to pick a number. One is not at all committed; 10 is completely committed.</p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Again, you may be at a 10 for being committed to your plan, or you might be 6, or another number.</p> 
+	  <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Whatever your level of commitment is to your plan, enter that number. And by the way, it's okay if this number is different from the last one.</p>
     </div>
   </body>
 </tt>

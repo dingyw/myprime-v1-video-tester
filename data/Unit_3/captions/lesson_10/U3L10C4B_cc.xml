@@ -5,12 +5,10 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        RAY: 
-        
-	   Your answers suggest your values are clear and important to you, but you're less sure about the plan. There can be a few reasons for this. It might be that your plan is not ready yet. Or maybe you aren't confident about making it happen. It could also be that this is the right plan, but it's not quite the right time for it. Focusing your next step on the plan side of the equation may be helpful. In particular, you might ask yourself, whether it one of these three things – your plan, confidence, or your timing? If not, is it something else that needs to change? 
-Now, it's time to consider if you're ready to set a date to begin.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">RAY: Your answers suggest your values are clear and important to you, but you're less sure about the plan. There can be a few reasons for this.</p> 
+	  <p begin="00:00:00.00" dur="00:00:01.00">RAY: It might be that your plan is not ready yet. Or maybe you aren't confident about making it happen. It could also be that this is the right plan, but it's not quite the right time for it.</p> 
+	  <p begin="00:00:00.00" dur="00:00:01.00">RAY: Focusing your next step on the plan side of the equation may be helpful. In particular, you might ask yourself, whether it one of these three things – your plan, confidence, or your timing?</p> 
+	  <p begin="00:00:00.00" dur="00:00:01.00">RAY: If not, is it something else that needs to change? Now, it's time to consider if you're ready to set a date to begin.</p>
     </div>
   </body>
 </tt>

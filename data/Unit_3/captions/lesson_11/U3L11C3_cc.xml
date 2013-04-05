@@ -5,11 +5,8 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        NARRATOR:
-        
-	   Here's your chance to share what you've experienced in this program. Take some time to think of a loved one. What would you like to share with them about this program? What 3 things did you learn in this course? Remember, this letter is confidential. No one will see what you write unless you choose to share your response.
-      </p>
+      <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: Here's your chance to share what you've experienced in this program. Take some time to think of a loved one. What would you like to share with them about this program?</p> 
+	  <p begin="00:00:00.00" dur="00:00:01.00">NARRATOR: What 3 things did you learn in this course? Remember, this letter is confidential. No one will see what you write unless you choose to share your response.</p>
     </div>
   </body>
 </tt>
