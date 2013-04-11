@@ -5,24 +5,29 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.25" dur="00:00:01.00">NARRATOR: High tolerance can trick us in several ways. First, we rely primarily on signs of physical impairment to tell us when we've have had too much to drink. </p>
-      <p begin="00:00:20.00" dur="00:00:01.00">NARRATOR: Second, risk begins at the point of mental impairment, which occurs before physical impairment. The signs of mental impairment are more difficult to recognize.</p>
-      <p begin="00:00:30.00" dur="00:00:01.00">NARRATOR: Third, the higher our tolerance level, the bigger the gap is between our mental and physical tolerance levels, and the longer it takes us to recognize physical impairment.</p>
-      <p begin="00:00:40.00" dur="00:00:01.00">NARRATOR: And finally, the higher our tolerance level, the less sensitive we are to the effects of alcohol.</p> 
-      <p begin="00:00:48.00" dur="00:00:01.00">NARRATOR: Together, these are a perfect storm; they cause people with a high tolerance to take risks they believe are safe, when they are actually putting themselves at risk. </p>
-      <p begin="00:01:00.00" dur="00:00:01.00">NARRATOR: How do we know high tolerance increases our risk for impairment problems? One way we can tell is by looking at the average blood alcohol level at arrest.</p>
-      <p begin="00:01:10.00" dur="00:00:01.00">NARRATOR: In multiple countries, the average blood alcohol level among impaired drivers is about a .15.</p>  
-      <p begin="00:01:17.00" dur="00:00:01.00">NARRATOR: But, people who have a low tolerance can't reach a .15 and still drive because they'd be asleep! So, this tells us that most people who are arrested have a high tolerance.</p> 
-      <p begin="00:01:27.00" dur="00:00:01.00">NARRATOR: In the united states, midnight on friday and saturday nights is a dangerous time to drive. Nearly 4% of drivers have a blood alcohol level of .10 or higher. </p>
-      <p begin="00:01:39.00" dur="00:00:01.00">NARRATOR: Yet these drivers account for 46% of all the fatal crashes that occur between 12 a.m. And 1 a.m.</p> 
-      <p begin="00:01:46.00" dur="00:00:01.00">NARRATOR: Of course most drivers who are pulled over don't believe they are impaired, even when they are. Oftentimes, their high tolerance causes them to be less sensitive to the effects of alcohol.</p>
-      <p begin="00:01:56.00" dur="00:00:01.00">NARRATOR: High tolerance may seem like an asset, but when it comes to avoiding problems, it's really a liability.</p>
-	  <p begin="00:02:05.00" dur="00:00:01.00">DORIAN: I actually got a D.U.I. at Fort Belvoir just recently.</p> 
-      <p begin="00:02:08.00" dur="00:00:01.00">DORIAN: I felt fine, I'd had a few drinks, I'd just come out of Germany, so my tolerance level was pretty high--I spent three years there. I felt fine, mentally, and physically I was acting fine, I left to drive.</p> 
-      <p begin="00:02:23.00" dur="00:00:01.00">DORIAN: I got pulled over for doing a California roll at a stop sign--I just kinda slowed down a little bit, looked, then went ahead, but there happened to be a Virginia state police officer down the street who saw me do it.</p> 
-      <p begin="00:02:32.00" dur="00:00:01.00">DORIAN: When they pulled me over, they had me do the field sobriety test. I performed pretty fine on all those--no problems. Military policy on Fort Belvoir is that if you get pulled over during those hours, you're gonna get a breathalyzer.</p>
-      <p begin="00:02:45.00" dur="00:00:01.00">DORIAN: They took me to the station, and when I blew a breathalyzer, and I blew a .15, which is almost twice the legal limit, which was a surprise for me as well as some of the officers that were in the room, just because of the way I was acting. </p>
-      <p begin="00:02:57.00" dur="00:00:01.00">DORIAN: So, I got a D.U.I... There's no way getting out of that. It was crazy to blow a level that high but feel normal.</p>
+      <p begin="00:00:00.25" dur="00:00:19.75">NARRATOR: High tolerance can trick us in several ways. First, we rely primarily on signs of physical impairment to tell us when we've have had too much to drink. </p>
+      <p begin="00:00:20.00" dur="00:00:10.00">NARRATOR: Second, risk begins at the point of mental impairment, which occurs before physical impairment. The signs of mental impairment are more difficult to recognize.</p>
+      <p begin="00:00:30.00" dur="00:00:10.00">NARRATOR: Third, the higher our tolerance level, the bigger the gap is between our mental and physical tolerance levels, and the longer it takes us to recognize physical impairment.</p>
+      <p begin="00:00:40.00" dur="00:00:08.00">NARRATOR: And finally, the higher our tolerance level, the less sensitive we are to the effects of alcohol.</p> 
+      <p begin="00:00:48.00" dur="00:00:12.00">NARRATOR: Together, these are a perfect storm; they cause people with a high tolerance to take risks they believe are safe, when they are actually putting themselves at risk. </p>
+      <p begin="00:01:00.00" dur="00:00:10.00">NARRATOR: How do we know high tolerance increases our risk for impairment problems? One way we can tell is by looking at the average blood alcohol level at arrest.</p>
+      <p begin="00:01:10.00" dur="00:00:07.00">NARRATOR: In multiple countries, the average blood alcohol level among impaired drivers is about a .15.</p>  
+      <p begin="00:01:17.00" dur="00:00:10.00">NARRATOR: But, people who have a low tolerance can't reach a .15 and still drive because they'd be asleep! So, this tells us that most people who are arrested have a high tolerance.</p> 
+      <p begin="00:01:27.00" dur="00:00:12.00">NARRATOR: In the united states, midnight on friday and saturday nights is a dangerous time to drive. Nearly 4% of drivers have a blood alcohol level of .10 or higher. </p>
+      <p begin="00:01:39.00" dur="00:00:07.00">NARRATOR: Yet these drivers account for 46% of all the fatal crashes that occur between 12 a.m. And 1 a.m.</p> 
+      <p begin="00:01:46.00" dur="00:00:10.00">NARRATOR: Of course most drivers who are pulled over don't believe they are impaired, even when they are. Oftentimes, their high tolerance causes them to be less sensitive to the effects of alcohol.</p>
+      <p begin="00:01:56.00" dur="00:00:09.00">NARRATOR: High tolerance may seem like an asset, but when it comes to avoiding problems, it's really a liability.</p>
+	  <p begin="00:02:05.00" dur="00:00:03.00">DORIAN: I actually got a D.U.I. at Fort Belvoir just recently.</p> 
+      <p begin="00:02:08.00" dur="00:00:15.00">DORIAN: I felt fine, I'd had a few drinks, I'd just come out of Germany, so my tolerance level was pretty high--I spent three years there. I felt fine, mentally, physically I was acting fine, I left to drive.</p> 
+      <p begin="00:02:23.00" dur="00:00:09.00">DORIAN: I got pulled over for doing a California roll at a stop sign--I just kinda slowed down a little bit, looked, then went ahead, but there happened to be a Virginia state police officer down the street who saw me do it.</p> 
+      <p begin="00:02:32.00" dur="00:00:07.00">DORIAN: When they pulled me over, they had me do the field sobriety test. I performed pretty fine on all those--no problems.</p> 
+	  <p begin="00:02:39.00" dur="00:00:06.00">DORIAN: Military policy on Fort Belvoir is that if you get pulled over during those hours, you're gonna get a breathalyzer.</p>
+      <p begin="00:02:45.00" dur="00:00:05.00">DORIAN: They took me to the station, and when I blew a breathalyzer, and I blew a .15, which is almost twice the legal limit,</p> 
+	  <p begin="00:02:50.00" dur="00:00:07.00">which was a surprise for me as well as some of the officers that were in the room, just because of the way I was acting. </p>
+      <p begin="00:02:57.00" dur="00:00:09.00">DORIAN: So, I got a D.U.I... There's no way getting out of that. It was crazy to blow a level that high but feel normal.</p>
+      <p begin="00:03:06.00" dur="00:00:13.00">MACKENZIE: Well as a woman, I really wanted to prove that I was just as capable as the men as were some of my other female friends, that we can throw down with the best of them.</p>
+      <p begin="00:03:19.00" dur="00:00:09.00">MACKENZIE: You know we went out there and did all of the PT stuff, with the guys, and wanted to prove to them that women are just a capable as men are,</p> 
+	  <p begin="00:03:28.00" dur="00:00:09.00">so we really learned to increase are drinking tolerance and in doing so some of us made some poor decisions.</p>
     </div>
   </body>
 </tt>
