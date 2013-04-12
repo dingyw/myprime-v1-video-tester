@@ -5,26 +5,10 @@
   </head>
   <body>
     <div xml:lang="en">
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 1:</b>
-        <br/>
-	   So what about drugs and impairment?
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 2:</b>
-        <br/>
-	   It's not the same--I would never drink and drive, but I'm actually a lot better driver when I'm high.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 3:</b>
-        <br/>
-	   Oh come on, there's no way you're a better driver when you're stoned.
-      </p>
-      <p begin="00:00:00.00" dur="00:00:01.00">
-        <b>Online user 4:</b>
-        <br/>
-	   No, it's true, I can't drink and drive for nothing, but when I'm high, I'm able to focus on the road.
-      </p>
+      <p begin="00:00:00.25" dur="00:00:01.75">ONLIINE USER 1: So what about drugs and impairment?</p>
+      <p begin="00:00:02.00" dur="00:00:05.00">ONLIINE USER 2: It's not the same--I would never drink and drive, but I'm actually a lot better driver when I'm high.</p>
+      <p begin="00:00:07.00" dur="00:00:04.00">ONLIINE USER 3: Oh come on, there's no way you're a better driver when you're stoned.</p>
+      <p begin="00:00:11.00" dur="00:00:05.00">ONLIINE USER 2: No, it's true, I can't drink and drive for nothing, but when I'm high, I'm able to focus on the road.</p>
     </div>
   </body>
 </tt>
