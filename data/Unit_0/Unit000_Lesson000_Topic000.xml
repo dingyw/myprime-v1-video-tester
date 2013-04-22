@@ -1,0 +1,67 @@
+<scene id="3499" title="Unit 1: Exploring Summary">
+
+	<assets visible="false">
+		<sequence label="Introduction">
+		
+			
+			<brightcoveVideo name="U1L0C2" source="1443616034001" width="768" height="432" complete="true" label="Exploring Unit Summary Review">
+			  <caption source="data/Unit_2/captions/lesson_00/U1L0C2_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U2L2AC2" source="782446809001" width="768" height="432" complete="true" label="Exploring Unit Summary Review">
+			  <caption source="data/Unit_2/captions/lesson_02/U2L2AC2_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U2L3C18" source="1537539665001" width="768" height="432" complete="true" label="Exploring Unit Summary Review">
+			  <caption source="data/Unit_2/captions/lesson_03/U2L3C18_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L8T1C4B_1" source="818961190001" width="768" height="432" complete="true" label="Drinking Alone">
+			  <caption source="data/Unit_1/captions/lesson_08/U1L8T1C4B_1_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L8T1C4B_2" source="818961489001" width="768" height="432" label="Drinking in the Morning">
+			  <caption source="data/Unit_1/captions/lesson_08/U1L8T1C4B_2_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L8T1C4B_3" source="818961189001" width="768" height="432" label="No Liquor">
+			  <caption source="data/Unit_1/captions/lesson_08/U1L8T1C4B_3_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L8T1C4B_4" source="818961488001" width="768" height="432" label="Introduction Video">
+			  <caption source="data/Unit_1/captions/lesson_08/U1L8T1C4B_4_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L8T1C4B_5" source="818961486001" width="768" height="432" label="Introduction Video">
+			  <caption source="data/Unit_1/captions/lesson_08/U1L8T1C4B_5_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L11T3C5B" source="1537130446001" width="768" height="432" label="Introduction Video">
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T3C5B_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L11T3C5C" source="1561023710001" width="768" height="432" label="Introduction Video">
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T3C5C_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L11T3C5D" source="746918676001" width="768" height="432" label="Introduction Video">
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T3C5D_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U1L11T3C5E" source="746853680001" width="768" height="432" label="Introduction Video">
+			  <caption source="data/Unit_1/captions/lesson_11/U1L11T3C5E_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U2L1C6" source="738359089001" width="768" height="432" label="Introduction Video">
+			  <caption source="data/Unit_2/captions/lesson_01/U2L1C6_cc.xml"/>
+			</brightcoveVideo>
+			
+			<brightcoveVideo name="U2L6C3" source="1519075040001" width="768" height="432" label="Introduction Video">
+			  <caption source="data/Unit_2/captions/lesson_06/U2L6C3_cc.xml"/>
+			</brightcoveVideo>
+			
+		</sequence>
+		
+	</assets>
+  
+</scene>
